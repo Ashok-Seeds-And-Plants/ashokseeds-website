@@ -18,7 +18,7 @@ export default function Home() {
             <div className="page-wrapper">
                 <Header />
 
-                <Sidebar />
+
 
 
 
