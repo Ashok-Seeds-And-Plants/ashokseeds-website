@@ -104,21 +104,9 @@ export default function Header() {
                               </div>
                               <ul className="navbar-nav ms-auto">
                                   <li className="nav-item">
-                                      <a href="#" className="nav-link active">
-                                          Home
-                                          <i className="ri-add-line"></i>
-                                      </a>
-                                      <ul className="dropdown-menu">
-                                          <li className="nav-item">
-                                              <a href="index.html" className="nav-link">Home One</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="index-2.html" className="nav-link active">Home Two</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="index-3.html" className="nav-link">Home Three</a>
-                                          </li>
-                                      </ul>
+                                      <a href="https://www.ashokseedplant.com/" className="nav-link">
+                                          Home</a>
+
                                   </li>
                                   <li className="nav-item">
                                       <a href="about.html" className="nav-link">
