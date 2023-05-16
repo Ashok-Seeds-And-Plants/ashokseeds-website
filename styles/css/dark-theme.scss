@@ -1,0 +1,447 @@
+/*-------------------------------
+    Dark Theme  CSS
+-------------------------------*/
+
+//Color Variable
+$clr_white: #fff;
+$clr_offwhite: rgba(255,255,255,0.85);
+$clr_black: #000;
+$clr_aztech: #091315;
+$clr_cod: #191919;
+$clr_grey: #ABA8B0;
+$clr_mine_shaft: #3B3B3B;
+$clr_mirage:#231F3E;
+$clr_sand: #F5F5F5;
+$clr_red:#FF3838;
+$clr_lochi:#338F7A;
+$clr_jaffa:#F59946;
+
+.switch-theme-mode{
+    position: fixed;
+    top: 200px;
+    right: 15px;
+    z-index: 99;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &.round {
+        border-radius: 50%;
+        &:before{
+            border-radius: 50%;
+        }
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        height: 35px;
+        width: 35px;
+        left: 0px;
+        bottom: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        box-shadow: 0 0px 15px #2020203d;
+        background: white url('../img/night.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $clr_aztech;
+        background-size: 17px;
+    }
+}
+input:checked + .slider {
+  background-color: transparent;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px  transparent;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  background: white url('../img/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+
+}
+/*---------------------------------
+    Color CSS For Elements 
+-----------------------------------*/
+.theme-light {
+    .navbar-brand{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+}
+.theme-dark {
+    .dpt-100{
+        padding-top: 100px;
+    }
+    .navbar-brand{
+        .logo-light{
+            display: none!important;
+        }
+        .logo-dark{
+            display: block!important;
+        }
+    }
+    .td-cod,
+    .footer-wrap,
+    .btn.style3,
+    .blog-card.style1,
+    .blog-card.style2,
+    .blog-card.style3,
+    .newsletter-form.style1,
+    .promo-wrap.style2,
+    .project-card.style3,
+    .project-card.style4,
+    .event-card.style2,
+    .event-card.style5,
+    .team-card.style2 .team-info-wrap,
+    .event-card.style3,
+    .counter-card-wrap.style1 .counter-card,
+    .team-card .team-info,
+    .bg-albastor {
+        background-color: $clr_cod!important;
+    }
+    body,
+    .bg-white,
+    .search-area{
+        background-color: $clr_black!important;
+    }
+    
+    .td-aztech,
+    .bg-athens,
+    .bg-sand,
+    .hero-wrap.style1,
+    .counter-wrap.style1,
+    .hero-wrap.style3,
+    .about-wrap.style3 .about-img-wrap::after,
+    .project-card.style1 .project-info,
+    .wp-block-quote{
+        background-color: $clr_aztech!important;
+    }
+    .breadcrumb-wrap::after{
+        background-color: rgba(9, 19, 21,0.75)!important;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h3 a,
+    a,
+    .event-search-form .form-group label,
+    .select-lang .navbar-language .dropdown-toggle::before,
+    .btn:hover{
+        color: $clr_white!important;
+    }
+    p,span,
+    .checkbox label,
+    .content-feature-list li,
+    .login-form .login-body .form-group label,
+    .blog-card .blog-info .blog-metainfo li,
+    article ol li,
+    .terms-wrap ol li,
+    article p strong, 
+    .terms-wrap p strong,
+    .content-feature-list li,
+    article ol li,
+    .project-desc ol li,
+     .event-desc ol li,
+    .team-desc ol li,
+    .terms-wrap ol li,
+    .project-card.style3 .project-info .fund-collection .fund-raised,
+    .project-card.style3 .project-info .fund-collection .fund-goal,
+    .project-card.style4 .project-info .fund-collection .fund-raised,
+    .project-card.style4 .project-info .fund-collection .fund-goal,
+    article ol li, .service-desc ol li, .terms-wrap ol li,
+    .post-metainfo li{
+        color: $clr_offwhite!important;
+    }
+    h3:hover a,
+    a:hover,
+    .counter-card-wrap.style1 .counter-card.style2 .counter-text h2,
+    .counter-card-wrap.style1 .counter-card.style2 .counter-text h2 span,
+    .counter-card-wrap.style1 .counter-card.style3 .counter-text h2,
+    .counter-card-wrap.style1 .counter-card.style3 .counter-text h2 span,
+    .copyright-text a{
+        color: $clr_lochi!important;
+    }
+    .counter-card-wrap.style1 .counter-card.style1 .counter-text h2,
+    .counter-card-wrap.style1 .counter-card.style1 .counter-text h2 span,
+    .counter-card-wrap.style1 .counter-card.style4 .counter-text h2 span,
+    .counter-card-wrap.style1 .counter-card.style4 .counter-text h2 {
+        color: $clr_jaffa!important;
+    }
+    .team-wrap .team-shape-one,
+    .blog-wrap .container .blog-section-shape,
+    .promo-wrap.style2 .promo-shape-two,
+    .event-wrap .event-sape-three,
+    .promo-wrap.style2 .promo-shape-one{
+        opacity: 0.09;
+    }
+    .hero-wrap.style3 .hero-shape-three,
+    .hero-wrap.style3 .hero-shape-four,
+    .about-wrap.style1 .about-shape-one,
+    .team-card.style1 .team-info .team-shape {
+        opacity: 0.17;
+    }
+    .hero-wrap.style3 .hero-shape-two {
+        filter: brightness(0) invert(1);
+        opacity: 0.3;
+    }
+    .cta-wrap.style1::after, .cta-wrap.style2::after {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(0, 0, 0, 0.95)), color-stop(94%, rgba(0, 0, 0, 0.3)));
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 45%, rgba(0, 0, 0, 0.3) 94%);
+    }
+    article,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next{
+        border-color: rgba(255,255,255,0.35);
+    }
+    .owl-carousel .owl-dots button.owl-dot span{
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .owl-carousel .owl-dots button.owl-dot.active span{
+        background-color: $clr_lochi;
+    }
+    .tag-list li a{
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.2);
+        color: $clr_white!important;
+    }
+    .tag-list li a:hover{
+        background: $clr_lochi!important;
+        color: $clr_white;
+        border-color: transparent;
+    }
+    .event-search-form {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .header-wrap{
+        .header-top{
+            background-color: $clr_black;
+            .header-top-right{
+                .social-profile{
+                    li{
+                        a{
+                            background-color: rgba(255, 255, 255, 0.15);
+                            &:hover{
+                                background-color: $clr_lochi;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header-bottom{
+            background-color: $clr_cod;
+            .searchbox{
+                input{
+                    color: $clr_white;
+                }
+                button{
+                    i{
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+            .searchbtn{
+                i{
+                    color: $clr_white;
+                }
+            }
+        }
+    }
+    .breadcrumb-wrap:after{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .header-wrap .navbar .other-options::before {
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+    .accordion-item {
+        background: transparent;
+        .accordion-header {
+            .accordion-button{
+                background-color: $clr_cod;
+                color: $clr_white;
+            }
+        }
+        .accordion-body{
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+    }
+    .search-area{
+        button{
+            i{
+                color: $clr_white;
+            }
+        }
+    }
+    .sidebar-widget{
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        &.style2{
+            border: none;
+        }
+    }
+    .header-wrap .navbar .navbar-nav .nav-item a:hover,
+    .header-wrap .navbar .navbar-nav .nav-item a:focus,
+    .header-wrap .navbar .navbar-nav .nav-item a.active {
+        color: $clr_lochi!important;
+    }
+    .event-card,
+    .blog-card .blog-info,
+    .promo-wrap.style2 .promo-card,
+    .event-info-item-wrap .event-info-item,
+    .comment-item{
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    .post-author,
+    .contact-item-wrap,
+    .contact-form{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .social-profile{
+        &.style3{
+            a{
+                background-color: rgba(255, 255, 255, 0.15);
+                i{
+                    color: $clr_white;
+                }
+                &:hover{
+                    background-color: $clr_lochi;
+                }
+            }
+        }
+    }
+    select{
+        background-image: url(../img/down-arrow-white.png);
+    }
+    .donation-form{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    input,textarea,
+    .event-search-form .form-group select,
+    .event-search-form .form-group input,
+    #cmt-form .comment-form .form-group input,
+    #cmt-form .comment-form .form-group textarea,
+    #contactForm .form-group input,
+    #contactForm .form-group textarea,
+    .donation-form .form-group input,
+    .donation-form .form-group textarea,
+    .donation-form .form-group select,
+    .register-widget .form-group input,
+    .register-widget .form-group select,
+    .register-widget .form-group textarea,
+    .project-search-form .form-group select,
+    .project-search-form .form-group input,
+    .login-form-wrap .login-body .form-group input,
+    .newsletter-form .form-group input{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: $clr_white;
+    }
+    .team-card.style3{
+        background-color: transparent;
+    }
+    .team-slider-one .owl-stage-outer .owl-stage .owl-item:nth-child(2n) .team-card.style3:hover,
+    .team-slider-one .owl-stage-outer .owl-stage .owl-item:nth-child(2n+1) .team-card.style3:hover{
+        background-color: $clr_cod;
+    }
+    .page-nav li a{
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        background-color: transparent;
+        &:hover{
+            background-color: $clr_lochi;
+            color: $clr_white!important;
+        }
+    }
+    .login-form-wrap .login-form .form-group input,
+    .contact-widget .form-group input,
+    .contact-widget .form-group textarea,
+    .search-box .form-group input{
+        background-color: $clr_black;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: $clr_white;
+        &::placeholder{
+            color: $clr_white;
+        }
+    }
+    .login-form-wrap{
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+    }
+}
+@media only screen and (max-width:991px) {
+    .theme-dark{
+        .main-menu-wrap,
+        .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu{
+            background-color: $clr_aztech;
+        }
+        .menu-close i,
+        .header-wrap .navbar .navbar-nav .nav-item .menu-expand i{
+            color: $clr_white!important;
+        }
+        .header-wrap .navbar .navbar-nav .nav-item a.active,
+        .main-menu li a.active{
+            color: $clr_lochi!important;
+        }
+        .main-menu li a.active,
+        .main-menu li a{
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu li,
+        .header-wrap .navbar .navbar-nav .nav-item a {
+            border-color:rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+@media only screen and (min-width:992px) {
+    .theme-dark{
+        .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu,
+        .main-menu-wrap #menu ul li.has-children .sub-menu{
+            background-color: $clr_aztech;
+        }
+        .header-wrap .navbar .navbar-nav .nav-item a:hover,
+        .header-wrap .navbar .navbar-nav .nav-item a:focus,
+        .header-wrap .navbar .navbar-nav .nav-item a.active{
+              color: $clr_lochi!important;
+         }
+         .header-wrap.style2 .navbar .navbar-nav .nav-item .dropdown-menu li{
+            border-color:rgba(255, 255, 255, 0.15);
+        }
+    }
+}
