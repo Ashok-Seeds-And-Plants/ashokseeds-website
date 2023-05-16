@@ -111,6 +111,48 @@ export default function Home() {
                                 </div>
                     </div>
                 </div>
+                <section className="about-wrap style2 ptb-100">
+                    <img src="/img/about/about-shape-1.png" alt="Image"
+                         className="about-shape-one moveHorizontal" />
+                        <div className="container">
+                            <div className="row align-items-center gx-5">
+                                <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200"
+                                     data-aos-delay="200">
+                                    <div className="about-img-wrap">
+                                        <img src="/img/about/about-img-2.png" alt="Image" className="bounce"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200"
+                                     data-aos-delay="200">
+                                    <div className="about-content">
+                                        <div className="content-title style3">
+                                            <span>A Little Introduction <span className="bl-text">About Us</span></span>
+                                            <h2>Protect Our Earth Against Climate Change</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
+                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
+                                                vestibulum aliquet arcu a duis. Sollicitudin consectetur netus du
+                                                ultric. </p>
+                                        </div>
+                                        <ul className="content-feature-list list-style">
+                                            <li><i className="ri-checkbox-circle-line"></i>Curabitur vitae ullamcorper
+                                                libe roras id augue
+                                            </li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Felis cras luctus nisi in
+                                                tincidunt blandit
+                                            </li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Sapien mi vestibulum est
+                                                commodo lobortis metus
+                                            </li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Mauris vitae purus blandit
+                                                fermentum
+                                            </li>
+                                        </ul>
+                                        <a href="about.html" className="btn style2">Find Out More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
 
 
                 <Footer />
