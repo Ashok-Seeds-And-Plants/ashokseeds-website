@@ -1,0 +1,80 @@
+// side  abar style hear
+
+.side-bar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: -100%;
+    width: 465px;
+    padding: 40px 30px;
+    padding-top: 50px;
+    height: 100%;
+    display: block;
+    background-color: white;
+    backdrop-filter: blur(7px);
+    z-index: 1900;
+    transition: all 600ms ease;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow: visible;
+    @media #{$large-mobile} {
+        width: 320px;
+    }
+    .inner-main-wrapper-desk{
+        .thumbnail{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 85%;
+                margin: auto;
+            }
+        }
+        .inner-content{
+            text-align: center;
+            margin-top: 30px;
+            p{
+            max-width: 95%;
+            text-align: center;
+            margin: auto;
+            }
+            .title{
+                font-weight: 600;
+            }
+            .footer{
+                padding-top: 50px;
+                margin-top: 80px;
+                border-top: 1px solid #c2c2c2;
+                .title{
+                    font-weight: 500;
+                }
+                a.rts-btn{
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+.side-bar.show {
+    right: 0;
+    overflow-y: auto;
+}
+.side-bar button {
+    max-width: max-content;
+    margin-right: auto;
+    margin-left: -53px;
+    margin-top: 0;
+    position: absolute;
+    i{
+        color: #000;
+        height: 50px;
+        width: 50px;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 14px;
+        margin-top: -48px;
+        font-size: 27px;    
+    }
+}

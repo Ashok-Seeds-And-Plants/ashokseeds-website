@@ -1,0 +1,76 @@
+// social area style hear
+
+.social-wrapper-one{
+    ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    }
+    li{
+        margin-right: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        a{
+            width: 40px;
+            height: 40px;
+            display: block;
+            background: #171717;
+            border: 1px solid #222222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            i{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                color: #FFFFFF;
+            }
+            &:hover{
+                background: var(--color-primary);
+            }
+        }
+    }
+}
+
+
+
+// social area start
+.rts-social-wrapper-three{
+    ul{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+        margin-top: 34px;
+        li{
+            margin: 0;
+            padding: 0;
+            a{  
+                i{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    display: block;
+                    background: #22282C;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 14px;
+                    justify-content: center;
+                    transition: .3s;
+                }
+                &:hover{
+                    i{
+                        background: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}

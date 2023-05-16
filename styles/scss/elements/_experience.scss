@@ -1,0 +1,29 @@
+
+// experience skill style]
+.great-quality-skill-four{
+    padding: 130px 180px;
+    background: #fff;
+    @media #{$smlg-device} {
+        padding: 40px;
+    }
+    @media #{$md-layout} {
+        padding: 40px;
+    }
+    @media #{$sm-layout} {
+        padding: 20px;
+    }
+}
+.infor-exp-content{
+    p.disc{
+        width: 90%;
+    }
+}
+
+.rts-skill-area{
+    &.four{
+        img{
+            width: 100%;
+        }
+    }
+}
+

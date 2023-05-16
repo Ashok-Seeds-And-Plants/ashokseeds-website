@@ -1,0 +1,193 @@
+
+// testimonials style hear
+.main-wrapper-testimonials{
+    padding: 0 60px;
+    border: 1px solid #ebebeb;
+    @media #{$large-mobile} {
+        padding: 0 30px;
+    }
+}
+
+.testimonials-mian-wrapepr{
+    display: flex;
+    align-items: center;  
+    gap: 80px;
+    @media #{$smlg-device} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media #{$sm-layout} {
+        gap: 40px;
+    }
+    .image-area{
+        flex-basis: 80%;
+        .title{
+            margin-bottom: 44px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 40px;
+            font-family: var(--font-primary);
+            color: #0C0A0A;
+            @media #{$large-mobile} {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+        .thumbnail{
+            position: relative;
+            margin-left: 75px;
+            &::after{
+                position: absolute;
+                left: -18%;
+                bottom: 0;
+                top: 70%;
+                content: '';
+                background-image: url(../images/testimonials/logo/01.png);
+                height: 150px;
+                width: 150px;
+                background-repeat: no-repeat;
+            }
+        }
+    }  
+    .testimonials-right{
+        .title{
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 46px;
+            font-family: var(--font-primary);
+            color: #0C0A0A;
+            margin-bottom: 40px;
+            @media #{$sm-layout} {
+                font-size: 18px;
+                line-height: 33px;
+            }
+        }
+        .name{
+            color: #0C0A0A;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: var(--font-primary);
+            span{
+                color: var(--color-primary);
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.swiper-testimonials-1{
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0;
+    @media #{$large-mobile} {
+        padding: 30px 0;
+    }
+}
+
+.main-wrapper-testimonials{
+    position: relative;
+    .swiper-button-next,
+    .swiper-button-prev{
+        background-image: none;
+        top: 87%;
+        i{
+            font-size: 26px;
+            padding: 15px 18px;
+            background: var(--color-primary);
+            color: #fff;
+            font-weight: 200;
+            transition: .3s;
+        }
+        &:hover{
+            i{
+                background: #0C0A0A;
+            }
+        }
+    }
+    .swiper-button-next{
+        right: 60px;
+    }
+    .swiper-button-prev{
+        right: 118px;
+        left: auto;
+    }
+    .button-wrapper{
+        @media #{$small-mobile} {
+            display: none;
+        }
+    }
+}
+
+
+.rts-clients-feedback-four{
+    background: #fff;
+    padding: 45px;
+    box-shadow: 0px 14px 70px rgba(0, 0, 0, 0.07);
+    @media #{$small-mobile} {
+        padding: 20px;
+    }
+    .thumbnail-area{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 25px;
+        .title-area{
+            .title{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    p.disc{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #F1F1F1;
+        width: 95% ;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+.rts-testimonials-area-4{
+    background-image: url(../images/cta/03.jpg);
+}
+
+
+.cta-main-wrapper-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media #{$large-mobile} {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+.cta-main-wrapper-4{
+    .left{
+        span{
+            color: var(--color-primary);
+            font-family: var(--font-primary);
+        }
+        .title{
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            color: #fff;
+            @media #{$sm-layout} {
+                font-size: 22px;
+                line-height: 34px;
+            }
+        }
+    }
+}

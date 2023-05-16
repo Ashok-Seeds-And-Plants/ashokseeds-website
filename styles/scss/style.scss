@@ -1,0 +1,89 @@
+/*=======css indexing======
+
+1.Default css
+2.Typography
+3.Spacing
+4.Reset
+5.Forms
+6.Mixins
+7.Shortcods
+8.Common
+9.animation
+10. text-animation
+11. sal animation
+12. button style
+13. header
+14. nav style
+15. mobile-menu
+16. cart-side
+17. side-bar
+18. about style 
+19. banner style
+20. social share
+21. project style hear
+22. funfacts styles
+23. blog
+24. cta
+25. team
+26. service
+27. testimonials
+28. working-process
+29. faq
+30. goal-time
+31. timeline
+32. contact
+33. date-picker
+34. pagination
+35. story-company
+36. backto-top
+37. Experience area
+38. footer
+
+==========================*/
+
+
+
+/* Default  */
+
+@import'default/variables';
+@import'default/typography';
+@import'default/spacing';
+@import'default/reset';
+@import'default/forms';
+@import'default/mixins';
+@import'default/shortcode';
+@import'default/common';
+@import'default/animations';
+@import'default/text-animation';
+@import'default/sal';
+
+
+/*elements*/
+@import'elements/button';
+@import'elements/header';
+@import'elements/nav';
+@import'elements/mobile-menu';
+@import'elements/cart-side';
+@import'elements/side-bar';
+@import'elements/about';
+@import'elements/banner';
+@import'elements/social';
+@import'elements/project';
+@import'elements/funfacts';
+@import'elements/blog';
+@import'elements/cta';
+@import'elements/team';
+@import'elements/service';
+@import'elements/testimonials';
+@import'elements/working-process';
+@import'elements/faq';
+@import'elements/goal-time';
+@import'elements/timeline';
+@import'elements/contact';
+@import'elements/date-picker';
+@import'elements/pagination';
+@import'elements/story-company';
+@import'elements/backto-top';
+@import'elements/experience';
+@import'elements/footer';
+

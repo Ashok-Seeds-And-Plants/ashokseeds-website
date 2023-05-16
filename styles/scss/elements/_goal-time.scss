@@ -1,0 +1,70 @@
+// goal time style
+.goal-time-wrapper-two{
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: #EFEFEF;
+        left: 11px;
+        bottom: 4px;
+        z-index: -2;
+    }
+    .rts-single-time{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            margin-bottom: 36px;
+            color: var(--color-primary);
+            font-size: 22px;
+        }
+        span{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -10px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                padding: 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.14);
+            }
+        }
+    }
+}
+.content-goal-time{
+    p{
+        max-width: 90%;
+    }
+}
+
+.title-goal-doller{
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 183px;
+    color: #FF6600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media(max-width:991px){
+        justify-content: left;
+    }
+    @media(max-width:576px){
+        font-size: 84px;
+    }
+}
