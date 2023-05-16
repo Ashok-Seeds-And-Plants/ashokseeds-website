@@ -11,18 +11,19 @@ export default function Home() {
         <>
             <Meta />
             <Head>
-            <title>404 Page not found! | Ashok Seeds and Plants</title>
-            <meta name="description" content="" />
+                <title>404 Page Not Found | Ashok Seeds and Plants</title>
+                <meta name="description" content="" />
 
             </Head>
+            <div className="page-wrapper">
+                <Header />
 
-            <Header />
-
-            <Sidebar />
+                <Sidebar />
 
 
-            <Footer />
 
+                <Footer />
+            </div>
             <Js />
         </>
     )

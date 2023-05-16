@@ -15,7 +15,7 @@ export default function Home() {
             <meta name="description" content="" />
 
             </Head>
-
+            <div className="page-wrapper">
             <Header />
 
             <Sidebar />
@@ -23,7 +23,7 @@ export default function Home() {
 
 
             <Footer />
-
+            </div>
             <Js />
         </>
     )
