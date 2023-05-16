@@ -20,7 +20,6 @@ export default function Home() {
 
                 <div className="content-wrapper">
 
-                    <!-- Error  Section start -->
                     <div className="error-wrap ptb-100">
                         <div className="container">
                             <div className="row">
@@ -36,7 +35,6 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <!-- Error  Section end -->
 
                 </div>
 
