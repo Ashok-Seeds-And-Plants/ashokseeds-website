@@ -26,44 +26,21 @@ export default function Header() {
                                   <ul className="contact-info list-style">
                                       <li>
                                           <i className="flaticon-phone-call"></i>
-                                          <a href="tel:666999888">+666-999-888</a>
+                                          <a href="tel:666999888">+91-9453-111-377</a>
                                       </li>
                                       <li>
                                           <i className="flaticon-email-2"></i>
-                                          <a href="mailto:info@clim.com">info@clim.com</a>
+                                          <a href="mailto:info@clim.com">contact@ashokseedplant.com</a>
                                       </li>
                                       <li>
                                           <i className="flaticon-pin"></i>
-                                          <p>2767 Sunrise Street, NY 1002, USA</p>
+                                          <p>506, Ashok Chauraha, Bargarh Chitrakoot UP-210208</p>
                                       </li>
                                   </ul>
                               </div>
                           </div>
                           <div className="col-lg-4 col-md-4">
                               <div className="header-top-right">
-                                  <div className="select-lang">
-                                      <i className="ri-earth-fill"></i>
-                                      <div className="navbar-option-item navbar-language dropdown language-option">
-                                          <button className="dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                                  aria-haspopup="true" aria-expanded="false">
-                                              <span className="lang-name"></span>
-                                          </button>
-                                          <div className="dropdown-menu language-dropdown-menu">
-                                              <a className="dropdown-item" href="#">
-                                                  <img src="/img/uk.png" alt="flag"/>
-                                                      Eng
-                                              </a>
-                                              <a className="dropdown-item" href="#">
-                                                  <img src="/img/china.png" alt="flag"/>
-                                                      简体中文
-                                              </a>
-                                              <a className="dropdown-item" href="#">
-                                                  <img src="/img/uae.png" alt="flag"/>
-                                                      العربيّة
-                                              </a>
-                                          </div>
-                                      </div>
-                                  </div>
                                   <ul className="social-profile list-style style1">
                                       <li>
                                           <a href="https://facebook.com" target="_blank">
@@ -78,11 +55,6 @@ export default function Header() {
                                       <li>
                                           <a href="https://linkedin.com" target="_blank">
                                               <i className="ri-linkedin-fill"></i>
-                                          </a>
-                                      </li>
-                                      <li>
-                                          <a href="https://pinterest.com">
-                                              <i className="ri-pinterest-line"></i>
                                           </a>
                                       </li>
                                   </ul>
@@ -270,10 +242,6 @@ export default function Header() {
                               </div>
                           </div>
                       </nav>
-                      <div className="search-area">
-                          <input type="search" placeholder="Search Here.."/>
-                              <button type="submit"><i className="ri-search-line"></i></button>
-                      </div>
                       <div className="mobile-bar-wrap">
                           <button className="searchbtn d-lg-none"><i className="ri-search-line"></i></button>
                           <div className="mobile-menu d-lg-none">
