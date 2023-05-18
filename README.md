@@ -1,1 +1,1 @@
-# Next + Netlify Website for wave earth infratech
+# Next + Netlify Website for Ashok Seeds and Plants
