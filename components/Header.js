@@ -26,11 +26,11 @@ export default function Header() {
                                   <ul className="contact-info list-style">
                                       <li>
                                           <i className="flaticon-phone-call"></i>
-                                          <a href="tel:666999888">+91-9453-111-377</a>
+                                          <a href="tel:+91-9453-111-377">+91-9453-111-377</a>
                                       </li>
                                       <li>
                                           <i className="flaticon-email-2"></i>
-                                          <a href="mailto:info@clim.com">contact@ashokseedplant.com</a>
+                                          <a href="mailto:contact@ashokseedplant.com">contact@ashokseedplant.com</a>
                                       </li>
                                       <li>
                                           <i className="flaticon-pin"></i>
