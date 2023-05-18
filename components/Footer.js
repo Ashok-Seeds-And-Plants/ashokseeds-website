@@ -19,10 +19,8 @@ export default function Footer() {
                                             <a href="https://www.ashokseedplant.com/" className="footer-logo">
                                                 <img src="/img/logo-white.png" alt="Image"/>
                                             </a>
-                                            <p className="comp-desc">
-                                                Lorem ipsum dolor sit amet consc tetur adicing elit. Dolor emque dicta
-                                                molest enim beatae ame consequ atur tempo pretium auctor nam.
-                                            </p>
+                                            <p className="comp-desc">Ashok Seeds and Plants is a leading Indian environmental group working towards the achievement of the Sustainable Development Goals (SDGs) through tree planting.</p>
+                                            <p className="comp-desc">Subscribe to our newsletter for our environmental updates.</p>
                                             <div className="newsletter-form">
                                                 <input type="email" placeholder="Email Address"/>
                                                     <button type="button">Subscribe Now</button>
@@ -100,17 +98,20 @@ export default function Footer() {
                                                 <li>
                                                     <i className="flaticon-pin"></i>
                                                     <h6>Location</h6>
-                                                    <p>2767 Sunrise Street, NY 1002, USA</p>
+                                                    <p>506, Ashok Chauraha, Bargarh Chitrakoot UP-210208</p>
                                                 </li>
                                                 <li>
                                                     <i className="flaticon-mail"></i>
                                                     <h6>Email</h6>
-                                                    <a href="mailto:hello@clim.com">hello@clim.com</a>
+                                                    <a href="mailto:contact@ashokseedplant.com
+">contact@ashokseedplant.com
+                                                    </a>
                                                 </li>
                                                 <li>
                                                     <i className="flaticon-phone-call"></i>
                                                     <h6>Phone</h6>
-                                                    <a href="tel:13454567877">+1-3454-5678-77</a>
+                                                    <a href="tel:+91-9453-111-377">
+                                                        +91-9453-111-377</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -122,7 +123,8 @@ export default function Footer() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-8 col-md-6 col-sm-7">
-                            <p className="copyright-text"><i className="ri-copyright-line"></i> Clim is proudly owned
+                            <p className="copyright-text"><i className="ri-copyright-line"></i> © 2023 Ashok Seeds and Plants, All Rights Reserved.
+
                                 by <a href="https://hibotheme.com/">HiboTheme</a></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
