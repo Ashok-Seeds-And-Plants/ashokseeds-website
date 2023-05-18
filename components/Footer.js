@@ -125,7 +125,7 @@ export default function Footer() {
                         <div className="col-lg-8 col-md-6 col-sm-7">
                             <p className="copyright-text"><i className="ri-copyright-line"></i> 2022- {getCurrentYear()} Ashok Seeds and Plants, All Rights Reserved.
 
-                                by <a href="https://www.srapsware.com/">Srapsware</a></p>
+                                Powered by <a href="https://www.srapsware.com/">Srapsware</a></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
                             <ul className="social-profile style1 list-style">
