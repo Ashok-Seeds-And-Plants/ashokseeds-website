@@ -228,7 +228,7 @@ export default function Header() {
                                   </li>
                               </ul>
                               <div className="other-options md-none">
-                                  
+
                                   <div className="option-item">
                                       <a href="donation.html" className="btn style1">Donate Now</a>
                                   </div>
@@ -236,7 +236,6 @@ export default function Header() {
                           </div>
                       </nav>
                       <div className="mobile-bar-wrap">
-                          <button className="searchbtn d-lg-none"><i className="ri-search-line"></i></button>
                           <div className="mobile-menu d-lg-none">
                               <a href="javascript:void(0)"><i className="ri-menu-line"></i></a>
                           </div>
