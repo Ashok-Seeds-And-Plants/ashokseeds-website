@@ -123,9 +123,9 @@ export default function Footer() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-8 col-md-6 col-sm-7">
-                            <p className="copyright-text"><i className="ri-copyright-line"></i> © 2023 Ashok Seeds and Plants, All Rights Reserved.
+                            <p className="copyright-text"><i className="ri-copyright-line"></i> 2023 Ashok Seeds and Plants, All Rights Reserved.
 
-                                by <a href="https://hibotheme.com/">HiboTheme</a></p>
+                                by <a href="https://www.srapsware.com/">Srapsware</a></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
                             <ul className="social-profile style1 list-style">
