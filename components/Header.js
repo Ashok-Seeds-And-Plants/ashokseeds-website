@@ -228,14 +228,7 @@ export default function Header() {
                                   </li>
                               </ul>
                               <div className="other-options md-none">
-                                  <div className="option-item">
-                                      <button className="searchbtn d-xl-none"><i className="ri-search-line"></i>
-                                      </button>
-                                      <div className="searchbox lg-none">
-                                          <input type="search" placeholder="Search..."/>
-                                              <button><i className="flaticon-search-1"></i></button>
-                                      </div>
-                                  </div>
+                                  
                                   <div className="option-item">
                                       <a href="donation.html" className="btn style1">Donate Now</a>
                                   </div>
