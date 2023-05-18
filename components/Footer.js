@@ -20,7 +20,7 @@ export default function Footer() {
                                                 <img src="/img/logo-white.png" alt="Image"/>
                                             </a>
                                             <p className="comp-desc">Ashok Seeds and Plants is a leading Indian environmental group working towards the achievement of the Sustainable Development Goals (SDGs) through tree planting.</p>
-                                            <p className="comp-desc">Subscribe to our newsletter for our environmental updates.</p>
+                                            <p>Subscribe to our newsletter for our environmental updates.</p>
                                             <div className="newsletter-form">
                                                 <input type="email" placeholder="Email Address"/>
                                                     <button type="button">Subscribe Now</button>
