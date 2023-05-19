@@ -153,18 +153,18 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="project-one.html" className="nav-link">News and Updates</a>
+                                              <a href="#" className="nav-link">News and Updates</a>
                                           </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <a href="contact.html" className="nav-link">Contact Us</a>
+                                      <a href="/contact-us/" className="nav-link">Contact Us</a>
                                   </li>
                               </ul>
                               <div className="other-options md-none">
 
                                   <div className="option-item">
-                                      <a href="donation.html" className="btn style1">Donate Now</a>
+                                      <a href="/donate-now/" className="btn style1">Donate Now</a>
                                   </div>
                               </div>
                           </div>
