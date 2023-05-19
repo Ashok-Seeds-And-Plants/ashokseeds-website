@@ -80,14 +80,10 @@ export default function Header() {
                                           Home</a>
 
                                   </li>
-                                  <li className="nav-item">
-                                      <a href="about.html" className="nav-link">
-                                          About Us
-                                      </a>
-                                  </li>
+
                                   <li className="nav-item">
                                       <a href="#" className="nav-link">
-                                          Projects
+                                          About
                                           <i className="ri-add-line"></i>
                                       </a>
                                       <ul className="dropdown-menu">
@@ -104,7 +100,7 @@ export default function Header() {
                                   </li>
                                   <li className="nav-item">
                                       <a href="#" className="nav-link">
-                                          Pages
+                                          Initiatives
                                           <i className="ri-add-line"></i>
                                       </a>
                                       <ul className="dropdown-menu">
@@ -125,7 +121,7 @@ export default function Header() {
                                           </li>
                                           <li className="nav-item">
                                               <a href="#" className="nav-link">
-                                                  Volunteer
+                                                  Get Involved
                                                   <i className="ri-add-line"></i>
                                               </a>
                                               <ul className="dropdown-menu">
