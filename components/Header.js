@@ -171,7 +171,7 @@ export default function Header() {
                                   </li>
                                   <li className="nav-item">
                                       <a href="#" className="nav-link">
-                                          Blog
+                                          Get Involved
                                           <i className="ri-add-line"></i>
                                       </a>
                                       <ul className="dropdown-menu">
@@ -217,10 +217,24 @@ export default function Header() {
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <a href="contact.html" className="nav-link">Contact Us</a>
+                                      <a href="#" className="nav-link">
+                                          Green News
+                                          <i className="ri-add-line"></i>
+                                      </a>
+                                      <ul className="dropdown-menu">
+                                          <li className="nav-item">
+                                              <a href="project-one.html" className="nav-link">Project One</a>
+                                          </li>
+                                          <li className="nav-item">
+                                              <a href="project-two.html" className="nav-link">Project Two</a>
+                                          </li>
+                                          <li className="nav-item">
+                                              <a href="project-details.html" className="nav-link">Single Project</a>
+                                          </li>
+                                      </ul>
                                   </li>
-                                  <li className="nav-item d-lg-none">
-                                      <a href="donation.html" className="nav-link btn style1">Donate Now</a>
+                                  <li className="nav-item">
+                                      <a href="contact.html" className="nav-link">Contact Us</a>
                                   </li>
                               </ul>
                               <div className="other-options md-none">
