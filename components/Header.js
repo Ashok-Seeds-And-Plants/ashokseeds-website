@@ -105,13 +105,33 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">About Us</a>
+                                              <a href="#" className="nav-link">Tree Plantation</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">Mission & Vision</a>
+                                              <a href="#" className="nav-link">Miyawaki Forest</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">Our Team</a>
+                                              <a href="#" className="nav-link">BKG / kitchen garden</a>
+                                          </li>
+                                          <li className="nav-item">
+                                              <a href="#" className="nav-link">
+                                                  Agroforestry
+                                                  <i className="ri-add-line"></i>
+                                              </a>
+                                              <ul className="dropdown-menu">
+                                                  <li className="nav-item">
+                                                      <a href="#" className="nav-link">Strawberry</a>
+                                                  </li>
+                                                  <li className="nav-item">
+                                                      <a href="#" className="nav-link">Apple</a>
+                                                  </li>
+                                                  <li className="nav-item">
+                                                      <a href="#" className="nav-link">Amroodh</a>
+                                                  </li>
+                                                  <li className="nav-item">
+                                                      <a href="#" className="nav-link">Aamla</a>
+                                                  </li>
+                                              </ul>
                                           </li>
                                       </ul>
                                   </li>
