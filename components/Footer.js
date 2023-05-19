@@ -29,7 +29,7 @@ export default function Footer() {
                                     </div>
                                     <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-xl-5 ps-lg-4 ps-md-5">
                                         <div className="footer-widget">
-                                            <h3 className="footer-widget-title">Explore</h3>
+                                            <h3 className="footer-widget-title">About Us</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
                                                     <a href="event-details.html">
@@ -61,7 +61,7 @@ export default function Footer() {
                                     </div>
                                     <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 ">
                                         <div className="footer-widget">
-                                            <h3 className="footer-widget-title">Other Pages</h3>
+                                            <h3 className="footer-widget-title">Quick Links</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
                                                     <a href="about.html">
