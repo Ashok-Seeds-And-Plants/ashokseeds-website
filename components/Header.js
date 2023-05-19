@@ -158,7 +158,7 @@ export default function Header() {
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <Link href="/contact-us/" className="nav-link">Contact Us</Link>
+                                      <a href="/contact-us/" className="nav-link">Contact Us</a>
                                   </li>
                               </ul>
                               <div className="other-options md-none">
