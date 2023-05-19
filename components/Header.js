@@ -111,7 +111,7 @@ export default function Header() {
                                               <a href="#" className="nav-link">Miyawaki Forest</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">BKG / kitchen garden</a>
+                                              <a href="#" className="nav-link">BKG / Kitchen Garden</a>
                                           </li>
                                           <li className="nav-item">
                                               <a href="#" className="nav-link">

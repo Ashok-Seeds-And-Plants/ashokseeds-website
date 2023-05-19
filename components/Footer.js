@@ -32,30 +32,21 @@ export default function Footer() {
                                             <h3 className="footer-widget-title">About Us</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
-                                                    <a href="event-details.html">
-                                                        Fundraise For Health
+                                                    <a href="#">
+                                                        About Us
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="event-details.html">
-                                                        Shelter For Refuge
+                                                    <a href="#">
+                                                        Mission & Vision
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="event-details.html">
-                                                        Adopt Orphan Child
+                                                    <a href="#">
+                                                        Our Team
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="event-details.html">
-                                                        Education For Poor
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="event-details.html">
-                                                        Clean Water Project
-                                                    </a>
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -64,28 +55,28 @@ export default function Footer() {
                                             <h3 className="footer-widget-title">Quick Links</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
-                                                    <a href="about.html">
-                                                        About us
+                                                    <a href="#">
+                                                        Miyawaki Forest
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="team.html">
-                                                        Our Team
+                                                    <a href="#">
+                                                        BKG / Kitchen Garden
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="event.html">
-                                                        Recent Events
+                                                    <a href="#">
+                                                        Volunteer
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="donation.html">
+                                                    <a href="#">
+                                                        News and Updates
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
                                                         Make Donation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">
-                                                        Get In Touch
                                                     </a>
                                                 </li>
                                             </ul>
