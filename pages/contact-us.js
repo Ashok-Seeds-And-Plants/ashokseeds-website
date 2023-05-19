@@ -19,22 +19,18 @@ export default function Home() {
                 <Header />
 
                 <div className="content-wrapper">
-
-                    <!-- Breadcrumb Start -->
                     <div className="breadcrumb-wrap bg-f br-1">
                         <div className="container">
                             <div className="breadcrumb-title">
                                 <h2>Contact Us</h2>
                                 <ul className="breadcrumb-menu list-style">
-                                    <li><a href="index.html">Home </a></li>
+                                    <li><a href="https://www.ashokseedplant.com/">Home </a></li>
                                     <li>Contact Us</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Breadcrumb End -->
 
-                    <!-- Contact Us section Start -->
                     <section className="contact-us-wrap ptb-100">
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
