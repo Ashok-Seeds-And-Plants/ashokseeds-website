@@ -142,13 +142,7 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">About Us</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="#" className="nav-link">Mission & Vision</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="#" className="nav-link">Our Team</a>
+                                              <a href="#" className="nav-link">Volunteer</a>
                                           </li>
                                       </ul>
                                   </li>
@@ -159,13 +153,7 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="project-one.html" className="nav-link">Project One</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="project-two.html" className="nav-link">Project Two</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="project-details.html" className="nav-link">Single Project</a>
+                                              <a href="project-one.html" className="nav-link">News and Updates</a>
                                           </li>
                                       </ul>
                                   </li>
