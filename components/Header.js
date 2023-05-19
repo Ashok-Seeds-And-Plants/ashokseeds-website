@@ -88,13 +88,13 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="project-one.html" className="nav-link">Project One</a>
+                                              <a href="#" className="nav-link">About Us</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="project-two.html" className="nav-link">Project Two</a>
+                                              <a href="#" className="nav-link">Mission & Vision</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="project-details.html" className="nav-link">Single Project</a>
+                                              <a href="#" className="nav-link">Our Team</a>
                                           </li>
                                       </ul>
                                   </li>
@@ -105,67 +105,13 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">
-                                                  Events
-                                                  <i className="ri-add-line"></i>
-                                              </a>
-                                              <ul className="dropdown-menu">
-                                                  <li className="nav-item">
-                                                      <a href="event.html" className="nav-link">Events</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="event-details.html" className="nav-link">Single
-                                                          Events</a>
-                                                  </li>
-                                              </ul>
+                                              <a href="#" className="nav-link">About Us</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">
-                                                  Get Involved
-                                                  <i className="ri-add-line"></i>
-                                              </a>
-                                              <ul className="dropdown-menu">
-                                                  <li className="nav-item">
-                                                      <a href="team.html" className="nav-link">Our Volunteer</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="team-details.html" className="nav-link">Volunteer
-                                                          Profile</a>
-                                                  </li>
-                                              </ul>
+                                              <a href="#" className="nav-link">Mission & Vision</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="donation.html" className="nav-link">Make Donation</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="faq.html" className="nav-link">FAQ</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="#" className="nav-link">
-                                                  User Pages
-                                                  <i className="ri-add-line"></i>
-                                              </a>
-                                              <ul className="dropdown-menu">
-                                                  <li className="nav-item">
-                                                      <a href="login.html" className="nav-link">Login</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="register.html" className="nav-link">Register</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="recover-password.html" className="nav-link">Recover
-                                                          Password</a>
-                                                  </li>
-                                              </ul>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="terms-of-service.html" className="nav-link">Terms of Service</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="privacy-policy.html" className="nav-link">Privacy Policy</a>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="error-404.html" className="nav-link">404 Error Page</a>
+                                              <a href="#" className="nav-link">Our Team</a>
                                           </li>
                                       </ul>
                                   </li>
@@ -176,47 +122,17 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">
-                                                  Blog Layout
-                                                  <i className="ri-add-line"></i>
-                                              </a>
-                                              <ul className="dropdown-menu">
-                                                  <li className="nav-item">
-                                                      <a href="blog-no-sidebar.html" className="nav-link">Blog Grid</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="blog-left-sidebar.html" className="nav-link">Blog Left
-                                                          Sidebar</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="blog-right-sidebar.html" className="nav-link">Blog Right
-                                                          Sidebar</a>
-                                                  </li>
-                                              </ul>
+                                              <a href="#" className="nav-link">About Us</a>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="#" className="nav-link">
-                                                  Single Blog
-                                                  <i className="ri-add-line"></i>
-                                              </a>
-                                              <ul className="dropdown-menu">
-                                                  <li className="nav-item">
-                                                      <a href="blog-details-no-sidebar.html" className="nav-link">Blog
-                                                          Details No Sidebar</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="blog-details-left-sidebar.html" className="nav-link">Blog
-                                                          Details Left Sidebar</a>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <a href="blog-details-right-sidebar.html" className="nav-link">Blog
-                                                          Details Right Sidebar</a>
-                                                  </li>
-                                              </ul>
+                                              <a href="#" className="nav-link">Mission & Vision</a>
+                                          </li>
+                                          <li className="nav-item">
+                                              <a href="#" className="nav-link">Our Team</a>
                                           </li>
                                       </ul>
                                   </li>
-                                  <li className="nav-item">
+                                 <li className="nav-item">
                                       <a href="#" className="nav-link">
                                           Green News
                                           <i className="ri-add-line"></i>
