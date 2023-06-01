@@ -18,7 +18,7 @@ export default function Header() {
           </div>
 
           <header className="header-wrap">
-              <div className="header-top">
+              <div className="header-top d-none d-lg-block">
                   <div className="container">
                       <div className="row align-items-center">
                           <div className="col-lg-8 col-md-8">
