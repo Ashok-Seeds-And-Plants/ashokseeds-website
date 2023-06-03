@@ -67,8 +67,8 @@ export default function Header() {
                   <div className="container">
                       <nav className="navbar navbar-expand-md navbar-light">
                           <a className="navbar-brand" href="https://www.ashokseedplant.com/">
-                              <img className="logo-light" src="/img/logo.png" alt="logo"/>
-                                  <img className="logo-dark" src="/img/logo-white.png" alt="logo"/>
+                              <img className="logo-light" src="/img/logo.png" alt="Ashok seeds and plants"/>
+                                  <img className="logo-dark" src="/img/logo-white.png" alt="Ashok seeds and plants"/>
                           </a>
                           <div className="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
                               <div className="menu-close d-lg-none">
@@ -78,7 +78,6 @@ export default function Header() {
                                   <li className="nav-item">
                                       <a href="https://www.ashokseedplant.com/" className="nav-link">
                                           Home</a>
-
                                   </li>
 
                                   <li className="nav-item">
@@ -177,7 +176,6 @@ export default function Header() {
                   </div>
               </div>
           </header>
-
       </>
   )
 }
