@@ -18,70 +18,221 @@ export default function Home() {
             <div className="page-wrapper">
             <Header />
 
-
-                <section className="hero-wrap style1">
-                    <div className="hero-slider-one owl-carousel" data-slider-id="1">
-                        <div className="hero-slide-item hero-slide-one bg-f">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-6  col-md-9">
-                                        <div className="hero-content" data-speed="0.10" data-revert="true">
-                                            <span>We'll Save Our Planet</span>
-                                            <h1>Lets Make Our Earth Green and Clean</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollic itudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu.</p>
-                                            <a href="register.html" className="btn style2">Join With us</a>
+                <section class="project-wrap ptb-100 bg-sand">
+                    <div class="container">
+                        <div class="section-title style3 text-center mb-40">
+                            <span>Donate Now <span class="bl-text">Donation</span></span>
+                            <h2>Our Latest Causes</h2>
+                        </div>
+                        <div class="project-slider-one owl-carousel">
+                            <div class="project-card style3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                                <div class="project-img">
+                                    <img src="/img/project/project-4.jpg" alt="Image"/>
+                                        <button class="like-btn" type="button"><i class="ri-heart-fill"></i></button>
+                                </div>
+                                <div class="project-info">
+                                    <h3><a href="project-details.html">Stop Cutting Down Trees</a></h3>
+                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                    <div class="progressbar-wrap ">
+                                        <div class="progress-bar" data-percentage="32%">
+                                            <h4 class="progress-title-holder">
+                                            <span class="progress-number-wrapper">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                </span>
+                                            </span>
+                                            </h4>
+                                            <div class="progress-content-outter">
+                                                <div class="progress-content">
+                                                    <div class="amet"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <ul class="fund-collection list-style">
+                                        <li class="fund-raised">
+                                            $4800 Raised Of $15000
+                                        </li>
+                                        <li class="fund-goal">
+                                            32.00%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-card style3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                                <div class="project-img">
+                                    <img src="/img/project/project-1.jpg" alt="Image"/>
+                                        <button class="like-btn" type="button"><i class="ri-heart-fill"></i></button>
+                                </div>
+                                <div class="project-info">
+                                    <h3><a href="project-details.html">Stop Cutting Down Trees</a></h3>
+                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                    <div class="progressbar-wrap ">
+                                        <div class="progress-bar" data-percentage="50%">
+                                            <h4 class="progress-title-holder">
+                                            <span class="progress-number-wrapper">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                </span>
+                                            </span>
+                                            </h4>
+                                            <div class="progress-content-outter">
+                                                <div class="progress-content">
+                                                    <div class="amet"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="fund-collection list-style">
+                                        <li class="fund-raised">
+                                            $5000 Raised Of $10000
+                                        </li>
+                                        <li class="fund-goal">
+                                            50.00%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-card style3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+                                <div class="project-img">
+                                    <img src="/img/project/project-2.jpg" alt="Image"/>
+                                        <button class="like-btn" type="button"><i class="ri-heart-fill"></i></button>
+                                </div>
+                                <div class="project-info">
+                                    <h3><a href="project-details.html">Recycling Daily Waste</a></h3>
+                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                    <div class="progressbar-wrap ">
+                                        <div class="progress-bar" data-percentage="52%">
+                                            <h4 class="progress-title-holder">
+                                            <span class="progress-number-wrapper">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                </span>
+                                            </span>
+                                            </h4>
+                                            <div class="progress-content-outter">
+                                                <div class="progress-content">
+                                                    <div class="amet"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="fund-collection list-style">
+                                        <li class="fund-raised">
+                                            $6200 Raised Of $12000
+                                        </li>
+                                        <li class="fund-goal">
+                                            52.00%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-card style3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                                <div class="project-img">
+                                    <img src="/img/project/project-3.jpg" alt="Image"/>
+                                        <button class="like-btn" type="button"><i class="ri-heart-fill"></i></button>
+                                </div>
+                                <div class="project-info">
+                                    <h3><a href="project-details.html">Reduce Greenhouse Gas</a></h3>
+                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                    <div class="progressbar-wrap ">
+                                        <div class="progress-bar" data-percentage="45%">
+                                            <h4 class="progress-title-holder">
+                                            <span class="progress-number-wrapper">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                </span>
+                                            </span>
+                                            </h4>
+                                            <div class="progress-content-outter">
+                                                <div class="progress-content">
+                                                    <div class="amet"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="fund-collection list-style">
+                                        <li class="fund-raised">
+                                            $3500 Raised Of $7000
+                                        </li>
+                                        <li class="fund-goal">
+                                            45.00%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-card style3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
+                                <div class="project-img">
+                                    <img src="/img/project/project-6.jpg" alt="Image"/>
+                                        <button class="like-btn" type="button"><i class="ri-heart-fill"></i></button>
+                                </div>
+                                <div class="project-info">
+                                    <h3><a href="project-details.html">Save The Wildlife</a></h3>
+                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                    <div class="progressbar-wrap ">
+                                        <div class="progress-bar" data-percentage="82%">
+                                            <h4 class="progress-title-holder">
+                                            <span class="progress-number-wrapper">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                </span>
+                                            </span>
+                                            </h4>
+                                            <div class="progress-content-outter">
+                                                <div class="progress-content">
+                                                    <div class="amet"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="fund-collection list-style">
+                                        <li class="fund-raised">
+                                            $3900 Raised Of $5000
+                                        </li>
+                                        <li class="fund-goal">
+                                            82.00%
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-card style3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
+                                <div class="project-img">
+                                    <img src="/img/project/project-5.jpg" alt="Image"/>
+                                        <button class="like-btn" type="button"><i class="ri-heart-fill"></i></button>
+                                </div>
+                                <div class="project-info">
+                                    <h3><a href="project-details.html">Reduce Air Pollution</a></h3>
+                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                    <div class="progressbar-wrap ">
+                                        <div class="progress-bar" data-percentage="32%">
+                                            <h4 class="progress-title-holder">
+                                            <span class="progress-number-wrapper">
+                                                <span class="progress-number-mark">
+                                                    <span class="percent"></span>
+                                                </span>
+                                            </span>
+                                            </h4>
+                                            <div class="progress-content-outter">
+                                                <div class="progress-content">
+                                                    <div class="amet"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="fund-collection list-style">
+                                        <li class="fund-raised">
+                                            $7000 Raised Of $19000
+                                        </li>
+                                        <li class="fund-goal">
+                                            32.00%
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="hero-slide-item hero-slide-two bg-f">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-9">
-                                        <div className="hero-content" data-speed="0.10" data-revert="true">
-                                            <span>Save Our Soil</span>
-                                            <h1>Stop Using Plastic And Make Our land More Fertile</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu a duis. </p>
-                                            <a href="register.html" className="btn style2">Join With us</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="hero-slide-item hero-slide-three bg-f">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-6  col-md-10">
-                                        <div className="hero-content" data-speed="0.10" data-revert="true">
-                                            <span>We'll Save Our Planet</span>
-                                            <h1>Lets Start Using Green Energy For A Better Planet</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu a duis. </p>
-                                            <a href="register.html" className="btn style2">Join With us</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="hero-slider-thumbs owl-thumbs" data-slider-id="1">
-                        <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-1.jpg" alt="Images"/>
-                        </button>
-                        <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-2.jpg" alt="Images"/>
-                        </button>
-                        <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-3.jpg" alt="Images"/>
-                        </button>
                     </div>
                 </section>
+
 
                 <div className="container">
                     <div className="promo-wrap style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
