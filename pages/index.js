@@ -18,37 +18,8 @@ export default function Home() {
             <div className="page-wrapper">
             <Header />
 
-            
-                <div className="container">
-                    <div className="promo-wrap style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                        <img src="/img/shape-8.png" alt="Image" className="promo-shape-one"/>
-                            <img src="/img/shape-9.png" alt="Image" className="promo-shape-two"/>
-                                <div className="promo-card">
-                        <span className="promo-icon">
-                            <i className="flaticon-volunteer"></i>
-                        </span>
-                                    <h3>Become A Volunteer</h3>
-                                    <a href="register.html" className="link style1">Join With Us <i
-                                        className="flaticon-right-arrow"></i></a>
-                                </div>
-                                <div className="promo-card">
-                        <span className="promo-icon">
-                            <i className="flaticon-money-box"></i>
-                        </span>
-                                    <h3>Quick Fundraise</h3>
-                                    <a href="donation.html" className="link style1">Help The People<i
-                                        className="flaticon-right-arrow"></i></a>
-                                </div>
-                                <div className="promo-card">
-                        <span className="promo-icon">
-                            <i className="flaticon-coin"></i>
-                        </span>
-                                    <h3>Make A Donation</h3>
-                                    <a href="donation.html" className="link style1">Donate Us <i
-                                        className="flaticon-right-arrow"></i></a>
-                                </div>
-                    </div>
-                </div>
+
+
                 <section className="about-wrap style2 ptb-100">
                     <img src="/img/about/about-shape-1.png" alt="Image"
                          className="about-shape-one moveHorizontal" />
