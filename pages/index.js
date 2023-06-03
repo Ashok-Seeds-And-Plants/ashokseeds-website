@@ -2,7 +2,6 @@ import Head from 'next/head'
 
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-import Sidebar from '@components/Sidebar'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
