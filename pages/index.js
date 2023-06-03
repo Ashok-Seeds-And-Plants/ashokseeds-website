@@ -19,7 +19,7 @@ export default function Home() {
             <Header />
 
 
-                <section className="hero-wrap style2">
+                <section className="hero-wrap style1">
                     <div className="hero-slider-one owl-carousel" data-slider-id="1">
                         <div className="hero-slide-item hero-slide-one bg-f">
                             <div className="container">
