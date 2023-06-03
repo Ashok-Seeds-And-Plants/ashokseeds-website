@@ -79,6 +79,16 @@ export default function Footer() {
                                                         Make Donation
                                                     </a>
                                                 </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Terms & Conditions
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Privacy Policy
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
