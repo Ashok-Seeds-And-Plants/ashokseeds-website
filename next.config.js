@@ -1,6 +1,7 @@
 module.exports = {
     trailingSlash: true,
     images: {
-        unoptimized: true
-    }
+        loader: 'imgix',
+        path: '',
+    },
 }
