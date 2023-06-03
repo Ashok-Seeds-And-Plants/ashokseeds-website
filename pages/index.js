@@ -72,13 +72,13 @@ export default function Home() {
                     </div>
                     <div className="hero-slider-thumbs owl-thumbs" data-slider-id="1">
                         <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-1.jpg" alt="Images">
+                            <img src="/img/hero/hero-thumb-1.jpg" alt="Images"/>
                         </button>
                         <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-2.jpg" alt="Images">
+                            <img src="/img/hero/hero-thumb-2.jpg" alt="Images"/>
                         </button>
                         <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-3.jpg" alt="Images">
+                            <img src="/img/hero/hero-thumb-3.jpg" alt="Images"/>
                         </button>
                     </div>
                 </section>
