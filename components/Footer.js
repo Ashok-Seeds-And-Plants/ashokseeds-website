@@ -32,17 +32,17 @@ export default function Footer() {
                                             <h3 className="footer-widget-title">About Us</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/about/">
                                                         About Us
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/about/mission-vision/">
                                                         Mission & Vision
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/about/our-team/">
                                                         Our Team
                                                     </a>
                                                 </li>
@@ -55,37 +55,37 @@ export default function Footer() {
                                             <h3 className="footer-widget-title">Quick Links</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/initiatives/miyawaki-forest/">
                                                         Miyawaki Forest
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/initiatives/bkg-kitchen-garden/">
                                                         BKG / Kitchen Garden
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/get-involved/volunteer/">
                                                         Volunteer
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/blog/">
                                                         News and Updates
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/donate-now/">
                                                         Make Donation
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/terms-conditions/">
                                                         Terms & Conditions
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/privacy-policy/">
                                                         Privacy Policy
                                                     </a>
                                                 </li>
@@ -126,7 +126,7 @@ export default function Footer() {
                         <div className="col-lg-8 col-md-6 col-sm-7">
                             <p className="copyright-text"><i className="ri-copyright-line"></i> 2022- {getCurrentYear()} Ashok Seeds and Plants, All Rights Reserved.
 
-                                Powered by <a href="https://www.srapsware.com/">Srapsware Technologies Pvt Ltd</a></p>
+                                Powered by <a target="_blank" href="https://www.srapsware.com/">Srapsware Technologies Pvt Ltd</a></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
                             <ul className="social-profile style1 list-style">
