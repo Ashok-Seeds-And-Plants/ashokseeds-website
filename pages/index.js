@@ -18,6 +18,7 @@ export default function Home() {
             <div className="page-wrapper">
             <Header />
 
+
                 <section className="hero-wrap style2">
                     <div className="hero-slider-one owl-carousel" data-slider-id="1">
                         <div className="hero-slide-item hero-slide-one bg-f">
@@ -71,16 +72,17 @@ export default function Home() {
                     </div>
                     <div className="hero-slider-thumbs owl-thumbs" data-slider-id="1">
                         <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-1.jpg" alt="Images"/>
+                            <img src="/img/hero/hero-thumb-1.jpg" alt="Images">
                         </button>
                         <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-2.jpg" alt="Images"/>
+                            <img src="/img/hero/hero-thumb-2.jpg" alt="Images">
                         </button>
                         <button className="owl-thumb-item">
-                            <img src="/img/hero/hero-thumb-3.jpg" alt="Images"/>
+                            <img src="/img/hero/hero-thumb-3.jpg" alt="Images">
                         </button>
                     </div>
                 </section>
+
                 <div className="container">
                     <div className="promo-wrap style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                         <img src="/img/shape-8.png" alt="Image" className="promo-shape-one"/>
