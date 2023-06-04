@@ -5,10 +5,6 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-
 export default function Home() {
     return (
         <>
@@ -21,18 +17,7 @@ export default function Home() {
             <div className="page-wrapper">
             <Header />
 
-                <Swiper
-                    spaceBetween={50}
-                    slidesPerView={3}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
-                >
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    ...
-                </Swiper>
+
 
                 <section className="about-wrap style2 ptb-100">
                     <img src="/img/about/about-shape-1.png" alt="Image"
