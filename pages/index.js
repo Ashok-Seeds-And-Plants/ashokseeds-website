@@ -5,6 +5,8 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
+import "/styles/css/home.css";
+
 export default function Home() {
     return (
         <>
