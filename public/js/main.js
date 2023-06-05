@@ -298,7 +298,7 @@
             }
         }
     });
-
+    $('.carousel').carousel();
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         //direction: 'vertical',
