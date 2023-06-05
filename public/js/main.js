@@ -304,7 +304,6 @@
         direction: 'vertical',
         loop: true,
         slidesPerView: 3,
-        autoHeight: true,
 
         // If we need pagination
         pagination: {
