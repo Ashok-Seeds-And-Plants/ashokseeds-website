@@ -13,6 +13,7 @@ export default function Js() {
         <script src="https://www.ashokseedplant.com/js/fancybox.js"></script>
         <script src="https://www.ashokseedplant.com/js/jquery.appear.js"></script>
         <script src="https://www.ashokseedplant.com/js/tweenmax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="https://www.ashokseedplant.com/js/main.js"></script>
     </>
   )
