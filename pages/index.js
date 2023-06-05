@@ -17,7 +17,22 @@ export default function Home() {
             <div className="page-wrapper">
             <Header />
 
+                <div className="swiper">
+                    <div className="swiper-wrapper">
 
+                        <div className="swiper-slide">Slide 1</div>
+                        <div className="swiper-slide">Slide 2</div>
+                        <div className="swiper-slide">Slide 3</div>
+                        ...
+                    </div>
+
+                    <div className="swiper-pagination"></div>
+
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
+
+                    <div className="swiper-scrollbar"></div>
+                </div>
 
                 <section className="about-wrap style2 ptb-100">
                     <img src="/img/about/about-shape-1.png" alt="Image"
