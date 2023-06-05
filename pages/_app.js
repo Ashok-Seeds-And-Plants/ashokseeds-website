@@ -9,7 +9,7 @@ import "/styles/css/aos.css";
 import "/styles/css/style.css";
 import "/styles/css/responsive.css";
 import "/styles/css/dark-theme.css";
-
+import "/styles/css/home.css";
 function Application({ Component, pageProps }) {
   return <Component {...pageProps} />
 }

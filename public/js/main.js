@@ -303,7 +303,7 @@
         // Optional parameters
         direction: 'vertical',
         loop: true,
-        //slidesPerView: 3,
+        slidesPerView: 3,
 
         // If we need pagination
         pagination: {
