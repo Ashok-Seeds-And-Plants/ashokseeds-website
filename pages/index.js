@@ -26,7 +26,6 @@ export default function Home() {
                         <div className="swiper-slide">
                             <img src="/img/home/slide2.jpg" />
                         </div>
-                        <div className="swiper-slide">Slide 3</div>
                         ...
                     </div>
 
