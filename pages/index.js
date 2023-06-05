@@ -36,7 +36,7 @@ export default function Home() {
 
                     <div className="swiper-scrollbar"></div>
                 </div>
-                
+
 
                 <section className="about-wrap style2 ptb-100">
                     <img src="/img/about/about-shape-1.png" alt="Image"
