@@ -12,8 +12,7 @@ export default function Home() {
             <Head>
             <title>Ashok Seeds and Plants</title>
             <meta name="description" content="" />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-                <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/home.css" />
+            <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/home.css" />
             </Head>
             <div className="page-wrapper">
             <Header />
