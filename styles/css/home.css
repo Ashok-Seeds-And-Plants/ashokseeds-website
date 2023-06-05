@@ -3,3 +3,6 @@
     height: 500px;
     margin-top: 193px
 }
+.swiper-slide > img {
+    width: 100%;
+}
