@@ -17,7 +17,7 @@ export default function Home() {
             <div className="page-wrapper">
             <Header />
 
-                <div className="swiper">
+                <div className="home-slider swiper">
                     <div className="swiper-wrapper">
 
                         <div className="swiper-slide">Slide 1</div>
