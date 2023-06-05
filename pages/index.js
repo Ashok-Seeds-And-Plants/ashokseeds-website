@@ -83,276 +83,263 @@ export default function Home() {
                 </section>
 
 
-                <section className="team-wrap ptb-100 bg-sand">
-                    <img src="assets/img/shape-11.png" alt="Image" className="team-shape-one"/>
-                        <div className="container">
-                            <div className="section-title style1 text-center mb-40">
-                                <span>Our Volunteer <img src="assets/img/section-shape.png" alt="Image"/></span>
-                                <h2>Our Experts Volunteer</h2>
-                            </div>
-                            <div className="team-slider-two owl-carousel">
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="200">
-                                    <img src="assets/img/team/team-1.jpg" alt="Image"/>
-                                        <div className="team-info-wrap">
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Kevin Thompson</a></h3>
-                                                    <span>Founder &amp; CEO</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
+<section class="team-wrap ptb-100 bg-sand">
+                <img src="assets/img/shape-11.png" alt="Image" class="team-shape-one"/>
+                <div class="container">
+                    <div class="section-title style1 text-center mb-40">
+                        <span>Our Volunteer <img src="assets/img/section-shape.png" alt="Image"/></span>
+                        <h2>Our Experts Volunteer</h2>
+                    </div>
+                    <div class="team-slider-two owl-carousel">
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                            <img src="assets/img/team/team-1.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Kevin Thompson</a></h3>
+                                    <span>Founder &amp; CEO</span>
                                 </div>
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="300">
-                                    <img src="assets/img/team/team-2.jpg" alt="Image"/>
-                                        <div className="team-info-wrap">
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Isabella Woods</a></h3>
-                                                    <span>Cheif Marketing Officer</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="400">
-                                    <img src="assets/img/team/team-3.jpg" alt="Image"/>
-                                        <div className="team-info-wrap">
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Liam Stokes</a></h3>
-                                                    <span>Senior Executive</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="500">
-                                    <img src="assets/img/team/team-4.jpg" alt="Image"/>
-                                        <div className="team-info-wrap"/>
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Lucy Floyd</a></h3>
-                                                    <span>Accounts Manager</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="600">
-                                    <img src="assets/img/team/team-5.jpg" alt="Image"/>
-                                        <div className="team-info-wrap"/>
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Hannah Adison</a></h3>
-                                                    <span>Marketing Manager</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="700">
-                                    <img src="assets/img/team/team-6.jpg" alt="Image"/>
-                                        <div className="team-info-wrap"/>
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Jaylen Mills </a></h3>
-                                                    <span>Senior Executive</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="800">
-                                    <img src="assets/img/team/team-7.jpg" alt="Image"/>
-                                        <div className="team-info-wrap"/>
-                                            <img src="assets/img/team/team-shape-1.png" alt="IMage"
-                                                 className="team-card-shape"/>
-                                                <div className="team-info">
-                                                    <h3><a href="team-details.html">Autumn Leilani</a></h3>
-                                                    <span>Sales Executive</span>
-                                                </div>
-                                                <div className="social-link">
-                                                    <span><i className="ri-add-line"></i></span>
-                                                    <ul className="social-profile style1 list-style">
-                                                        <li>
-                                                            <a href="https://facebook.com" target="_blank">
-                                                                <i className="ri-facebook-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com" target="_blank">
-                                                                <i className="ri-twitter-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://instagram.com" target="_blank">
-                                                                <i className="ri-instagram-line"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://linkedin.com" target="_blank">
-                                                                <i className="ri-linkedin-fill"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                        </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                </section>
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+                            <img src="assets/img/team/team-2.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Isabella Woods</a></h3>
+                                    <span>Cheif Marketing Officer</span>
+                                </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                            <img src="assets/img/team/team-3.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Liam Stokes</a></h3>
+                                    <span>Senior Executive</span>
+                                </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
+                            <img src="assets/img/team/team-4.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Lucy Floyd</a></h3>
+                                    <span>Accounts Manager</span>
+                                </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
+                            <img src="assets/img/team/team-5.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Hannah Adison</a></h3>
+                                    <span>Marketing Manager</span>
+                                </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">
+                            <img src="assets/img/team/team-6.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Jaylen Mills </a></h3>
+                                    <span>Senior Executive</span>
+                                </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="800">
+                            <img src="assets/img/team/team-7.jpg" alt="Image"/>
+                            <div class="team-info-wrap">
+                                <img src="assets/img/team/team-shape-1.png" alt="IMage" class="team-card-shape"/>
+                                <div class="team-info">
+                                    <h3><a href="team-details.html">Autumn Leilani</a></h3>
+                                    <span>Sales Executive</span>
+                                </div>
+                                <div class="social-link">
+                                    <span><i class="ri-add-line"></i></span>
+                                    <ul class="social-profile style1 list-style">
+                                        <li>
+                                            <a href="https://facebook.com" target="_blank">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://twitter.com" target="_blank">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com" target="_blank">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                           <a href="https://linkedin.com" target="_blank">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
 
 
                 <Footer />
