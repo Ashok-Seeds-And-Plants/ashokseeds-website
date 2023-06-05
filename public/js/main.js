@@ -1,14 +1,29 @@
-(function ($) {
-    "use strict";
+$(document).ready(function() {
     
     //Preloader
     $(window).on('load', function (event) {
         $('.js-preloader').delay(500).fadeOut(500);
     });
     
+    //Open Search Box
+    $('.searchbtn').on('click', function() {
+        $('.search-area').toggleClass('open');
+    });
+    $('.close-searchbox').on('click', function() {
+        $('.search-area').removeClass('open');
+    });
 
-
-
+    // Language Dropdown
+    $(".language-option").each(function () {
+        var each = $(this)
+        each.find(".lang-name").html(each.find(".language-dropdown-menu a:nth-child(1)").text());
+        var allOptions = $(".language-dropdown-menu").children('a');
+        each.find(".language-dropdown-menu").on("click", "a", function () {
+            allOptions.removeClass('selected');
+            $(this).addClass('selected');
+            $(this).closest(".language-option").find(".lang-name").html($(this).text());
+        });
+    })
     
       //Counter
       $(".odometer").appear(function (e) {
@@ -228,7 +243,32 @@
             }
         }
     });
-
+    $(".team-slider-two").owlCarousel({
+        nav: true,
+        dots: true,
+        loop: true,
+        navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
+        margin: 25,
+        items: 1,
+        thumbs: false,
+        smartSpeed: 1300,
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: false,
+        responsiveClass: true,
+        autoHeight: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            1200: {
+                items: 3,
+            }
+        }
+    });
 
     //Blog Slider 
     $(".blog-slider-one").owlCarousel({
@@ -256,32 +296,6 @@
                 items: 3,
             }
         }
-    });
-
-    const swiper = new Swiper('.home-slider', {
-
-        loop: true,
-
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
     });
 
     //sticky Header
@@ -370,7 +384,7 @@
     }
     BackToTop();
 
-})(jQuery);
+});
 
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
@@ -397,36 +411,3 @@ function toggleTheme() {
         document.getElementById('slider').checked = true;
     }
 })();
-
-$(document).ready(function() {
-
-    $(".team-slider-two").owlCarousel({
-        nav: true,
-        dots: true,
-        loop: true,
-        navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
-        margin: 25,
-        items: 1,
-        thumbs: false,
-        smartSpeed: 1300,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            }
-        }
-    });
-
-
-
-})
