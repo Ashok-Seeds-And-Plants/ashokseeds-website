@@ -6,7 +6,7 @@ export default function Js() {
         <script src="https://www.ashokseedplant.com/js/form-validator.min.js"></script>
         <script src="https://www.ashokseedplant.com/js/contact-form-script.js"></script>
         <script src="https://www.ashokseedplant.com/js/aos.js"></script>
-        <script src="https://www.ashokseedplant.com/js/owl.carousel.min.js"></script>
+        <script src="https://www.ashokseedplant.com/js/owl.carousel.js"></script>
         <script src="https://www.ashokseedplant.com/js/owl-thumb.min.js"></script>
         <script src="https://www.ashokseedplant.com/js/odometer.js"></script>
         <script src="https://www.ashokseedplant.com/js/circle-progressbar.min.js"></script>
