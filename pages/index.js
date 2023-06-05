@@ -21,10 +21,10 @@ export default function Home() {
                     <div className="swiper-wrapper">
 
                         <div className="swiper-slide">
-                            <img src="/img/home/slide1.jpeg" />
+                            <img src="/img/home/slide1.jpg" alt="Forest" />
                         </div>
                         <div className="swiper-slide">
-                            <img src="/img/home/slide2.jpg" />
+                            <img src="/img/home/slide2.jpg" alt="Forest" />
                         </div>
                         ...
                     </div>
