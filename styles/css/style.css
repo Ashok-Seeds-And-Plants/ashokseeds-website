@@ -7217,3 +7217,7 @@ article {
     font-size: 20px;
   }
 }
+
+.hero-slide-four {
+  background-image: url(../img/hero/hero-slider-4.jpg);
+}
