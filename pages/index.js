@@ -447,6 +447,28 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+                <section className="cta-wrap style1 bg-f ptb-100">
+                    <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
+                                    <div className="content-title style1 text-center mb-40" data-aos="fade-up"
+                                         data-aos-duration="1200" data-aos-delay="200">
+                                        <span>Crowd-Funding <img src="/img/section-shape.png" alt="Image"/></span>
+                                        <h2>Best Way To Make A Difference In The Lives Of Others
+                                        </h2>
+                                    </div>
+                                    <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"
+                                         data-aos-delay="300">
+                                        <a href="#" className="btn style1">Get Started now</a>
+                                        <a href="#" className="btn style2">Join Our Community</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
                 <section className="blog-wrap ptb-100 bg-sand">
                     <div className="container">
                         <img src="/img/shape-7.png" alt="Image" className="blog-section-shape"/>
