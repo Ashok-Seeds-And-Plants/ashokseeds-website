@@ -455,9 +455,8 @@ export default function Home() {
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
                                          data-aos-duration="1200" data-aos-delay="200">
-                                        <span>Crowd-Funding <img src="/img/section-shape.png" alt="Image"/></span>
-                                        <h2>Best Way To Make A Difference In The Lives Of Others
-                                        </h2>
+                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <h2>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h2>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"
                                          data-aos-delay="300">
