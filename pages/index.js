@@ -103,27 +103,16 @@ export default function Home() {
                                     <div className="about-content">
                                         <div className="content-title style3">
                                             <span>A Little Introduction <span className="bl-text">About Us</span></span>
-                                            <h2>Protect Our Earth Against Climate Change</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu a duis. Sollicitudin consectetur netus du
-                                                ultric. </p>
+                                            <h2>Keeping our Earth safe from climate change.</h2>
+                                            <p>Ashok Seeds and Plants in India are working towards achieving the Sustainable Development Goals (SDGs) through tree plantation, urban biodiversity conservation, water body restoration, sustainable solutions, and environmental research and awareness. We are a rare blend of traditional wisdom and modern and innovative technologies to help businesses achieve their net-zero goal.</p>
                                         </div>
                                         <ul className="content-feature-list list-style">
-                                            <li><i className="ri-checkbox-circle-line"></i>Curabitur vitae ullamcorper
-                                                libe roras id augue
-                                            </li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Felis cras luctus nisi in
-                                                tincidunt blandit
-                                            </li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Sapien mi vestibulum est
-                                                commodo lobortis metus
-                                            </li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Mauris vitae purus blandit
-                                                fermentum
-                                            </li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Tree Plantation</li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Miyawaki Forest</li>
+                                            <li><i className="ri-checkbox-circle-line"></i>BKG / Kitchen Garden</li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Agroforestry</li>
                                         </ul>
-                                        <a href="about.html" className="btn style2">Find Out More</a>
+                                        <a href="/about/" className="btn style2">Find Out More</a>
                                     </div>
                                 </div>
                             </div>
