@@ -195,8 +195,8 @@ export default function Home() {
                 <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
                 <div className="container">
                     <div className="section-title style1 text-center mb-40">
-                        <span>Our Volunteer <img src="/img/section-shape.png" alt="Image"/></span>
-                        <h2>Our Experts Volunteer</h2>
+                        <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                        <h2>Our Efforts</h2>
                     </div>
                     <div className="team-slider-two owl-carousel">
                         <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
