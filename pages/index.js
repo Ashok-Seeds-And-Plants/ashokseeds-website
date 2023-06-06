@@ -57,7 +57,7 @@ export default function Home() {
                                     <div className="col-lg-6  col-md-10">
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>We'll Save Our Planet</span>
-                                            <h1>BKG / Kitchen Garden</h1>
+                                            <h1>Kitchen Garden</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
                                                 consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
                                                 vestibulum aliquet arcu a duis. </p>
