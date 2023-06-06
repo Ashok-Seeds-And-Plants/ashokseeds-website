@@ -32,54 +32,57 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <section className="about-wrap style1 ptb-100">
-                        <img src="/img/about/about-shape-2.png" alt="Image" className="about-shape-one"/>
-                            <img src="/img/shape-2.png" alt="Image" className="about-shape-two flyUp"/>
-                                <img src="/img/about/deer.png" alt="Image"
-                                     className="about-shape-three moveHorizontal"/>
-                                    <div className="container">
-                                        <div className="row align-items-center gx-5">
-                                            <div className="col-lg-6">
-                                                <div className="about-img-wrap bg-f">
-                                                    <div className="about-quote">
-                                                        <i className="flaticon-right-quote"></i>
-                                                        <p>Lorem ipsum dolor sit amet conse ctet adip elit ollicitu din
-                                                            conse ctetur netus dui ultrice lectus ac egestas ips ctetur
-                                                            ctet adip ivamus tellu aliq. </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <div className="about-content">
-                                                    <div className="content-title style1">
-                                                        <span>A Little Introduction<img
-                                                            src="/img/section-shape.png" alt="Image"/></span>
-                                                        <h2>Protect Our Earth Against Climate Change</h2>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                            Sollicitudin consectetur netus dui, ultrices or lectus ac
-                                                            egestas. Vivamus tellus vestibulum aliquet arcu a duis.
-                                                            Sollicitudin consectetur netus du ultric. </p>
-                                                    </div>
-                                                    <ul className="content-feature-list list-style mb-0">
-                                                        <li><i className="ri-checkbox-circle-line"></i>Curabitur vitae
-                                                            ullamcorper libe roras id augue
-                                                        </li>
-                                                        <li><i className="ri-checkbox-circle-line"></i>Felis cras luctus
-                                                            nisi in tincidunt blandit
-                                                        </li>
-                                                        <li><i className="ri-checkbox-circle-line"></i>Sapien mi
-                                                            vestibulum est commodo lobortis metus
-                                                        </li>
-                                                        <li><i className="ri-checkbox-circle-line"></i>Mauris vitae
-                                                            purus blandit fermentum
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <section className="about-wrap style2 ptb-100">
+                        <img src="/img/about/about-shape-1.png" alt="Image"
+                             className="about-shape-one moveHorizontal" />
+                        <div className="container">
+                            <div className="row align-items-center gx-5">
+                                <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200"
+                                     data-aos-delay="200">
+                                    <div className="about-img-wrap">
+                                        <img src="/img/about/about-img-2.png" alt="Image" className="bounce"/>
                                     </div>
+                                </div>
+                                <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200"
+                                     data-aos-delay="200">
+                                    <div className="about-content">
+                                        <div className="content-title style3">
+                                            <span>A Little Introduction <span className="bl-text">About Us</span></span>
+                                            <h2>Keeping our Earth safe from climate change.</h2>
+                                            <p>Ashok Seeds and Plants in India are working towards achieving the Sustainable Development Goals (SDGs) through tree plantation, urban biodiversity conservation, water body restoration, sustainable solutions, and environmental research and awareness. We are a rare blend of traditional wisdom and modern and innovative technologies to help businesses achieve their net-zero goal.</p>
+                                        </div>
+                                        <ul className="content-feature-list list-style">
+                                            <li><i className="ri-checkbox-circle-line"></i>Tree Plantation</li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Miyawaki Forest</li>
+                                            <li><i className="ri-checkbox-circle-line"></i>BKG / Kitchen Garden</li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Agroforestry</li>
+                                        </ul>
+                                        <a href="/about/" className="btn style2">Find Out More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
+                    <section className="cta-wrap style1 bg-f ptb-100">
+                        <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
+                                    <div className="content-title style1 text-center mb-40" data-aos="fade-up"
+                                         data-aos-duration="1200" data-aos-delay="200">
+                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
+                                    </div>
+                                    <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"
+                                         data-aos-delay="300">
+                                        <a href="/donate-now/" className="btn style1">Get Started now</a>
+                                        <a href="/get-involved/volunteer/" className="btn style2">Join Our Community</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                 </div>
 
