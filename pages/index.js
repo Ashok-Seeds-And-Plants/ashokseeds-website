@@ -120,7 +120,78 @@ export default function Home() {
                 </section>
 
 
-<section className="team-wrap ptb-100 bg-sand">
+                <div className="promo-video bg-f style3 ptb-100">
+                    <div className="container">
+                        <div className="row gx-5">
+                            <div className="col-xl-5 col-lg-5">
+                                <div className="content-title style5 md-center">
+                                    <span>Intro Video</span>
+                                    <h2>Our journey so far</h2>
+                                </div>
+                                <a className="play-now" data-fancybox=""
+                                   href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                                    <i className="ri-play-fill"></i>
+                                    <span className="ripple"></span>
+                                </a>
+                            </div>
+                            <div className="col-xl-7 col-lg-7">
+                                <div className="counter-card-wrap style3">
+                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
+                                         data-aos-delay="200">
+                                    <span className="counter-icon">
+                                        <i className="flaticon-coin"></i>
+                                    </span>
+                                        <div className="counter-text">
+                                            <h2 className="counter-num">
+                                                <span className="odometer" data-count="8705"></span>
+                                            </h2>
+                                            <p>Donations</p>
+                                        </div>
+                                    </div>
+                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
+                                         data-aos-delay="300">
+                                    <span className="counter-icon">
+                                        <i className="flaticon-campaign"></i>
+                                    </span>
+                                        <div className="counter-text">
+                                            <h2 className="counter-num">
+                                                <span className="odometer" data-count="380"></span>
+                                            </h2>
+                                            <p>Campaigns</p>
+                                        </div>
+                                    </div>
+                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
+                                         data-aos-delay="400">
+                                    <span className="counter-icon">
+                                        <i className="flaticon-money-box"></i>
+                                    </span>
+                                        <div className="counter-text">
+                                            <h2 className="counter-num">
+                                                <span className="odometer" data-count="9450"></span>
+                                            </h2>
+                                            <p>Fun Raised</p>
+                                        </div>
+                                    </div>
+                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
+                                         data-aos-delay="500">
+                                    <span className="counter-icon">
+                                        <i className="flaticon-volunteer"></i>
+                                    </span>
+                                        <div className="counter-text">
+                                            <h2 className="counter-num">
+                                                <span className="odometer" data-count="707"></span>
+                                            </h2>
+                                            <p>Volunteers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section className="team-wrap ptb-100 bg-sand">
                 <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
                 <div className="container">
                     <div className="section-title style1 text-center mb-40">
