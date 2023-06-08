@@ -1,5 +1,6 @@
 import React from "react"
-import delve from 'dlv';
+import delve from 'dlv'
+import { parseISO, format } from 'date-fns'
 
 const Posts = ({ posts }) => {
     //const leftArticlesCount = Math.ceil(articles.length / 5)
@@ -25,7 +26,8 @@ const Posts = ({ posts }) => {
                         const title = delve(post, "attributes.title");
                         const slug = delve(post, "attributes.slug");
                         const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
-                        //console.log(cover);
+                        const date = parseISO(delve(post, "attributes.publishedAt"));
+                        console.log(date);
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
