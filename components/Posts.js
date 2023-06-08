@@ -21,7 +21,7 @@ const Posts = ({ posts }) => {
 
                     {posts.map((post, i) => {
 
-
+                        console.log(post);
                         const title = delve(post, "title");
                         console.log(title);
                         return (
