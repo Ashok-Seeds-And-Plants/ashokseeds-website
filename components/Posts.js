@@ -23,18 +23,19 @@ const Posts = ({ posts }) => {
 
                         console.log(post);
                         const title = delve(post, "attributes.title");
+                        const slug = delve(post, "attributes.slug");
                         //console.log(title);
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
                                     <img src="/img/blog/blog-3.jpg" alt="Image"/>
-                                    <a href="#" className="blog-date"><span>25</span> Jul, 2022</a>
+                                    <a href="{slug}" className="blog-date"><span>25</span> Jul, 2022</a>
                                 </div>
                                 <div className="blog-info">
-                                    <h3><a href="#">{title}</a></h3>
+                                    <h3><a href="{slug}">{title}</a></h3>
                                     <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu
                                         ame ultrices lectus dolor sit amet egestas.</p>
-                                    <a href="#" className="link style1">Read More <i
+                                    <a href="{slug}" className="link style1">Read More <i
                                         className="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
