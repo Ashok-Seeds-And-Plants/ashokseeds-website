@@ -22,7 +22,7 @@ const Posts = ({ posts }) => {
                     {posts.map((post, i) => {
 
                         console.log(post);
-                        const title = delve(post, "title");
+                        const title = delve(post, "data.attributes.title");
                         console.log(title);
                         return (
                             <div>{title}</div>
