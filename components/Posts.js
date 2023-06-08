@@ -29,7 +29,7 @@ const Posts = ({ posts }) => {
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
-                                    <img src={`${cover}`} alt={`${title}`}/> 
+                                    <img src={`${cover}`} alt={`${title}`}/>
                                     <a href={`/blog/${slug}`} className="blog-date"><span>25</span> Jul, 2022</a>
                                 </div>
                                 <div className="blog-info">
@@ -37,7 +37,7 @@ const Posts = ({ posts }) => {
                                     <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu
                                         ame ultrices lectus dolor sit amet egestas.</p>
                                     <a href={`/blog/${slug}`} className="link style1">Read More <i
-                                        className="flaticon-right-arrow"></i></a>
+                                        className="flaticon-right-arrow"></i></a> 
                                 </div>
                             </div>
                         )
