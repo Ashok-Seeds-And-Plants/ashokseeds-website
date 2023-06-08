@@ -29,14 +29,30 @@ const Blog = ({ post }) => {
     )
 }
 
-export async function getStaticProps() {
-    // Run API calls in parallel
-    const postRes = await fetchAPI("/posts", { fields: ["slug"] })
+export async function getStaticPaths() {
+    const articlesRes = await fetchAPI("/posts", { fields: ["slug"] })
 
     return {
-        props: {
-            posts: postRes.data,
+        paths: articlesRes.data.map((article) => ({
+            params: {
+                slug: article.attributes.slug,
+            },
+        })),
+        fallback: false,
+    }
+}
+
+export async function getStaticProps({ params }) {
+    const articlesRes = await fetchAPI("/posts", {
+        filters: {
+            slug: params.slug,
         },
+        populate: "*",
+    })
+    const categoriesRes = await fetchAPI("/categories")
+
+    return {
+        props: { article: articlesRes.data[0], categories: categoriesRes },
         revalidate: 1,
     }
 }
