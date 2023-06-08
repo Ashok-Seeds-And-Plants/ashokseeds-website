@@ -7,25 +7,11 @@ import Js from '@components/Js'
 
 import { fetchAPI } from "../../lib/api"
 
+const Article = ({ article, categories }) => {
 
-const Blog = ({ post }) => {
-    console.log(post);
+
     return (
-        <>
-            <Meta />
-            <Head>
-                <title>Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
-            </Head>
-            <div className="page-wrapper">
-                <Header />
-
-
-
-                <Footer />
-            </div>
-            <Js />
-        </>
+        <h3>New blog</h3>
     )
 }
 
@@ -49,7 +35,7 @@ export async function getStaticProps({ params }) {
         },
         populate: "*",
     })
-    const categoriesRes = await fetchAPI("/categories")
+    const categoriesRes = await fetchAPI("/post-categories")
 
     return {
         props: { article: articlesRes.data[0], categories: categoriesRes },
@@ -57,4 +43,4 @@ export async function getStaticProps({ params }) {
     }
 }
 
-export default Blog
+export default Article
