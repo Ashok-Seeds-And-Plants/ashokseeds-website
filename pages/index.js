@@ -16,7 +16,6 @@ const Home = ({ posts, galleries, portfolios }) => {
             <Head>
             <title>Ashok Seeds and Plants</title>
             <meta name="description" content="" />
-            <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/home.css" />
             </Head>
             <div className="page-wrapper">
             <Header />
