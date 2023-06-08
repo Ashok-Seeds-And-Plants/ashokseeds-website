@@ -22,12 +22,12 @@ const Posts = ({ posts }) => {
 
                     {posts.map((post, i) => {
 
-                        console.log(post);
+                        //console.log(post);
                         const title = delve(post, "attributes.title");
                         const slug = delve(post, "attributes.slug");
                         const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                         const date = parseISO(delve(post, "attributes.publishedAt"));
-                        console.log(date);
+                       // console.log(date);
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">

@@ -6,15 +6,17 @@ import Footer from '@components/Footer'
 import Js from '@components/Js'
 
 import { fetchAPI } from "../../lib/api"
+import delve from 'dlv'
+import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
-
+    const title = delve(post, "attributes.title");
 
     return (
         <>
             <Meta />
             <Head>
-                <title>404 Page Not Found | Ashok Seeds and Plants</title>
+                <title>{title} | Ashok Seeds and Plants</title>
                 <meta name="description" content="" />
 
             </Head>
