@@ -5,7 +5,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
-import { fetchAPI } from "../lib/api"
+import { fetchAPI } from "../../lib/api"
 
 
 const Blog = ({ post }) => {
