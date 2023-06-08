@@ -18,6 +18,14 @@ const Posts = ({ posts }) => {
                     <h2>Our Latest News &amp; posts</h2>
                 </div>
                 <div className="blog-slider-one owl-carousel">
+
+                    {posts.map((post, i) => {
+                        return (
+                            <div>Test</div>
+                        )
+                    })}
+
+
                     <div className="blog-card style3">
                         <div className="blog-img">
                             <img src="/img/blog/blog-3.jpg" alt="Image"/>
