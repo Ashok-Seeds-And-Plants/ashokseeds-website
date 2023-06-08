@@ -25,7 +25,7 @@ const Posts = ({ posts }) => {
                         const title = delve(post, "attributes.title");
                         console.log(title);
                         return (
-                            <div>{title}</div>
+                            <div>{delve(post, "attributes.title")}</div>
                         )
                     })}
 
