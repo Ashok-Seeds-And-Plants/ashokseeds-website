@@ -5,7 +5,9 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
-export default function Home() {
+import { fetchAPI } from "../lib/api"
+
+const Home = ({ posts, galleries, portfolios }) => {
     return (
         <>
             <Meta />
@@ -473,7 +475,7 @@ export default function Home() {
                         <img src="/img/shape-7.png" alt="Image" className="blog-section-shape"/>
                             <div className="section-title style3 mb-40 text-center">
                                 <span>Our Latest News</span>
-                                <h2>Our Latest News &amp; Articles</h2>
+                                <h2>Our Latest News &amp; posts</h2>
                             </div>
                             <div className="blog-slider-one owl-carousel">
                                 <div className="blog-card style3">
@@ -557,3 +559,23 @@ export default function Home() {
         </>
     )
 }
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [postsRes, galleriesRes, portfoliosRes] = await Promise.all([
+        fetchAPI("/posts", { populate: "*" }),
+        fetchAPI("/galleries", { populate: "*" }),
+        fetchAPI("/portfolios", { populate: "*" }),
+    ])
+
+    return {
+        props: {
+            posts: postsRes.data,
+            galleries: galleriesRes.data,
+            portfolios: portfoliosRes.data,
+        },
+        revalidate: 1,
+    }
+}
+
+export default Home
