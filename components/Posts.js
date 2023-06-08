@@ -32,10 +32,10 @@ const Posts = ({ posts }) => {
                                     <a href={`/blog/${slug}`} className="blog-date"><span>25</span> Jul, 2022</a>
                                 </div>
                                 <div className="blog-info">
-                                    <h3><a href={'${slug}'}>{title}</a></h3>
+                                    <h3><a href={`/blog/${slug}`}>{title}</a></h3>
                                     <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu
                                         ame ultrices lectus dolor sit amet egestas.</p>
-                                    <a href={'${slug}'} className="link style1">Read More <i
+                                    <a href={`/blog/${slug}`} className="link style1">Read More <i
                                         className="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
