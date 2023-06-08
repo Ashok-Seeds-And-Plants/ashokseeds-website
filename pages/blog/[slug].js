@@ -26,6 +26,7 @@ const Blog = ({ post, categories }) => {
                 <div className="content-wrapper">
 
                     <h3>Blog post</h3>
+                    <p>{title}</p>
 
                 </div>
 
