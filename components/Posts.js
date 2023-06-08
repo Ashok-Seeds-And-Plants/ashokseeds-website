@@ -24,11 +24,12 @@ const Posts = ({ posts }) => {
                         console.log(post);
                         const title = delve(post, "attributes.title");
                         const slug = delve(post, "attributes.slug");
-                        console.log(slug);
+                        const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
+                        console.log(cover);
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
-                                    <img src="/img/blog/blog-3.jpg" alt={'{title}'}/>
+                                    <img src="{`${cover}`} alt={'${title}'}/>
                                     <a href={`/blog/${slug}`} className="blog-date"><span>25</span> Jul, 2022</a>
                                 </div>
                                 <div className="blog-info">
