@@ -29,7 +29,7 @@ const Posts = ({ posts }) => {
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
-                                    <img src={`${cover}`} alt={`${title}`}/>
+                                    <img src={`${cover}`} alt={`${title}`}/> 
                                     <a href={`/blog/${slug}`} className="blog-date"><span>25</span> Jul, 2022</a>
                                 </div>
                                 <div className="blog-info">
