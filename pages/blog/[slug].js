@@ -166,7 +166,7 @@ const Blog = ({ post, categories }) => {
                                     </div>
                                     <div className="post-author">
                                         <div className="post-author-img">
-                                            <img src="assets/img/blog/author-1.jpg" alt="Image"/>
+                                            <img src="/img/blog/author-1.jpg" alt="Image"/>
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="posts-by-author.html"> David Warner</a></h4>
