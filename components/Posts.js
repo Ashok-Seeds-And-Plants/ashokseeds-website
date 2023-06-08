@@ -32,7 +32,7 @@ const Posts = ({ posts }) => {
                             <div className="blog-card style3">
                                 <div className="blog-img">
                                     <img src={`${cover}`} alt={`${title}`}/>
-                                    <a href={`/blog/${slug}`} className="blog-date"><span>25</span> {format(date, 'LLL yyyy')}</a>
+                                    <a href={`/blog/${slug}`} className="blog-date"> {format(date, '<span>d</span>LLL yyyy')}</a>
                                 </div>
                                 <div className="blog-info">
                                     <h3><a href={`/blog/${slug}`}>{title}</a></h3>
