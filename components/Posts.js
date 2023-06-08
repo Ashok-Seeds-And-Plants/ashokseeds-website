@@ -20,10 +20,10 @@ const Posts = ({ posts }) => {
                 <div className="blog-slider-one owl-carousel">
 
                     {posts.map((post, i) => {
-                        console.log(post);
+
 
                         const title = delve(post, "title");
-
+                        console.log(title);
                         return (
                             <div>{title}</div>
                         )
