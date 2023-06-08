@@ -197,7 +197,7 @@ const Blog = ({ post, categories }) => {
                                             </ul>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
