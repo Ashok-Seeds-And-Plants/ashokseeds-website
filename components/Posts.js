@@ -25,7 +25,7 @@ const Posts = ({ posts }) => {
                         const title = delve(post, "title");
 
                         return (
-                            <div>title</div>
+                            <div>{title}</div>
                         )
                     })}
 
