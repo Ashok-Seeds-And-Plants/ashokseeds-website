@@ -24,7 +24,7 @@ const Posts = ({ posts }) => {
                         console.log(post);
                         const title = delve(post, "attributes.title");
                         const slug = delve(post, "attributes.slug");
-                        //console.log(title);
+                        console.log(slug);
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
