@@ -5,6 +5,8 @@ const Posts = ({ posts }) => {
     //const leftArticles = articles.slice(0, leftArticlesCount)
     //const rightArticles = articles.slice(leftArticlesCount, articles.length)
 
+    console.log(posts);
+
     return (
 
         <section className="blog-wrap ptb-100 bg-sand">
