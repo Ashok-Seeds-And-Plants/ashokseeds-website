@@ -6,7 +6,7 @@ const Posts = ({ posts }) => {
     //const leftArticles = articles.slice(0, leftArticlesCount)
     //const rightArticles = articles.slice(leftArticlesCount, articles.length)
 
-    console.log(posts);
+   // console.log(posts);
 
     return (
 
@@ -20,6 +20,7 @@ const Posts = ({ posts }) => {
                 <div className="blog-slider-one owl-carousel">
 
                     {posts.map((post, i) => {
+                        console.log(post);
                         return (
                             <div>Test</div>
                         )
