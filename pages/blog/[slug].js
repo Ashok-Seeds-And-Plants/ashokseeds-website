@@ -7,21 +7,42 @@ import Js from '@components/Js'
 
 import { fetchAPI } from "../../lib/api"
 
-const Article = ({ article, categories }) => {
+const Blog = ({ post, categories }) => {
 
 
     return (
-        <h3>New blog</h3>
+        <>
+            <Meta />
+            <Head>
+                <title>404 Page Not Found | Ashok Seeds and Plants</title>
+                <meta name="description" content="" />
+
+            </Head>
+            <div className="page-wrapper">
+                <Header />
+
+                <div className="content-wrapper">
+
+                    <h3>Blog post</h3>
+
+                </div>
+
+
+
+                <Footer />
+            </div>
+            <Js />
+        </>
     )
 }
 
 export async function getStaticPaths() {
-    const articlesRes = await fetchAPI("/posts", { fields: ["slug"] })
+    const postsRes = await fetchAPI("/posts", { fields: ["slug"] })
 
     return {
-        paths: articlesRes.data.map((article) => ({
+        paths: postsRes.data.map((post) => ({
             params: {
-                slug: article.attributes.slug,
+                slug: post.attributes.slug,
             },
         })),
         fallback: false,
@@ -29,7 +50,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const articlesRes = await fetchAPI("/posts", {
+    const postsRes = await fetchAPI("/posts", {
         filters: {
             slug: params.slug,
         },
@@ -38,9 +59,9 @@ export async function getStaticProps({ params }) {
     const categoriesRes = await fetchAPI("/post-categories")
 
     return {
-        props: { article: articlesRes.data[0], categories: categoriesRes },
+        props: { post: postsRes.data[0], categories: categoriesRes },
         revalidate: 1,
     }
 }
 
-export default Article
+export default Blog
