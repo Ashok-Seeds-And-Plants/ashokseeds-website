@@ -37,7 +37,7 @@ const Posts = ({ posts }) => {
                                     <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu
                                         ame ultrices lectus dolor sit amet egestas.</p>
                                     <a href={`/blog/${slug}`} className="link style1">Read More <i
-                                        className="flaticon-right-arrow"></i></a> 
+                                        className="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
                         )
