@@ -58,7 +58,7 @@ const Blog = ({ post, categories }) => {
                                             <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
                                         <div className="post-para">
-                                            <ReactMarkdown source={content} escapeHtml={false} />
+                                            <ReactMarkdown source={content} />
                                         </div>
                                     </article>
                                     <div className="post-meta-option">
@@ -107,7 +107,7 @@ const Blog = ({ post, categories }) => {
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="posts-by-author.html"> {username}</a></h4>
-                                            <ReactMarkdown source={about} escapeHtml={false} />
+                                            <ReactMarkdown source={about} />
                                             <ul className="social-profile list-style style3">
                                                 <li>
                                                     <a href="https://facebook.com">
