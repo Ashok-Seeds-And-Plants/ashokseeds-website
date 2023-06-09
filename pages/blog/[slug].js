@@ -13,7 +13,7 @@ import { parseISO, format } from 'date-fns'
 const Blog = ({ post, categories }) => {
     const title = delve(post, "attributes.title");
     const content = delve(post, "attributes.content");
-    const cover = delve(post, "attributes.cover.data.attributes.formats.large.url");
+    const cover = delve(post, "attributes.cover.data.attributes.formats.url");
     const date = parseISO(delve(post, "attributes.publishedAt"));
     const username = delve(post, "attributes.user.data.attributes.displayName");
     const about = delve(post, "attributes.user.data.attributes.about");
