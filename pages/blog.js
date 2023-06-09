@@ -48,7 +48,7 @@ const Blogs = ({ posts }) => {
                                     const slug = delve(post, "attributes.slug");
                                     const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                                     const date = parseISO(delve(post, "attributes.publishedAt"));
-                                    const username = delve(post, "attributes.user.data.attributes.username");
+                                    const username = delve(post, "attributes.user.data.attributes.displayName");
                                     // console.log(date);
                                     return (
                                 <div className="col-xl-4 col-lg-6 col-md-6">
