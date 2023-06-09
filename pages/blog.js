@@ -45,7 +45,7 @@ const Blogs = ({ posts }) => {
 
                                     //console.log(post);
                                     const title = delve(post, "attributes.title");
-                                    const slug = delve(post, "attributes.slug");d
+                                    const slug = delve(post, "attributes.slug");
                                     const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                                     const date = parseISO(delve(post, "attributes.publishedAt"));
                                     // console.log(date);
