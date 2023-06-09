@@ -45,7 +45,7 @@ const Blogs = ({ posts }) => {
 
                                     //console.log(post);
                                     const title = delve(post, "attributes.title");
-                                    const slug = elve(post, "attributes.slug");d
+                                    const slug = delve(post, "attributes.slug");d
                                     const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                                     const date = parseISO(delve(post, "attributes.publishedAt"));
                                     // console.log(date);
@@ -59,7 +59,7 @@ const Blogs = ({ posts }) => {
                                                 </div>
                                                 <div className="blog-author-info">
                                                     <span>Posted By</span>
-                                                    <h6><a href="#">{elve(post, "attributes.user.data.attributes.username")}</a></h6>
+                                                    <h6><a href="#">{delve(post, "attributes.user.data.attributes.username")}</a></h6>
                                                 </div>
                                             </div>
                                             <img src={`${cover}`} alt={`${title}`}/>
