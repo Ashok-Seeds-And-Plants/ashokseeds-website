@@ -172,7 +172,7 @@ const Blog = ({ post, categories }) => {
                                             <img src="/img/user.png" alt="Image"/>
                                         </div>
                                         <div className="post-author-info">
-                                            <h4>Posted by<a href="posts-by-author.html"> David Warner</a></h4>
+                                            <h4>Posted by<a href="posts-by-author.html"> {username}</a></h4>
                                             <p>Claritas est etiam amet sinicus, qui sequitur lorem ipsum semet coui
                                                 lectorum. Lorem ipsum dolor voluptatem corporis blanditiis sadipscing
                                                 elitr sed diam nonumy eirmod amet sit lorem.</p>
