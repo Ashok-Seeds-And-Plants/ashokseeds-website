@@ -6,7 +6,7 @@ import Sidebar from '@components/Sidebar'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
-import { fetchAPI } from "../../lib/api"
+import { fetchAPI } from "../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import Blog from "./blog/[slug]";
