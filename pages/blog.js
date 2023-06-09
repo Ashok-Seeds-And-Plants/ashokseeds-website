@@ -80,11 +80,11 @@ const Blogs = ({ posts }) => {
                                 })}
                             </div>
                             <ul className="page-nav list-style">
-                                <li><a href="blog-right-sidebar.html"><i className="flaticon-left-arrow"></i></a></li>
-                                <li><a className="active" href="blog-right-sidebar.html">1</a></li>
-                                <li><a href="blog-right-sidebar.html">2</a></li>
-                                <li><a href="blog-right-sidebar.html">3</a></li>
-                                <li><a href="blog-right-sidebar.html"><i className="flaticon-right-arrow"></i></a></li>
+                                <li><a href="#"><i className="flaticon-left-arrow"></i></a></li>
+                                <li><a className="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
                         </div>
                     </div>

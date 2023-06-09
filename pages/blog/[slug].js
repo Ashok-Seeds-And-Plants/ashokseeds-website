@@ -11,6 +11,9 @@ import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
     const title = delve(post, "attributes.title");
+    const cover = delve(post, "attributes.cover.data.attributes.formats.large.url");
+    const date = parseISO(delve(post, "attributes.publishedAt"));
+    const username = delve(post, "attributes.user.data.attributes.displayName");
 
     return (
         <>
@@ -44,12 +47,12 @@ const Blog = ({ post, categories }) => {
                                 <div className="col-xl-10 offset-xl-1 col-lg-12">
                                     <article>
                                         <a className="post-img" data-fancybox="gallery"
-                                           href="assets/img/blog/single-blog-1.jpg">
-                                            <img src="assets/img/blog/single-blog-1.jpg" alt="Image"/>
+                                           href={`${cover}`}>
+                                            <img src={`${cover}`} alt={`${title}`}/>
                                         </a>
-                                        <h1>Massive Changes In Landscape &amp; Wildlife</h1>
+                                        <h1>{title}</h1>
                                         <ul className="post-metainfo  list-style">
-                                            <li><i className="ri-calendar-todo-line"></i>Jul 25, 2022</li>
+                                            <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
                                         <div className="post-para">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
@@ -83,14 +86,14 @@ const Blog = ({ post, categories }) => {
                                             <div className="row">
                                                 <div className="col-md-6">
                                                     <a className="post-img" data-fancybox="gallery"
-                                                       href="assets/img/blog/single-blog-2.jpg">
-                                                        <img src="assets/img/blog/single-blog-2.jpg" alt="Image"/>
+                                                       href="/img/blog/single-blog-2.jpg">
+                                                        <img src="/img/blog/single-blog-2.jpg" alt="Image"/>
                                                     </a>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <a className="post-img" data-fancybox="gallery"
-                                                       href="assets/img/blog/single-blog-3.jpg">
-                                                        <img src="assets/img/blog/single-blog-3.jpg" alt="Image"/>
+                                                       href="/img/blog/single-blog-3.jpg">
+                                                        <img src="/img/blog/single-blog-3.jpg" alt="Image"/>
                                                     </a>
                                                 </div>
                                             </div>
@@ -155,10 +158,10 @@ const Blog = ({ post, categories }) => {
                                             </div>
                                             <div className="col-md-7 col-12 text-md-end">
                                                 <div className="post-tag">
-                                                    <span>Tags:</span>
+                                                    <span>Categories:</span>
                                                     <ul className="tag-list list-style">
-                                                        <li><a href="posts-by-tag.html">Pollution</a></li>
-                                                        <li><a href="posts-by-tag.html">Climate</a></li>
+                                                        <li><a href="#">Pollution</a></li>
+                                                        <li><a href="#">Climate</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -166,7 +169,7 @@ const Blog = ({ post, categories }) => {
                                     </div>
                                     <div className="post-author">
                                         <div className="post-author-img">
-                                            <img src="/img/blog/author-1.jpg" alt="Image"/>
+                                            <img src="/img/user.png" alt="Image"/>
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="posts-by-author.html"> David Warner</a></h4>
