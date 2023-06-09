@@ -12,9 +12,11 @@ import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
     const title = delve(post, "attributes.title");
+    const content = delve(post, "attributes.content");
     const cover = delve(post, "attributes.cover.data.attributes.formats.large.url");
     const date = parseISO(delve(post, "attributes.publishedAt"));
     const username = delve(post, "attributes.user.data.attributes.displayName");
+    const about = delve(post, "attributes.user.data.attributes.about");
 
     return (
         <>
@@ -56,7 +58,7 @@ const Blog = ({ post, categories }) => {
                                             <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
                                         <div className="post-para">
-                                            <ReactMarkdown source={post.attributes.Content} escapeHtml={false} />
+                                            <ReactMarkdown source={content} escapeHtml={false} />
                                         </div>
                                     </article>
                                     <div className="post-meta-option">
@@ -105,7 +107,7 @@ const Blog = ({ post, categories }) => {
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="posts-by-author.html"> {username}</a></h4>
-                                            <ReactMarkdown source={post.attributes.user.data.attributes.about} escapeHtml={false} />
+                                            <ReactMarkdown source={about} escapeHtml={false} />
                                             <ul className="social-profile list-style style3">
                                                 <li>
                                                     <a href="https://facebook.com">
