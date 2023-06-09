@@ -48,6 +48,7 @@ const Blogs = ({ posts }) => {
                                     const slug = delve(post, "attributes.slug");
                                     const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                                     const date = parseISO(delve(post, "attributes.publishedAt"));
+                                    const username = delve(post, "attributes.user.data.attributes.username");
                                     // console.log(date);
                                     return (
                                 <div className="col-xl-4 col-lg-6 col-md-6">
@@ -55,11 +56,11 @@ const Blogs = ({ posts }) => {
                                         <div className="blog-info">
                                             <div className="blog-author">
                                                 <div className="blog-author-img">
-                                                    <img src={`${cover}`} alt={`${title}`}/>
+                                                    <img src="/img/user.png" alt={`${username}`}/>
                                                 </div>
                                                 <div className="blog-author-info">
                                                     <span>Posted By</span>
-                                                    <h6><a href="#">{delve(post, "attributes.user.data.attributes.username")}</a></h6>
+                                                    <h6><a href="#">{username}</a></h6>
                                                 </div>
                                             </div>
                                             <img src={`${cover}`} alt={`${title}`}/>
