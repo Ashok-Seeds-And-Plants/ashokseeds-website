@@ -6,7 +6,12 @@ import Sidebar from '@components/Sidebar'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
-export default function Home() {
+import { fetchAPI } from "../../lib/api"
+import delve from 'dlv'
+import { parseISO, format } from 'date-fns'
+import Blog from "./blog/[slug]";
+
+const Blogs = ({ posts }) => {
     return (
         <>
             <Meta />
@@ -256,3 +261,19 @@ export default function Home() {
         </>
     )
 }
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [postsRes] = await Promise.all([
+        fetchAPI("/posts", { populate: "*" })
+    ])
+
+    return {
+        props: {
+            posts: postsRes.data
+        },
+        revalidate: 1,
+    }
+}
+
+export default Blogs
