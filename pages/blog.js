@@ -63,7 +63,7 @@ const Blogs = ({ posts }) => {
                                                     <h6><a href="#">{username}</a></h6>
                                                 </div>
                                             </div>
-                                            <img src={`${cover}`} alt={`${title}`}/>
+                                            <img className="blog-cover-img" src={`${cover}`} alt={`${title}`}/>
                                             <h3><a href={`/blog/${slug}`}>{title}</a></h3>
                                             <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur
                                                 netusdu ame ultrices lectus dolor sit amet egestas.</p>
