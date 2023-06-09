@@ -64,15 +64,15 @@ const Blogs = ({ posts }) => {
                                                 </div>
                                             </div>
                                             <img className="blog-cover-img" src={`${cover}`} alt={`${title}`}/>
-                                            <h3><a href={`/blog/${slug}`}>{title}</a></h3>
+                                            <h3><a href={`/blog/${slug}/`}>{title}</a></h3>
                                             <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur
                                                 netusdu ame ultrices lectus dolor sit amet egestas.</p>
                                             <ul className="blog-metainfo list-style">
-                                                <li><a href={`/blog/${slug}`}><i
+                                                <li><a href={`/blog/${slug}/`}><i
                                                     className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a></li>
                                             </ul>
                                         </div>
-                                        <a href={`/blog/${slug}`} className="link style1">Read More <i
+                                        <a href={`/blog/${slug}/`} className="link style1">Read More <i
                                             className="flaticon-right-arrow"></i></a>
                                     </div>
                                 </div>
