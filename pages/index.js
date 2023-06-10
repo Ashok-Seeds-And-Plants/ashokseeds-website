@@ -205,14 +205,12 @@ const Home = ({ posts, galleries, portfolios }) => {
                                  data-aos-delay="600">
                                 <div className="project-img">
                                     <img src="/img/project/project-22.jpg" alt="Image"/>
-                                        <button className="like-btn" type="button"><i className="ri-heart-fill"></i>
-                                        </button>
                                 </div>
                                 <div className="project-info">
                                     <h3><a href="project-details.html">Reduce Air Pollution
                                     </a></h3>
                                     <p>Lorem ipsum dolor sit amet cons ecte adipiscin elit.</p>
-                                    
+
                                     <a href="#" className="link style1">See More<i
                                         className="flaticon-right-arrow"></i></a>
                                 </div>
