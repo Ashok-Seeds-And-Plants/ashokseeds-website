@@ -14,7 +14,7 @@ const Galleries = ({ galleries }) => {
 
                 return (
             <div className="team-card style2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                <img src={`${image}`} alt={`${title}`}/>
+                <img src={`${image}`} alt={`${title}`} data-fancybox="gallery"/>
             </div>
                 )
             })}
