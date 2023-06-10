@@ -203,7 +203,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                     </div>
 
                     <Galleries galleries={galleries} />
-                    
+
                 </div>
             </section>
 
