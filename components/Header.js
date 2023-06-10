@@ -3,8 +3,6 @@ import Link from 'next/link'
 export default function Header() {
     return (
       <>
-          
-
           <div className="switch-theme-mode">
               <label id="switch" className="switch">
                   <input type="checkbox" onChange="toggleTheme()" id="slider"/>
