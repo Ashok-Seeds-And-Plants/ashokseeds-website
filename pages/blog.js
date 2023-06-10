@@ -2,14 +2,12 @@ import Head from 'next/head'
 
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-import Sidebar from '@components/Sidebar'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
 import { fetchAPI } from "../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
-import Blog from "./blog/[slug]";
 
 const Blogs = ({ posts }) => {
     return (
