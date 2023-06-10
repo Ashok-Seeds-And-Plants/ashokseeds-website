@@ -3,11 +3,7 @@ import Link from 'next/link'
 export default function Header() {
     return (
       <>
-          <div className="loader js-preloader">
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
+          
 
           <div className="switch-theme-mode">
               <label id="switch" className="switch">
