@@ -15,7 +15,7 @@ const Portfolios = ({ portfolios }) => {
                 <div className="project-slider-three owl-carousel">
 
                     {portfolios.map((portfolio, i) => {
-   
+
                         //const title = delve(portfolio, "attributes.title");
                         //const image = delve(portfolio, "attributes.image.data.attributes.formats.medium.url");
 
