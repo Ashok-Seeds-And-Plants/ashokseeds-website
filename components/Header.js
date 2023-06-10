@@ -134,6 +134,9 @@ export default function Header() {
                                       </ul>
                                   </li>
                                   <li className="nav-item">
+                                      <a href="/projects/" className="nav-link">Projects</a>
+                                  </li>
+                                  <li className="nav-item">
                                       <a href="#" className="nav-link">
                                           Get Involved
                                           <i className="ri-add-line"></i>
