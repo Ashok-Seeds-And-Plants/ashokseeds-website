@@ -1,6 +1,7 @@
 import React from "react"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
+import ReactMarkdown from "react-markdown";
 
 const Portfolios = ({ portfolios }) => {
 
@@ -16,7 +17,8 @@ const Portfolios = ({ portfolios }) => {
 
                     {portfolios.map((portfolio, i) => {
 
-                        //const title = delve(portfolio, "attributes.title");
+                        const title = delve(portfolio, "attributes.title");
+                        const content = delve(portfolio, "attributes.content");
                         //const image = delve(portfolio, "attributes.image.data.attributes.formats.medium.url");
 
                         return (
@@ -26,9 +28,8 @@ const Portfolios = ({ portfolios }) => {
                             <img src="/img/project/project-22.jpg" alt="Image"/>
                         </div>
                         <div className="project-info">
-                            <h3><a href="#">Reduce Air Pollution
-                            </a></h3>
-                            <p>Lorem ipsum dolor sit amet cons ecte adipiscin elit.</p>
+                            <h3><a href="#">{title}</a></h3>
+                            <ReactMarkdown children={content} />
 
                             <a href="#" className="link style1">See More<i
                                 className="flaticon-right-arrow"></i></a>
