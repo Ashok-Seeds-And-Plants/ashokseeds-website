@@ -49,10 +49,17 @@ const Blog = ({ portfolio, categories }) => {
                             <div className="row gx-5">
                                 <div className="col-xl-8">
                                     <div className="project-desc">
-                                        <a className="single-project-img mt-0" data-fancybox="gallery"
-                                           href={`${cover}`}>
+                                        <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
                                             <img src={`${cover}`} alt={`${title}`}/>
                                         </a>
+                                        <div className="team-slider-one owl-carousel">
+                                            <div className="team-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                                                <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
+                                                    <img src={`${cover}`} alt={`${title}`}/>
+                                                </a>
+                                            </div>
+
+                                        </div>
                                         <h1>{title}</h1>
 
                                         <ReactMarkdown children={content} />
