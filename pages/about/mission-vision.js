@@ -2,11 +2,13 @@ import Head from 'next/head'
 
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-import Sidebar from '@components/Sidebar'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
+import Galleries from "@components/Galleries";
+import {fetchAPI} from "../../lib/api";
+import Portfolios from "@components/Portfolios";
 
-export default function Home() {
+const Mission = ({ galleries, portfolios }) => {
     return (
         <>
             <Meta />
@@ -23,18 +25,31 @@ export default function Home() {
                     <div className="error-wrap ptb-100">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-8 offset-lg-2">
-                                    <div className="error-content">
-                                        <img src="/img/404.png" alt="Iamge"/>
-                                            <h2>Oops! Page Not Found</h2>
-                                            <p>The page you are looking for might have been removed had its name changed
-                                                or is temporarily unavailable.</p>
-                                            <a href="https://www.ashokseedplant.com/" className="btn style1">Back To Home</a>
-                                    </div>
+                                <div className="col-md-12">
+                                <h2>Our Vision</h2>
+                                    <p>A world of value and respect for the environment.</p>
+                                </div>
+                                <div className="col-md-12">
+                                <h2>Our Mission</h2>
+                                    <p>Fight against climate change by carrying out projects in support of Mother Earth.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <section className="team-wrap ptb-100 bg-sand">
+                        <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                        <div className="container">
+                            <div className="section-title style1 text-center mb-40">
+                                <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                                <h2>Our Efforts</h2>
+                            </div>
+
+                            <Galleries galleries={galleries} />
+
+                        </div>
+                    </section>
+                    <Portfolios portfolios={portfolios} />
 
                 </div>
 
@@ -46,3 +61,21 @@ export default function Home() {
         </>
     )
 }
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [galleriesRes, portfoliosRes] = await Promise.all([
+        fetchAPI("/galleries", { populate: "*" }),
+        fetchAPI("/portfolios", { populate: "*" }),
+    ])
+
+    return {
+        props: {
+            galleries: galleriesRes.data,
+            portfolios: portfoliosRes.data,
+        },
+        revalidate: 1,
+    }
+}
+
+export default Mission
