@@ -52,13 +52,13 @@ const Portfolios = ({ portfolios }) => {
                                 <div className="col-xl-4 col-lg-6 col-md-6">
                                     <div className="project-card style1">
                                         <div className="project-img">
-                                            <img src="/img/project/project-1.jpg" alt="Image"/>
+                                            <img src={`${cover}`} alt={`${title}`}/>
                                         </div>
                                         <div className="project-info">
                                             <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                <h3><a href={`/blog/${slug}/`}>{title}</a></h3>
+                                                <h3><a href={`/project/${slug}/`}>{title}</a></h3>
                                             <ReactMarkdown children={excerpt} />
-                                                <a href={`/blog/${slug}/`} className="link style1">Read More <i
+                                                <a href={`/project/${slug}/`} className="link style1">Read More <i
                                                     className="flaticon-right-arrow"></i></a>
                                         </div>
                                     </div>

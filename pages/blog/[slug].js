@@ -108,7 +108,7 @@ const Blog = ({ post, categories }) => {
                                             <img src="/img/user.png" alt="Image"/>
                                         </div>
                                         <div className="post-author-info">
-                                            <h4>Posted by<a href="posts-by-author.html"> {username}</a></h4>
+                                            <h4>Posted by<a href="#"> {username}</a></h4>
                                             <ReactMarkdown children={about} />
                                             <ul className="social-profile list-style style3">
                                                 <li>
