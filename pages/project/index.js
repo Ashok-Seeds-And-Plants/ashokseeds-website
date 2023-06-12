@@ -38,10 +38,19 @@ const Portfolios = ({ portfolios }) => {
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
                             <div className="row justify-content-center">
+                                {portfolios.map((portfolio, i) => {
+
+                                    //console.log(post);
+                                    const title = delve(portfolio, "attributes.title");
+                                    const slug = delve(portfolio, "attributes.slug");
+                                    const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
+                                    const date = parseISO(delve(portfolio, "attributes.publishedAt"));
+                                    // console.log(date);
+                                    return (
                                 <div className="col-xl-4 col-lg-6 col-md-6">
                                     <div className="project-card style1">
                                         <div className="project-img">
-                                            <img src="assets/img/project/project-1.jpg" alt="Image"/>
+                                            <img src="/img/project/project-1.jpg" alt="Image"/>
                                         </div>
                                         <div className="project-info">
                                             <img src="assets/img/shape-1.png" alt="Image" className="project-shape"/>
@@ -53,6 +62,8 @@ const Portfolios = ({ portfolios }) => {
                                         </div>
                                     </div>
                                 </div>
+                                    )
+                                })}
                             </div>
                             <ul className="page-nav list-style">
                                 <li><a href="#"><i className="flaticon-left-arrow"></i></a></li>
