@@ -7240,4 +7240,7 @@ article {
 .portfolio-categories{
   background-color: #338F7A;
   color: #000000;
+  margin-right: 10px;
+  padding: 0 5px;
+  cursor: pointer;
 }
