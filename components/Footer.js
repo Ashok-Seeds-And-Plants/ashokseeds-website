@@ -65,18 +65,8 @@ export default function Footer() {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/get-involved/volunteer/">
-                                                        Volunteer
-                                                    </a>
-                                                </li>
-                                                <li>
                                                     <a href="/blog/">
                                                         News and Updates
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/donate-now/">
-                                                        Make Donation
                                                     </a>
                                                 </li>
                                                 <li>
