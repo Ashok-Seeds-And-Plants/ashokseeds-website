@@ -56,9 +56,9 @@ const Portfolios = ({ portfolios }) => {
                                         </div>
                                         <div className="project-info">
                                             <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                <h3><a href={`/project/${slug}/`}>{title}</a></h3>
+                                            <h3><a href={`/project/${slug}/`}>{title}</a></h3>
                                             <ReactMarkdown children={excerpt} />
-                                                <a href={`/project/${slug}/`} className="link style1">Read More <i
+                                            <a href={`/project/${slug}/`} className="link style1">Read More <i
                                                     className="flaticon-right-arrow"></i></a>
                                         </div>
                                     </div>
