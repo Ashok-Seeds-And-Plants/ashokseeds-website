@@ -2,11 +2,15 @@ import Head from 'next/head'
 
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 
-export default function Home() {
+import { fetchAPI } from "../../lib/api"
+import delve from 'dlv'
+import { parseISO, format } from 'date-fns'
+import Blogs from "../blog";
+
+const Portfolios = ({ portfolios }) => {
     return (
         <>
             <Meta />
@@ -68,3 +72,19 @@ export default function Home() {
         </>
     )
 }
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [portfoliosRes] = await Promise.all([
+        fetchAPI("/portfolios", { populate: "*" })
+    ])
+
+    return {
+        props: {
+            portfolios: portfoliosRes.data
+        },
+        revalidate: 1,
+    }
+}
+
+export default Portfolios
