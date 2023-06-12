@@ -59,7 +59,7 @@ const Blog = ({ portfolio, categories }) => {
                                                     const url = delve(slide, "attributes.url");
                                                         return (
                                                             <div className="team-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                                                            <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
+                                                            <a className="single-project-img mt-0" data-fancybox="gallery" href={`${url}`}>
                                                                 <img src={`${url}`} alt={`${title}`}/>
                                                             </a>
                                                             </div>
