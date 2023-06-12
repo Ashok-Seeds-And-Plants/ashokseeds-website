@@ -53,11 +53,11 @@ const Portfolios = ({ portfolios }) => {
                                             <img src="/img/project/project-1.jpg" alt="Image"/>
                                         </div>
                                         <div className="project-info">
-                                            <img src="assets/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                <h3><a href="project-details.html">Stop Cutting Down Trees</a></h3>
+                                            <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
+                                                <h3><a href="#">Stop Cutting Down Trees</a></h3>
                                                 <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur
                                                     netusdu ame ultrices lectus dolor sit amet egestas.</p>
-                                                <a href="project-details.html" className="link style1">Read More <i
+                                                <a href="#" className="link style1">Read More <i
                                                     className="flaticon-right-arrow"></i></a>
                                         </div>
                                     </div>
