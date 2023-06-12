@@ -53,10 +53,10 @@ const Blog = ({ portfolio, categories }) => {
                                 <div className="col-xl-8">
                                     <div className="project-desc">
                                         <a className="single-project-img mt-0" data-fancybox="gallery"
-                                           href="assets/img/project/single-project-1.jpg">
-                                            <img src="assets/img/project/single-project-1.jpg" alt="Image"/>
+                                           href={`${cover}`}>
+                                            <img src={`${cover}`} alt={`${title}`}/>
                                         </a>
-                                        <h1>Protect Global Warming By Tree Plantation</h1>
+                                        <h1>{title}</h1>
                                         <div className="progressbar-wrap ">
                                             <div className="progress-bar" data-percentage="70%">
                                                 <h4 className="progress-title-holder">
