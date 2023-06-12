@@ -4495,7 +4495,7 @@ select {
 .promo-video .play-now .ripple:before,
 .promo-video .play-now .ripple {
   width: 90px;
-  height: 90x;
+  height: 90px;
 }
 
 .promo-video.style1 {
@@ -4962,7 +4962,7 @@ select {
 
 .newsletter-form.style1 h4 {
   font-size: 22px;
-  margin: 0 0 10x;
+  margin: 0 0 10px;
   text-align: center;
 }
 
@@ -7217,6 +7217,8 @@ article {
     font-size: 20px;
   }
 }
+
+
 .hero-slide-four {
   background-image: url(../img/hero/hero-slider-4.jpg);
 }
