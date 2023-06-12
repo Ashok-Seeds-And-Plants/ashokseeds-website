@@ -67,7 +67,7 @@ const Blog = ({ portfolio, categories }) => {
                                                 })}
 
                                         </div>
-                                        
+
                                         <h1>{title}</h1>
 
                                         <ReactMarkdown children={content} />
@@ -131,10 +131,10 @@ const Blog = ({ portfolio, categories }) => {
                                             <h4>Give Us A Message</h4>
                                             <form action="#" className="register-widget">
                                                 <div className="form-group">
-                                                    <input type="text" placeholder="Name*"/>
+                                                    <input type="text" name="name" placeholder="Name*"/>
                                                 </div>
                                                 <div className="form-group">
-                                                    <input type="email" placeholder="Email*"/>
+                                                    <input type="email" name="email" placeholder="Email*"/>
                                                 </div>
                                                 <div className="form-group">
                                                     <textarea name="msg" id="msg" cols="30" rows="10"
