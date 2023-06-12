@@ -7227,3 +7227,11 @@ article {
 .blog-cover-img{
   padding: 0px 0px 15px 0px;
 }
+.categories-list > li {
+  color: #338F7A;
+  font-weight: bold;
+}
+.project-card.style1:hover .categories-list > li
+{
+  color: #000000;
+}
