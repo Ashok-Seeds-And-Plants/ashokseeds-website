@@ -69,8 +69,8 @@ export default function Header() {
                               </div>
                               <ul className="navbar-nav ms-auto">
                                   <li className="nav-item">
-                                      <a href="https://www.ashokseedplant.com/" className="nav-link">
-                                          Home</a>
+                                      <Link href="https://www.ashokseedplant.com/" className="nav-link">
+                                          Home</Link>
                                   </li>
 
                                   <li className="nav-item">
@@ -80,13 +80,13 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="/about/" className="nav-link">About Us</a>
+                                              <Link href="/about/" className="nav-link">About Us</Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/about/mission-vision/" className="nav-link">Mission & Vision</a>
+                                              <Link href="/about/mission-vision/" className="nav-link">Mission & Vision</Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/about/our-team/" className="nav-link">Our Team</a>
+                                              <Link href="/about/our-team/" className="nav-link">Our Team</Link>
                                           </li>
                                       </ul>
                                   </li>
@@ -97,13 +97,13 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="/initiatives/tree-plantation/" className="nav-link">Tree Plantation</a>
+                                              <Link href="/initiatives/tree-plantation/" className="nav-link">Tree Plantation</Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/initiatives/miyawaki-forest/" className="nav-link">Miyawaki Forest</a>
+                                              <Link href="/initiatives/miyawaki-forest/" className="nav-link">Miyawaki Forest</Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/initiatives/bkg-kitchen-garden/" className="nav-link">BKG / Kitchen Garden</a>
+                                              <Link href="/initiatives/bkg-kitchen-garden/" className="nav-link">BKG / Kitchen Garden</Link>
                                           </li>
                                           <li className="nav-item">
                                               <a href="#" className="nav-link">
@@ -112,23 +112,23 @@ export default function Header() {
                                               </a>
                                               <ul className="dropdown-menu">
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/strawberry/" className="nav-link">Strawberry</a>
+                                                      <Link href="/initiatives/agroforestry/strawberry/" className="nav-link">Strawberry</Link>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/apple/" className="nav-link">Apple</a>
+                                                      <Link href="/initiatives/agroforestry/apple/" className="nav-link">Apple</Link>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/amrood-guava/" className="nav-link">Amrood (Guava)</a>
+                                                      <Link href="/initiatives/agroforestry/amrood-guava/" className="nav-link">Amrood (Guava)</Link>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/amla-indian-gooseberry/" className="nav-link">Amla (Indian gooseberry)</a>
+                                                      <Link href="/initiatives/agroforestry/amla-indian-gooseberry/" className="nav-link">Amla (Indian gooseberry)</Link>
                                                   </li>
                                               </ul>
                                           </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <a href="/projects/" className="nav-link">Projects</a>
+                                      <Link href="/project/" className="nav-link">Projects</Link>
                                   </li>
                                   <li className="nav-item">
                                       <a href="#" className="nav-link">
@@ -137,7 +137,7 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="/get-involved/volunteer/" className="nav-link">Volunteer</a>
+                                              <Link href="/get-involved/volunteer/" className="nav-link">Volunteer</Link>
                                           </li>
                                       </ul>
                                   </li>
@@ -148,18 +148,18 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="/blog/" className="nav-link">News and Updates</a>
+                                              <Link href="/blog/" className="nav-link">News and Updates</Link>
                                           </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <a href="/contact-us/" className="nav-link">Contact Us</a>
+                                      <Link href="/contact-us/" className="nav-link">Contact Us</Link>
                                   </li>
                               </ul>
                               <div className="other-options md-none">
 
                                   <div className="option-item">
-                                      <a href="/donate-now/" className="btn style1">Donate Now</a>
+                                      <Link href="/donate-now/" className="btn style1">Donate Now</Link>
                                   </div>
                               </div>
                           </div>
