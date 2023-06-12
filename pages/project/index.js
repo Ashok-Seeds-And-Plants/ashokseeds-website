@@ -63,11 +63,14 @@ const Portfolios = ({ portfolios }) => {
                                             <ul className="categories-list">
                                                 {categories.map((category, i) => {
                                                     const cat_name = delve(category, "attributes.name");
-                                                    return (
+                                                    if (cat_name !== "All")
+                                                    {
+                                                        return (
+                                                            <li>{cat_name}</li>
 
-                                                        <li>{cat_name}</li>
-
-                                                    )})}
+                                                        )
+                                                    }
+                                                    })}
 
 
                                             </ul>
