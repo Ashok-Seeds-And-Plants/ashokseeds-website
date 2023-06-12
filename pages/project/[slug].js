@@ -14,6 +14,7 @@ const Blog = ({ portfolio, categories }) => {
     const title = delve(portfolio, "attributes.title");
     const content = delve(portfolio, "attributes.content");
     const cover = delve(portfolio, "attributes.cover.data.attributes.url");
+    const sliders = delve(portfolio, "attributes.sliders.data");
     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
     const port_categories = delve(portfolio, "attributes.portfolio_categories.data");
 
@@ -54,9 +55,15 @@ const Blog = ({ portfolio, categories }) => {
                                         </a>
                                         <div className="team-slider-one owl-carousel">
                                             <div className="team-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                                                <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
-                                                    <img src={`${cover}`} alt={`${title}`}/>
-                                                </a>
+                                                {sliders.map((slide, i) => {
+                                                    const url = delve(slide, "attributes.url");
+                                                        return (
+                                                            <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
+                                                                <img src={`${url}`} alt={`${title}`}/>
+                                                            </a>
+                                                        )
+                                                })}
+
                                             </div>
 
                                         </div>
