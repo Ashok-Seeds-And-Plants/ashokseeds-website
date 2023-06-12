@@ -136,6 +136,17 @@ export default function Header() {
                                   <li className="nav-item">
                                       <a href="/project/" className="nav-link">Projects</a>
                                   </li>
+                                  <li className="nav-item">
+                                      <a href="#" className="nav-link">
+                                          Get Involved
+                                          <i className="ri-add-line"></i>
+                                      </a>
+                                      <ul className="dropdown-menu">
+                                          <li className="nav-item">
+                                              <a href="/get-involved/volunteer/" className="nav-link">Volunteer</a>
+                                          </li>
+                                      </ul>
+                                  </li>
                                  <li className="nav-item">
                                       <a href="#" className="nav-link">
                                           Green News
@@ -151,6 +162,12 @@ export default function Header() {
                                       <a href="/contact-us/" className="nav-link">Contact Us</a>
                                   </li>
                               </ul>
+                              <div className="other-options md-none">
+
+                                  <div className="option-item">
+                                      <a href="/donate-now/" className="btn style1">Donate Now</a>
+                                  </div>
+                              </div>
                           </div>
                       </nav>
                       <div className="mobile-bar-wrap">
