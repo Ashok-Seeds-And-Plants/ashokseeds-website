@@ -79,15 +79,11 @@ const Blog = ({ portfolio, categories }) => {
                                                 </div>
                                                 <div className="project-info-item">
                                                     <h6>Date:</h6>
-                                                    <span>28 Jul, 2022</span>
+                                                    <span>{format(date, 'd LLL yyyy')}</span>
                                                 </div>
                                                 <div className="project-info-item">
-                                                    <h6>Entrance:</h6>
-                                                    <span>Unlimited</span>
-                                                </div>
-                                                <div className="project-info-item">
-                                                    <h6>Type:</h6>
-                                                    <span>Open</span>
+                                                    <h6>Status:</h6>
+                                                    <span>Completed</span>
                                                 </div>
                                                 <div className="project-info-item">
                                                     <h6>Share:</h6>
