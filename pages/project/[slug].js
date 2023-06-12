@@ -224,7 +224,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const postsRes = await fetchAPI("/portfolios", {
+    const portfoliosRes = await fetchAPI("/portfolios", {
         filters: {
             slug: params.slug,
         },
