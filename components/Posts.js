@@ -4,11 +4,6 @@ import { parseISO, format } from 'date-fns'
 import ReactMarkdown from "react-markdown";
 
 const Posts = ({ posts }) => {
-    //const leftArticlesCount = Math.ceil(articles.length / 5)
-    //const leftArticles = articles.slice(0, leftArticlesCount)
-    //const rightArticles = articles.slice(leftArticlesCount, articles.length)
-
-   // console.log(posts);
 
     return (
 
@@ -23,13 +18,11 @@ const Posts = ({ posts }) => {
 
                     {posts.map((post, i) => {
 
-                        //console.log(post);
                         const title = delve(post, "attributes.title");
                         const slug = delve(post, "attributes.slug");
                         const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                         const date = parseISO(delve(post, "attributes.publishedAt"));
                         const excerpt = delve(post, "attributes.excerpt");
-                       // console.log(date);
                         return (
                             <div className="blog-card style3">
                                 <div className="blog-img">
