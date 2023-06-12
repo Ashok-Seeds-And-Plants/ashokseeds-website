@@ -3,6 +3,12 @@ import Link from 'next/link'
 export default function Header() {
     return (
       <>
+          <div className="loader js-preloader">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+
           <div className="switch-theme-mode">
               <label id="switch" className="switch">
                   <input type="checkbox" onChange="toggleTheme()" id="slider"/>
@@ -69,8 +75,8 @@ export default function Header() {
                               </div>
                               <ul className="navbar-nav ms-auto">
                                   <li className="nav-item">
-                                      <Link href="https://www.ashokseedplant.com/" className="nav-link">
-                                          Home</Link>
+                                      <a href="https://www.ashokseedplant.com/" className="nav-link">
+                                          Home</a>
                                   </li>
 
                                   <li className="nav-item">
@@ -80,13 +86,13 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <Link href="/about/" className="nav-link">About Us</Link>
+                                              <a href="/about/" className="nav-link">About Us</a>
                                           </li>
                                           <li className="nav-item">
-                                              <Link href="/about/mission-vision/" className="nav-link">Mission & Vision</Link>
+                                              <a href="/about/mission-vision/" className="nav-link">Mission & Vision</a>
                                           </li>
                                           <li className="nav-item">
-                                              <Link href="/about/our-team/" className="nav-link">Our Team</Link>
+                                              <a href="/about/our-team/" className="nav-link">Our Team</a>
                                           </li>
                                       </ul>
                                   </li>
@@ -97,13 +103,13 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <Link href="/initiatives/tree-plantation/" className="nav-link">Tree Plantation</Link>
+                                              <a href="/initiatives/tree-plantation/" className="nav-link">Tree Plantation</a>
                                           </li>
                                           <li className="nav-item">
-                                              <Link href="/initiatives/miyawaki-forest/" className="nav-link">Miyawaki Forest</Link>
+                                              <a href="/initiatives/miyawaki-forest/" className="nav-link">Miyawaki Forest</a>
                                           </li>
                                           <li className="nav-item">
-                                              <Link href="/initiatives/bkg-kitchen-garden/" className="nav-link">BKG / Kitchen Garden</Link>
+                                              <a href="/initiatives/bkg-kitchen-garden/" className="nav-link">BKG / Kitchen Garden</a>
                                           </li>
                                           <li className="nav-item">
                                               <a href="#" className="nav-link">
@@ -112,23 +118,23 @@ export default function Header() {
                                               </a>
                                               <ul className="dropdown-menu">
                                                   <li className="nav-item">
-                                                      <Link href="/initiatives/agroforestry/strawberry/" className="nav-link">Strawberry</Link>
+                                                      <a href="/initiatives/agroforestry/strawberry/" className="nav-link">Strawberry</a>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <Link href="/initiatives/agroforestry/apple/" className="nav-link">Apple</Link>
+                                                      <a href="/initiatives/agroforestry/apple/" className="nav-link">Apple</a>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <Link href="/initiatives/agroforestry/amrood-guava/" className="nav-link">Amrood (Guava)</Link>
+                                                      <a href="/initiatives/agroforestry/amrood-guava/" className="nav-link">Amrood (Guava)</a>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <Link href="/initiatives/agroforestry/amla-indian-gooseberry/" className="nav-link">Amla (Indian gooseberry)</Link>
+                                                      <a href="/initiatives/agroforestry/amla-indian-gooseberry/" className="nav-link">Amla (Indian gooseberry)</a>
                                                   </li>
                                               </ul>
                                           </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <Link href="/project/" className="nav-link">Projects</Link>
+                                      <a href="/project/" className="nav-link">Projects</a>
                                   </li>
                                   <li className="nav-item">
                                       <a href="#" className="nav-link">
@@ -137,7 +143,7 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <Link href="/get-involved/volunteer/" className="nav-link">Volunteer</Link>
+                                              <a href="/get-involved/volunteer/" className="nav-link">Volunteer</a>
                                           </li>
                                       </ul>
                                   </li>
@@ -148,18 +154,18 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <Link href="/blog/" className="nav-link">News and Updates</Link>
+                                              <a href="/blog/" className="nav-link">News and Updates</a>
                                           </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <Link href="/contact-us/" className="nav-link">Contact Us</Link>
+                                      <a href="/contact-us/" className="nav-link">Contact Us</a>
                                   </li>
                               </ul>
                               <div className="other-options md-none">
 
                                   <div className="option-item">
-                                      <Link href="/donate-now/" className="btn style1">Donate Now</Link>
+                                      <a href="/donate-now/" className="btn style1">Donate Now</a>
                                   </div>
                               </div>
                           </div>
