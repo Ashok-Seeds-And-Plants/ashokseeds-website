@@ -91,9 +91,6 @@ export default function Header() {
                                           <li className="nav-item">
                                               <a href="/about/mission-vision/" className="nav-link">Mission & Vision</a>
                                           </li>
-                                          <li className="nav-item">
-                                              <a href="/about/our-team/" className="nav-link">Our Team</a>
-                                          </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
