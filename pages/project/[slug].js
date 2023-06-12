@@ -71,7 +71,7 @@ const Blog = ({ portfolio, categories }) => {
                                                         if (cat_name !== "All")
                                                         {
                                                             return (
-                                                                <span>{`${cat_name} `}</span>
+                                                                <span className="portfolio-categories">{`${cat_name} `}</span>
 
                                                             )
                                                         }
