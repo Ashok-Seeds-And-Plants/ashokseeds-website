@@ -211,10 +211,10 @@ const Blog = ({ portfolio, categories }) => {
 }
 
 export async function getStaticPaths() {
-    const postsRes = await fetchAPI("/posts", { fields: ["slug"] })
+    const portfoliosRes = await fetchAPI("/portfolios", { fields: ["slug"] })
 
     return {
-        paths: postsRes.data.map((portfolio) => ({
+        paths: portfoliosRes.data.map((portfolio) => ({
             params: {
                 slug: portfolio.attributes.slug,
             },
