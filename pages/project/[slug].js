@@ -18,6 +18,8 @@ const Blog = ({ portfolio, categories }) => {
     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
     const port_categories = delve(portfolio, "attributes.portfolio_categories.data");
 
+    console.log(sliders);
+
     return (
         <>
             <Meta />
