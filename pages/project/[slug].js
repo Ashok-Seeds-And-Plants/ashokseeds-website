@@ -14,11 +14,7 @@ const Blog = ({ portfolio, categories }) => {
     const title = delve(portfolio, "attributes.title");
     const content = delve(portfolio, "attributes.content");
     const cover = delve(portfolio, "attributes.cover.data.attributes.url");
-
-
     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
-    const username = delve(portfolio, "attributes.user.data.attributes.displayName");
-    const about = delve(portfolio, "attributes.user.data.attributes.about");
 
     return (
         <>
@@ -57,76 +53,9 @@ const Blog = ({ portfolio, categories }) => {
                                             <img src={`${cover}`} alt={`${title}`}/>
                                         </a>
                                         <h1>{title}</h1>
-                                        <div className="progressbar-wrap ">
-                                            <div className="progress-bar" data-percentage="70%">
-                                                <h4 className="progress-title-holder">
-                                                <span className="progress-number-wrapper">
-                                                    <span className="progress-number-mark">
-                                                        <span className="percent"></span>
-                                                    </span>
-                                                </span>
-                                                </h4>
-                                                <div className="progress-content-outter">
-                                                    <div className="progress-content">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ul className="fund-collection list-style">
-                                            <li className="fund-raised">
-                                                <span>$4800</span> Raised Of $19000
-                                            </li>
-                                        </ul>
-                                        <p>Ultrices conubia vehicula malesuada. Eros commodo a duis accumsan vestibulum
-                                            adipiscing hendrerit risus felis eros non justo semper semper rutrum ad
-                                            risus felis eros. Cursus libero viverra tempus net diam vestibulum Semper
-                                            est cursus viverra lectus nibh Eros commodo a duis accumsan vestibulum
-                                            adipiscing hendrerit adipis Cursus libero viverra temp semper semper rutrum
-                                            ad risus felis eros.</p>
-                                        <p>Conubia vehicula malesuada. Eros commodo a duis accumsan vestibulum
-                                            adipiscing hendrerit risus felis eros lob ortis viverra non justo semper
-                                            semper rutrum ad risus felis eros. Cursus libero viverra tempus net diam
-                                            vestibulum Semper est cursus viverra lectus nibh Eros commodo a duis
-                                            accumsan.</p>
-                                        <blockquote className="wp-block-quote">
-                                            <p>Ultrices conubia vehicula malesuada. Eros commodo a duis accumsan
-                                                vestibulum adipiscing hendrerit risus felis eros lobortis viverra non
-                                                justo semper semper rutrum ad risus felis.</p>
-                                        </blockquote>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form, by injected humour, or
-                                            randomised words which don't look even slightly believable. If you are going
-                                            to use a passage of Lorem Ipsum.</p>
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <a className="single-project-img" data-fancybox="gallery"
-                                                   href="/img/project/project-1.jpg">
-                                                    <img src="/img/project/project-1.jpg" alt="Image"/>
-                                                </a>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <a className="single-project-img" data-fancybox="gallery"
-                                                   href="/img/project/project-2.jpg">
-                                                    <img src="/img/project/project-2.jpg" alt="Image"/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h3>Our Goal &amp; Plan</h3>
-                                        <p>Amet consectetur adipisicing elit. Mollitia excepturi eaque, corporis nulla
-                                            maxime inventore magni repreh enderit lorem ipsum dolor sit consequatur
-                                            deserunt, eligendi totam voluptas natus quaerat.</p>
-                                        <ol>
-                                            <li>Lorem ipsum dolor sit consectetur adipiscing elitdiam nonumy eirmod
-                                                tempor.
-                                            </li>
-                                            <li>Advisory membership elitr, sed diam nonumy eirmod tempor.</li>
-                                            <li>If you do not have enough time, you will always be able.</li>
-                                            <li>Irmad temporarily involved labor and doll magna alicum erat.</li>
-                                            <li>Labor and love magna aliquam irat valupatua.</li>
-                                        </ol>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis
-                                            ad, corrupti vel enim voluptatibus repudiandae illum. Fuga, pariatur
-                                            possimus.</p>
+
+                                        <ReactMarkdown children={content} />
+
                                     </div>
                                 </div>
                                 <div className="col-xl-4">
