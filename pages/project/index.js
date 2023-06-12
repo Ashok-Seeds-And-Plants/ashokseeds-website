@@ -72,7 +72,6 @@ const Portfolios = ({ portfolios }) => {
                                                     }
                                                     })}
 
-
                                             </ul>
 
                                             <ReactMarkdown children={excerpt} />

@@ -15,6 +15,7 @@ const Blog = ({ portfolio, categories }) => {
     const content = delve(portfolio, "attributes.content");
     const cover = delve(portfolio, "attributes.cover.data.attributes.url");
     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
+    const port_categories = delve(portfolio, "attributes.portfolio_categories.data");
 
     return (
         <>
@@ -64,8 +65,17 @@ const Blog = ({ portfolio, categories }) => {
                                             <h4>Project Brief</h4>
                                             <div className="project-info-item-wrap">
                                                 <div className="project-info-item">
-                                                    <h6>Categroy:</h6>
-                                                    <span>Climate Change Awarness</span>
+                                                    <h6>Category:</h6>
+                                                    {port_categories.map((category, i) => {
+                                                        const cat_name = delve(category, "attributes.name");
+                                                        if (cat_name !== "All")
+                                                        {
+                                                            return (
+                                                                <span>{cat_name}</span> 
+
+                                                            )
+                                                        }
+                                                    })}
                                                 </div>
                                                 <div className="project-info-item">
                                                     <h6>Date:</h6>
