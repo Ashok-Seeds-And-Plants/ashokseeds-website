@@ -58,8 +58,9 @@ const Blog = ({ portfolio, categories }) => {
                                         <div className="team-slider-one owl-carousel">
 
                                                 {sliders.map((slide, i) => {
-                                                    console.log(slide);
+
                                                     const url = delve(slide, "attributes.url");
+                                                    console.log(url);
                                                         return (
                                                             <div className="team-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                                                             <a className="single-project-img mt-0" data-fancybox="gallery" href={`${url}`}>
