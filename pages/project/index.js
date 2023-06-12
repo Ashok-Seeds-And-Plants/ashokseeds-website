@@ -47,6 +47,7 @@ const Portfolios = ({ portfolios }) => {
                                     const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
                                     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
                                     const excerpt = delve(portfolio, "attributes.excerpt");
+                                    const categories = delve(portfolio, "attributes.portfolio_categories.data");
                                     // console.log(date);
                                     return (
                                 <div className="col-xl-4 col-lg-6 col-md-6">
@@ -56,7 +57,21 @@ const Portfolios = ({ portfolios }) => {
                                         </div>
                                         <div className="project-info">
                                             <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
+
                                             <h3><a href={`/project/${slug}/`}>{title}</a></h3>
+
+                                            <ul className="categories-list">
+                                                {categories.map((category, i) => {
+                                                    const cat_name = delve(category, "attributes.name");
+                                                    return (
+
+                                                        <li>{cat_name}</li>
+
+                                                    )})}
+
+
+                                            </ul>
+
                                             <ReactMarkdown children={excerpt} />
                                             <a href={`/project/${slug}/`} className="link style1">Read More <i
                                                     className="flaticon-right-arrow"></i></a>
