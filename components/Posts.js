@@ -1,6 +1,7 @@
 import React from "react"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
+import ReactMarkdown from "react-markdown";
 
 const Posts = ({ posts }) => {
     //const leftArticlesCount = Math.ceil(articles.length / 5)
@@ -27,6 +28,7 @@ const Posts = ({ posts }) => {
                         const slug = delve(post, "attributes.slug");
                         const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
                         const date = parseISO(delve(post, "attributes.publishedAt"));
+                        const excerpt = delve(post, "attributes.excerpt");
                        // console.log(date);
                         return (
                             <div className="blog-card style3">
@@ -36,8 +38,7 @@ const Posts = ({ posts }) => {
                                 </div>
                                 <div className="blog-info">
                                     <h3><a href={`/blog/${slug}`}>{title}</a></h3>
-                                    <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur netusdu
-                                        ame ultrices lectus dolor sit amet egestas.</p>
+                                    <ReactMarkdown children={excerpt} />
                                     <a href={`/blog/${slug}`} className="link style1">Read More <i
                                         className="flaticon-right-arrow"></i></a>
                                 </div>

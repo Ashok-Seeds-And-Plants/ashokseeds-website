@@ -18,7 +18,7 @@ const Portfolios = ({ portfolios }) => {
                     {portfolios.map((portfolio, i) => {
 
                         const title = delve(portfolio, "attributes.title");
-                        const content = delve(portfolio, "attributes.content");
+                        const excerpt = delve(portfolio, "attributes.excerpt");
                         const slug = delve(portfolio, "attributes.slug");
                         const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
 
@@ -30,7 +30,7 @@ const Portfolios = ({ portfolios }) => {
                         </div>
                         <div className="project-info">
                             <h3><a href={`/project/${slug}`}>{title}</a></h3>
-                            <ReactMarkdown children={content} />
+                            <ReactMarkdown children={excerpt} />
 
                             <a href={`/project/${slug}`} className="link style1">See More<i
                                 className="flaticon-right-arrow"></i></a>

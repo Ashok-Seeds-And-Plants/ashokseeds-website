@@ -8,6 +8,7 @@ import Js from '@components/Js'
 import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
+import ReactMarkdown from "react-markdown";
 
 const Blogs = ({ posts }) => {
     return (
@@ -45,6 +46,7 @@ const Blogs = ({ posts }) => {
                                     const title = delve(post, "attributes.title");
                                     const slug = delve(post, "attributes.slug");
                                     const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
+                                    const excerpt = delve(post, "attributes.excerpt");
                                     const date = parseISO(delve(post, "attributes.publishedAt"));
                                     const username = delve(post, "attributes.user.data.attributes.displayName");
                                     // console.log(date);
@@ -63,8 +65,7 @@ const Blogs = ({ posts }) => {
                                             </div>
                                             <img className="blog-cover-img" src={`${cover}`} alt={`${title}`}/>
                                             <h3><a href={`/blog/${slug}/`}>{title}</a></h3>
-                                            <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur
-                                                netusdu ame ultrices lectus dolor sit amet egestas.</p>
+                                            <ReactMarkdown children={excerpt} />
                                             <ul className="blog-metainfo list-style">
                                                 <li><a href={`/blog/${slug}/`}><i
                                                     className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a></li>

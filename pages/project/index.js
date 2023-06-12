@@ -9,6 +9,7 @@ import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import Blogs from "../blog";
+import ReactMarkdown from "react-markdown";
 
 const Portfolios = ({ portfolios }) => {
     return (
@@ -45,6 +46,7 @@ const Portfolios = ({ portfolios }) => {
                                     const slug = delve(portfolio, "attributes.slug");
                                     const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
                                     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
+                                    const excerpt = delve(portfolio, "attributes.excerpt");
                                     // console.log(date);
                                     return (
                                 <div className="col-xl-4 col-lg-6 col-md-6">
@@ -54,10 +56,9 @@ const Portfolios = ({ portfolios }) => {
                                         </div>
                                         <div className="project-info">
                                             <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                <h3><a href="#">Stop Cutting Down Trees</a></h3>
-                                                <p>Lorem ipsum dolor sit amet cons ectadic elite soli tudin consec tetur
-                                                    netusdu ame ultrices lectus dolor sit amet egestas.</p>
-                                                <a href="#" className="link style1">Read More <i
+                                                <h3><a href={`/blog/${slug}/`}>{title}</a></h3>
+                                            <ReactMarkdown children={excerpt} />
+                                                <a href={`/blog/${slug}/`} className="link style1">Read More <i
                                                     className="flaticon-right-arrow"></i></a>
                                         </div>
                                     </div>
