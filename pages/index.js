@@ -153,10 +153,10 @@ const Home = ({ posts, galleries, portfolios }) => {
                                             <p>Trees</p>
                                         </div>
                                     </div>
-                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
+                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="37"
                                          data-aos-delay="300">
                                     <span className="counter-icon">
-                                        <i className="flaticon-campaign"></i>
+                                        <i className="fa-duotone fa-bullhorn"></i>
                                     </span>
                                         <div className="counter-text">
                                             <h2 className="counter-num">
@@ -168,25 +168,25 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
                                          data-aos-delay="400">
                                     <span className="counter-icon">
-                                        <i className="flaticon-money-box"></i>
+                                        <i className="fa-duotone fa-tomato"></i>
                                     </span>
                                         <div className="counter-text">
                                             <h2 className="counter-num">
-                                                <span className="odometer" data-count="9450"></span>
+                                                <span className="odometer" data-count="124"></span>
                                             </h2>
-                                            <p>Fun Raised</p>
+                                            <p>Kitchen Garden</p>
                                         </div>
                                     </div>
-                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
+                                    <div className="counter-card" data-aos="fade-up" data-aos-duration="14"
                                          data-aos-delay="500">
                                     <span className="counter-icon">
-                                        <i className="flaticon-volunteer"></i>
+                                        <i className="fa-duotone fa-tree-city"></i>
                                     </span>
                                         <div className="counter-text">
                                             <h2 className="counter-num">
                                                 <span className="odometer" data-count="707"></span>
                                             </h2>
-                                            <p>Volunteers</p>
+                                            <p>Miyawaki Forest</p>
                                         </div>
                                     </div>
                                 </div>
