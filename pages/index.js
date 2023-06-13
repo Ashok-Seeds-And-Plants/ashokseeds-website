@@ -184,7 +184,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     </span>
                                         <div className="counter-text">
                                             <h2 className="counter-num">
-                                                <span className="odometer" data-count="707"></span>
+                                                <span className="odometer" data-count="19"></span>
                                             </h2>
                                             <p>Miyawaki Forest</p>
                                         </div>
