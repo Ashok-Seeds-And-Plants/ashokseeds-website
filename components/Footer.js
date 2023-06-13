@@ -132,12 +132,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a href="https://instagram.com">
-                                        <i className="ri-instagram-line"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://linkedin.com">
-                                        <i className="ri-linkedin-fill"></i>
+                                        <i className="ri-instagram-fill"></i>
                                     </a>
                                 </li>
                             </ul>
