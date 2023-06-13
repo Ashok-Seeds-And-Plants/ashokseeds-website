@@ -52,8 +52,8 @@ export default function Header() {
                                           </a>
                                       </li>
                                       <li>
-                                          <a href="https://linkedin.com" target="_blank">
-                                              <i className="ri-linkedin-fill"></i>
+                                          <a href="https://instagram.com" target="_blank">
+                                              <i className="ri-instagram-fill"></i>
                                           </a>
                                       </li>
                                   </ul>
