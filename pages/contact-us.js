@@ -2,9 +2,11 @@ import Head from 'next/head'
 
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-import Sidebar from '@components/Sidebar'
+
 import Footer from '@components/Footer'
 import Js from '@components/Js'
+
+import SocialLinks from "@components/SocialLinks";
 
 export default function Home() {
     return (
@@ -131,23 +133,9 @@ export default function Home() {
                                         </div>
                                         <div className="contact-item">
                                             <h3>Follow us</h3>
-                                            <ul className="social-profile style2 list-style">
-                                                <li>
-                                                    <a href="https://facebook.com">
-                                                        <i className="ri-facebook-fill"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://twitter.com">
-                                                        <i className="ri-twitter-fill"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://instagram.com">
-                                                        <i className="ri-instagram-line"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
+
+                                            <SocialLinks style={'style2'}/>
+
                                         </div>
                                     </div>
                                 </div>
