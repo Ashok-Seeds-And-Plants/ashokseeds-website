@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import SocialLinks from "@components/SocialLinks";
 export default function Footer() {
     const getCurrentYear = () => {
         return new Date().getFullYear();
@@ -119,23 +120,9 @@ export default function Footer() {
                                 Powered by <a target="_blank" href="https://www.srapsware.com/">Srapsware Technologies Pvt Ltd</a></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
-                            <ul className="social-profile style1 list-style">
-                                <li>
-                                    <a href="https://facebook.com">
-                                        <i className="ri-facebook-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com">
-                                        <i className="ri-twitter-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://instagram.com">
-                                        <i className="ri-instagram-fill"></i>
-                                    </a>
-                                </li>
-                            </ul>
+
+                            <SocialLinks style={'style1'}/>
+
                         </div>
                     </div>
                 </div>

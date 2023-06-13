@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import SocialLinks from "@components/SocialLinks";
 
 export default function Header() {
     return (
@@ -40,23 +41,9 @@ export default function Header() {
                           </div>
                           <div className="col-lg-4 col-md-4">
                               <div className="header-top-right">
-                                  <ul className="social-profile list-style style1">
-                                      <li>
-                                          <a href="https://facebook.com" target="_blank">
-                                              <i className="ri-facebook-fill"></i>
-                                          </a>
-                                      </li>
-                                      <li>
-                                          <a href="https://twitter.com" target="_blank">
-                                              <i className="ri-twitter-fill"></i>
-                                          </a>
-                                      </li>
-                                      <li>
-                                          <a href="https://instagram.com" target="_blank">
-                                              <i className="ri-instagram-fill"></i>
-                                          </a>
-                                      </li>
-                                  </ul>
+
+                                  <SocialLinks style={'style1'}/>
+                                  
                               </div>
                           </div>
                       </div>
