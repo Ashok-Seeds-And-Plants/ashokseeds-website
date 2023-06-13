@@ -147,11 +147,6 @@ export default function Home() {
                                                         <i className="ri-instagram-line"></i>
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="https://linkedin.com">
-                                                        <i className="ri-linkedin-fill"></i>
-                                                    </a>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>
