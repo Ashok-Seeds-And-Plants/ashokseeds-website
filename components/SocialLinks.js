@@ -1,5 +1,6 @@
 const SocialLinks = ({ style }) => {
 const styleName = style;
+console.log(styleName);
     return (
         <ul className="social-profile {styleName} list-style">
             <li>
