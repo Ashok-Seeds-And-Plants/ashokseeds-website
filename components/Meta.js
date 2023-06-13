@@ -18,6 +18,7 @@ export default function Meta() {
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/style.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/responsive.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/dark-theme.css" />
+                <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/fontawesome6.all.css" />
             </Head>
         </>
     )
