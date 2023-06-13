@@ -150,7 +150,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                             <h2 className="counter-num">
                                                 <span className="odometer" data-count="35000"></span>
                                             </h2>
-                                            <p>Trees</p>
+                                            <p>Tree plantation</p>
                                         </div>
                                     </div>
                                     <div className="counter-card" data-aos="fade-up" data-aos-duration="37"
@@ -180,7 +180,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     <div className="counter-card" data-aos="fade-up" data-aos-duration="14"
                                          data-aos-delay="500">
                                     <span className="counter-icon">
-                                        <i className="fa-duotone fa-tree-city"></i>
+                                        <i className="fa-duotone fa-trees"></i>
                                     </span>
                                         <div className="counter-text">
                                             <h2 className="counter-num">
