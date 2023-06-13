@@ -1,8 +1,10 @@
+import React from "react";
+
 const SocialLinks = ({ style }) => {
-const styleName = style;
-console.log(styleName);
+
     return (
-        <ul className="social-profile {styleName} list-style">
+        <>
+        <ul className={`social-profile list-style ${style}`}>
             <li>
                 <a href="https://facebook.com">
                     <i className="ri-facebook-fill"></i>
@@ -19,6 +21,7 @@ console.log(styleName);
                 </a>
             </li>
         </ul>
+        </>
     )
 }
 
