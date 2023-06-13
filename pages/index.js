@@ -144,13 +144,13 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
                                          data-aos-delay="200">
                                     <span className="counter-icon">
-                                        <i className="flaticon-coin"></i>
+                                        <i className="fa-duotone fa-tree-deciduous"></i>
                                     </span>
                                         <div className="counter-text">
                                             <h2 className="counter-num">
-                                                <span className="odometer" data-count="8705"></span>
+                                                <span className="odometer" data-count="35000"></span>
                                             </h2>
-                                            <p>Donations</p>
+                                            <p>Trees</p>
                                         </div>
                                     </div>
                                     <div className="counter-card" data-aos="fade-up" data-aos-duration="1200"
