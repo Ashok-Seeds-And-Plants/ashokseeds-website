@@ -43,7 +43,7 @@ export default function Header() {
                               <div className="header-top-right">
 
                                   <SocialLinks style={'style1'}/>
-                                  
+
                               </div>
                           </div>
                       </div>
