@@ -8,7 +8,7 @@ import Galleries from "@components/Galleries";
 import Portfolios from "@components/Portfolios";
 import {fetchAPI} from "../../lib/api";
 
-const Miyawaki = ({ posts, galleries, portfolios }) => {
+const Miyawaki = ({ galleries, portfolios }) => {
     return (
         <>
             <Meta />
@@ -141,15 +141,13 @@ const Miyawaki = ({ posts, galleries, portfolios }) => {
 
 export async function getStaticProps() {
     // Run API calls in parallel
-    const [postsRes, galleriesRes, portfoliosRes] = await Promise.all([
-        fetchAPI("/posts", { populate: "*" }),
+    const [galleriesRes, portfoliosRes] = await Promise.all([
         fetchAPI("/galleries", { populate: "*" }),
         fetchAPI("/portfolios", { populate: "*" }),
     ])
 
     return {
         props: {
-            posts: postsRes.data,
             galleries: galleriesRes.data,
             portfolios: portfoliosRes.data,
         },
