@@ -41,17 +41,10 @@ export default function Home() {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
-                                            <span>A Little Introduction <span className="bl-text">About Us</span></span>
-                                            <h2>Keeping our Earth safe from climate change.</h2>
-                                            <p>Ashok Seeds and Plants in India are working towards achieving the Sustainable Development Goals (SDGs) through tree plantation, urban biodiversity conservation, water body restoration, sustainable solutions, and environmental research and awareness. We are a rare blend of traditional wisdom and modern and innovative technologies to help businesses achieve their net-zero goal.</p>
+                                            <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
+                                            <h2>The Miyawaki approach to creating forests.</h2>
+                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
                                         </div>
-                                        <ul className="content-feature-list list-style">
-                                            <li><i className="ri-checkbox-circle-line"></i>Tree Plantation</li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Miyawaki Forest</li>
-                                            <li><i className="ri-checkbox-circle-line"></i>BKG / Kitchen Garden</li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Agroforestry</li>
-                                        </ul>
-                                        <a href="/about/" className="btn style2">Find Out More</a>
                                     </div>
                                 </div>
                             </div>
