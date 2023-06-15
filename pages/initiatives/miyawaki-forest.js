@@ -54,7 +54,7 @@ export default function Home() {
                                 <img src={'/img/how_miyawaki_work.jpg'} alt={'How miyawaki work'}/>
                                 </div>
 
-                                <div className={'col-md-12'}>
+                                <div className={'col-md-12 pt-20'}>
                                 <p>The dense forests of Miyawaki grow 10 times faster, 100 times richer in biodiversity, 30 times more noisy and reduce dust. have 30 times more green area and is 100 organic, Up to 30 times better carbon dioxide uptake compared to monoculture planting.</p>
                                 </div>
                             </div>
