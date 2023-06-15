@@ -7247,3 +7247,6 @@ article {
 .miyawaki{
   background-image: url(../img/breadcrumb/miyawaki-breadcrumb.jpg);
 }
+.miyawaki > section{
+  background-color: #f9f9f1;
+}
