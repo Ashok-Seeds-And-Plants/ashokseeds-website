@@ -22,7 +22,7 @@ export default function Home() {
                     <div className="breadcrumb-wrap bg-f miyawaki">
                         <div className="container">
                             <div className="breadcrumb-title">
-                                <h2>About Us</h2>
+                                <h2>Miyawaki Forest</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home </a></li>
                                     <li>Miyawaki Forest</li>
