@@ -36,13 +36,8 @@ export default function Home() {
                              className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
-                                <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="200">
-                                    <div className="about-img-wrap">
-                                        <img src="/img/about/about-img-2.png" alt="Image" className="bounce"/>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200"
+
+                                <div className="col-lg-12" data-aos="fade-left" data-aos-duration="1200"
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
