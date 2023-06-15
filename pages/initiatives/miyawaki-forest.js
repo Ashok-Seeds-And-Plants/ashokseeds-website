@@ -60,6 +60,7 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
+
                     <div className="promo-video style2 bg-f ptb-100">
                         <div className="container">
                             <div className="row">
