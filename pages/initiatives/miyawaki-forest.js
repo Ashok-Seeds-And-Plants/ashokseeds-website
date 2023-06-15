@@ -6,8 +6,9 @@ import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Galleries from "@components/Galleries";
 import Portfolios from "@components/Portfolios";
+import {fetchAPI} from "../../lib/api";
 
-export default function Home() {
+const Miyawaki = ({ posts, galleries, portfolios }) => {
     return (
         <>
             <Meta />
@@ -127,3 +128,23 @@ export default function Home() {
         </>
     )
 }
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [postsRes, galleriesRes, portfoliosRes] = await Promise.all([
+        fetchAPI("/posts", { populate: "*" }),
+        fetchAPI("/galleries", { populate: "*" }),
+        fetchAPI("/portfolios", { populate: "*" }),
+    ])
+
+    return {
+        props: {
+            posts: postsRes.data,
+            galleries: galleriesRes.data,
+            portfolios: portfoliosRes.data,
+        },
+        revalidate: 1,
+    }
+}
+
+export default Miyawaki
