@@ -19,7 +19,7 @@ export default function Home() {
 
                 <div className="content-wrapper">
 
-                    <div className="breadcrumb-wrap bg-f br-1">
+                    <div className="breadcrumb-wrap bg-f miyawaki">
                         <div className="container">
                             <div className="breadcrumb-title">
                                 <h2>About Us</h2>
