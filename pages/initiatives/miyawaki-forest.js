@@ -152,7 +152,7 @@ export async function getStaticProps() {
                         },
                     },
                 },
-        populate: "*"
+                populate: "*"
         }),
         fetchAPI("/galleries", { populate: "*" }),
     ])
