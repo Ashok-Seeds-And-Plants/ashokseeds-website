@@ -5,6 +5,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Galleries from "@components/Galleries";
+import Portfolios from "@components/Portfolios";
 
 export default function Home() {
     return (
@@ -61,6 +62,8 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
+
+                    <Portfolios portfolios={portfolios} />
 
                     <div className="promo-video style2 bg-f ptb-100">
                         <div className="container">
