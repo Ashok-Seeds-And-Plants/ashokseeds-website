@@ -123,7 +123,17 @@ const Home = ({ posts, galleries, portfolios }) => {
                         </div>
                 </section>
 
+                <section className="project-wrap ptb-100 bg-sand">
+                    <div className="container">
+                        <div className="section-title style3 text-center mb-40">
+                            <span>Journey <span className="bl-text">So for</span></span>
+                            <h2>Our Completed Projects</h2>
+                        </div>
+
                 <Portfolios portfolios={portfolios} />
+
+                    </div>
+                </section>
 
                 <div className="promo-video bg-f style3 ptb-100">
                     <div className="container">

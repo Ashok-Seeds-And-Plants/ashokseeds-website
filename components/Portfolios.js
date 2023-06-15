@@ -7,12 +7,7 @@ const Portfolios = ({ portfolios }) => {
 
     return (
 
-        <section className="project-wrap ptb-100 bg-sand">
-            <div className="container">
-                <div className="section-title style3 text-center mb-40">
-                    <span>Journey <span className="bl-text">So for</span></span>
-                    <h2>Our Completed Projects</h2>
-                </div>
+
                 <div className="project-slider-three owl-carousel">
 
                     {portfolios.map((portfolio, i) => {
@@ -40,8 +35,7 @@ const Portfolios = ({ portfolios }) => {
                     })}
 
                 </div>
-            </div>
-        </section>
+
 
     )
 }
