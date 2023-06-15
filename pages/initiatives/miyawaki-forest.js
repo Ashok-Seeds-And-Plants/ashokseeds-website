@@ -149,7 +149,7 @@ export async function getStaticProps() {
                 filters: {
                     portfolio_categories: {
                         name: {
-                            $eq: 'Miyawaki Forest',
+                            $eq: 'dfgfdg Forest',
                         },
                     },
                 },
