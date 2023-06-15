@@ -44,8 +44,18 @@ export default function Home() {
                                             <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
                                             <h2>The Miyawaki approach to creating forests.</h2>
                                             <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
+                                            <h3>What does the Miyawaki method mean?</h3>
+                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
+                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div className={'col-md-12'}>
+                                <img src={'/img/how_miyawaki_work.jpg'} alt={'How miyawaki work'}/>
+                                </div>
+
+                                <div className={'col-md-12'}>
+                                <p>The dense forests of Miyawaki grow 10 times faster, 100 times richer in biodiversity, 30 times more noisy and reduce dust. have 30 times more green area and is 100 organic, Up to 30 times better carbon dioxide uptake compared to monoculture planting.</p>
                                 </div>
                             </div>
                         </div>
