@@ -4,6 +4,7 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
+import Galleries from "@components/Galleries";
 
 export default function Home() {
     return (
@@ -79,6 +80,18 @@ export default function Home() {
                         </div>
 
                     </div>
+                    <section className="team-wrap ptb-100 bg-sand">
+                        <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                        <div className="container">
+                            <div className="section-title style1 text-center mb-40">
+                                <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                                <h2>Our Efforts</h2>
+                            </div>
+
+                            <Galleries galleries={galleries} />
+
+                        </div>
+                    </section>
 
                     <section className="cta-wrap style1 bg-f ptb-100">
                         <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
