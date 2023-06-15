@@ -31,7 +31,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <section className="about-wrap style2 ptb-100">
+                    <section className="about-wrap style2 ptb-100 miyawaki-section-bg">
                         <img src="/img/about/about-shape-1.png" alt="Image"
                              className="about-shape-one moveHorizontal" />
                         <div className="container">
