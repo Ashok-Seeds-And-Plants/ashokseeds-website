@@ -68,7 +68,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                         <div className="container">
                             <div className="section-title style3 text-center mb-40">
                                 <span>Journey <span className="bl-text">So for</span></span>
-                                <h2>Our Completed Miyawaki Projects</h2>
+                                <h2>Our Completed BKG Projects</h2>
                             </div>
 
                             <Portfolios portfolios={portfolios} />
