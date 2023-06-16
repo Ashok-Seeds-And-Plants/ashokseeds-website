@@ -1,14 +1,10 @@
 import Link from 'next/link'
 import SocialLinks from "@components/SocialLinks";
+import JsLoader from "@components/JsLoader";
 
 export default function Header() {
     return (
       <>
-          <div className="loader js-preloader">
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
 
           <div className="switch-theme-mode">
               <label id="switch" className="switch">
