@@ -31,9 +31,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>We'll Save Our Planet</span>
                                             <h1>Tree Plantation</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollic itudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu.</p>
+                                            <p>Tree planting is the process of planting and growing trees to restore degraded lands, improve biodiversity, sequester carbon and provide various ecosystem services..</p>
                                             <a href="/initiatives/tree-plantation/" className="btn style2">Join With us</a>
                                         </div>
                                     </div>
@@ -47,9 +45,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>Save Our Soil</span>
                                             <h1>Miyawaki Forest</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu a duis. </p>
+                                            <p>Miyawaki forest is a dense and diverse mini-forest that mimics the natural succession and relationships of a native forest, and grows much faster and absorbs more carbon than a conventional plantation.</p>
                                             <a href="/initiatives/miyawaki-forest/" className="btn style2">Join With us</a>
                                         </div>
                                     </div>
@@ -63,9 +59,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>We'll Save Our Planet</span>
                                             <h1>Kitchen Garden</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu a duis. </p>
+                                            <p>The Kitchen garden is a small convenient area near the home where you can grow fresh and organic vegetables, fruits, herbs and flowers for your culinary and aesthetic needs.</p>
                                             <a href="/initiatives/bkg-kitchen-garden/" className="btn style2">Join With us</a>
                                         </div>
                                     </div>
@@ -79,9 +73,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>Organic vegetables at home</span>
                                             <h1>Agroforestry</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-                                                consectetur netus dui, ultrices or lectus ac egestas. Vivamus tellus
-                                                vestibulum aliquet arcu a duis. </p>
+                                            <p>Agroforestry is a land use practice that combines trees and shrubs with crops and livestock, aiming to enhance ecological and social benefits such as biodiversity, soil health, carbon sequestration, and income generation.</p>
                                             <a href="#" className="btn style2">Join With us</a>
                                         </div>
                                     </div>
