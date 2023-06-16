@@ -2,6 +2,7 @@ import React from "react"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 const Posts = ({ posts }) => {
 
@@ -27,13 +28,17 @@ const Posts = ({ posts }) => {
                             <div className="blog-card style3">
                                 <div className="blog-img">
                                     <img src={`${cover}`} alt={`${title}`}/>
-                                    <a href={`/blog/${slug}`} className="blog-date"> <span>{format(date, 'd')}</span>{format(date, 'LLL yyyy')}</a>
+                                    <Link href={`/blog/${slug}`}>
+                                    <a className="blog-date"> <span>{format(date, 'd')}</span>{format(date, 'LLL yyyy')}</a>
+                                    </Link>
                                 </div>
                                 <div className="blog-info">
-                                    <h3><a href={`/blog/${slug}`}>{title}</a></h3>
+                                    <h3><Link href={`/blog/${slug}`}>{title}</Link></h3>
                                     <ReactMarkdown children={excerpt} />
-                                    <a href={`/blog/${slug}`} className="link style1">Read More <i
+                                    <Link href={`/blog/${slug}`}>
+                                    <a className="link style1">Read More <i
                                         className="flaticon-right-arrow"></i></a>
+                                    </Link>
                                 </div>
                             </div>
                         )
