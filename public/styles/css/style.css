@@ -7250,3 +7250,6 @@ article {
 .miyawaki-section-bg{
   background-color: #f9f9f1;
 }
+.navbar-nav.ms-auto > .nav-item > a {
+  display: block;
+}
