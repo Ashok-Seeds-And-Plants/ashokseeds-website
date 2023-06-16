@@ -72,8 +72,10 @@ const Blogs = ({ posts }) => {
                                                     className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a></li>
                                             </ul>
                                         </div>
-                                        <Link href={`/blog/${slug}/`} className="link style1">Read More <i
-                                            className="flaticon-right-arrow"></i></Link>
+                                        <Link href={`/blog/${slug}/`}>
+                                        <a className="link style1">Read More <i
+                                            className="flaticon-right-arrow"></i></a>
+                                        </Link>
                                     </div>
                                 </div>
                                     )
