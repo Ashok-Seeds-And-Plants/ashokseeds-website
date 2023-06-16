@@ -253,7 +253,7 @@ export async function getStaticProps() {
     // Run API calls in parallel
     const [postsRes, galleriesRes, portfoliosRes] = await Promise.all([
         fetchAPI("/posts", {
-            sort: ['id:asc'],
+            sort: ['id:desc'],
             pagination: {
                 start: 0,
                 limit: 10,
@@ -261,9 +261,7 @@ export async function getStaticProps() {
             populate: "*"
         }),
         fetchAPI("/galleries", {
-            filters: {
-                sort: ['id:desc']
-            },
+            sort: ['id:desc'],
             pagination: {
                 start: 0,
                 limit: 10,
@@ -271,9 +269,7 @@ export async function getStaticProps() {
             populate: "*"
         }),
         fetchAPI("/portfolios", {
-            filters: {
-                sort: ['id:desc']
-            },
+            sort: ['id:desc'],
             pagination: {
                 start: 0,
                 limit: 10,

@@ -153,6 +153,7 @@ export async function getStaticProps() {
                         },
                     },
                 },
+                sort: ['id:desc'],
                 populate: "*" }),
         fetchAPI("/portfolios",
             {
@@ -163,6 +164,7 @@ export async function getStaticProps() {
                         },
                     },
                 },
+                sort: ['id:desc'],
                 populate: "*"
             }),
 
