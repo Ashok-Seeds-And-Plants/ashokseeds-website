@@ -9,6 +9,7 @@ import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 const Blogs = ({ posts }) => {
     return (
@@ -71,8 +72,8 @@ const Blogs = ({ posts }) => {
                                                     className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a></li>
                                             </ul>
                                         </div>
-                                        <a href={`/blog/${slug}/`} className="link style1">Read More <i
-                                            className="flaticon-right-arrow"></i></a>
+                                        <Link href={`/blog/${slug}/`} className="link style1">Read More <i
+                                            className="flaticon-right-arrow"></i></Link>
                                     </div>
                                 </div>
                                     )
