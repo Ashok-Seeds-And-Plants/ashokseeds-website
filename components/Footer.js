@@ -66,9 +66,9 @@ export default function Footer() {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/blog/">
+                                                    <Link href="/blog/">
                                                         News and Updates
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/terms-conditions/">
