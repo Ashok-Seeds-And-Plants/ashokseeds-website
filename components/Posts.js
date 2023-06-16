@@ -34,7 +34,9 @@ const Posts = ({ posts }) => {
                                 </div>
                                 <div className="blog-info">
                                     <h3><Link href={`/blog/${slug}`}>{title}</Link></h3>
+
                                     <ReactMarkdown children={excerpt} />
+                                    
                                     <Link href={`/blog/${slug}`}>
                                     <a className="link style1">Read More <i
                                         className="flaticon-right-arrow"></i></a>
