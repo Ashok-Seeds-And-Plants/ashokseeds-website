@@ -253,7 +253,7 @@ export async function getStaticProps() {
     const [postsRes, galleriesRes, portfoliosRes] = await Promise.all([
         fetchAPI("/posts", {
             filters: {
-                sort: ['id:desc']
+                sort: ['id:asc']
             },
             pagination: {
                 start: 0,
@@ -263,7 +263,7 @@ export async function getStaticProps() {
         }),
         fetchAPI("/galleries", {
             filters: {
-                sort: ['id:desc']
+                sort: ['id:asc']
             },
             pagination: {
                 start: 0,
@@ -273,7 +273,7 @@ export async function getStaticProps() {
         }),
         fetchAPI("/portfolios", {
             filters: {
-                sort: ['id:desc']
+                sort: ['id:asc']
             },
             pagination: {
                 start: 0,
