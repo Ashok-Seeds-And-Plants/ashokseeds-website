@@ -65,11 +65,14 @@ const Blogs = ({ posts }) => {
                                                 </div>
                                             </div>
                                             <img className="blog-cover-img" src={`${cover}`} alt={`${title}`}/>
-                                            <h3><a href={`/blog/${slug}/`}>{title}</a></h3>
+                                            <h3><Link href={`/blog/${slug}/`}>{title}</Link></h3>
                                             <ReactMarkdown children={excerpt} />
                                             <ul className="blog-metainfo list-style">
-                                                <li><a href={`/blog/${slug}/`}><i
-                                                    className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a></li>
+                                                <li>
+                                                    <Link href={`/blog/${slug}/`}>
+                                                    <a><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a>
+                                                    </Link>
+                                                </li>
                                             </ul>
                                         </div>
                                         <Link href={`/blog/${slug}/`}>
