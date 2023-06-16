@@ -73,7 +73,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>Organic vegetables at home</span>
                                             <h1>Agroforestry</h1>
-                                            <p>Agroforestry is a land use practice that combines trees and shrubs with crops and livestock, aiming to enhance ecological and social benefits such as biodiversity, soil health, carbon sequestration, and income generation.</p>
+                                            <p>Agroforestry is a way of integrating trees and shrubs with crops and livestock in order to create diverse and productive agricultural systems that provide multiple environmental and social benefits.</p>
                                             <a href="#" className="btn style2">Join With us</a>
                                         </div>
                                     </div>
