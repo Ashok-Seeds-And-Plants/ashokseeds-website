@@ -113,8 +113,8 @@ export default function Header() {
                                           </li>
                                       </ul>
                                   </li>
-                                  <li className={"nav-item"}>
-                                      <Link href="/project/" className="nav-link">Projects</Link>
+                                  <li className="nav-item">
+                                      <Link href="/project/" className={"nav-link"}>Projects</Link>
                                   </li>
                                  <li className="nav-item">
                                       <a href="#" className="nav-link">
@@ -127,8 +127,8 @@ export default function Header() {
                                           </li>
                                       </ul>
                                   </li>
-                                  <li className={"nav-item"}>
-                                      <Link href="/contact-us/" className="nav-link">Contact Us</Link>
+                                  <li className="nav-item">
+                                      <Link href="/contact-us/" className={"nav-link"}>Contact Us</Link>
                                   </li>
                               </ul>
                           </div>
