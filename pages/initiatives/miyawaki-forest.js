@@ -152,6 +152,7 @@ export async function getStaticProps() {
                             $eq: 'Miyawaki Forest',
                         },
                     },
+                    sort: ['id:desc']
                 },
                 populate: "*" }),
         fetchAPI("/portfolios",
@@ -162,6 +163,7 @@ export async function getStaticProps() {
                             $eq: 'Miyawaki Forest',
                         },
                     },
+                    sort: ['id:desc']
                 },
                 populate: "*"
         }),
