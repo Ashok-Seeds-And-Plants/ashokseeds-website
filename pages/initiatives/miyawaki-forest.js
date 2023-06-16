@@ -153,6 +153,10 @@ export async function getStaticProps() {
                         },
                     },
                 },
+                pagination: {
+                    start: 0,
+                    limit: 30,
+                },
                 sort: ['id:desc'],
                 populate: "*" }),
         fetchAPI("/portfolios",
@@ -163,6 +167,10 @@ export async function getStaticProps() {
                             $eq: 'Miyawaki Forest',
                         },
                     },
+                },
+                pagination: {
+                    start: 0,
+                    limit: 10,
                 },
                 sort: ['id:desc'],
                 populate: "*"
