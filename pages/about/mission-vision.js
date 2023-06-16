@@ -49,7 +49,18 @@ const Mission = ({ galleries, portfolios }) => {
 
                         </div>
                     </section>
-                    <Portfolios portfolios={portfolios} />
+
+                    <section className="project-wrap ptb-100 bg-sand">
+                        <div className="container">
+                            <div className="section-title style3 text-center mb-40">
+                                <span>Journey <span className="bl-text">So for</span></span>
+                                <h2>Our Completed Projects</h2>
+                            </div>
+
+                            <Portfolios portfolios={portfolios} />
+
+                        </div>
+                    </section>
 
                 </div>
 
@@ -65,8 +76,20 @@ const Mission = ({ galleries, portfolios }) => {
 export async function getStaticProps() {
     // Run API calls in parallel
     const [galleriesRes, portfoliosRes] = await Promise.all([
-        fetchAPI("/galleries", { populate: "*" }),
-        fetchAPI("/portfolios", { populate: "*" }),
+        fetchAPI("/galleries", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*" }),
+        fetchAPI("/portfolios", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*" }),
     ])
 
     return {
