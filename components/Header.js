@@ -114,7 +114,10 @@ export default function Header() {
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <Link href="/project/" className={"nav-link"}>Projects</Link>
+                                      <Link href={`/project/`}>
+                                          <a className="nav-link">Projects</a>
+                                      </Link>
+
                                   </li>
                                  <li className="nav-item">
                                       <a href="#" className="nav-link">
@@ -123,12 +126,16 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <Link href="/blog/" className="nav-link">News and Updates</Link>
+                                              <Link href={'/blog/'}>
+                                                  <a className="nav-link">News and Updates</a>
+                                              </Link>
                                           </li>
                                       </ul>
                                   </li>
                                   <li className="nav-item">
-                                      <Link href="/contact-us/" className={"nav-link"}>Contact Us</Link>
+                                      <Link href={'/contact-us/'}>
+                                      <a className={"nav-link"}>Contact Us</a>
+                                      </Link>
                                   </li>
                               </ul>
                           </div>
