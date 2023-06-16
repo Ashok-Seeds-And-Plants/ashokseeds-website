@@ -34,91 +34,70 @@ export default function Home() {
                             <div className="row">
                                 <div className="col-xl-10 offset-xl-1">
                                     <div className="single-terms">
-                                        <h3>Legal Disclaimer: </h3>
-                                        <p>We may collect personal identification information from Users in a variety of
-                                            ways, including, but not limited to, when Users visit our site, subscribe to
-                                            the newsletter, fill out a form, and in connection with
-                                            other <strong>activities</strong>, services, features or resources we make
-                                            available on our Site. Users may be asked for, as appropriate, name, email
-                                            address, mailing address, phone number, <a href="index.html">company
-                                                name</a>. We will collect personal identification information from Users
-                                            only if they voluntarily consent such information to us. Users can always
-                                            refuse to supply personally identification information, except that it may
-                                            prevent them from engaging in certain Site related activities.</p>
+                                        <h3>Privacy Policy: </h3>
+                                        <p>We are committed to protecting and respecting your privacy. This policy explains how we collect, use and disclose your personal information when you visit our website or interact with us.</p>
                                     </div>
                                     <div className="single-terms">
-                                        <h3>Credit Reporting Terms of Service</h3>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, quod.
-                                            Ratione ex delectus quis tenetur odio non alias numquam official ipsum dolor
-                                            sit, amet consectetur adipisicing elit. Accusamus, laborum.</p>
+                                        <h3>What information do we collect?</h3>
+                                        <p><strong>We may collect the following information from you:</strong></p>
                                         <ol>
-                                            <li>Mauris ut in vestibulum hasellus ultrices fusce nibh justo, venenatis,
-                                                amet. Lectus quam in lobortis.
-                                            </li>
-                                            <li>Consectetur phasellus <strong>ultrices</strong> fusce nibh justo,
-                                                venenatis, amet. Lectus quam in lobortis justo venenatis amet.
-                                            </li>
-                                            <li>Lectus quam there are two thing is very important in Consectetur
-                                                phasellus ultrices fusce nibh justo, venenatis, amet in lobortis.
-                                            </li>
-                                            <li>Web Development very creative to do something , mauris ut in vestibulum.
-                                                Consectetur phasellus ultrices fusce nibh justo, venenatis, amet to all
-                                                design.
-                                            </li>
+                                            <li>Your name, email address, phone number, postal address and other contact details when you fill in a form on our website, subscribe to our newsletter, make a donation, join our membership, register for an event or contact us by email, phone or post.</li>
+                                            <li>Your payment details when you make a donation or purchase a product or service from us. We do not store your payment card details on our website or servers. We use a third-party payment processor to handle your transactions securely.</li>
+                                            <li>Your preferences and interests when you participate in our surveys, feedback forms, petitions or campaigns.</li>
+                                            <li>Your IP address, browser type, device type, operating system, referral source, pages viewed and duration of visit when you access our website. We use cookies and similar technologies to collect this information. You can manage your cookie settings on our website or browser.</li>
+                                            <li>Your social media username and profile picture when you interact with us on social media platforms such as Facebook, Twitter, Instagram or YouTube.</li>
                                         </ol>
                                     </div>
                                     <div className="single-terms">
-                                        <h3>Ownership of Site Agreement to Terms of Use</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla minus
-                                            quasi. Voluptatem, facilis saepe ullam autem magni quod sint tempore, eius
-                                            molestias aliquam debitis. Neque saepe dignissimos repudiandae fuga.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eveniet quas
-                                            dignissimos doloribus ea pariatur corrupti rerum deserunt, ipsum, ipsa eos
-                                            veniam aspernatur fuga, optio soluta? Libero neque reiciendis cupiditate
-                                            dolores nam. Earum eius similique sapiente. Iure, sit non. At fuga ipsam
-                                            veniam.</p>
+                                        <h3>How do we use your information? </h3>
+                                        <p>We may use your information for the following purposes:</p>
+                                        <ol>
+                                            <li>To provide you with the information, products or services that you request from us or that we think may interest you, in accordance with your preferences.</li>
+                                            <li>To process your donations or purchases and issue receipts or acknowledgements.</li>
+                                            <li>To communicate with you about our activities, events, campaigns, appeals and updates.</li>
+                                            <li>To administer and improve our website and ensure its security and functionality.</li>
+                                            <li>To analyse and monitor our website traffic and user behaviour.</li>
+                                            <li>To comply with our legal obligations and protect our rights and interests.</li>
+                                        </ol>
                                     </div>
                                     <div className="single-terms">
-                                        <h3>Provision of Services</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eveniet quas
-                                            dignissimos doloribus ea pariatur corrupti rerum deserunt, ipsum, ipsa eos
-                                            veniam aspernatur fuga, optio soluta? Libero neque reiciendis cupiditate
-                                            dolores nam. Earum eius similique sapiente. Iure, sit non. At fuga ipsam
-                                            veniam.</p>
-                                        <ul className="content-feature-list style2 list-style ">
-                                            <li><i className="ri-check-double-line"></i> Lorem ipsum dolor, sit amet.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Amet consectetur adipisicing
-                                                elit.
-                                                Officia, odit!
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Aquaerat ipsa quis possimus.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Lorem, ipsum dolor sit amet
-                                                consectetur adipi.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Consectetur adipisicing elit.
-                                                Voluptatibus, dignissimos.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Highly professional
-                                                administration.
-                                            </li>
-                                        </ul>
+                                        <h3>How do we share your information?</h3>
+                                        <p>We may share your information with the following parties:</p>
+                                        <ol>
+                                            <li>Our service providers who help us with our website hosting, payment processing, email delivery, data analysis and other functions.</li>
+                                            <li>Our partners who collaborate with us on our projects, events, campaigns or research.</li>
+                                            <li>Our regulators, auditors, legal advisors and other authorities who require us to disclose your information by law or for compliance purposes.</li>
+                                        </ol>
+                                        <p>We will not sell, rent or trade your information to any third parties for marketing purposes without your consent.</p>
                                     </div>
                                     <div className="single-terms">
-                                        <h3> Limitation of Liability</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla minus
-                                            quasi. Voluptatem, facilis saepe ullam autem magni quod sint tempore, eius
-                                            molestias aliquam debitis. Neque saepe dignissimos repudiandae fuga.</p>
+                                        <h3>How do we protect your information?</h3>
+                                        <p>We take appropriate technical and organisational measures to protect your information from unauthorized access, use, disclosure, alteration or destruction. We use encryption, firewalls, password protection and other security tools to safeguard your information. However, no method of transmission or storage is completely secure and we cannot guarantee the absolute security of your information.</p>
                                     </div>
                                     <div className="single-terms">
-                                        <h3> Accounts, Passwords and Security</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla minus
-                                            quasi. Voluptatem, facilis saepe ullam autem magni quod sint tempore, eius
-                                            molestias aliquam debitis. Neque saepe dignissimos repudiandae fuga.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eveniet quas
-                                            dignissimos doloribus ea pariatur corrupti ullam autem magni quod sint
-                                            tempore saepe ullam autem magni.</p>
+                                        <h3>How long do we keep your information?</h3>
+                                        <p>We will only keep your information for as long as necessary for the purposes for which it was collected, unless we have a legal obligation or legitimate interest to retain it for longer. We will delete or anonymize your information when it is no longer needed.</p>
+                                    </div>
+                                    <div className="single-terms">
+                                        <h3>What are your rights?</h3>
+                                        <p>You have the following rights in relation to your information:</p>
+                                        <ol>
+                                          <li>The right to access your information and receive a copy of it.</li>
+                                          <li>The right to correct any inaccurate or incomplete information that we hold about you.</li>
+                                          <li>The right to erase your information or restrict its processing in certain circumstances.</li>
+                                          <li>The right to object to our use of your information for direct marketing or other purposes based on our legitimate interests.</li>
+                                          <li>The right to withdraw your consent at any time where we rely on it to process your information.</li>
+                                          <li>The right to complain to the relevant data protection authority if you are unhappy with how we handle your information.</li>
+                                        </ol>
+                                        <p>To exercise any of these rights, please contact us using the details below. We may ask you to provide proof of identity before we can comply with your request.</p>
+                                    </div>
+                                    <div className="single-terms">
+                                        <h3>How do we update this policy?</h3>
+                                        <p>We may update this policy from time to time to reflect changes in our practices, technologies or legal requirements. We will notify you of any significant changes by posting a notice on our website or by contacting you directly. Please check this page regularly to stay informed of any updates.</p>
+                                    </div>
+                                    <div className="single-terms">
+                                        <h3>How do you contact us?</h3>
+                                        <p>If you have any questions or comments about this policy or how we handle your information, please contact us by email at info@ashokseedplant.com or by post at: 506, Ashok Chauraha, Bargarh Chitrakoot UP-210208. We will respond to your inquiry as soon as possible.</p>
                                     </div>
                                 </div>
                             </div>
