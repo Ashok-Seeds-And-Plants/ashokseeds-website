@@ -10,6 +10,7 @@ import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import Blogs from "../blog";
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 const Portfolios = ({ portfolios }) => {
     return (
@@ -58,7 +59,7 @@ const Portfolios = ({ portfolios }) => {
                                         <div className="project-info">
                                             <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
 
-                                            <h3><a href={`/project/${slug}/`}>{title}</a></h3>
+                                            <h3><Link href={`/project/${slug}/`}>{title}</Link></h3>
 
                                             <ul className="categories-list">
                                                 {categories.map((category, i) => {
@@ -75,8 +76,11 @@ const Portfolios = ({ portfolios }) => {
                                             </ul>
 
                                             <ReactMarkdown children={excerpt} />
-                                            <a href={`/project/${slug}/`} className="link style1">Read More <i
+
+                                            <Link href={`/project/${slug}/`}>
+                                            <a className="link style1">Read More <i
                                                     className="flaticon-right-arrow"></i></a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
