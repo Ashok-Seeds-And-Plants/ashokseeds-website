@@ -255,17 +255,29 @@ export async function getStaticProps() {
             filters: {
                 sort: ['id:desc']
             },
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
             populate: "*"
         }),
         fetchAPI("/galleries", {
             filters: {
                 sort: ['id:desc']
             },
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
             populate: "*"
         }),
         fetchAPI("/portfolios", {
             filters: {
                 sort: ['id:desc']
+            },
+            pagination: {
+                start: 0,
+                limit: 10,
             },
             populate: "*"
         }),
