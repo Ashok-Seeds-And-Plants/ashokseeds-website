@@ -139,6 +139,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
     )
 }
 
+
 export async function getStaticProps() {
     // Run API calls in parallel
 
