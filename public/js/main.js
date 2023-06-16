@@ -5,26 +5,6 @@ $(document).ready(function() {
         $('.js-preloader').delay(500).fadeOut(500);
     });
     
-    //Open Search Box
-    $('.searchbtn').on('click', function() {
-        $('.search-area').toggleClass('open');
-    });
-    $('.close-searchbox').on('click', function() {
-        $('.search-area').removeClass('open');
-    });
-
-    // Language Dropdown
-    $(".language-option").each(function () {
-        var each = $(this)
-        each.find(".lang-name").html(each.find(".language-dropdown-menu a:nth-child(1)").text());
-        var allOptions = $(".language-dropdown-menu").children('a');
-        each.find(".language-dropdown-menu").on("click", "a", function () {
-            allOptions.removeClass('selected');
-            $(this).addClass('selected');
-            $(this).closest(".language-option").find(".lang-name").html($(this).text());
-        });
-    })
-    
       //Counter
       $(".odometer").appear(function (e) {
         var odo = $(".odometer");
