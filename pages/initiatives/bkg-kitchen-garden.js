@@ -105,7 +105,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                             <Galleries galleries={galleries} />
 
                         </div>
-                    </section>
+                    </section> 
 
                     <section className="cta-wrap style1 bg-f ptb-100">
                         <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
