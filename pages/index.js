@@ -10,6 +10,7 @@ import Portfolios from "@components/Portfolios";
 import Galleries from "@components/Galleries";
 import Posts from "@components/Posts";
 
+
 const Home = ({ posts, galleries, portfolios }) => {
     return (
         <>
