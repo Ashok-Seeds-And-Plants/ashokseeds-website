@@ -36,91 +36,26 @@ export default function Home() {
                             <div className="row">
                                 <div className="col-xl-10 offset-xl-1">
                                     <div className="single-terms">
-                                        <h3>Legal Disclaimer: </h3>
-                                        <p>We may collect personal identification information from Users in a variety of
-                                            ways, including, but not limited to, when Users visit our site, subscribe to
-                                            the newsletter, fill out a form, and in connection with
-                                            other <strong>activities</strong>, services, features or resources we make
-                                            available on our Site. Users may be asked for, as appropriate, name, email
-                                            address, mailing address, phone number, <a href="index.html">company
-                                                name</a>. We will collect personal identification information from Users
-                                            only if they voluntarily consent such information to us. Users can always
-                                            refuse to supply personally identification information, except that it may
-                                            prevent them from engaging in certain Site related activities.</p>
+                                        <h3>Terms and Conditions: </h3>
+                                        <p>Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern our relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.</p>
+                                        <p>The term 'us' or 'we' refers to the owner of the website, an environmental non-governmental organization (NGO) that aims to promote environmental awareness, conservation, and action. The term 'you' refers to the user or viewer of our website.
+                                        </p>
                                     </div>
                                     <div className="single-terms">
-                                        <h3>Credit Reporting Terms of Service</h3>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, quod.
-                                            Ratione ex delectus quis tenetur odio non alias numquam official ipsum dolor
-                                            sit, amet consectetur adipisicing elit. Accusamus, laborum.</p>
+                                        <h3>The use of this website is subject to the following terms of use:</h3>
                                         <ol>
-                                            <li>Mauris ut in vestibulum hasellus ultrices fusce nibh justo, venenatis,
-                                                amet. Lectus quam in lobortis.
+                                            <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+                                            <li>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, some personal information may be stored by us for use by third parties.</li>
+                                            <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
                                             </li>
-                                            <li>Consectetur phasellus <strong>ultrices</strong> fusce nibh justo,
-                                                venenatis, amet. Lectus quam in lobortis justo venenatis amet.
+                                            <li>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.
                                             </li>
-                                            <li>Lectus quam there are two thing is very important in Consectetur
-                                                phasellus ultrices fusce nibh justo, venenatis, amet in lobortis.
-                                            </li>
-                                            <li>Web Development very creative to do something , mauris ut in vestibulum.
-                                                Consectetur phasellus ultrices fusce nibh justo, venenatis, amet to all
-                                                design.
-                                            </li>
+                                            <li>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+                                            <li>All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.</li>
+                                            <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offence.</li>
+                                            <li>From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</li>
+                                            <li>Your use of this website and any dispute arising out of such use of the website is subject to the laws of the country where we are registered as an NGO.</li>
                                         </ol>
-                                    </div>
-                                    <div className="single-terms">
-                                        <h3>Ownership of Site Agreement to Terms of Use</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla minus
-                                            quasi. Voluptatem, facilis saepe ullam autem magni quod sint tempore, eius
-                                            molestias aliquam debitis. Neque saepe dignissimos repudiandae fuga.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eveniet quas
-                                            dignissimos doloribus ea pariatur corrupti rerum deserunt, ipsum, ipsa eos
-                                            veniam aspernatur fuga, optio soluta? Libero neque reiciendis cupiditate
-                                            dolores nam. Earum eius similique sapiente. Iure, sit non. At fuga ipsam
-                                            veniam.</p>
-                                    </div>
-                                    <div className="single-terms">
-                                        <h3>Provision of Services</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eveniet quas
-                                            dignissimos doloribus ea pariatur corrupti rerum deserunt, ipsum, ipsa eos
-                                            veniam aspernatur fuga, optio soluta? Libero neque reiciendis cupiditate
-                                            dolores nam. Earum eius similique sapiente. Iure, sit non. At fuga ipsam
-                                            veniam.</p>
-                                        <ul className="content-feature-list style2 list-style ">
-                                            <li><i className="ri-check-double-line"></i> Lorem ipsum dolor, sit amet.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Amet consectetur adipisicing
-                                                elit.
-                                                Officia, odit!
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Aquaerat ipsa quis possimus.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Lorem, ipsum dolor sit amet
-                                                consectetur adipi.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Consectetur adipisicing elit.
-                                                Voluptatibus, dignissimos.
-                                            </li>
-                                            <li><i className="ri-check-double-line"></i>Highly professional
-                                                administration.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="single-terms">
-                                        <h3> Limitation of Liability</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla minus
-                                            quasi. Voluptatem, facilis saepe ullam autem magni quod sint tempore, eius
-                                            molestias aliquam debitis. Neque saepe dignissimos repudiandae fuga.</p>
-                                    </div>
-                                    <div className="single-terms">
-                                        <h3> Accounts, Passwords and Security</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla minus
-                                            quasi. Voluptatem, facilis saepe ullam autem magni quod sint tempore, eius
-                                            molestias aliquam debitis. Neque saepe dignissimos repudiandae fuga.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eveniet quas
-                                            dignissimos doloribus ea pariatur corrupti ullam autem magni quod sint
-                                            tempore saepe ullam autem magni.</p>
                                     </div>
                                 </div>
                             </div>
