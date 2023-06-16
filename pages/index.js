@@ -11,7 +11,6 @@ import Galleries from "@components/Galleries";
 import Posts from "@components/Posts";
 
 const Home = ({ posts, galleries, portfolios }) => {
-    //console.log(posts);
     return (
         <>
             <Meta />
