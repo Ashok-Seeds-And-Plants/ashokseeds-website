@@ -143,7 +143,16 @@ export async function getStaticProps() {
     // Run API calls in parallel
 
     const [galleriesRes, portfoliosRes] = await Promise.all([
-        fetchAPI("/galleries", { populate: "*" }),
+        fetchAPI("/galleries",
+            {
+                filters: {
+                    gallery_categories: {
+                        name: {
+                            $eq: 'Miyawaki Forest',
+                        },
+                    },
+                },
+                populate: "*" }),
         fetchAPI("/portfolios",
             {
                 filters: {
