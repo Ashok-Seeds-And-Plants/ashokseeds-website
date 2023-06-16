@@ -2,6 +2,7 @@ import React from "react"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 const Portfolios = ({ portfolios }) => {
 
@@ -24,11 +25,12 @@ const Portfolios = ({ portfolios }) => {
                             <img src={`${cover}`} alt={`${title}`}/>
                         </div>
                         <div className="project-info">
-                            <h3><a href={`/project/${slug}`}>{title}</a></h3>
+                            <h3><Link href={`/project/${slug}`}>{title}</Link></h3>
                             <ReactMarkdown children={excerpt} />
-
-                            <a href={`/project/${slug}`} className="link style1">See More<i
+                            <Link href={`/project/${slug}`}>
+                            <a className="link style1">See More<i
                                 className="flaticon-right-arrow"></i></a>
+                            </Link>
                         </div>
                     </div>
                         )
