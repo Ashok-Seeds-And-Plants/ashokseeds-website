@@ -20,8 +20,7 @@ import "swiper/css/navigation";
 //import "./styles.css";
 
 // import required modules
-import { Pagination } from "swiper";
-import { Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay} from "swiper";
 
 
 const Blog = ({ portfolio, categories }) => {
@@ -75,8 +74,12 @@ const Blog = ({ portfolio, categories }) => {
                                                 clickable: true,
                                                 dynamicBullets:true
                                             }}
+                                            autoplay={{
+                                                delay: 2500,
+                                                disableOnInteraction: false,
+                                            }}
                                             navigation={true}
-                                            modules={[Pagination] [Navigation]}
+                                            modules={[Autoplay, Pagination, Navigation]}
                                             className="mySwiper"
                                         >
                                             {sliders.map((slide, i) => {
