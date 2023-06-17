@@ -9,6 +9,18 @@ import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./styles.css";
+
+// import required modules
+import { Pagination } from "swiper";
+
 
 const Blog = ({ portfolio, categories }) => {
     const title = delve(portfolio, "attributes.title");
@@ -50,6 +62,25 @@ const Blog = ({ portfolio, categories }) => {
                             <div className="row gx-5">
                                 <div className="col-xl-8">
                                     <div className="project-desc">
+                                        <Swiper
+                                            slidesPerView={3}
+                                            spaceBetween={30}
+                                            pagination={{
+                                                clickable: true,
+                                            }}
+                                            modules={[Pagination]}
+                                            className="mySwiper"
+                                        >
+                                            <SwiperSlide>Slide 1</SwiperSlide>
+                                            <SwiperSlide>Slide 2</SwiperSlide>
+                                            <SwiperSlide>Slide 3</SwiperSlide>
+                                            <SwiperSlide>Slide 4</SwiperSlide>
+                                            <SwiperSlide>Slide 5</SwiperSlide>
+                                            <SwiperSlide>Slide 6</SwiperSlide>
+                                            <SwiperSlide>Slide 7</SwiperSlide>
+                                            <SwiperSlide>Slide 8</SwiperSlide>
+                                            <SwiperSlide>Slide 9</SwiperSlide>
+                                        </Swiper>
                                         <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
                                             <img src={`${cover}`} alt={`${title}`}/>
                                         </a>
