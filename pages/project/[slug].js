@@ -21,7 +21,32 @@ const Blog = ({ portfolio, categories }) => {
     const port_categories = delve(portfolio, "attributes.portfolio_categories.data");
 
     useEffect(() => {
-        alert($("#name").val())
+        $(".team-slider-one").owlCarousel({
+            nav: true,
+            dots: true,
+            loop: true,
+            navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
+            margin: 25,
+            items: 1,
+            thumbs: false,
+            smartSpeed: 1300,
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            responsiveClass: true,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 4,
+                }
+            }
+        });
     })
 
     return (
