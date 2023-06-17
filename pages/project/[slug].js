@@ -74,6 +74,7 @@ const Blog = ({ portfolio, categories }) => {
                                                 clickable: true,
                                                 dynamicBullets:true
                                             }}
+                                            loop={true}
                                             autoplay={{
                                                 delay: 2500,
                                                 disableOnInteraction: false,
