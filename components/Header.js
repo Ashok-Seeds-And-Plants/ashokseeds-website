@@ -69,7 +69,9 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="/about/" className="nav-link">About Us</a>
+                                              <Link href={`/about/`}>
+                                              <a className="nav-link">About Us</a>
+                                              </Link>
                                           </li>
                                           <li className="nav-item">
                                               <a href="/about/mission-vision/" className="nav-link">Mission & Vision</a>
