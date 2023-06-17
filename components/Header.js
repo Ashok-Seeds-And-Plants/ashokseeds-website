@@ -424,8 +424,9 @@ export default function Header() {
                               </div>
                               <ul className="navbar-nav ms-auto">
                                   <li className="nav-item">
-                                      <a href="https://www.ashokseedplant.com/" className="nav-link">
-                                          Home</a>
+                                      <Link href={'/'}>
+                                      <a className="nav-link">Home</a>
+                                      </Link>
                                   </li>
 
                                   <li className="nav-item">
@@ -440,7 +441,9 @@ export default function Header() {
                                               </Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/about/mission-vision/" className="nav-link">Mission & Vision</a>
+                                              <Link href={'/about/mission-vision/'}>
+                                              <a className="nav-link">Mission & Vision</a>
+                                              </Link>
                                           </li>
                                       </ul>
                                   </li>
@@ -451,13 +454,19 @@ export default function Header() {
                                       </a>
                                       <ul className="dropdown-menu">
                                           <li className="nav-item">
-                                              <a href="/initiatives/tree-plantation/" className="nav-link">Tree Plantation</a>
+                                              <Link href={'/initiatives/tree-plantation/'}>
+                                              <a className="nav-link">Tree Plantation</a>
+                                              </Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/initiatives/miyawaki-forest/" className="nav-link">Miyawaki Forest</a>
+                                              <Link href={'/initiatives/miyawaki-forest/'}>
+                                              <a className="nav-link">Miyawaki Forest</a>
+                                              </Link>
                                           </li>
                                           <li className="nav-item">
-                                              <a href="/initiatives/bkg-kitchen-garden/" className="nav-link">BKG / Kitchen Garden</a>
+                                              <Link href={'/initiatives/bkg-kitchen-garden/'}>
+                                              <a className="nav-link">BKG / Kitchen Garden</a>
+                                              </Link>
                                           </li>
                                           <li className="nav-item">
                                               <a href="#" className="nav-link">
@@ -466,16 +475,24 @@ export default function Header() {
                                               </a>
                                               <ul className="dropdown-menu">
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/strawberry/" className="nav-link">Strawberry</a>
+                                                      <Link href={'/initiatives/agroforestry/strawberry/'}>
+                                                      <a className="nav-link">Strawberry</a>
+                                                      </Link>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/apple/" className="nav-link">Apple</a>
+                                                      <Link href={'/initiatives/agroforestry/apple/'}>
+                                                      <a className="nav-link">Apple</a>
+                                                      </Link>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/amrood-guava/" className="nav-link">Amrood (Guava)</a>
+                                                      <Link href={'/initiatives/agroforestry/amrood-guava/'}>
+                                                      <a className="nav-link">Amrood (Guava)</a>
+                                                      </Link>
                                                   </li>
                                                   <li className="nav-item">
-                                                      <a href="/initiatives/agroforestry/amla-indian-gooseberry/" className="nav-link">Amla (Indian gooseberry)</a>
+                                                      <Link href={'/initiatives/agroforestry/amla-indian-gooseberry/'}>
+                                                      <a className="nav-link">Amla (Indian gooseberry)</a>
+                                                      </Link>
                                                   </li>
                                               </ul>
                                           </li>
