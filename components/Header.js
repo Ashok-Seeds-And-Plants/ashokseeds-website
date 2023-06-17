@@ -414,10 +414,12 @@ export default function Header() {
               <div className="header-bottom">
                   <div className="container">
                       <nav className="navbar navbar-expand-md navbar-light">
-                          <a className="navbar-brand" href="https://www.ashokseedplant.com/">
+                          <Link href={'/'}>
+                          <a className="navbar-brand">
                               <img className="logo-light" src="/img/logo.png" alt="Ashok seeds and plants"/>
                                   <img className="logo-dark" src="/img/logo-white.png" alt="Ashok seeds and plants"/>
                           </a>
+                          </Link>
                           <div className="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
                               <div className="menu-close d-lg-none">
                                   <a href="javascript:void(0)"> <i className="ri-close-line"></i></a>

@@ -17,9 +17,11 @@ export default function Footer() {
                                 <div className="row pt-100 pb-75">
                                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-xl-5">
                                         <div className="footer-widget">
-                                            <a href="https://www.ashokseedplant.com/" className="footer-logo">
+                                            <Link href={'/'}>
+                                            <a className="footer-logo">
                                                 <img src="/img/logo-white.png" alt="Image"/>
                                             </a>
+                                            </Link>
                                             <p className="comp-desc">Ashok Seeds and Plants is a leading Indian environmental group working towards the achievement of the Sustainable Development Goals (SDGs) through tree planting.</p>
                                             <p>Subscribe to our newsletter for our environmental updates.</p>
                                             <div className="newsletter-form">
@@ -33,19 +35,19 @@ export default function Footer() {
                                             <h3 className="footer-widget-title">About Us</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
-                                                    <a href="/about/">
+                                                    <Link href="/about/">
                                                         About Us
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/about/mission-vision/">
+                                                    <Link href="/about/mission-vision/">
                                                         Mission & Vision
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/about/our-team/">
+                                                    <Link href="/about/our-team/">
                                                         Our Team
-                                                    </a>
+                                                    </Link>
                                                 </li>
 
                                             </ul>
@@ -56,14 +58,14 @@ export default function Footer() {
                                             <h3 className="footer-widget-title">Quick Links</h3>
                                             <ul className="footer-menu list-style">
                                                 <li>
-                                                    <a href="/initiatives/miyawaki-forest/">
+                                                    <Link href="/initiatives/miyawaki-forest/">
                                                         Miyawaki Forest
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/initiatives/bkg-kitchen-garden/">
+                                                    <Link href="/initiatives/bkg-kitchen-garden/">
                                                         BKG / Kitchen Garden
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/blog/">
