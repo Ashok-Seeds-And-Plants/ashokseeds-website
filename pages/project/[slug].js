@@ -73,6 +73,7 @@ const Blog = ({ portfolio, categories }) => {
                                             spaceBetween={30}
                                             pagination={{
                                                 clickable: true,
+                                                dynamicBullets:true
                                             }}
                                             navigation={true}
                                             modules={[Pagination] [Navigation]}
