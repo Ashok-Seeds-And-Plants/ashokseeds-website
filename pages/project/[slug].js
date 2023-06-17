@@ -80,28 +80,17 @@ const Blog = ({ portfolio, categories }) => {
                                                 const url = delve(slide, "attributes.url");
 
                                                 return (
-                                            <SwiperSlide>Slide 1</SwiperSlide>
+                                            <SwiperSlide>
+                                                <a className="single-project-img mt-0" data-fancybox="gallery" href={`${url}`}>
+                                                    <img src={`${url}`} alt={`${title}`}/>
+                                                </a>
+                                            </SwiperSlide>
 
                                                 )
                                             })}
 
                                         </Swiper>
-                                        <div className="team-slider-one owl-carousel">
 
-                                                {sliders.map((slide, i) => {
-
-                                                    const url = delve(slide, "attributes.url");
-
-                                                        return (
-                                                            <div className="team-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                                                            <a className="single-project-img mt-0" data-fancybox="gallery" href={`${url}`}>
-                                                                <img src={`${url}`} alt={`${title}`}/>
-                                                            </a>
-                                                            </div>
-                                                        )
-                                                })}
-
-                                        </div>
 
                                         <h1>{title}</h1>
 
