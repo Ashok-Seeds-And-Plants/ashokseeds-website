@@ -62,6 +62,10 @@ const Blog = ({ portfolio, categories }) => {
                             <div className="row gx-5">
                                 <div className="col-xl-8">
                                     <div className="project-desc">
+                                        <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
+                                            <img src={`${cover}`} alt={`${title}`}/>
+                                        </a>
+
                                         <Swiper
                                             slidesPerView={3}
                                             spaceBetween={30}
@@ -71,19 +75,17 @@ const Blog = ({ portfolio, categories }) => {
                                             modules={[Pagination]}
                                             className="mySwiper"
                                         >
+                                            {sliders.map((slide, i) => {
+
+                                                const url = delve(slide, "attributes.url");
+
+                                                return (
                                             <SwiperSlide>Slide 1</SwiperSlide>
-                                            <SwiperSlide>Slide 2</SwiperSlide>
-                                            <SwiperSlide>Slide 3</SwiperSlide>
-                                            <SwiperSlide>Slide 4</SwiperSlide>
-                                            <SwiperSlide>Slide 5</SwiperSlide>
-                                            <SwiperSlide>Slide 6</SwiperSlide>
-                                            <SwiperSlide>Slide 7</SwiperSlide>
-                                            <SwiperSlide>Slide 8</SwiperSlide>
-                                            <SwiperSlide>Slide 9</SwiperSlide>
+
+                                                )
+                                            })}
+
                                         </Swiper>
-                                        <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
-                                            <img src={`${cover}`} alt={`${title}`}/>
-                                        </a>
                                         <div className="team-slider-one owl-carousel">
 
                                                 {sliders.map((slide, i) => {
