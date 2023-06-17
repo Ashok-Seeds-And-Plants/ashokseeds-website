@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { useEffect } from "react";
+
 import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
@@ -18,7 +20,9 @@ const Blog = ({ portfolio, categories }) => {
     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
     const port_categories = delve(portfolio, "attributes.portfolio_categories.data");
 
-
+    useEffect(() => {
+        alert($("#name").val())
+    })
 
     return (
         <>
@@ -135,10 +139,10 @@ const Blog = ({ portfolio, categories }) => {
                                             <h4>Give Us A Message</h4>
                                             <form action="#" className="register-widget">
                                                 <div className="form-group">
-                                                    <input type="text" name="name" placeholder="Name*"/>
+                                                    <input type="text" name="name" id={'name'} placeholder="Name*"/>
                                                 </div>
                                                 <div className="form-group">
-                                                    <input type="email" name="email" placeholder="Email*"/>
+                                                    <input type="email" name="email" id={'email'} placeholder="Email*"/>
                                                 </div>
                                                 <div className="form-group">
                                                     <textarea name="msg" id="msg" cols="30" rows="10"
