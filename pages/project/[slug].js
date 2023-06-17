@@ -1,7 +1,5 @@
 import Head from 'next/head'
 
-import { useEffect } from "react";
-
 import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
@@ -19,35 +17,6 @@ const Blog = ({ portfolio, categories }) => {
     const sliders = delve(portfolio, "attributes.sliders.data");
     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
     const port_categories = delve(portfolio, "attributes.portfolio_categories.data");
-
-    useEffect(() => {
-        $(".team-slider-one").owlCarousel({
-            nav: true,
-            dots: true,
-            loop: true,
-            navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
-            margin: 25,
-            items: 1,
-            thumbs: false,
-            smartSpeed: 1300,
-            autoplay: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: false,
-            responsiveClass: true,
-            autoHeight: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                },
-                1200: {
-                    items: 4,
-                }
-            }
-        });
-    })
 
     return (
         <>
