@@ -83,11 +83,11 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
                                     <div className="content-title style4 text-center mb-40">
-                                        <span>Miyawaki Method of Plantation <span className="bl-text">Our Video</span></span>
-                                        <h2>The best method to grow an urban forest within a short span of 10-20 years.</h2>
+                                        <span>Kitchen Garden for your daily needs vegetables <span className="bl-text">Our Video</span></span>
+                                        <h2>A kitchen garden is a small plot of land where you can grow your own fresh and healthy vegetables for your daily needs.</h2>
                                     </div>
                                     <a className="play-now" data-fancybox=""
-                                       href="https://www.youtube.com/watch?v=BJC2nZQcDXM">
+                                       href="https://www.youtube.com/watch?v=Rzug00g44FA">
                                         <i className="ri-play-fill"></i>
                                         <span className="ripple"></span>
                                     </a>
