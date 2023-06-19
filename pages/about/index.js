@@ -5,6 +5,7 @@ import Header from '@components/Header'
 import Sidebar from '@components/Sidebar'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -52,12 +53,11 @@ export default function Home() {
                                             <p>Ashok Seeds and Plants in India are working towards achieving the Sustainable Development Goals (SDGs) through tree plantation, urban biodiversity conservation, water body restoration, sustainable solutions, and environmental research and awareness. We are a rare blend of traditional wisdom and modern and innovative technologies to help businesses achieve their net-zero goal.</p>
                                         </div>
                                         <ul className="content-feature-list list-style">
-                                            <li><i className="ri-checkbox-circle-line"></i>Tree Plantation</li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Miyawaki Forest</li>
-                                            <li><i className="ri-checkbox-circle-line"></i>BKG / Kitchen Garden</li>
-                                            <li><i className="ri-checkbox-circle-line"></i>Agroforestry</li>
+                                            <li><i className="ri-checkbox-circle-line"></i><Link href={'/initiatives/tree-plantation/'}>Tree Plantation</Link></li>
+                                            <li><i className="ri-checkbox-circle-line"></i><Link href={'/initiatives/miyawaki-forest/'}>Miyawaki Forest</Link></li>
+                                            <li><i className="ri-checkbox-circle-line"></i><Link href={'/initiatives/bkg-kitchen-garden/'}>BKG / Kitchen Garden</Link></li>
+                                            <li><i className="ri-checkbox-circle-line"></i>Agroforestry (<Link href={'/initiatives/agroforestry/strawberry/'}>Strawberry</Link>, <Link href={'/initiatives/agroforestry/apple/'}>Apple</Link>, <Link href={'/initiatives/agroforestry/amrood-guava/'}>Amrood (Guava)</Link>, <Link href={'/initiatives/agroforestry/amla-indian-gooseberry/'}>Amla (Indian Gooseberry)</Link>)</li>
                                         </ul>
-                                        <a href="/about/" className="btn style2">Find Out More</a>
                                     </div>
                                 </div>
                             </div>
