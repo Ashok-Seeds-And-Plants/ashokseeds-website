@@ -28,6 +28,7 @@ const Miyawaki = ({ galleries, portfolios }) => {
                                 <h2>Miyawaki Forest</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home </a></li>
+                                    <li>Initiatives</li>
                                     <li>Miyawaki Forest</li>
                                 </ul>
                             </div>

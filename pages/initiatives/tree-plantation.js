@@ -28,6 +28,7 @@ const TreePlantation = ({ galleries, portfolios }) => {
                                 <h2>Tree Plantation</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home </a></li>
+                                    <li>Initiatives</li>
                                     <li>Tree Plantation</li>
                                 </ul>
                             </div>
