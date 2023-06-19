@@ -1,8 +1,18 @@
-import React from "react"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation, Autoplay} from "swiper";
 
 const Posts = ({ posts }) => {
 
@@ -15,7 +25,40 @@ const Posts = ({ posts }) => {
                     <span>Our Latest News</span>
                     <h2>Our Latest News &amp; posts</h2>
                 </div>
-                <div className="blog-slider-one owl-carousel">
+                <Swiper
+                    slidesPerView={2}
+                    spaceBetween={30}
+                    pagination={{
+                        clickable: true,
+                        dynamicBullets:true
+                    }}
+                    loop={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    navigation={true}
+                    breakpoints={{
+                        "@0.00": {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        "@0.75": {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        "@1.00": {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        "@1.50": {
+                            slidesPerView: 2,
+                            spaceBetween: 50,
+                        },
+                    }}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper"
+                >
 
                     {posts.map((post, i) => {
 
@@ -25,6 +68,7 @@ const Posts = ({ posts }) => {
                         const date = parseISO(delve(post, "attributes.publishedAt"));
                         const excerpt = delve(post, "attributes.excerpt");
                         return (
+                            <SwiperSlide>
                             <div className="blog-card style3">
                                 <div className="blog-img">
                                     <img src={`${cover}`} alt={`${title}`}/>
@@ -43,10 +87,11 @@ const Posts = ({ posts }) => {
                                     </Link>
                                 </div>
                             </div>
+                            </SwiperSlide>
                         )
                     })}
 
-                </div>
+                </Swiper>
             </div>
         </section>
 
