@@ -22,7 +22,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
 
                 <div className="content-wrapper">
 
-                    <div className="breadcrumb-wrap bg-f miyawaki">
+                    <div className="breadcrumb-wrap bg-f bkg-breadcrumb">
                         <div className="container">
                             <div className="breadcrumb-title">
                                 <h2>BKG / Kitchen Garden</h2>

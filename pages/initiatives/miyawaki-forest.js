@@ -22,7 +22,7 @@ const Miyawaki = ({ galleries, portfolios }) => {
 
                 <div className="content-wrapper">
 
-                    <div className="breadcrumb-wrap bg-f miyawaki">
+                    <div className="breadcrumb-wrap bg-f miyawaki-breadcrumb">
                         <div className="container">
                             <div className="breadcrumb-title">
                                 <h2>Miyawaki Forest</h2>

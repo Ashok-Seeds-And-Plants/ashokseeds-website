@@ -7244,7 +7244,10 @@ article {
   padding: 0 5px;
   cursor: pointer;
 }
-.miyawaki{
+.miyawaki-breadcrumb{
+  background-image: url(../img/breadcrumb/miyawaki-breadcrumb.jpg);
+}
+.bkg-breadcrumb{
   background-image: url(../img/breadcrumb/miyawaki-breadcrumb.jpg);
 }
 .miyawaki-section-bg{
