@@ -26,7 +26,7 @@ const Posts = ({ posts }) => {
                     <h2>Our Latest News &amp; posts</h2>
                 </div>
                 <Swiper
-                    slidesPerView={2}
+                    slidesPerView={3}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
@@ -48,11 +48,11 @@ const Posts = ({ posts }) => {
                             spaceBetween: 20,
                         },
                         "@1.00": {
-                            slidesPerView: 2,
+                            slidesPerView: 3,
                             spaceBetween: 40,
                         },
                         "@1.50": {
-                            slidesPerView: 2,
+                            slidesPerView: 3,
                             spaceBetween: 50,
                         },
                     }}
