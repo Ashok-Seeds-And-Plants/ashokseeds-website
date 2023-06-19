@@ -1,8 +1,8 @@
 import delve from 'dlv'
-import { parseISO, format } from 'date-fns'
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation, Autoplay} from "swiper";
-import React from "react";
+
 const Portfolios = ({ portfolios }) => {
 
     return (
