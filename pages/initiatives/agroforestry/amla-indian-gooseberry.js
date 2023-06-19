@@ -151,7 +151,7 @@ export async function getStaticProps() {
                 filters: {
                     gallery_categories: {
                         name: {
-                            $eq: 'Tree Plantation',
+                            $eq: 'Amla Agroforestry',
                         },
                     },
                 },
@@ -166,7 +166,7 @@ export async function getStaticProps() {
                 filters: {
                     portfolio_categories: {
                         name: {
-                            $eq: 'Tree Plantation',
+                            $eq: 'Amla Agroforestry',
                         },
                     },
                 },
