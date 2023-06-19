@@ -44,12 +44,18 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
-                                            <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
-                                            <h2>The Miyawaki approach to creating forests.</h2>
-                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
-                                            <h3>What does the Miyawaki method mean?</h3>
-                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
-                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
+                                            <span>A Little Introduction <span className="bl-text">BKG / Kitchen Garden</span></span>
+                                            <h2>BKG / Kitchen Garden for your daily needs vegetables</h2>
+                                            <p>The vegetable garden is growing fruits and vegetables in the backyard of the house using the wastewater from the kitchen. Also known as Home Garden or Nutritional Garden or Vegetable Garden or Vegetable Garden.</p>
+                                            <h3>Advantages of Kitchen garden:</h3>
+                                            <ol>
+                                                <li>Supply of fresh fruits and vegetables with high nutritive value.</li>
+                                                <li>Provide fruits and vegetables free of poisonous chemicals.</li>
+                                                <li>Helps to save expenses on purchasing vegetables.</li>
+                                                <li>Homegrown vegetables taste better than those bought at the market.</li>
+                                                <li>Efficient use of waste water and household waste.</li>
+                                                <li>Exercise for body and mind.</li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
