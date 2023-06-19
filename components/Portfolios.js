@@ -18,7 +18,7 @@ const Portfolios = ({ portfolios }) => {
     return (
 
         <Swiper
-            slidesPerView={3}
+            slidesPerView={2}
             spaceBetween={30}
             pagination={{
                 clickable: true,
@@ -40,11 +40,11 @@ const Portfolios = ({ portfolios }) => {
                     spaceBetween: 20,
                 },
                 "@1.00": {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 40,
                 },
                 "@1.50": {
-                    slidesPerView: 4,
+                    slidesPerView: 2,
                     spaceBetween: 50,
                 },
             }}
@@ -80,7 +80,7 @@ const Portfolios = ({ portfolios }) => {
             })}
 
         </Swiper>
-        
+
     )
 }
 
