@@ -67,7 +67,7 @@ export default function Header() {
                 TweenMax.to($(this), 1, { x: (1 - newx * speed), y: (1 - newy * speed) });
             });
         });
-        
+
 
         //sticky Header
         var wind = $(window);

@@ -10,8 +10,6 @@ export default function Meta() {
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/bootstrap.min.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/flaticon.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/remixicon.css" />
-                <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/owl.carousel.css" />
-                <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/owl.theme.default.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/odometer.min.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/fancybox.css" />
                 <link rel="stylesheet" href="https://www.ashokseedplant.com/styles/css/aos.css" />
