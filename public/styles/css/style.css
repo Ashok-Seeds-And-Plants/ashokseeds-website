@@ -7271,3 +7271,6 @@ article {
 .navbar-nav.ms-auto > .nav-item > a {
   display: block;
 }
+.bkg-video-bg{
+  background-image: url(../img/bkg_bg.jpg);
+}
