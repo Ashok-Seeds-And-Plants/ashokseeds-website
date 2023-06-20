@@ -151,6 +151,19 @@ $(document).ready(function() {
 
 });
 
+const toggleTheme = (e) =>  {
+    if (localStorage.getItem('clim_theme') === 'theme-dark') {
+        setTheme('theme-light');
+    } else {
+        setTheme('theme-dark');
+    }
+}
+function setTheme(themeName) {
+    localStorage.setItem('clim_theme', themeName);
+    document.documentElement.className = themeName;
+    console.log('Theme Changed');
+}
+
 (function () {
     if (localStorage.getItem('clim_theme') === 'theme-dark') {
         setTheme('theme-dark');

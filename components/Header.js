@@ -3,29 +3,9 @@ import SocialLinks from "@components/SocialLinks";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
 
-
-const toggleTheme = (e) =>  {
-    if (localStorage.getItem('clim_theme') === 'theme-dark') {
-        setTheme('theme-light');
-    } else {
-        setTheme('theme-dark');
-    }
-}
-
-function setTheme(themeName) {
-    //localStorage.setItem('clim_theme', themeName);
-    //document.documentElement.className = themeName;
-    console.log('Theme Changed');
-}
-
 export default function Header() {
 
     useEffect(() => {
-
-
-
-// Immediately invoked function to set the theme on initial load
-
 
         //Preloader
         $(window).on('load', function (event) {
