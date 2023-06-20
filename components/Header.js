@@ -11,29 +11,25 @@ const toggleTheme = (e) =>  {
     }
 }
 export default function Header() {
-    useEffect(() => {
 
-
-        function setTheme(themeName) {
-            localStorage.setItem('clim_theme', themeName);
-            document.documentElement.className = themeName;
-        }
-
+    function setTheme(themeName) {
+        localStorage.setItem('clim_theme', themeName);
+        document.documentElement.className = themeName;
+    }
 
 // Immediately invoked function to set the theme on initial load
-        (function () {
-            if (localStorage.getItem('clim_theme') === 'theme-dark') {
-                setTheme('theme-dark');
-                document.getElementById('slider').checked = false;
-            } else {
-                setTheme('theme-light');
-                document.getElementById('slider').checked = true;
-            }
-            console.log('initial check');
-        })();
+    (function () {
+        if (localStorage.getItem('clim_theme') === 'theme-dark') {
+            setTheme('theme-dark');
+            document.getElementById('slider').checked = false;
+        } else {
+            setTheme('theme-light');
+            document.getElementById('slider').checked = true;
+        }
+        console.log('initial check');
+    })();
 
-
-
+    useEffect(() => {
         //Preloader
         $(window).on('load', function (event) {
             $('.js-preloader').delay(500).fadeOut(500);
