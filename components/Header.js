@@ -2,6 +2,14 @@ import Link from 'next/link'
 import SocialLinks from "@components/SocialLinks";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
+
+const toggleTheme = (e) =>  {
+    if (localStorage.getItem('clim_theme') === 'theme-dark') {
+        setTheme('theme-light');
+    } else {
+        setTheme('theme-dark');
+    }
+}
 export default function Header() {
     useEffect(() => {
 
@@ -9,15 +17,6 @@ export default function Header() {
         function setTheme(themeName) {
             localStorage.setItem('clim_theme', themeName);
             document.documentElement.className = themeName;
-        }
-
-// function to toggle between light and dark theme
-        const toggleTheme = (e) =>  {
-            if (localStorage.getItem('clim_theme') === 'theme-dark') {
-                setTheme('theme-light');
-            } else {
-                setTheme('theme-dark');
-            }
         }
 
 
