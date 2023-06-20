@@ -68,7 +68,7 @@ const TreePlantation = ({ galleries, portfolios }) => {
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
-                                    <p></p>
+                                    <p> </p>
                                 </div>
                             </div>
                         </div>
