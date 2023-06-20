@@ -11,6 +11,17 @@ import Galleries from "@components/Galleries";
 import Posts from "@components/Posts";
 import Link from "next/link";
 
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation, Autoplay} from "swiper";
+
 
 const Home = ({ posts, galleries, portfolios }) => {
     return (
@@ -24,7 +35,24 @@ const Home = ({ posts, galleries, portfolios }) => {
             <Header />
 
                 <section className="hero-wrap style2">
+
                     <div className="hero-slider-one owl-carousel" data-slider-id="1">
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={1}
+                            pagination={{
+                                clickable: true,
+                                dynamicBullets:true
+                            }}
+                            loop={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
+                            className="mySwiper"
+                        >
                         <div className="hero-slide-item hero-slide-one bg-f">
                             <div className="container">
                                 <div className="row">
@@ -81,6 +109,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                 </div>
                             </div>
                         </div>
+                        </Swiper>
                     </div>
                 </section>
 
