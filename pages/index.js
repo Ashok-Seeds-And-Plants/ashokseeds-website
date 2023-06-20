@@ -53,7 +53,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                             modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                         >
-                        <div className="hero-slide-item hero-slide-one bg-f">
+                            <SwiperSlide><div className="hero-slide-item hero-slide-one bg-f">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-6  col-md-9">
@@ -66,8 +66,8 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="hero-slide-item hero-slide-two bg-f">
+                        </div></SwiperSlide>
+                            <SwiperSlide><div className="hero-slide-item hero-slide-two bg-f">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-6 col-md-9">
@@ -80,8 +80,8 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="hero-slide-item hero-slide-three bg-f">
+                            </div></SwiperSlide>
+                            <SwiperSlide><div className="hero-slide-item hero-slide-three bg-f">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-6  col-md-10">
@@ -94,8 +94,8 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="hero-slide-item hero-slide-four bg-f">
+                            </div></SwiperSlide>
+                            <SwiperSlide><div className="hero-slide-item hero-slide-four bg-f">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-6  col-md-10">
@@ -108,7 +108,7 @@ const Home = ({ posts, galleries, portfolios }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            </div></SwiperSlide>
                         </Swiper>
                     </div>
                 </section>
