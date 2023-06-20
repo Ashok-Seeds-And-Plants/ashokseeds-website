@@ -12,13 +12,14 @@ export default function Header() {
         }
 
 // function to toggle between light and dark theme
-        function toggleTheme() {
+        const toggleTheme = (e) =>  {
             if (localStorage.getItem('clim_theme') === 'theme-dark') {
                 setTheme('theme-light');
             } else {
                 setTheme('theme-dark');
             }
         }
+
 
 // Immediately invoked function to set the theme on initial load
         (function () {
@@ -192,7 +193,7 @@ export default function Header() {
 
           <div className="switch-theme-mode">
               <label id="switch" className="switch">
-                  <input type="checkbox" onChange="toggleTheme()" id="slider"/>
+                  <input type="checkbox" onChange={toggleTheme} id="slider"/>
                       <span className="slider round"></span>
               </label>
           </div>
