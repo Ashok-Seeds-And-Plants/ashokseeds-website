@@ -174,7 +174,7 @@ export default function Header() {
 
           <div className="switch-theme-mode">
               <label id="switch" className="switch">
-                  <input type="checkbox" onChange="toggleTheme" id="slider"/>
+                  <input type="checkbox" onChange={toggleTheme} id="slider"/>
                       <span className="slider round"></span>
               </label>
           </div>
