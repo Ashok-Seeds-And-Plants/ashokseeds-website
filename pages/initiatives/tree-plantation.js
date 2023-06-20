@@ -7,6 +7,7 @@ import Js from '@components/Js'
 import Galleries from "@components/Galleries";
 import Portfolios from "@components/Portfolios";
 import {fetchAPI} from "../../lib/api";
+import React from "react";
 
 const TreePlantation = ({ galleries, portfolios }) => {
     return (
@@ -45,17 +46,25 @@ const TreePlantation = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
-                                            <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
-                                            <h2>The Miyawaki approach to creating forests.</h2>
-                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
-                                            <h3>What does the Miyawaki method mean?</h3>
-                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
-                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
+                                            <span>A Little Introduction <span className="bl-text">Tree Plantation</span></span>
+                                            <h2>Approach tree planting to rescue Mother Earth.</h2>
+                                            <p>With the rapid growth of India's population and the transformation of towns into concrete jungles, the need for clean air is urgent. We need a solution that can deliver outstanding outcomes in less time and space. </p>
+                                            <p><strong>We need a tree planting approach for all areas:</strong></p>
+                                            <ol>
+                                             <li>Our approach to tree plantation is based on community participation and ecological restoration.</li>
+                                             <li>We use a holistic approach to tree plantation that considers the social, economic and environmental benefits of planting trees.</li>
+                                             <li>The main goal of our approach to tree plantation is to enhance biodiversity and combat climate change.</li>
+                                             <li>Our approach to tree plantation involves selecting native and resilient species, preparing the soil and providing adequate care for the saplings.</li>
+                                             <li>We follow a scientific approach to tree plantation that optimizes the growth and survival of the trees.</li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
                                 <div className={'col-md-12'}>
-                                    <img src={'/img/how_miyawaki_work.jpg'} alt={'How miyawaki work'}/>
+                                    <a className="page-img" data-fancybox="gallery"
+                                       href={'/img/how_miyawaki_work.jpg'}>
+                                        <img src={'/img/how_miyawaki_work.jpg'} alt={'Approach tree planting to rescue Mother Earth'}/>
+                                    </a>
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
