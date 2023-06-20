@@ -175,4 +175,5 @@ function toggleTheme() {
         setTheme('theme-light');
         document.getElementById('slider').checked = true;
     }
+    console.log('current theme is: '.localStorage.getItem('clim_theme'));
 })();
