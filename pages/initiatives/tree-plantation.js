@@ -62,8 +62,8 @@ const TreePlantation = ({ galleries, portfolios }) => {
                                 </div>
                                 <div className={'col-md-12'}>
                                     <a className="page-img" data-fancybox="gallery"
-                                       href={'/img/how_miyawaki_work.jpg'}>
-                                        <img src={'/img/how_miyawaki_work.jpg'} alt={'Approach tree planting to rescue Mother Earth'}/>
+                                       href={'/img/tree_plat.jpg'}>
+                                        <img src={'/img/tree_plat.jpg'} alt={'Approach tree planting to rescue Mother Earth'}/>
                                     </a>
                                 </div>
 
@@ -78,7 +78,7 @@ const TreePlantation = ({ galleries, portfolios }) => {
                         <div className="container">
                             <div className="section-title style3 text-center mb-40">
                                 <span>Journey <span className="bl-text">So for</span></span>
-                                <h2>Our Completed Miyawaki Projects</h2>
+                                <h2>Our Completed Tree Plantation Projects</h2>
                             </div>
 
                             <Portfolios portfolios={portfolios} />
