@@ -3,33 +3,37 @@ import SocialLinks from "@components/SocialLinks";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
 
-const toggleTheme = (e) =>  {
-    if (localStorage.getItem('clim_theme') === 'theme-dark') {
-        setTheme('theme-light');
-    } else {
-        setTheme('theme-dark');
-    }
-}
-
-function setTheme(themeName) {
-    localStorage.setItem('clim_theme', themeName);
-    document.documentElement.className = themeName;
-}
-
-// Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('clim_theme') === 'theme-dark') {
-        setTheme('theme-dark');
-        document.getElementById('slider').checked = false;
-    } else {
-        setTheme('theme-light');
-        document.getElementById('slider').checked = true;
-    }
-    console.log('initial check');
-})();
 export default function Header() {
 
     useEffect(() => {
+
+        const toggleTheme = (e) =>  {
+            if (localStorage.getItem('clim_theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        function setTheme(themeName) {
+            localStorage.setItem('clim_theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+// Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('clim_theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            }
+            console.log('initial check');
+        })();
+
+
+
         //Preloader
         $(window).on('load', function (event) {
             $('.js-preloader').delay(500).fadeOut(500);
