@@ -153,23 +153,22 @@ $(document).ready(function() {
 
 const toggleTheme = (e) =>  {
     if (localStorage.getItem('clim_theme') === 'theme-dark') {
-        setTheme('theme-light');
+        localStorage.setItem('clim_theme', 'theme-light');
+        document.documentElement.className = 'theme-light';
     } else {
-        setTheme('theme-dark');
+        localStorage.setItem('clim_theme', 'theme-dark');
+        document.documentElement.className = 'theme-dark';
     }
-}
-function setTheme(themeName) {
-    localStorage.setItem('clim_theme', themeName);
-    document.documentElement.className = themeName;
-    console.log('Theme Changed');
 }
 
 (function () {
     if (localStorage.getItem('clim_theme') === 'theme-dark') {
-        setTheme('theme-dark');
+        localStorage.setItem('clim_theme', 'theme-dark');
+        document.documentElement.className = 'theme-dark';
         document.getElementById('slider').checked = false;
     } else {
-        setTheme('theme-light');
+        localStorage.setItem('clim_theme', 'theme-light');
+        document.documentElement.className = 'theme-light';
         document.getElementById('slider').checked = true;
     }
     console.log('initial check');
