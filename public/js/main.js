@@ -161,5 +161,4 @@ $(document).ready(function() {
         document.documentElement.className = 'theme-light';
         document.getElementById('slider').checked = true;
     }
-    console.log('initial check');
 })();
