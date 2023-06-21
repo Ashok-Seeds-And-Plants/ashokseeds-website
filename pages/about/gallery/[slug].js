@@ -15,12 +15,12 @@ const Blog = ({ post, categories }) => {
     let pages = 6;
 
     let PagesArray = [];
-    let PageIndex = [];
+    let PageData = [];
     let num = 1;
 
     for (let i = 1; i <= pages; i++) {
-        PageIndex['id'] = num;
-        PagesArray.push(PageIndex);
+        PageData['id'] = num;
+        PagesArray.push(PageData);
         num++;
         //console.log(num);
     }
