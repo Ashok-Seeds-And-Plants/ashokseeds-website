@@ -13,7 +13,7 @@ import {tr} from "date-fns/locale";
 
 const Gallery = ({ galleries, portfolios }) => {
 
-    const PerPage = 3;
+    const PerPage = 10;
 
     const pagination = galleries.meta.pagination;
 
