@@ -139,7 +139,7 @@ export async function getStaticProps() {
             {
                 pagination: {
                     start: 0,
-                    limit: 5,
+                    limit: 10,
                     withCount: true
                 },
                 sort: ['id:desc'],
