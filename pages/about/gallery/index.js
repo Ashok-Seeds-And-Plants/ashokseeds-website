@@ -25,13 +25,18 @@ const Gallery = ({ galleries, portfolios }) => {
     if (total <= PerPage)
     {
         pages = 0;
+        console.log(pages);
     }else if(total % PerPage === 0){
         pages = pagination.total/pagination.limit;
+
+        console.log('Correct number '+pages);
+
     }else{
         pages = pagination.total/pagination.limit + 1;
+
+        console.log('Not correct '+pages);
     }
 
-console.log(pages);
 
 
     const PaginationData = index => {
