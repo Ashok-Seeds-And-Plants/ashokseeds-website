@@ -12,6 +12,16 @@ import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
 
+    let pages = 6;
+
+    let PagesArray = [];
+    let PageIndex = [];
+
+    for (let i = 1; i <= pages; i++) {
+        PageIndex['id'].push(i);
+        PagesArray.push(PageIndex);
+    }
+    console.log(PagesArray);
 
     return (
         <>
@@ -53,14 +63,7 @@ const Blog = ({ post, categories }) => {
 export async function getStaticPaths() {
     //const postsRes = await fetchAPI("/posts", { fields: ["slug"] })
 
-    let pages = 6;
-
-    let PagesArray = [];
-
-    for (let i = 1; i <= pages; i++) {
-        PagesArray.push(i);
-    }
-    console.log(PagesArray);
+  
 
     return {
         paths: [
