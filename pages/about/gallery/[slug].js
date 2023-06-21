@@ -74,7 +74,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
     const postsRes = await fetchAPI("/galleries", {
         pagination: {
-            start: params.slug+1,
+            start: 1,
             limit: 4,
             withCount: true
         },
