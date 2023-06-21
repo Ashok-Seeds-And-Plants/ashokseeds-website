@@ -62,7 +62,7 @@ export async function getStaticPaths() {
     }
 
     return {
-        paths: PagesArray.data.map((page, i) => ({
+        paths: PagesArray.map((page, i) => ({
             params: {
                 slug: i,
             },
