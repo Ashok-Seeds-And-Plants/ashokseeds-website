@@ -17,6 +17,15 @@ const Gallery = ({ galleries, portfolios }) => {
 
     const pages = pagination.total/pagination.limit;
 
+
+    const PaginationData = index => {
+        let content = [];
+        for (let i = 1; i < pages; i++) {
+            content.push(<li><a href="#">{i}</a></li>);
+        }
+        return content;
+    };
+
     galleries = galleries.data;
 
     console.log(galleries);
@@ -79,11 +88,9 @@ const Gallery = ({ galleries, portfolios }) => {
                             </div>
                             <ul className="page-nav list-style">
                                 <li><a className="active" href="/about/gallery/">1</a></li>
-                                {pages.map((i) => {
-                                    return (
-                                <li><a href="#">{i}</a></li>
-                                    )
-                                })}
+
+                                {PaginationData(index)}
+
                                 <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
                         </div>
