@@ -13,9 +13,16 @@ import {tr} from "date-fns/locale";
 
 const Gallery = ({ galleries, portfolios }) => {
 
+    const PerPage = 3;
+
     const pagination = galleries.meta.pagination;
 
-    const pages = pagination.total/pagination.limit;
+    const total = pagination.total;
+    const limit = pagination.limit;
+
+    let pages = 0;
+
+    pages = pagination.total/pagination.limit;
 
 
     const PaginationData = index => {
@@ -106,7 +113,7 @@ const Gallery = ({ galleries, portfolios }) => {
     )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(PerPage) {
     // Run API calls in parallel
 
     const [galleriesRes, portfoliosRes] = await Promise.all([
@@ -114,7 +121,7 @@ export async function getStaticProps() {
             {
                 pagination: {
                     start: 0,
-                    limit: 10,
+                    limit: PerPage,
                     withCount: true
                 },
                 sort: ['id:desc'],
