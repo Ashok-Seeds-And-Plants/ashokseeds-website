@@ -19,7 +19,7 @@ const Blog = ({ post, categories }) => {
     let num = 1;
 
     for (let i = 1; i <= pages; i++) {
-        PageIndex['id'] = num;
+        PageIndex['id'] = 3;
         PagesArray.push(PageIndex);
         num++;
     }
