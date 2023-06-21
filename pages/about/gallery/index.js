@@ -38,22 +38,24 @@ const Gallery = ({ galleries, portfolios }) => {
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
                             <div className="row justify-content-center">
-                                <div className="col-xl-4 col-lg-6 col-md-6">
-                                    <div className="project-card style1">
-                                        <div className="project-img">
-                                            <img src="/img/project/project-1.jpg" alt="Image"/>
-                                        </div>
-                                        <div className="project-info">
-                                            <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
+                                    {galleries.map((gallery, i) => {
+                                        <div className="col-xl-4 col-lg-6 col-md-6">
+                                        <div className="project-card style1">
+                                            <div className="project-img">
+                                                <img src="/img/project/project-1.jpg" alt="Image"/>
+                                            </div>
+                                            <div className="project-info">
+                                                <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
                                                 <h3>Stop Cutting Down Trees</h3>
-                                            <ul>
-                                            <li>Category</li>
-                                            <li>Category 1</li>
-                                            </ul>
+                                                <ul>
+                                                    <li>Category</li>
+                                                    <li>Category 1</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
+                                    })}
+                                
                             </div>
                             <ul className="page-nav list-style">
                                 <li><a href="#"><i className="flaticon-left-arrow"></i></a></li>
