@@ -23,17 +23,14 @@ const Gallery = ({ galleries, portfolios }) => {
     if (TotalPage <= PerPage)
     {
         pages = 0;
-        console.log(pages);
+
     }else if(TotalPage % PerPage === 0){
 
         pages = TotalPage/PerPage;
 
-        console.log('Correct number '+pages);
-
     }else{
         pages = TotalPage/PerPage + 1;
 
-        console.log('Not correct '+pages);
     }
 
 
@@ -45,7 +42,7 @@ const Gallery = ({ galleries, portfolios }) => {
             {
                 content.push(<li><a className="active" href="/about/gallery/">1</a></li>);
             }else{
-                content.push(<li><a href="/about/gallery/{i}/">{i}</a></li>);
+                content.push(<li><a href={`/about/gallery/${i}/`}>{i}</a></li>);
             }
         }
         return content;
