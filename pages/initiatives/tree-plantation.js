@@ -6,7 +6,7 @@ import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Galleries from "@components/Galleries";
 import Portfolios from "@components/Portfolios";
-import {fetchAPI} from "../../../../lib/api";
+import {fetchAPI} from "../../lib/api";
 import React from "react";
 
 const TreePlantation = ({ galleries, portfolios }) => {

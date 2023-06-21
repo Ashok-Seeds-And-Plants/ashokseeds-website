@@ -6,7 +6,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Link from "next/link";
-import {fetchAPI} from "../../lib/api";
+import {fetchAPI} from "../../../lib/api";
 
 const Gallery = ({ galleries, portfolios }) => {
     return (
