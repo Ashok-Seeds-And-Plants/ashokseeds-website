@@ -59,17 +59,17 @@ export async function getStaticPaths() {
     for (let i = 1; i < pages; i++) {
         if(i === 1)
         {
-            Pages.push({id:'/'});
+            Pages.push({id:''});
         }else
         {
-            Pages.push({id:i});
+            Pages.push({id:i.toString()});
         }
     }
 
     return {
         paths: Pages.map((page) => ({
             params: {
-                slug: page.id.toString(),
+                slug: page.id,
             },
         })),
         fallback: false,
