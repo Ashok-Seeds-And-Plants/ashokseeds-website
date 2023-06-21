@@ -12,8 +12,10 @@ import React from "react";
 import {tr} from "date-fns/locale";
 
 const Gallery = ({ galleries, portfolios }) => {
-    galleries = galleries.data;
+
     const pagination = galleries.meta.pagination;
+
+    galleries = galleries.data;
 
     console.log(galleries);
     console.log(pagination);
