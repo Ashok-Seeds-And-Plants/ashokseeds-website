@@ -89,7 +89,7 @@ const Gallery = ({ galleries, portfolios }) => {
                             <ul className="page-nav list-style">
                                 <li><a className="active" href="/about/gallery/">1</a></li>
 
-                                {PaginationData(index)}
+                                {PaginationData()}
 
                                 <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
