@@ -18,7 +18,7 @@ const Blog = ({ post, categories }) => {
     let PageIndex = [];
 
     for (let i = 1; i <= pages; i++) {
-        PageIndex['id'].push(i);
+        PageIndex['id'] = i;
         PagesArray.push(PageIndex);
     }
     console.log(PagesArray);
@@ -63,7 +63,7 @@ const Blog = ({ post, categories }) => {
 export async function getStaticPaths() {
     //const postsRes = await fetchAPI("/posts", { fields: ["slug"] })
 
-  
+
 
     return {
         paths: [
