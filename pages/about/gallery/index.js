@@ -45,7 +45,7 @@ const Gallery = ({ galleries, portfolios }) => {
             {
                 content.push(<li><a className="active" href="/about/gallery/">1</a></li>);
             }else{
-                content.push(<li><a href="#">{i}</a></li>);
+                content.push(<li><a href="/about/gallery/{i}/">{i}</a></li>);
             }
         }
         return content;
