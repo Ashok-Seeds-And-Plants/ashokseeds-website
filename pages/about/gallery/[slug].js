@@ -19,12 +19,12 @@ const Blog = ({ post, categories }) => {
     let num = 1;
 
     for (let i = 1; i <= pages; i++) {
-        PageIndex['id'] = 3;
-        PagesArray.push(num);
+        PageIndex['id'] = num;
+        PagesArray.push(PageIndex);
         num++;
-        console.log(num);
+        //console.log(num);
     }
-    //console.log(PagesArray);
+    console.log(PagesArray);
 
     return (
         <>
