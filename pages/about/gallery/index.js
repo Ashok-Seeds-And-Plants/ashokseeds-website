@@ -92,32 +92,14 @@ export async function getStaticProps() {
     const [galleriesRes, portfoliosRes] = await Promise.all([
         fetchAPI("/galleries",
             {
-                filters: {
-                    gallery_categories: {
-                        name: {
-                            $eq: 'Tree Plantation',
-                        },
-                    },
-                },
                 pagination: {
                     start: 0,
                     limit: 30,
                 },
                 sort: ['id:desc'],
                 populate: "*" }),
-        fetchAPI("/portfolios",
+        fetchAPI("/gallery_categories",
             {
-                filters: {
-                    portfolio_categories: {
-                        name: {
-                            $eq: 'Tree Plantation',
-                        },
-                    },
-                },
-                pagination: {
-                    start: 0,
-                    limit: 10,
-                },
                 sort: ['id:desc'],
                 populate: "*"
             }),
