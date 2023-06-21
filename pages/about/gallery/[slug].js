@@ -12,6 +12,8 @@ import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
 
+
+
     return (
         <>
             <Meta />
@@ -62,11 +64,12 @@ export async function getStaticPaths() {
     return {
         paths: Pages.map((page) => ({
             params: {
-                slug: "page.id",
+                slug: 'g'+page.id,
             },
         })),
         fallback: false,
     }
+
 }
 
 export async function getStaticProps({ params }) {
