@@ -15,22 +15,23 @@ const Gallery = ({ galleries, portfolios }) => {
 
     const pagination = galleries.meta.pagination;
 
-    const total = pagination.total;
+    const TotalPage = pagination.total;
     const PerPage = pagination.limit;
 
     let pages = 0;
 
-    if (total <= PerPage)
+    if (TotalPage <= PerPage)
     {
         pages = 0;
         console.log(pages);
-    }else if(total % PerPage === 0){
-        pages = pagination.total/pagination.limit;
+    }else if(TotalPage % PerPage === 0){
+
+        pages = TotalPage/PerPage;
 
         console.log('Correct number '+pages);
 
     }else{
-        pages = pagination.total/pagination.limit + 1;
+        pages = TotalPage/PerPage + 1;
 
         console.log('Not correct '+pages);
     }
