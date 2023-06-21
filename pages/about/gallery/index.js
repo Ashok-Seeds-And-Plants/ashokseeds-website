@@ -13,12 +13,10 @@ import {tr} from "date-fns/locale";
 
 const Gallery = ({ galleries, portfolios }) => {
 
-    const PerPage = 10;
-
     const pagination = galleries.meta.pagination;
 
     const total = pagination.total;
-    const limit = pagination.limit;
+    const PerPage = pagination.limit;
 
     let pages = 0;
 
