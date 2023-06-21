@@ -62,13 +62,12 @@ export async function getStaticPaths() {
     }
 
     return {
-        paths: PagesArray.map((page, i) => ({
-            params: {
-                slug: '2',
-            },
-        })
-        ),
-        fallback: false,
+        paths: [
+            { params: { slug: '1'} },
+            { params: { slug: '2'} },
+            { params: { slug: '3'} }
+        ],
+        fallback: false // fallback is set to false because we already know the slugs ahead of time
     }
 }
 
