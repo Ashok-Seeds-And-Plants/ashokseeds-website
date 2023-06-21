@@ -107,14 +107,14 @@ const Gallery = ({ galleries, portfolios }) => {
 }
 
 export async function getStaticProps() {
-    // Run API calls in parallel 
+    // Run API calls in parallel
 
     const [galleriesRes, portfoliosRes] = await Promise.all([
         fetchAPI("/galleries",
             {
                 pagination: {
                     start: 0,
-                    limit: 4,
+                    limit: 10,
                     withCount: true
                 },
                 sort: ['id:desc'],
