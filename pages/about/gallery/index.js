@@ -9,6 +9,7 @@ import Link from "next/link";
 import {fetchAPI} from "../../../lib/api";
 import delve from "dlv";
 import React from "react";
+import {tr} from "date-fns/locale";
 
 const Gallery = ({ galleries, portfolios }) => {
     galleries = galleries.data;
@@ -100,7 +101,8 @@ export async function getStaticProps() {
             {
                 pagination: {
                     start: 0,
-                    limit: 30,
+                    limit: 3,
+                    withCount: true
                 },
                 sort: ['id:desc'],
                 populate: "*" }),
