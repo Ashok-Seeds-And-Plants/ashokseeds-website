@@ -22,9 +22,9 @@ const Blog = ({ post, categories }) => {
         PageIndex['id'] = 3;
         PagesArray.push(num);
         num++;
-        console.log(PagesArray);
+        console.log(num);
     }
-    console.log(PagesArray);
+    //console.log(PagesArray);
 
     return (
         <>
