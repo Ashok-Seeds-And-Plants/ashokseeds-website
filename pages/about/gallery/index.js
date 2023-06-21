@@ -11,7 +11,12 @@ import delve from "dlv";
 import React from "react";
 
 const Gallery = ({ galleries, portfolios }) => {
+    galleries = galleries.data;
+    const pagination = galleries.meta.pagination;
+
     console.log(galleries);
+    console.log(pagination);
+
     return (
         <>
             <Meta />
@@ -109,7 +114,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            galleries: galleriesRes.data,
+            galleries: galleriesRes,
             portfolios: portfoliosRes.data,
         },
         revalidate: 1,
