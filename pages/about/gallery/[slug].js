@@ -52,7 +52,6 @@ const Blog = ({ post, categories }) => {
 }
 
 export async function getStaticPaths() {
-    //const postsRes = await fetchAPI("/posts", { fields: ["slug"] })
     let pages = 6;
 
     var Pages = [];
@@ -64,7 +63,7 @@ export async function getStaticPaths() {
     return {
         paths: Pages.map((page) => ({
             params: {
-                slug: '+page.id+',
+                slug: page.id.toString(),
             },
         })),
         fallback: false,
