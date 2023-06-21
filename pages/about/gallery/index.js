@@ -22,7 +22,14 @@ const Gallery = ({ galleries, portfolios }) => {
 
     let pages = 0;
 
-    pages = pagination.total/pagination.limit;
+    if (total <= PerPage)
+    {
+        pages = 0;
+    }else{
+        pages = pagination.total/pagination.limit;
+    }
+
+
 
 
     const PaginationData = index => {
@@ -113,7 +120,7 @@ const Gallery = ({ galleries, portfolios }) => {
     )
 }
 
-export async function getStaticProps(PerPage) {
+export async function getStaticProps() {
     // Run API calls in parallel
 
     const [galleriesRes, portfoliosRes] = await Promise.all([
@@ -121,7 +128,7 @@ export async function getStaticProps(PerPage) {
             {
                 pagination: {
                     start: 0,
-                    limit: PerPage,
+                    limit: 3,
                     withCount: true
                 },
                 sort: ['id:desc'],
