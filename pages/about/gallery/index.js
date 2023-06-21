@@ -6,6 +6,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Link from "next/link";
+import {fetchAPI} from "../../lib/api";
 
 const Gallery = ({ galleries, portfolios }) => {
     return (
@@ -92,6 +93,53 @@ const Gallery = ({ galleries, portfolios }) => {
             <Js />
         </>
     )
+}
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+
+    const [galleriesRes, portfoliosRes] = await Promise.all([
+        fetchAPI("/galleries",
+            {
+                filters: {
+                    gallery_categories: {
+                        name: {
+                            $eq: 'Tree Plantation',
+                        },
+                    },
+                },
+                pagination: {
+                    start: 0,
+                    limit: 30,
+                },
+                sort: ['id:desc'],
+                populate: "*" }),
+        fetchAPI("/portfolios",
+            {
+                filters: {
+                    portfolio_categories: {
+                        name: {
+                            $eq: 'Tree Plantation',
+                        },
+                    },
+                },
+                pagination: {
+                    start: 0,
+                    limit: 10,
+                },
+                sort: ['id:desc'],
+                populate: "*"
+            }),
+
+    ])
+
+    return {
+        props: {
+            galleries: galleriesRes.data,
+            portfolios: portfoliosRes.data,
+        },
+        revalidate: 1,
+    }
 }
 
 export default Gallery
