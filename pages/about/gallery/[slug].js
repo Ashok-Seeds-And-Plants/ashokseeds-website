@@ -62,14 +62,14 @@ export async function getStaticPaths() {
             Pages.push({id:''});
         }else
         {
-            Pages.push({id:i.toString()});
+            Pages.push({id:i});
         }
     }
 
     return {
         paths: Pages.map((page) => ({
             params: {
-                slug: page.id,
+                slug: page.id.toString(),
             },
         })),
         fallback: false,
