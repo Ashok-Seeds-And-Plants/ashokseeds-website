@@ -11,6 +11,7 @@ import delve from "dlv";
 import React from "react";
 
 const Gallery = ({ galleries, portfolios }) => {
+    console.log(galleries);
     return (
         <>
             <Meta />
