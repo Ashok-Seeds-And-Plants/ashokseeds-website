@@ -98,7 +98,7 @@ export async function getStaticProps() {
                 },
                 sort: ['id:desc'],
                 populate: "*" }),
-        fetchAPI("/gallery_categories",
+        fetchAPI("/gallery-categories",
             {
                 sort: ['id:desc'],
                 populate: "*"
