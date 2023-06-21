@@ -60,6 +60,7 @@ export async function getStaticPaths() {
     for (let i = 1; i <= pages; i++) {
         PagesArray.push(i);
     }
+    console.log(PagesArray);
 
     return {
         paths: [
