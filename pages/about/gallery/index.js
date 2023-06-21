@@ -7,6 +7,8 @@ import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Link from "next/link";
 import {fetchAPI} from "../../../lib/api";
+import delve from "dlv";
+import React from "react";
 
 const Gallery = ({ galleries, portfolios }) => {
     return (
@@ -39,10 +41,16 @@ const Gallery = ({ galleries, portfolios }) => {
                         <div className="container">
                             <div className="row justify-content-center">
                                     {galleries.map((gallery, i) => {
+                                        const title = delve(gallery, "attributes.title");
+                                        const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
+                                        return (
                                         <div className="col-xl-4 col-lg-6 col-md-6">
                                         <div className="project-card style1">
                                             <div className="project-img">
-                                                <img src="/img/project/project-1.jpg" alt="Image"/>
+                                                <a className="post-img" data-fancybox="gallery"
+                                                   href={`${image}`}>
+                                                    <img src={`${image}`} alt={`${title}`}/>
+                                                </a>
                                             </div>
                                             <div className="project-info">
                                                 <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
@@ -54,8 +62,9 @@ const Gallery = ({ galleries, portfolios }) => {
                                             </div>
                                         </div>
                                     </div>
+                                        )
                                     })}
-                                
+
                             </div>
                             <ul className="page-nav list-style">
                                 <li><a href="#"><i className="flaticon-left-arrow"></i></a></li>
