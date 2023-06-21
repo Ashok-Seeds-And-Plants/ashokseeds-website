@@ -43,7 +43,7 @@ const Gallery = ({ galleries, portfolios }) => {
         for (let i = 1; i <= pages; i++) {
             if(i === 1)
             {
-
+                content.push(<li><a className="active" href="/about/gallery/">1</a></li>);
             }else{
                 content.push(<li><a href="#">{i}</a></li>);
             }
@@ -112,7 +112,7 @@ const Gallery = ({ galleries, portfolios }) => {
 
                             </div>
                             <ul className="page-nav list-style">
-                                <li><a className="active" href="/about/gallery/">1</a></li>
+
 
                                 {PaginationData()}
 
