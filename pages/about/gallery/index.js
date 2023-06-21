@@ -41,7 +41,12 @@ const Gallery = ({ galleries, portfolios }) => {
     const PaginationData = index => {
         let content = [];
         for (let i = 1; i <= pages; i++) {
-            content.push(<li><a href="#">{i}</a></li>);
+            if(i === 1)
+            {
+
+            }else{
+                content.push(<li><a href="#">{i}</a></li>);
+            }
         }
         return content;
     };
