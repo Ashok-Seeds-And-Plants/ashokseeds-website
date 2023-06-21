@@ -12,20 +12,6 @@ import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
 
-    let pages = 6;
-
-    let PagesArray = [];
-    let PageData = [];
-    let num = 1;
-
-    for (let i = 1; i <= pages; i++) {
-        PageData['id'] = num;
-        PagesArray.push(PageData);
-        num++;
-        //console.log(num);
-    }
-    console.log(PagesArray);
-
     return (
         <>
             <Meta />
@@ -65,16 +51,21 @@ const Blog = ({ post, categories }) => {
 
 export async function getStaticPaths() {
     //const postsRes = await fetchAPI("/posts", { fields: ["slug"] })
+    let pages = 6;
 
+    var Pages = [];
 
+    for (let i = 0; i <= pages; i++) {
+        Pages.push({id:i});
+    }
 
     return {
-        paths: [
-            { params: { slug: '1'} },
-            { params: { slug: '2'} },
-            { params: { slug: '3'} }
-        ],
-        fallback: false // fallback is set to false because we already know the slugs ahead of time
+        paths: Pages.map((page) => ({
+            params: {
+                slug: page.id,
+            },
+        })),
+        fallback: false,
     }
 }
 
