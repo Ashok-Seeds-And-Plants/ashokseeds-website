@@ -107,7 +107,7 @@ const Gallery = ({ galleries, portfolios }) => {
 }
 
 export async function getStaticProps() {
-    // Run API calls in parallel
+    // Run API calls in parallel 
 
     const [galleriesRes, portfoliosRes] = await Promise.all([
         fetchAPI("/galleries",
