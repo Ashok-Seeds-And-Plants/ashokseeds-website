@@ -180,7 +180,7 @@ export async function getStaticProps({ params }) {
         return content;
     };
 
-    const categoriesRes = await fetchAPI("/gallery-categories")
+    const categoriesRes = await fetchAPI("/galleries")
 
     return {
         props: { galleries: galleriesRes.data[0], categories: categoriesRes, PaginationData: PaginationData },
