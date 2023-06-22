@@ -136,36 +136,35 @@ export async function getStaticPaths() {
 
     //const PerPage = 4;
 
-    const Gallery = await fetchAPI("/galleries");
+    const ServerGallery = await fetchAPI("/galleries");
 
-    const TotalPage = Gallery.meta.pagination.total;
-
+    const ServerTotalPage = ServerGallery.meta.pagination.total;
 
 
     let pages = 0;
 
-    if (TotalPage <= PerPage)
+    if (ServerTotalPage <= PerPage)
     {
         pages = 0;
 
-    }else if(TotalPage % PerPage === 0){
+    }else if(ServerTotalPage % PerPage === 0){
 
-        pages = TotalPage/PerPage;
+        pages = ServerTotalPage/PerPage;
 
     }else{
-        pages = TotalPage/PerPage + 1;
+        pages = ServerTotalPage/PerPage + 1;
 
     }
 
-    var Pages = [];
+    var ServerPages = [];
 
     for (let i = 1; i < pages; i++) {
-        Pages.push({id:i});
+        ServerPages.push({id:i});
 
     }
 
     return {
-        paths: Pages.map((page) => ({
+        paths: ServerPages.map((page) => ({
             params: {
                 slug: page.id.toString(),
             },
