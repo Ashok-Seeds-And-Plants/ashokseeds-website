@@ -52,7 +52,26 @@ const Blog = ({ post, categories }) => {
 }
 
 export async function getStaticPaths() {
-    let pages = 6;
+    const Gallery = await fetchAPI("/galleries");
+
+    const TotalPage = Gallery.meta.pagination.total;
+    const PerPage = 4;
+
+
+    let pages = 0;
+
+    if (TotalPage <= PerPage)
+    {
+        pages = 0;
+
+    }else if(TotalPage % PerPage === 0){
+
+        pages = TotalPage/PerPage;
+
+    }else{
+        pages = TotalPage/PerPage + 1;
+
+    }
 
     var Pages = [];
 
