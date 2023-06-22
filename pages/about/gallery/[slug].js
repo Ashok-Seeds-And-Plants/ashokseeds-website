@@ -13,6 +13,7 @@ import React from "react";
 const PerPage = 5;
 const Blog = ({ galleries, categories, PaginationData }) => {
 
+    console.log(galleries);
     return (
         <>
             <Meta />
@@ -41,33 +42,7 @@ const Blog = ({ galleries, categories, PaginationData }) => {
 
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
-                            <div className="row justify-content-center">
-                                {galleries.map((gallery, i) => {
-                                    const title = delve(gallery, "attributes.title");
-                                    const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
-                                    return (
-                                        <div className="col-xl-4 col-lg-6 col-md-6">
-                                            <div className="project-card style1">
-                                                <div className="project-img">
-                                                    <a className="post-img" data-fancybox="gallery"
-                                                       href={`${image}`}>
-                                                        <img src={`${image}`} alt={`${title}`}/>
-                                                    </a>
-                                                </div>
-                                                <div className="project-info">
-                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                    <h3>Stop Cutting Down Trees</h3>
-                                                    <ul>
-                                                        <li>Category</li>
-                                                        <li>Category 1</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
 
-                            </div>
                             <ul className="page-nav list-style">
 
 
