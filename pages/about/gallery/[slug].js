@@ -55,7 +55,7 @@ export async function getStaticPaths() {
     const Gallery = await fetchAPI("/galleries");
 
     const TotalPage = Gallery.meta.pagination.total;
-    const PerPage = 4;
+    const PerPage = 5;
 
 
     let pages = 0;
