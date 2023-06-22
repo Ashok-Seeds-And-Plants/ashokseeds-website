@@ -96,7 +96,7 @@ export async function getStaticProps({ params }) {
     const postsRes = await fetchAPI("/galleries", {
         pagination: {
             start: 1,
-            limit: 4,
+            limit: PerPage,
             withCount: true
         },
         sort: ['id:desc'],
