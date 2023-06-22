@@ -45,6 +45,11 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
             }
 
         }
+        if(CurrentPage < pages)
+        {
+            content.push(<li><a href={`/about/gallery/${CurrentPage+1}/`}><i className="flaticon-right-arrow"></i></a></li>)
+        }
+
         return content;
     };
 
@@ -108,7 +113,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                                 {PaginationData()}
 
 
-                                <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
+
                             </ul>
                         </div>
                     </section>
