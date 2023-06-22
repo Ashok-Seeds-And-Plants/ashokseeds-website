@@ -7270,3 +7270,9 @@ article {
 .bkg-video-bg{
   background-image: url(../img/bkg_bg.jpg);
 }
+.GalleryCategory{
+
+}
+.GalleryCategory > li{
+  
+}

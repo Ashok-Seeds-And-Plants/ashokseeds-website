@@ -94,9 +94,8 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                         <div className="container">
                             <div className="row justify-content-center">
                                 {galleries.data.map((gallery, i) => {
-                                    console.log(gallery);
                                     const title = delve(gallery, "attributes.title");
-                                    const Id = delve(gallery, "id");
+                                    const gallery_categories = delve(gallery, "attributes.gallery_categories");
                                     const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
                                     return (
                                         <div className="col-xl-4 col-lg-6 col-md-6">
@@ -109,10 +108,16 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                                                 </div>
                                                 <div className="project-info">
                                                     <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                    <h3>{Id}</h3>
-                                                    <ul>
-                                                        <li>Category</li>
-                                                        <li>Category 1</li>
+                                                    <ul className={'GalleryCategory'}>
+                                                        {gallery_categories.data.map((galleryCat, i) => {
+                                                            const name = delve(galleryCat, "attributes.name");
+                                                                if(name !== 'All')
+                                                                {
+                                                                    return(
+                                                                    <li>{name}</li>
+                                                                    )
+                                                                }
+                                                        })}
                                                     </ul>
                                                 </div>
                                             </div>
