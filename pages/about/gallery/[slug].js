@@ -47,7 +47,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
         }
         if(CurrentPage < pages)
         {
-            content.push(<li><a href={`/about/gallery/${CurrentPage+1}/`}><i className="flaticon-right-arrow"></i></a></li>)
+            content.push(<li><Link href={`/about/gallery/${CurrentPage+1}/`}><a><i className="flaticon-right-arrow"></i></a></Link></li>)
         }
 
         return content;
