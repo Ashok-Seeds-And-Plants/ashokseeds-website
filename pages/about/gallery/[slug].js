@@ -83,6 +83,7 @@ const Blog = ({ galleries, categories, startPage }) => {
                             <div className="row justify-content-center">
                                 {galleries.data.map((gallery, i) => {
                                     const title = delve(gallery, "attributes.title");
+                                    const Id = delve(gallery, "attributes.id");
                                     const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
                                     return (
                                         <div className="col-xl-4 col-lg-6 col-md-6">
@@ -95,7 +96,7 @@ const Blog = ({ galleries, categories, startPage }) => {
                                                 </div>
                                                 <div className="project-info">
                                                     <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-                                                    <h3>Stop Cutting Down Trees</h3>
+                                                    <h3>{Id}</h3>
                                                     <ul>
                                                         <li>Category</li>
                                                         <li>Category 1</li>
