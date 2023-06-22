@@ -11,7 +11,42 @@ import { parseISO, format } from 'date-fns'
 import React from "react";
 
 const PerPage = 5;
-const Blog = ({ galleries, categories, PaginationData }) => {
+const Blog = ({ galleries, categories }) => {
+
+    const pagination = galleries.meta.pagination;
+
+    const TotalPage = pagination.total;
+    const PerPage = pagination.limit;
+
+    let pages = 0;
+
+    if (TotalPage <= PerPage)
+    {
+        pages = 0;
+
+    }else if(TotalPage % PerPage === 0){
+
+        pages = TotalPage/PerPage;
+
+    }else{
+        pages = TotalPage/PerPage + 1;
+
+    }
+
+
+
+    const PaginationData = index => {
+        let content = [];
+        for (let i = 1; i <= pages; i++) {
+            if(i === 1)
+            {
+                content.push(<li><a className="active" href="/about/gallery/">1</a></li>);
+            }else{
+                content.push(<li><a href={`/about/gallery/${i}/`}>{i}</a></li>);
+            }
+        }
+        return content;
+    };
 
     return (
         <>
@@ -71,7 +106,7 @@ const Blog = ({ galleries, categories, PaginationData }) => {
                             <ul className="page-nav list-style">
 
 
-                                {PaginationData}
+                                {PaginationData()}
 
                                 <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
@@ -148,41 +183,10 @@ export async function getStaticProps({ params }) {
         populate: "*",
     })
 
-
-    const TotalPage = galleriesRes.meta.pagination.total;
-
-
-
-    let pages = 0;
-
-    if (TotalPage <= PerPage)
-    {
-        pages = 0;
-
-    }else if(TotalPage % PerPage === 0){
-
-        pages = TotalPage/PerPage;
-
-    }else{
-        pages = TotalPage/PerPage + 1;
-
-    }
-
-        let content = '';
-        for (let i = 1; i <= pages; i++) {
-            if(i === 1)
-            {
-                content = content+'<li><a className="active" href="/about/gallery/">1</a></li>';
-            }else{
-                content = content+'<li><a href={`/about/gallery/${i}/`}>{i}</a></li>';
-            }
-        }
-
-
     const categoriesRes = await fetchAPI("/galleries")
 
     return {
-        props: { galleries: galleriesRes, categories: categoriesRes, PaginationData: content },
+        props: { galleries: galleriesRes, categories: categoriesRes },
         revalidate: 1,
     }
 }
