@@ -4,14 +4,14 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
-import ReactMarkdown from "react-markdown";
+
 import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
-import { parseISO, format } from 'date-fns'
+
 import React from "react";
 import Link from "next/link";
 
-const PerPage = 5;
+const PerPage = 9;
 const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     const ServerTotalPage = galleries.meta.pagination.total;
