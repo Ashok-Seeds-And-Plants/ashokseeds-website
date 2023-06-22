@@ -11,7 +11,7 @@ import { parseISO, format } from 'date-fns'
 import React from "react";
 import Link from "next/link";
 
-const PerPage = 4;
+const PerPage = 5;
 const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     const ServerTotalPage = galleries.meta.pagination.total;
@@ -35,6 +35,15 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     const PaginationData = index => {
         let content = [];
+
+        if(pages > 1)
+        {
+
+            if(CurrentPage !== 1)
+            {
+                content.push(<li><Link href={`/about/gallery/${CurrentPage-1}/`}><a><i className="flaticon-left-arrow"></i></a></Link></li>)
+            }
+
         for (let i = 1; i <= pages; i++) {
 
             if(CurrentPage === i)
@@ -48,6 +57,9 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
         if(CurrentPage < pages)
         {
             content.push(<li><Link href={`/about/gallery/${CurrentPage+1}/`}><a><i className="flaticon-right-arrow"></i></a></Link></li>)
+        }
+        }else{
+            // Do nothing
         }
 
         return content;
