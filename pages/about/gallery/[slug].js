@@ -71,7 +71,7 @@ const Blog = ({ galleries, categories, PaginationData }) => {
                             <ul className="page-nav list-style">
 
 
-                                {PaginationData()}
+                                {PaginationData}
 
                                 <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
