@@ -9,10 +9,8 @@ import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 
-
+const PerPage = 4;
 const Blog = ({ post, categories }) => {
-
-
 
     return (
         <>
@@ -52,10 +50,13 @@ const Blog = ({ post, categories }) => {
 }
 
 export async function getStaticPaths() {
+
+    //const PerPage = 4;
+
     const Gallery = await fetchAPI("/galleries");
 
     const TotalPage = Gallery.meta.pagination.total;
-    const PerPage = 5;
+
 
 
     let pages = 0;
