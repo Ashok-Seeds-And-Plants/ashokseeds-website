@@ -7280,7 +7280,7 @@ article {
   opacity: 1;
   background-color: #338F7A;
   margin-left: 5px;
-  padding: 2px;
+  padding: 2px 5px 2px 5px;
 }
 .GalleryCategory > li:first-child{
   margin-left: 0;
