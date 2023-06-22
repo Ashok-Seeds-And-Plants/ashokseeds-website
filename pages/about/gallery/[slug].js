@@ -138,7 +138,8 @@ export async function getStaticPaths() {
 
     const ServerTotalPage = ServerGallery.meta.pagination.total;
 
-    console.log(ServerGallery); 
+    console.log(ServerGallery);
+    
 
     let pages = 0;
 
