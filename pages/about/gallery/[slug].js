@@ -9,38 +9,34 @@ import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import React from "react";
-const Blog = ({ galleries, categories, startPage }) => {
 
-    console.log(galleries)
-    console.log(startPage)
+const PerPage = 4;
+const Gallery = ({ galleries, categories, CurrentPage }) => {
 
-    const pagination = galleries.meta.pagination;
-
-    const TotalPage = pagination.total;
-    const PerPage = pagination.limit;
+    const ServerTotalPage = galleries.meta.pagination.total;
 
     let pages = 0;
 
-    if (TotalPage <= PerPage)
+    if (ServerTotalPage <= PerPage)
     {
-        pages = 0;
+        pages = 1;
 
-    }else if(TotalPage % PerPage === 0){
+    }else if(ServerTotalPage % PerPage === 0){
 
-        pages = TotalPage/PerPage;
+        pages = ServerTotalPage/PerPage;
 
     }else{
-        pages = TotalPage/PerPage + 1;
+        pages = (ServerTotalPage/PerPage) + 1;
 
     }
 
-
+    pages = Math.trunc(pages); // Removing decimal points
 
     const PaginationData = index => {
         let content = [];
         for (let i = 1; i <= pages; i++) {
 
-            if(startPage === i)
+            if(CurrentPage === i)
             {
                 content.push(<li><a className="active" href={`/about/gallery/${i}/`}>{i}</a></li>);
             }else{
@@ -76,7 +72,6 @@ const Blog = ({ galleries, categories, startPage }) => {
                             </div>
                         </div>
                     </div>
-
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
                             <div className="row justify-content-center">
@@ -109,14 +104,13 @@ const Blog = ({ galleries, categories, startPage }) => {
                             </div>
                             <ul className="page-nav list-style">
 
-
                                 {PaginationData()}
+
 
                                 <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
                         </div>
                     </section>
-
 
 
 
@@ -132,39 +126,37 @@ const Blog = ({ galleries, categories, startPage }) => {
 
 export async function getStaticPaths() {
 
-    const PerPage = 6;
-
     const ServerGallery = await fetchAPI("/galleries");
 
     const ServerTotalPage = ServerGallery.meta.pagination.total;
-
-    console.log(ServerGallery);
-
 
     let pages = 0;
 
     if (ServerTotalPage <= PerPage)
     {
-        pages = 0;
+        pages = 1;
 
     }else if(ServerTotalPage % PerPage === 0){
 
         pages = ServerTotalPage/PerPage;
 
     }else{
-        pages = ServerTotalPage/PerPage + 1;
+        pages = (ServerTotalPage/PerPage) + 1;
 
     }
 
-    var ServerPages = [];
+    pages = Math.trunc(pages); // Removing decimal points
 
-    for (let i = 1; i < pages; i++) {
-        ServerPages.push({id:i});
+    var Pages = [];
+
+    for (let i = 0; i < pages; i++) {
+
+        Pages.push({id:i+1});
 
     }
 
     return {
-        paths: ServerPages.map((page) => ({
+        paths: Pages.map((page) => ({
             params: {
                 slug: page.id.toString(),
             },
@@ -176,26 +168,26 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 
-    const PerPage = 6;
+    const slug = parseInt(params.slug);
 
-    const StartFrom = PerPage*params.slug+1;
+    let StartPage = (slug-1)*PerPage;
+
 
     const galleriesRes = await fetchAPI("/galleries", {
         pagination: {
-            start: StartFrom,
+            start: StartPage,
             limit: PerPage,
             withCount: true
         },
-        sort: ['id:desc'],
+        sort: ['id:asc'],
         populate: "*",
     })
-
-    const categoriesRes = await fetchAPI("/galleries")
+    const categoriesRes = await fetchAPI("/post-categories")
 
     return {
-        props: { galleries: galleriesRes, categories: categoriesRes, startPage:params.slug },
+        props: { galleries: galleriesRes, categories: categoriesRes, CurrentPage: slug },
         revalidate: 1,
     }
 }
 
-export default Blog
+export default Gallery

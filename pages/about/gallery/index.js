@@ -50,8 +50,8 @@ const Gallery = ({ galleries, portfolios }) => {
 
     galleries = galleries.data;
 
-    console.log(galleries);
-    console.log(pagination);
+    //console.log(galleries);
+    //console.log(pagination);
 
     return (
         <>
