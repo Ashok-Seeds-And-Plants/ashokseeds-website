@@ -9,8 +9,6 @@ import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import React from "react";
-
-const PerPage = 6;
 const Blog = ({ galleries, categories, startPage }) => {
 
     console.log(galleries)
@@ -134,7 +132,7 @@ const Blog = ({ galleries, categories, startPage }) => {
 
 export async function getStaticPaths() {
 
-    //const PerPage = 4;
+    const PerPage = 6;
 
     const ServerGallery = await fetchAPI("/galleries");
 
