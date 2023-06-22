@@ -11,7 +11,9 @@ import { parseISO, format } from 'date-fns'
 import React from "react";
 
 const PerPage = 5;
-const Blog = ({ galleries, categories }) => {
+const Blog = ({ galleries, categories, startPage }) => {
+
+    console.log(startPage)
 
     const pagination = galleries.meta.pagination;
 
@@ -186,7 +188,7 @@ export async function getStaticProps({ params }) {
     const categoriesRes = await fetchAPI("/galleries")
 
     return {
-        props: { galleries: galleriesRes, categories: categoriesRes },
+        props: { galleries: galleriesRes, categories: categoriesRes, startPage:params.slug },
         revalidate: 1,
     }
 }
