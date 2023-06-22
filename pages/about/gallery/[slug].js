@@ -174,6 +174,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 
+    const PerPage = 6;
+
     const StartFrom = PerPage*params.slug+1;
 
     const galleriesRes = await fetchAPI("/galleries", {
