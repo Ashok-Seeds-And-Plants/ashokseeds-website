@@ -13,6 +13,7 @@ import React from "react";
 const PerPage = 6;
 const Blog = ({ galleries, categories, startPage }) => {
 
+    console.log(galleries)
     console.log(startPage)
 
     const pagination = galleries.meta.pagination;
@@ -83,7 +84,7 @@ const Blog = ({ galleries, categories, startPage }) => {
                             <div className="row justify-content-center">
                                 {galleries.data.map((gallery, i) => {
                                     const title = delve(gallery, "attributes.title");
-                                    const Id = delve(gallery, "attributes.id");
+                                    const Id = delve(gallery, "attributes.Id");
                                     const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
                                     return (
                                         <div className="col-xl-4 col-lg-6 col-md-6">
