@@ -180,7 +180,7 @@ export async function getStaticProps({ params }) {
             limit: PerPage,
             withCount: true
         },
-        sort: ['id:asc'],
+        sort: ['id:desc'],
         populate: "*",
     })
     const categoriesRes = await fetchAPI("/post-categories")
