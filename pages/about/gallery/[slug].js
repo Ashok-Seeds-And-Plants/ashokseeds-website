@@ -182,7 +182,7 @@ export async function getStaticProps({ params }) {
     const categoriesRes = await fetchAPI("/galleries")
 
     return {
-        props: { galleries: galleriesRes.data[0], categories: categoriesRes, PaginationData: content },
+        props: { galleries: galleriesRes, categories: categoriesRes, PaginationData: content },
         revalidate: 1,
     }
 }
