@@ -71,7 +71,7 @@ const Blog = ({ galleries, categories, PaginationData }) => {
                             <ul className="page-nav list-style">
 
 
-                                
+
 
                                 <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
                             </ul>
@@ -168,13 +168,13 @@ export async function getStaticProps({ params }) {
 
     }
     const PaginationData = index => {
-        let content = [];
+        let content = '';
         for (let i = 1; i <= pages; i++) {
             if(i === 1)
             {
-                content.push(<li><a className="active" href="/about/gallery/">1</a></li>);
+                content = content+'<li><a className="active" href="/about/gallery/">1</a></li>';
             }else{
-                content.push(<li><a href={`/about/gallery/${i}/`}>{i}</a></li>);
+                content = content+'<li><a href={`/about/gallery/${i}/`}>{i}</a></li>';
             }
         }
         return content;
