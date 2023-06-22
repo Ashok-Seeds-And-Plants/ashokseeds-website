@@ -10,7 +10,7 @@ import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import React from "react";
 
-const PerPage = 5;
+const PerPage = 6;
 const Blog = ({ galleries, categories, startPage }) => {
 
     console.log(startPage)
