@@ -9,6 +9,7 @@ import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import React from "react";
+import Link from "next/link";
 
 const PerPage = 4;
 const Gallery = ({ galleries, categories, CurrentPage }) => {
@@ -38,9 +39,9 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
 
             if(CurrentPage === i)
             {
-                content.push(<li><a className="active" href={`/about/gallery/${i}/`}>{i}</a></li>);
+                content.push(<li><Link href={`/about/gallery/${i}/`}><a className="active">{i}</a></Link></li>);
             }else{
-                content.push(<li><a href={`/about/gallery/${i}/`}>{i}</a></li>);
+                content.push(<li><Link href={`/about/gallery/${i}/`}><a>{i}</a></Link></li>);
             }
 
         }
