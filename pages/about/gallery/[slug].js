@@ -9,7 +9,7 @@ import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 
-const PerPage = 4;
+const PerPage = 5;
 const Blog = ({ post, categories }) => {
 
     return (
