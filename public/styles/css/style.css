@@ -7271,8 +7271,17 @@ article {
   background-image: url(../img/bkg_bg.jpg);
 }
 .GalleryCategory{
-
+  padding-left: 0;
 }
 .GalleryCategory > li{
-  
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  opacity: 1;
+  background-color: #338F7A;
+  margin-left: 5px;
+  padding: 2px;
+}
+.GalleryCategory > li:first-child{
+  margin-left: 0;
 }
