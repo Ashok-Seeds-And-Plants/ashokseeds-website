@@ -167,7 +167,7 @@ export async function getStaticProps({ params }) {
         pages = TotalPage/PerPage + 1;
 
     }
-    const PaginationData = index => {
+
         let content = '';
         for (let i = 1; i <= pages; i++) {
             if(i === 1)
@@ -177,13 +177,12 @@ export async function getStaticProps({ params }) {
                 content = content+'<li><a href={`/about/gallery/${i}/`}>{i}</a></li>';
             }
         }
-        return content;
-    };
+
 
     const categoriesRes = await fetchAPI("/galleries")
 
     return {
-        props: { galleries: galleriesRes.data[0], categories: categoriesRes, PaginationData: PaginationData },
+        props: { galleries: galleriesRes.data[0], categories: categoriesRes, PaginationData: content },
         revalidate: 1,
     }
 }
