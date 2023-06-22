@@ -8,9 +8,10 @@ import ReactMarkdown from "react-markdown";
 import { fetchAPI } from "../../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
+import React from "react";
 
 const PerPage = 5;
-const Blog = ({ post, categories }) => {
+const Blog = ({ galleries, categories, PaginationData }) => {
 
     return (
         <>
@@ -37,6 +38,47 @@ const Blog = ({ post, categories }) => {
                             </div>
                         </div>
                     </div>
+
+                    <section className="project-details-wrap ptb-100">
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                {galleries.map((gallery, i) => {
+                                    const title = delve(gallery, "attributes.title");
+                                    const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
+                                    return (
+                                        <div className="col-xl-4 col-lg-6 col-md-6">
+                                            <div className="project-card style1">
+                                                <div className="project-img">
+                                                    <a className="post-img" data-fancybox="gallery"
+                                                       href={`${image}`}>
+                                                        <img src={`${image}`} alt={`${title}`}/>
+                                                    </a>
+                                                </div>
+                                                <div className="project-info">
+                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
+                                                    <h3>Stop Cutting Down Trees</h3>
+                                                    <ul>
+                                                        <li>Category</li>
+                                                        <li>Category 1</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+
+                            </div>
+                            <ul className="page-nav list-style">
+
+
+                                {PaginationData()}
+
+                                <li><a href="/about/gallery/2/"><i className="flaticon-right-arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+
 
 
                 </div>
@@ -93,19 +135,55 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const postsRes = await fetchAPI("/galleries", {
+
+    const StartFrom = PerPage*params.slug+1;
+
+    const galleriesRes = await fetchAPI("/galleries", {
         pagination: {
-            start: 1,
+            start: StartFrom,
             limit: PerPage,
             withCount: true
         },
         sort: ['id:desc'],
         populate: "*",
     })
-    const categoriesRes = await fetchAPI("/post-categories")
+
+
+    const TotalPage = galleriesRes.meta.pagination.total;
+
+
+
+    let pages = 0;
+
+    if (TotalPage <= PerPage)
+    {
+        pages = 0;
+
+    }else if(TotalPage % PerPage === 0){
+
+        pages = TotalPage/PerPage;
+
+    }else{
+        pages = TotalPage/PerPage + 1;
+
+    }
+    const PaginationData = index => {
+        let content = [];
+        for (let i = 1; i <= pages; i++) {
+            if(i === 1)
+            {
+                content.push(<li><a className="active" href="/about/gallery/">1</a></li>);
+            }else{
+                content.push(<li><a href={`/about/gallery/${i}/`}>{i}</a></li>);
+            }
+        }
+        return content;
+    };
+
+    const categoriesRes = await fetchAPI("/gallery-categories")
 
     return {
-        props: { post: postsRes.data[0], categories: categoriesRes },
+        props: { galleries: galleriesRes.data[0], categories: categoriesRes, PaginationData: PaginationData },
         revalidate: 1,
     }
 }
