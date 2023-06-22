@@ -69,7 +69,7 @@ export async function getStaticPaths() {
     return {
         paths: Pages.map((page) => ({
             params: {
-                slug: '/gallery/'+page.id,
+                slug: '/gallery/'+page.id.toString(),
             },
         })),
         fallback: false,
