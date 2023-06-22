@@ -57,12 +57,7 @@ export async function getStaticPaths() {
     var Pages = [];
 
     for (let i = 1; i < pages; i++) {
-        if(i === 1)
-        {
-            Pages.push({id:'/gallery/'});
-        }else{
-            Pages.push({id:'/gallery/'+i});
-        }
+        Pages.push({id:i});
 
     }
 
