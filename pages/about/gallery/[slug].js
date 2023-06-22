@@ -69,7 +69,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
         <>
             <Meta />
             <Head>
-                <title>Gallery Page  | Ashok Seeds and Plants</title>
+                <title>Gallery Page - {CurrentPage} | Ashok Seeds and Plants</title>
                 <meta name="description" content="" />
 
             </Head>
@@ -81,7 +81,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                     <div className="breadcrumb-wrap bg-f br-1">
                         <div className="container">
                             <div className="breadcrumb-title">
-                                <h2>Gallery</h2>
+                                <h2>Gallery - {CurrentPage}</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home</a></li>
                                     <li><a href="https://www.ashokseedplant.com/blog/">Blog</a></li>
