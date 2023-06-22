@@ -20,7 +20,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     if (ServerTotalPage <= PerPage)
     {
-        pages = 1;
+        pages = 1; 
 
     }else if(ServerTotalPage % PerPage === 0){
 
