@@ -171,7 +171,7 @@ export async function getStaticPaths() {
 
     pages = Math.trunc(pages); // Removing decimal points
 
-    var Pages = [];
+    const Pages = [];
 
     for (let i = 0; i < pages; i++) {
 
