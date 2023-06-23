@@ -130,8 +130,6 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
 
                                 {PaginationData()}
 
-
-
                             </ul>
                         </div>
                     </section>
