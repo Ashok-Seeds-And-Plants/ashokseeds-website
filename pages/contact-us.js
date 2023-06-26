@@ -8,7 +8,26 @@ import Js from '@components/Js'
 
 import SocialLinks from "@components/SocialLinks";
 
-export default function Home() {
+import React from "react";
+import axios from "axios";
+
+const handleSubmit = (e) => {
+  // We don't want the page to refresh
+ e.preventDefault();
+
+    let formData = new FormData();
+
+  // Turn our formData state into data we can use with a form submission
+  Object.entries(formData).forEach(([key, value]) => {
+    formData.append(key, value);
+  })
+
+  // POST the data to the URL of the form
+ 
+}
+
+const Contact = () => {
+
     return (
         <>
             <Meta />
@@ -42,7 +61,7 @@ export default function Home() {
                             <div className="row gx-5 justify-content-center">
                                 <div className="col-lg-8">
                                     <div className="contact-form">
-                                        <form className="form-wrap" method='post' action='https://crm.ashokseedplant.com/api/ezforms/submit' name='contactForm' id="contactForm">
+                                        <form className="form-wrap" name='contactForm' id="contactForm" onSubmit={handleSubmit}>
                                             <div className="row">
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
@@ -152,3 +171,6 @@ export default function Home() {
         </>
     )
 }
+
+
+export default Contact;

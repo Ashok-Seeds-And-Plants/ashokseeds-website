@@ -4,7 +4,6 @@ export default function Js() {
         <script src="https://www.ashokseedplant.com/js/jquery.min.js"></script>
         <script src="https://www.ashokseedplant.com/js/bootstrap.bundle.min.js"></script>
         <script src="https://www.ashokseedplant.com/js/form-validator.min.js"></script>
-        <script src="https://www.ashokseedplant.com/js/contact-form-script.js"></script>
         <script src="https://www.ashokseedplant.com/js/aos.js"></script>
         <script src="https://www.ashokseedplant.com/js/odometer.js"></script>
         <script src="https://www.ashokseedplant.com/js/circle-progressbar.min.js"></script>
