@@ -22,6 +22,7 @@ const handleSubmit = (e) => {
     formData.append(key, value);
   })
 
+  console.log(formData);
   // POST the data to the URL of the form
  
 }
