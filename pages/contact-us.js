@@ -19,6 +19,8 @@ const handleSubmit = (e) => {
 
   // Turn our formData state into data we can use with a form submission
   Object.entries(formData).forEach(([key, value]) => {
+    console.log('Key:'+key);
+    console.log('Key:'+value);
     formData.append(key, value);
   })
 
