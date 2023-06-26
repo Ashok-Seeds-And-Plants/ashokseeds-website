@@ -9,6 +9,7 @@ import { fetchAPI } from "../lib/api"
 import Portfolios from "@components/Portfolios";
 import Galleries from "@components/Galleries";
 import Posts from "@components/Posts";
+import Clients from "@components/Clients";
 import Link from "next/link";
 
 import React, { useRef, useState } from "react";
@@ -23,7 +24,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay} from "swiper";
 
 
-const Home = ({ posts, galleries, portfolios }) => {
+const Home = ({ posts, galleries, portfolios, clients }) => {
     return (
         <>
             <Meta />
@@ -230,7 +231,6 @@ const Home = ({ posts, galleries, portfolios }) => {
                     </div>
                 </div>
 
-
                 <section className="team-wrap ptb-100 bg-sand">
                 <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
                 <div className="container">
@@ -241,6 +241,17 @@ const Home = ({ posts, galleries, portfolios }) => {
 
                     <Galleries galleries={galleries} />
 
+                </div>
+            </section>
+
+            <section class="team-wrap ptb-100 bg-sand">
+                <img src="/img/shape-11.png" alt="Image" class="team-shape-one"/>
+                <div class="container">
+                    <div class="section-title style3 text-center mb-40">
+                        <span>Our Partners</span>
+                        <h2>Our Great Customers</h2>
+                    </div>
+                    <Clients clients={clients} />
                 </div>
             </section>
 
@@ -275,7 +286,7 @@ const Home = ({ posts, galleries, portfolios }) => {
 
 export async function getStaticProps() {
     // Run API calls in parallel
-    const [postsRes, galleriesRes, portfoliosRes] = await Promise.all([
+    const [postsRes, galleriesRes, portfoliosRes, clientsRes] = await Promise.all([
         fetchAPI("/posts", {
             sort: ['id:desc'],
             pagination: {
@@ -300,6 +311,14 @@ export async function getStaticProps() {
             },
             populate: "*"
         }),
+        fetchAPI("/clients", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*"
+        }),
     ])
 
     return {
@@ -307,6 +326,7 @@ export async function getStaticProps() {
             posts: postsRes.data,
             galleries: galleriesRes.data,
             portfolios: portfoliosRes.data,
+            clients: clientsRes.data,
         },
         revalidate: 1,
     }
