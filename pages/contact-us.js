@@ -42,7 +42,7 @@ export default function Home() {
                             <div className="row gx-5 justify-content-center">
                                 <div className="col-lg-8">
                                     <div className="contact-form">
-                                        <form className="form-wrap" id="contactForm">
+                                        <form className="form-wrap" method='post' action='https://crm.ashokseedplant.com/api/ezforms/submit' name='contactForm' id="contactForm">
                                             <div className="row">
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
