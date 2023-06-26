@@ -61,7 +61,7 @@ export default function Home() {
                                                 </div>
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
-                                                        <input type="email" name="phone" id="phone" required
+                                                        <input type="text" name="phone" id="phone" required
                                                                placeholder="Phone*"
                                                                data-error="Please enter your phone"/>
                                                             <div className="help-block with-errors"></div>
