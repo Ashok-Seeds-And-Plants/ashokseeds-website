@@ -5126,7 +5126,7 @@ select {
   padding: 25px;
   position: absolute;
   z-index: 1;
-  bottom: -120px;
+  bottom: -60px;
   left: 0;
   width: 100%;
   -webkit-transition: 0.4s;
