@@ -5118,6 +5118,7 @@ select {
 
 .team-card.style1 img {
   border-radius: 5px 5px 0 0;
+  padding-bottom: 100px;
 }
 
 .team-card.style1 .team-info {
