@@ -78,7 +78,7 @@ const Miyawaki = ({ galleries, portfolios }) => {
                     </section>
 
                     <div className="promo-video style2 bg-f ptb-100">
-                        <div className="container"> 
+                        <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
                                     <div className="content-title style4 text-center mb-40">
