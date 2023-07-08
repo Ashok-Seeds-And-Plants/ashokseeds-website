@@ -96,9 +96,11 @@ const Team = ({ users }) => {
 
 export async function getStaticProps() {
 
-
     const usersRes = await fetchAPI("/users", {
         sort: ['sort:asc'],
+        filters: {
+            team: true,
+        },
         populate: {
             displayName: true,
             position: true,
