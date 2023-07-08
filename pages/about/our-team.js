@@ -93,7 +93,7 @@ const Team = ({ users }) => {
         </>
     )
 }
-
+ 
 export async function getStaticProps() {
 
     const usersRes = await fetchAPI("/users", {
