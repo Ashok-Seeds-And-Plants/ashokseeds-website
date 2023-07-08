@@ -7285,3 +7285,8 @@ article {
 .GalleryCategory > li:first-child{
   margin-left: 0;
 }
+.team-card .qualification{
+  display: block;
+  padding-top: 5px;
+  font-weight: bold;
+}

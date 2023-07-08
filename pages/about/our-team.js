@@ -45,6 +45,7 @@ const Team = ({ users }) => {
                         const displayName = delve(user, "displayName");
                         const position = delve(user, "position");
                         const department = delve(user, "department");
+                        const qualification = delve(user, "qualification");
 
                         const image = delve(user, "photo.url");
                         return (
@@ -54,7 +55,8 @@ const Team = ({ users }) => {
                         <div class="team-info">
                         <img src="/img/team/team-shape-2.png" alt={displayName} class="team-shape"/>
                         <h3><a href="#">{displayName}</a></h3>
-                        <span>{position}</span>
+                        <span className="position">{position}</span>
+                        <span className="qualification">{qualification}</span>
                         <ul class="social-profile style1 list-style">
                         <li>
                         <a href="https://facebook.com">
@@ -112,6 +114,7 @@ export async function getStaticProps() {
             twitter: true,
             instagram: true,
             linkedin: true,
+            qualification: true,
             photo: true
 },
     })
