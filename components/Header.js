@@ -242,14 +242,20 @@ export default function Header() {
                                               <a className="nav-link">About Us</a>
                                               </Link>
                                           </li>
-                                          <li className="nav-item">
-                                              <Link href={'/about/gallery/1/'}>
-                                                  <a className="nav-link">Gallery</a>
-                                              </Link>
-                                          </li>
+                                          
                                           <li className="nav-item">
                                               <Link href={'/about/mission-vision/'}>
                                               <a className="nav-link">Mission & Vision</a>
+                                              </Link>
+                                          </li>
+                                          <li className="nav-item">
+                                              <Link href={'/about/our-team/'}>
+                                                  <a className="nav-link">Our Team</a>
+                                              </Link>
+                                          </li>
+                                          <li className="nav-item">
+                                              <Link href={'/about/gallery/1/'}>
+                                                  <a className="nav-link">Gallery</a>
                                               </Link>
                                           </li>
                                       </ul>

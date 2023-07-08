@@ -6,15 +6,14 @@ import Footer from '@components/Footer'
 import Js from '@components/Js'
 
 import { fetchAPI } from "../../lib/api"
+
 import delve from 'dlv'
-import { parseISO, format } from 'date-fns'
-import Blogs from "../blog";
-import ReactMarkdown from "react-markdown";
+
+import React from "react";
 import Link from "next/link";
 
-const Team = ({ team }) => {
-
-    console.log(team);
+const Team = ({ users }) => {
+    //console.log(users);
     return (
         <>
             <Meta />
@@ -31,10 +30,10 @@ const Team = ({ team }) => {
                     <div className="breadcrumb-wrap bg-f br-1">
                         <div className="container">
                             <div className="breadcrumb-title">
-                                <h2>Projects</h2>
+                                <h2>Our Team</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="/">Home </a></li>
-                                    <li>Projects</li>
+                                    <li>Our Team</li>
                                 </ul>
                             </div>
                         </div>
@@ -42,40 +41,46 @@ const Team = ({ team }) => {
                     <section class="team-wrap ptb-100 bg-sand">
                     <div class="container">
                         <div class="row justify-content-center">
+                        {users.map((user, i) => {
+                        const displayName = delve(user, "displayName");
+                        const position = delve(user, "position");
+                        const department = delve(user, "department");
 
-                            <div class="col-xl-3 col-lg-4 col-md-6">
-                                <div class="team-card style1">
-                                    <img src="/img/team/team-1.jpg" alt="Image"/>
-                                    <div class="team-info">
-                                        <img src="/img/team/team-shape-2.png" alt="IMage" class="team-shape"/>
-                                        <h3><a href="#">Kevin Thompson</a></h3>
-                                        <span>Founder &amp; CEO</span>
-                                        <ul class="social-profile style1 list-style">
-                                            <li>
-                                                <a href="https://facebook.com">
-                                                    <i class="ri-facebook-fill"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://twitter.com">
-                                                    <i class="ri-twitter-fill"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://instagram.com">
-                                                    <i class="ri-instagram-line"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://linkedin.com">
-                                                    <i class="ri-linkedin-fill"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
+                        const image = delve(user, "image.url");
+                        return (
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="team-card style1">
+                        <img src={image} alt={displayName}/>
+                        <div class="team-info">
+                        <img src="/img/team/team-shape-2.png" alt={displayName} class="team-shape"/>
+                        <h3><a href="#">{displayName}</a></h3>
+                        <span>{position}</span>
+                        <ul class="social-profile style1 list-style">
+                        <li>
+                        <a href="https://facebook.com">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://twitter.com">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://instagram.com">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://linkedin.com">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        </li>
+                        </ul>
+                        </div>
+                        </div>
+                        </div>
+                        )})}
                         </div>
                     </div>
                 </section>
@@ -90,29 +95,25 @@ const Team = ({ team }) => {
 }
 
 export async function getStaticProps() {
-    // Run API calls in parallel
-    const [teamRes] = await Promise.all([
-        fetchAPI("/users", {
-            sort: ['sort:asc'],
-            populate: {
-      displayName: true,
-      position: true,
-      department: true,
-      about: true,
-      facebook: true,
-      twitter: true,
-      instagram: true,
-      linkedin: true,
-      photo: true
 
-    }
-        })
-    ])
+
+    const usersRes = await fetchAPI("/users", {
+        sort: ['sort:asc'],
+        populate: {
+            displayName: true,
+            position: true,
+            department: true,
+            about: true,
+            facebook: true,
+            twitter: true,
+            instagram: true,
+            linkedin: true,
+            photo: true
+},
+    })
 
     return {
-        props: {
-            team: teamRes.data
-        },
+        props: { users: usersRes },
         revalidate: 1,
     }
 }
