@@ -46,7 +46,7 @@ const Team = ({ users }) => {
                         const position = delve(user, "position");
                         const department = delve(user, "department");
 
-                        const image = delve(user, "image.url");
+                        const image = delve(user, "photo.url");
                         return (
                         <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="team-card style1">
