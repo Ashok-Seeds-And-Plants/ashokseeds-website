@@ -86,7 +86,7 @@ const Miyawaki = ({ galleries, portfolios }) => {
                                         <h2>The best method to grow an urban forest within a short span of 10-20 years.</h2>
                                     </div>
                                     <a className="play-now" data-fancybox=""
-                                       href="https://www.youtube.com/watch?v=l5jtg2q1gnU">
+                                       href="https://www.youtube.com/watch?v=JBwe7mT_1N4">
                                         <i className="ri-play-fill"></i>
                                         <span className="ripple"></span>
                                     </a>
