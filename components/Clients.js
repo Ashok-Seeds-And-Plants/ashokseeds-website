@@ -56,10 +56,7 @@ const Clients = ({ clients }) => {
 
                 return (
                     <SwiperSlide>
-                        <div class="team-card style3">
-                            <img src={image} alt={name}/>
-                            
-                        </div>
+                            <img src={image} alt={name}/> 
                     </SwiperSlide>
 
                 )
