@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
+import axios from "axios";
+
 
 export default function Test() {
   const [candidat, setCandidat] = useState({
@@ -13,13 +15,20 @@ export default function Test() {
     if (candidat.lastName === "" || candidat.firstName === "")
       return alert("last name or first name is empty");
 
-await fetch("/myform/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(candidat),
-    }).then(res=>res.json()).then(data=>setUser(data.user))
+
+  let token = 'recaptcha token';
+
+  axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', {token, formData: JSON.stringify(candidat)})
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((error) => {
+      // error.response.status Check status code
+    }).finally(() => {
+    //Perform action in always
+  });
+
+
   };
   return (
     <div>
