@@ -78,7 +78,7 @@ const Contact = () => {
                             <div className="row gx-5 justify-content-center">
                                 <div className="col-lg-8">
                                     <div className="contact-form">
-                                        <form className="form-wrap" name='contactForm' id="contactForm" onSubmit={handleSubmit}>
+                                        <form className="form-wrap" name='contactForm' id="contactForm" onSubmit={onSubmit}>
                                             <div className="row">
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
