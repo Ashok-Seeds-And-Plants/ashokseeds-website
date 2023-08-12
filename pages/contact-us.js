@@ -11,25 +11,38 @@ import SocialLinks from "@components/SocialLinks";
 import React from "react";
 import axios from "axios";
 
-const handleSubmit = (e) => {
-  // We don't want the page to refresh
- e.preventDefault();
-
-    let formData = new FormData();
-
-  // Turn our formData state into data we can use with a form submission
-  Object.entries(formData).forEach(([key, value]) => {
-    console.log('Key:'+key);
-    console.log('Key:'+value);
-    formData.append(key, value);
-  })
-
-  console.log(formData);
-  // POST the data to the URL of the form
- 
-}
-
 const Contact = () => {
+
+const [candidat, setCandidat] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    msg_subject: "",
+    message: "",
+  });
+  const [user,setUser]= useState()
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    if (candidat.name === "")
+      return alert("Your name is empty.");
+
+
+  let token = 'recaptcha token';
+
+  axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', {token, formData: JSON.stringify(candidat)})
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((error) => {
+      // error.response.status Check status code
+    }).finally(() => {
+    //Perform action in always
+  });
+
+
+  };
+
 
     return (
         <>
@@ -69,7 +82,9 @@ const Contact = () => {
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
                                                         <input type="text" name="name" placeholder="Name*" id="name"
-                                                               required data-error="Please enter your name"/>
+                                                               required data-error="Please enter your name" onChange={() => {
+            setCandidat({ ...candidat, name: event.target.value });
+          }} />
                                                             <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -77,7 +92,9 @@ const Contact = () => {
                                                     <div className="form-group">
                                                         <input type="email" name="email" id="email" required
                                                                placeholder="Email*"
-                                                               data-error="Please enter your email"/>
+                                                               data-error="Please enter your email" onChange={() => {
+            setCandidat({ ...candidat, email: event.target.value });
+          }} />
                                                             <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -85,7 +102,9 @@ const Contact = () => {
                                                     <div className="form-group">
                                                         <input type="text" name="phone" id="phone" required
                                                                placeholder="Phone*"
-                                                               data-error="Please enter your phone"/>
+                                                               data-error="Please enter your phone" onChange={() => {
+            setCandidat({ ...candidat, phone: event.target.value });
+          }} />
                                                             <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -93,7 +112,9 @@ const Contact = () => {
                                                     <div className="form-group">
                                                         <input type="text" name="msg_subject" placeholder="Subject*"
                                                                id="msg_subject" required
-                                                               data-error="Please enter your subject"/>
+                                                               data-error="Please enter your subject" onChange={() => {
+            setCandidat({ ...candidat, msg_subject: event.target.value });
+          }} />
                                                             <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -102,7 +123,9 @@ const Contact = () => {
                                                         <textarea name="message" id="message"
                                                                   placeholder="Your Messages.." cols="30" rows="10"
                                                                   required
-                                                                  data-error="Please enter your message"/>
+                                                                  data-error="Please enter your message" onChange={() => {
+            setCandidat({ ...candidat, message: event.target.value });
+          }} />
                                                         <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -115,7 +138,9 @@ const Contact = () => {
                                                                 className="form-check-input"
                                                                 type="checkbox"
                                                                 id="gridCheck"
-                                                                required
+                                                                required onChange={() => {
+            setCandidat({ ...candidat, gridCheck: event.target.value });
+          }} 
                                                             />
                                                                 <label className="form-check-label" htmlFor="gridCheck">
                                                                     I agree to the <a className="link style1"
