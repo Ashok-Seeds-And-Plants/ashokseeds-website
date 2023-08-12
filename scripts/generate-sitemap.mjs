@@ -35,7 +35,7 @@ async function generate() {
     </urlset>
     `;
 
-    const formatted = prettier.format(sitemap, {
+    const formatted = await prettier.format(sitemap, {
         ...prettierConfig,
         parser: 'html',
     });
