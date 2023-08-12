@@ -33,7 +33,7 @@ const Contact = () => {
 
         axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', { token, formData: JSON.stringify(candidat) })
             .then((res) => {
-                console.log(res)
+                // console.log(res)
             })
             .catch((error) => {
                 // error.response.status Check status code
@@ -135,7 +135,7 @@ const Contact = () => {
                                                         <div className="form-check checkbox">
                                                             <input
                                                                 name="gridCheck"
-                                                                value="I agree to the terms and privacy policy."
+                                                                value="Agree to tos."
                                                                 className="form-check-input"
                                                                 type="checkbox"
                                                                 id="gridCheck"
