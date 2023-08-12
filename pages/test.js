@@ -8,7 +8,7 @@ export default function Test() {
     lastName: "",
     firstName: "",
   });
-  const [user,setUser]= useState()
+  const [user, setUser] = useState()
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -16,17 +16,17 @@ export default function Test() {
       return alert("last name or first name is empty");
 
 
-  let token = 'recaptcha token';
+    let token = 'recaptcha token';
 
-  axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', {token, formData: JSON.stringify(candidat)})
-    .then((res) => {
-      console.log(res)
-    })
-    .catch((error) => {
-      // error.response.status Check status code
-    }).finally(() => {
-    //Perform action in always
-  });
+    axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', { token, formData: JSON.stringify(candidat) })
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((error) => {
+        // error.response.status Check status code
+      }).finally(() => {
+        //Perform action in always
+      });
 
 
   };
@@ -39,7 +39,7 @@ export default function Test() {
       <form
         onSubmit={onSubmit}
         className="w-1/3 justify-center border-2 flex flex-col gap-4 m-4 p-2"
-     
+
       >
         <label htmlFor="Last name">Last name</label>
         <input
@@ -64,7 +64,7 @@ export default function Test() {
           <>Submit</>
         </button>
       </form>
-      <div className="p-2">{user ? 'user is : '+ user:''}</div>
+      <div className="p-2">{user ? 'user is : ' + user : ''}</div>
     </div>
   );
 }

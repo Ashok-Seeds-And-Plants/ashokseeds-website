@@ -13,35 +13,35 @@ import axios from "axios";
 
 const Contact = () => {
 
-const [candidat, setCandidat] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    msg_subject: "",
-    message: "",
-  });
-  const [user,setUser]= useState()
+    const [candidat, setCandidat] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        msg_subject: "",
+        message: "",
+    });
+    const [user, setUser] = useState()
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    if (candidat.name === "")
-      return alert("Your name is empty.");
-
-
-  let token = 'recaptcha token';
-
-  axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', {token, formData: JSON.stringify(candidat)})
-    .then((res) => {
-      console.log(res)
-    })
-    .catch((error) => {
-      // error.response.status Check status code
-    }).finally(() => {
-    //Perform action in always
-  });
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        if (candidat.name === "")
+            return alert("Your name is empty.");
 
 
-  };
+        let token = 'recaptcha token';
+
+        axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', { token, formData: JSON.stringify(candidat) })
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((error) => {
+                // error.response.status Check status code
+            }).finally(() => {
+                //Perform action in always
+            });
+
+
+    };
 
 
     return (
@@ -71,7 +71,7 @@ const [candidat, setCandidat] = useState({
                     <section className="contact-us-wrap ptb-100">
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
-                                <span>Contact Us<img src="/img/section-shape.png" alt="Image"/></span>
+                                <span>Contact Us<img src="/img/section-shape.png" alt="Image" /></span>
                                 <h2>Get In Touch With Us</h2>
                             </div>
                             <div className="row gx-5 justify-content-center">
@@ -82,50 +82,50 @@ const [candidat, setCandidat] = useState({
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
                                                         <input type="text" name="name" placeholder="Name*" id="name"
-                                                               required data-error="Please enter your name" onChange={() => {
-            setCandidat({ ...candidat, name: event.target.value });
-          }} />
-                                                            <div className="help-block with-errors"></div>
+                                                            required data-error="Please enter your name" onChange={() => {
+                                                                setCandidat({ ...candidat, name: event.target.value });
+                                                            }} />
+                                                        <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
                                                         <input type="email" name="email" id="email" required
-                                                               placeholder="Email*"
-                                                               data-error="Please enter your email" onChange={() => {
-            setCandidat({ ...candidat, email: event.target.value });
-          }} />
-                                                            <div className="help-block with-errors"></div>
+                                                            placeholder="Email*"
+                                                            data-error="Please enter your email" onChange={() => {
+                                                                setCandidat({ ...candidat, email: event.target.value });
+                                                            }} />
+                                                        <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
                                                         <input type="text" name="phone" id="phone" required
-                                                               placeholder="Phone*"
-                                                               data-error="Please enter your phone" onChange={() => {
-            setCandidat({ ...candidat, phone: event.target.value });
-          }} />
-                                                            <div className="help-block with-errors"></div>
+                                                            placeholder="Phone*"
+                                                            data-error="Please enter your phone" onChange={() => {
+                                                                setCandidat({ ...candidat, phone: event.target.value });
+                                                            }} />
+                                                        <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="form-group">
                                                         <input type="text" name="msg_subject" placeholder="Subject*"
-                                                               id="msg_subject" required
-                                                               data-error="Please enter your subject" onChange={() => {
-            setCandidat({ ...candidat, msg_subject: event.target.value });
-          }} />
-                                                            <div className="help-block with-errors"></div>
+                                                            id="msg_subject" required
+                                                            data-error="Please enter your subject" onChange={() => {
+                                                                setCandidat({ ...candidat, msg_subject: event.target.value });
+                                                            }} />
+                                                        <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12">
                                                     <div className="form-group v1">
                                                         <textarea name="message" id="message"
-                                                                  placeholder="Your Messages.." cols="30" rows="10"
-                                                                  required
-                                                                  data-error="Please enter your message" onChange={() => {
-            setCandidat({ ...candidat, message: event.target.value });
-          }} />
+                                                            placeholder="Your Messages.." cols="30" rows="10"
+                                                            required
+                                                            data-error="Please enter your message" onChange={() => {
+                                                                setCandidat({ ...candidat, message: event.target.value });
+                                                            }} />
                                                         <div className="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -139,17 +139,17 @@ const [candidat, setCandidat] = useState({
                                                                 type="checkbox"
                                                                 id="gridCheck"
                                                                 required onChange={() => {
-            setCandidat({ ...candidat, gridCheck: event.target.value });
-          }} 
+                                                                    setCandidat({ ...candidat, gridCheck: event.target.value });
+                                                                }}
                                                             />
-                                                                <label className="form-check-label" htmlFor="gridCheck">
-                                                                    I agree to the <a className="link style1"
-                                                                                      href="#">Terms &amp; Conditions</a> and <a
-                                                                    className="link style1" href="#">Privacy
+                                                            <label className="form-check-label" htmlFor="gridCheck">
+                                                                I agree to the <a className="link style1"
+                                                                    href="#">Terms &amp; Conditions</a> and <a
+                                                                        className="link style1" href="#">Privacy
                                                                     Policy</a>
-                                                                </label>
-                                                                <div
-                                                                    className="help-block with-errors gridCheck-error"></div>
+                                                            </label>
+                                                            <div
+                                                                className="help-block with-errors gridCheck-error"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -181,7 +181,7 @@ const [candidat, setCandidat] = useState({
                                         <div className="contact-item">
                                             <h3>Follow us</h3>
 
-                                            <SocialLinks style={'style2'}/>
+                                            <SocialLinks style={'style2'} />
 
                                         </div>
                                     </div>
