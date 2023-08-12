@@ -30,6 +30,7 @@ const Contact = () => {
 
 
         let token = 'recaptcha token';
+        let formName = 'Contact page';
 
         axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', { token, formData: JSON.stringify(candidat) })
             .then((res) => {
