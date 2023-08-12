@@ -177,7 +177,7 @@ const Contact = () => {
                                             <a href="mailto:contact@ashokseedplant.com">contact@ashokseedplant.com</a>
                                         </div>
                                         <div className="contact-item">
-                                            <h3>24/7 Support</h3>
+                                            <h3>Support (India Working Time)</h3>
                                             <a href="tel:+91-9453-111-377">+91-9453-111-377</a>
                                         </div>
                                         <div className="contact-item">
