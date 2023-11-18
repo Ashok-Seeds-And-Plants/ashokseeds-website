@@ -19,7 +19,7 @@ const Team = ({ users }) => {
             <Meta />
             <Head>
                 <title>Our Team | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="We are a small team with dreaming a eco-friendly environment for our world." />
 
             </Head>
             <div className="page-wrapper">

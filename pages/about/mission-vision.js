@@ -14,7 +14,7 @@ const Mission = ({ galleries, portfolios }) => {
             <Meta />
             <Head>
                 <title>Mission vision | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="Our Mission is to fight against climate change and our vision is having a would full of value and respect for the environment." />
 
             </Head>
             <div className="page-wrapper">

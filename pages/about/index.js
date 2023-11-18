@@ -12,8 +12,8 @@ export default function Home() {
         <>
             <Meta />
             <Head>
-                <title>About | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <title>About - Ashok Seeds and Plants</title>
+                <meta name="description" content="We are India's leading Seeds and Plants Provider. We are working to achieve sustainable development goals through tree planting." />
 
             </Head>
             <div className="page-wrapper">
