@@ -51,7 +51,7 @@ const Contact = () => {
             <Meta />
             <Head>
                 <title>Contact | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="Test contact description." />
 
             </Head>
             <div className="page-wrapper">

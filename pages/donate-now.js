@@ -12,7 +12,7 @@ export default function Home() {
             <Meta />
             <Head>
                 <title>Donate | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="Test DOnate Now" />
 
             </Head>
             <div className="page-wrapper">
