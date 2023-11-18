@@ -51,7 +51,7 @@ const Contact = () => {
             <Meta />
             <Head>
                 <title>Contact | Ashok Seeds and Plants</title>
-                <meta name="description" content="Test contact description." />
+                <meta name="description" content="We are India's leading Seeds an Plants Provider. We are working to achieve sustainable development goals through tree planting." />
 
             </Head>
             <div className="page-wrapper">

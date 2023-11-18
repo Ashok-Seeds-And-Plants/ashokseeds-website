@@ -12,7 +12,7 @@ export default function Home() {
             <Meta />
             <Head>
                 <title>404 Page Not Found | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="The page you requested is not available at the moment. Please visit our homepage." />
 
             </Head>
             <div className="page-wrapper">

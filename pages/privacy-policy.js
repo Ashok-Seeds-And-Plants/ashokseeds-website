@@ -11,7 +11,7 @@ export default function Home() {
             <Meta />
             <Head>
                 <title>Privacy Policy | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="We reuest our users to read our Privacy Policy before work wth us. Thank you!" />
             </Head>
             <div className="page-wrapper">
                 <Header />

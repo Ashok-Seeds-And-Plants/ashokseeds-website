@@ -11,7 +11,7 @@ export default function Home() {
             <Meta />
             <Head>
                 <title>Terms and conditions | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="We reuest our users/customers to read our Terms & Conditions before work wth us. Thank you!" />
 
             </Head>
             <div className="page-wrapper">

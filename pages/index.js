@@ -29,8 +29,8 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
         <>
             <Meta />
             <Head>
-            <title>Ashok Seeds and Plants</title>
-            <meta name="description" content="" />
+            <title>Ashok Seeds and Plants - Keeping Earth Safe Through Tree Plantation</title>
+            <meta name="description" content="Ashok Seeds and Plants - We are working towards achieving the Sustainable Development Goals (SDGs) through tree plantation, urban biodiversity conservation, water body restoration, sustainable solutions, and environmental research and awareness." />
             </Head>
             <div className="page-wrapper">
             <Header />
