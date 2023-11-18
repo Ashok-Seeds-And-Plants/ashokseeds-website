@@ -15,7 +15,7 @@ const TreePlantation = ({ galleries, portfolios }) => {
             <Meta />
             <Head>
                 <title>Tree Plantation | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="We are approaching faster for tree plantation to resuce mother earth. Plant helps to breath clean and fresh air to everyone on this earth.  We use a holistic approach to tree plantation that considers the social, economic and environmental benefits of planting trees." />
 
             </Head>
             <div className="page-wrapper">
