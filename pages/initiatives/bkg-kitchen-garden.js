@@ -14,7 +14,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
             <Meta />
             <Head>
                 <title>BKG / Kitchen Garden | Ashok Seeds and Plants</title>
-                <meta name="description" content="BKG / Kitchen Garden for your daily needs of vegetables. The vegetable garden is growing fruits and vegetables in the backyard of the house using the wastewater from the kitchen." />
+                <meta name="description" content="BKG / Kitchen Garden for your daily needs of vegetables. The vegetable garden is growing fruits and vegetables in the backyard of the house using the wastewater from the kitchen!" />
 
             </Head>
             <div className="page-wrapper">
