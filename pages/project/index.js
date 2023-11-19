@@ -18,7 +18,7 @@ const Portfolios = ({ portfolios }) => {
             <Meta />
             <Head>
                 <title>Projects | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="Check out our on-going and delivered farming and tree plantation projects." />
 
             </Head>
             <div className="page-wrapper">
