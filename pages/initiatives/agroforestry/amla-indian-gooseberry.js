@@ -14,7 +14,7 @@ const Amla = ({ galleries, portfolios }) => {
             <Meta />
             <Head>
                 <title>Amla (Indian Gooseberry) Agroforestry | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="We have used Miyawaki Method to plant 500+ Amla (Indian Gooseberry). Amla tree is small to medium in size, reaching 8 to 18 m in height. Contact us for Amla tree plantation." />
 
             </Head>
             <div className="page-wrapper">

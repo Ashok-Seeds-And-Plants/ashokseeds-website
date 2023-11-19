@@ -13,8 +13,8 @@ const Miyawaki = ({ galleries, portfolios }) => {
         <>
             <Meta />
             <Head>
-                <title>Miyawaki Forest | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <title>Miyawaki Forest, Miyawaki Method | Ashok Seeds and Plants</title>
+                <meta name="description" content="The Miyawaki approach to creating forests. This this method involves planting two to four different types of indigenous trees within every square metre. The creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years." />
 
             </Head>
             <div className="page-wrapper">
