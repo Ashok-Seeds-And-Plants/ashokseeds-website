@@ -27,11 +27,14 @@ const Mission = ({ galleries, portfolios }) => {
                             <div className="row">
                                 <div className="col-md-12">
                                 <h2>Our Vision</h2>
-                                    <p>A world of value and respect for the environment.</p>
+                                    <p>we believe that trees are the lifeline of our planet. They provide us with oxygen, food, shelter, medicine, and beauty. They also help combat climate change, conserve water, prevent soil erosion, and support biodiversity.</p>
+                                    <p>We are passionate about creating natural, wild, and self-sustaining forests using the Miyawaki method, which is a proven technique to grow dense and diverse forests in a short span of time. We aim to plant millions of trees across India and restore the green cover of our country.</p>
+                                    <p>We are not just a website, but a community of forest lovers who want to make a positive difference in the world. We invite you to join us in our mission to create city lungs with Miyawaki forests and make India a greener and healthier place to live.</p>
                                 </div>
                                 <div className="col-md-12">
                                 <h2>Our Mission</h2>
-                                    <p>Fight against climate change by carrying out projects in support of Mother Earth.</p>
+                                    <p>our mission is to create natural, wild, and self-sustaining forests using the Miyawaki method, which is a proven technique to grow dense and diverse forests in a short span of time. We want to plant millions of trees across India and restore the green cover of our country. We want to combat climate change, conserve water, prevent soil erosion, and support biodiversity. We want to make India a greener and healthier place to live.</p>
+                                    <p>We are not just a website, but a community of forest lovers who want to make a positive difference in the world. We invite you to join us in our mission to create city lungs with Miyawaki forests and make India a greener and healthier place to live.</p>
                                 </div>
                             </div>
                         </div>
