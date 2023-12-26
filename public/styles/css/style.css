@@ -2655,9 +2655,7 @@ select {
     font-size: 16px;
     line-height: 1;
     position: relative;
-    top: 4px;
     display: inline-block;
-    margin-left: -3px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
