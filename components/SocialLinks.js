@@ -6,18 +6,18 @@ const SocialLinks = ({ style }) => {
         <>
         <ul className={`social-profile list-style ${style}`}>
             <li>
-                <a href="https://facebook.com">
+                <a target="_blank" href="https://www.facebook.com/ashokseedplant">
                     <i className="ri-facebook-fill"></i>
                 </a>
             </li>
             <li>
-                <a href="https://twitter.com">
-                    <i className="ri-twitter-fill"></i>
+                <a target="_blank" href="https://www.instagram.com/ashokseedplant/">
+                    <i className="ri-instagram-line"></i>
                 </a>
             </li>
             <li>
-                <a href="https://instagram.com">
-                    <i className="ri-instagram-line"></i>
+                <a target="_blank" href="https://x.com/ashokseedplant">
+                    <i className="ri-twitter-x-line"></i>
                 </a>
             </li>
         </ul>
