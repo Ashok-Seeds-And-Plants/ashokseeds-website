@@ -116,13 +116,13 @@ export default function Footer() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-8 col-md-6 col-sm-7">
-                            <p className="copyright-text"><i className="ri-copyright-line"></i> 2022- {getCurrentYear()} Ashok Seeds and Plants, All Rights Reserved.
+                            <p className="copyright-text">Ashok Seeds <i className="ri-copyright-line"></i> 2022- {getCurrentYear()}, All Rights Reserved.
 
-                                Powered by <a target="_blank" href="https://www.srapsware.com/">Srapsware Technologies Pvt Ltd</a></p>
+                                </p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
 
-                            <SocialLinks style={'style1'}/>
+                            Powered by <a target="_blank" href="https://www.srapsware.com/">Srapsware</a>
 
                         </div>
                     </div>
