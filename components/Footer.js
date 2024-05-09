@@ -122,7 +122,7 @@ export default function Footer() {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-5">
 
-                            <p class="text-right">Powered by <a target="_blank" href="https://www.srapsware.com/">Srapsware</a></p>
+                            <p class="text-end">Powered by <a target="_blank" href="https://www.srapsware.com/">Srapsware</a></p>
 
                         </div>
                     </div>
