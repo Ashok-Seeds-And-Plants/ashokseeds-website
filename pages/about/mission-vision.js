@@ -40,10 +40,10 @@ const Mission = ({ galleries, portfolios }) => {
                     </div>
 
                     <section className="team-wrap ptb-100 bg-sand">
-                        <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                        <img src="/img/shape-11.png" alt="neem tree plantation" className="team-shape-one"/>
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
-                                <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                                <span>Fruits of<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                 <h2>Our Efforts</h2>
                             </div>
 

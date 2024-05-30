@@ -1,9 +1,10 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import SocialLinks from "@components/SocialLinks";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
 
-const toggleTheme = (e) =>  {
+const toggleTheme = (e) => {
     if (localStorage.getItem('clim_theme') === 'theme-dark') {
         localStorage.setItem('clim_theme', 'theme-light');
         document.documentElement.className = 'theme-light';
@@ -52,10 +53,10 @@ export default function Header() {
         // Progressbar Animation on Scroll
         if ($('.skills').length) {
             var offsetTop = $('.skills').offset().top;
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 var height = $(window).height();
                 if ($(window).scrollTop() + height > offsetTop) {
-                    $('.skillbar').each(function() {
+                    $('.skillbar').each(function () {
                         $(this).find('.skillbar-bar').animate({
                             width: $(this).attr('data-percent')
                         }, 1500);
@@ -93,14 +94,14 @@ export default function Header() {
         });
 
         // Responsive mmenu
-        $(window).on('resize', function() {
-            if($(window).width() <= 1199) {
+        $(window).on('resize', function () {
+            if ($(window).width() <= 1199) {
                 $('.collapse.navbar-collapse').removeClass('collapse');
-            }else{
+            } else {
                 $('.navbar-collapse').addClass('collapse');
             }
         });
-        $('.mobile-menu a').on('click', function() {
+        $('.mobile-menu a').on('click', function () {
             $('.main-menu-wrap').addClass('open');
             $('.collapse.navbar-collapse').removeClass('collapse');
         });
@@ -170,182 +171,187 @@ export default function Header() {
 
 
     return (
-      <>
 
-          <div className="switch-theme-mode">
-              <label id="switch" className="switch">
-                  <input type="checkbox" onChange={toggleTheme} id="slider"/>
-                      <span className="slider round"></span>
-              </label>
-          </div>
+        <>
+            <Head>
+              
 
-          <header className="header-wrap">
-              <div className="header-top d-none d-lg-block">
-                  <div className="container">
-                      <div className="row align-items-center">
-                          <div className="col-lg-8 col-md-8">
-                              <div className="header-top-left">
-                                  <ul className="contact-info list-style">
-                                      <li>
-                                          <i className="flaticon-phone-call"></i>
-                                          <a href="tel:+91-9453-111-377">+91-9453-111-377</a>
-                                      </li>
-                                      <li>
-                                          <i className="flaticon-email-2"></i>
-                                          <a href="mailto:contact@ashokseedplant.com">contact@ashokseedplant.com</a>
-                                      </li>
-                                      <li>
-                                          <i className="flaticon-pin"></i>
-                                          <p>506, Ashok Chauraha, Bargarh Chitrakoot UP-210208</p>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                          <div className="col-lg-4 col-md-4">
-                              <div className="header-top-right">
+            </Head>
+            <meta name="google-site-verification" content="gOzE3th4SItv1MjobRq-oZRER7QhJEh9DHAopeeBcYk" />
+            <div className="switch-theme-mode">
+                <label id="switch" className="switch">
+                    <input type="checkbox" onChange={toggleTheme} id="slider" />
+                    <span className="slider round"></span>
+                </label>
+            </div>
 
-                                  <SocialLinks style={'style1'}/>
+            <header className="header-wrap">
+                <div className="header-top d-none d-lg-block">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-8 col-md-8">
+                                <div className="header-top-left">
+                                    <ul className="contact-info list-style">
+                                        <li>
+                                            <i className="flaticon-phone-call"></i>
+                                            <a href="tel:+91-9453-111-377">+91-9453-111-377</a>
+                                        </li>
+                                        <li>
+                                            <i className="flaticon-email-2"></i>
+                                            <a href="mailto:contact@ashokseedplant.com">contact@ashokseedplant.com</a>
+                                        </li>
+                                        <li>
+                                            <i className="flaticon-pin"></i>
+                                            <p>506, Ashok Chauraha, Bargarh Chitrakoot UP-210208</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-4">
+                                <div className="header-top-right">
 
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div className="header-bottom">
-                  <div className="container">
-                      <nav className="navbar navbar-expand-md navbar-light">
-                          <Link href={'/'}>
-                          <a className="navbar-brand">
-                              <img className="logo-light" src="/img/logo.png" alt="Ashok seeds and plants"/>
-                                  <img className="logo-dark" src="/img/logo-white.png" alt="Ashok seeds and plants"/>
-                          </a>
-                          </Link>
-                          <div className="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
-                              <div className="menu-close d-lg-none">
-                                  <a href="javascript:void(0)"> <i className="ri-close-line"></i></a>
-                              </div>
-                              <ul className="navbar-nav ms-auto">
-                                  <li className="nav-item">
-                                      <Link href={'/'}>
-                                      <a className="nav-link">Home</a>
-                                      </Link>
-                                  </li>
+                                    <SocialLinks style={'style1'} />
 
-                                  <li className="nav-item">
-                                      <a href="#" className="nav-link">
-                                          About
-                                          <i className="ri-add-line"></i>
-                                      </a>
-                                      <ul className="dropdown-menu">
-                                          <li className="nav-item">
-                                              <Link href={`/about/`}>
-                                              <a className="nav-link">About Us</a>
-                                              </Link>
-                                          </li>
-                                          
-                                          <li className="nav-item">
-                                              <Link href={'/about/mission-vision/'}>
-                                              <a className="nav-link">Mission & Vision</a>
-                                              </Link>
-                                          </li>
-                                          <li className="nav-item">
-                                              <Link href={'/about/our-team/'}>
-                                                  <a className="nav-link">Our Team</a>
-                                              </Link>
-                                          </li>
-                                          <li className="nav-item">
-                                              <Link href={'/about/gallery/1/'}>
-                                                  <a className="nav-link">Gallery</a>
-                                              </Link>
-                                          </li>
-                                      </ul>
-                                  </li>
-                                  <li className="nav-item">
-                                      <a href="#" className="nav-link">
-                                          Initiatives
-                                          <i className="ri-add-line"></i>
-                                      </a>
-                                      <ul className="dropdown-menu">
-                                          <li className="nav-item">
-                                              <Link href={'/initiatives/tree-plantation/'}>
-                                              <a className="nav-link">Tree Plantation</a>
-                                              </Link>
-                                          </li>
-                                          <li className="nav-item">
-                                              <Link href={'/initiatives/miyawaki-forest/'}>
-                                              <a className="nav-link">Miyawaki Forest</a>
-                                              </Link>
-                                          </li>
-                                          <li className="nav-item">
-                                              <Link href={'/initiatives/bkg-kitchen-garden/'}>
-                                              <a className="nav-link">BKG / Kitchen Garden</a>
-                                              </Link>
-                                          </li>
-                                          <li className="nav-item">
-                                              <a href="#" className="nav-link">
-                                                  Agroforestry
-                                                  <i className="ri-add-line"></i>
-                                              </a>
-                                              <ul className="dropdown-menu">
-                                                  <li className="nav-item">
-                                                      <Link href={'/initiatives/agroforestry/strawberry/'}>
-                                                      <a className="nav-link">Strawberry</a>
-                                                      </Link>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <Link href={'/initiatives/agroforestry/apple/'}>
-                                                      <a className="nav-link">Apple</a>
-                                                      </Link>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <Link href={'/initiatives/agroforestry/amrood-guava/'}>
-                                                      <a className="nav-link">Amrood (Guava)</a>
-                                                      </Link>
-                                                  </li>
-                                                  <li className="nav-item">
-                                                      <Link href={'/initiatives/agroforestry/amla-indian-gooseberry/'}>
-                                                      <a className="nav-link">Amla (Indian gooseberry)</a>
-                                                      </Link>
-                                                  </li>
-                                              </ul>
-                                          </li>
-                                      </ul>
-                                  </li>
-                                  <li className="nav-item">
-                                      <Link href={`/project/`}>
-                                          <a className="nav-link">Projects</a>
-                                      </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="header-bottom">
+                    <div className="container">
+                        <nav className="navbar navbar-expand-md navbar-light">
+                            <Link href={'/'}>
+                                <a className="navbar-brand">
+                                    <img className="logo-light" src="/img/logo.png" alt="Ashok seeds and plants" />
+                                    <img className="logo-dark" src="/img/logo-white.png" alt="Ashok seeds and plants" />
+                                </a>
+                            </Link>
+                            <div className="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+                                <div className="menu-close d-lg-none">
+                                    <a href="javascript:void(0)"> <i className="ri-close-line"></i></a>
+                                </div>
+                                <ul className="navbar-nav ms-auto">
+                                    <li className="nav-item">
+                                        <Link href={'/'}>
+                                            <a className="nav-link">Home</a>
+                                        </Link>
+                                    </li>
 
-                                  </li>
-                                 <li className="nav-item">
-                                      <a href="#" className="nav-link">
-                                          Green News
-                                          <i className="ri-add-line"></i>
-                                      </a>
-                                      <ul className="dropdown-menu">
-                                          <li className="nav-item">
-                                              <Link href={'/blog/'}>
-                                                  <a className="nav-link">News and Updates</a>
-                                              </Link>
-                                          </li>
-                                      </ul>
-                                  </li>
-                                  <li className="nav-item">
-                                      <Link href={'/contact-us/'}>
-                                      <a className={"nav-link"}>Contact Us</a>
-                                      </Link>
-                                  </li>
-                              </ul>
-                          </div>
-                      </nav>
-                      <div className="mobile-bar-wrap">
-                          <div className="mobile-menu d-lg-none">
-                              <a href="javascript:void(0)"><i className="ri-menu-line"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </header>
-      </>
-  )
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link">
+                                            About
+                                            <i className="ri-add-line"></i>
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li className="nav-item">
+                                                <Link href={`/about/`}>
+                                                    <a className="nav-link">About Us</a>
+                                                </Link>
+                                            </li>
+
+                                            <li className="nav-item">
+                                                <Link href={'/about/mission-vision/'}>
+                                                    <a className="nav-link">Mission & Vision</a>
+                                                </Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link href={'/about/our-team/'}>
+                                                    <a className="nav-link">Our Team</a>
+                                                </Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link href={'/about/gallery/1/'}>
+                                                    <a className="nav-link">Gallery</a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link">
+                                            Initiatives
+                                            <i className="ri-add-line"></i>
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li className="nav-item">
+                                                <Link href={'/initiatives/tree-plantation/'}>
+                                                    <a className="nav-link">Tree Plantation</a>
+                                                </Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link href={'/initiatives/miyawaki-forest/'}>
+                                                    <a className="nav-link">Miyawaki Forest</a>
+                                                </Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link href={'/initiatives/bkg-kitchen-garden/'}>
+                                                    <a className="nav-link">BKG / Kitchen Garden</a>
+                                                </Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a href="#" className="nav-link">
+                                                    Agroforestry
+                                                    <i className="ri-add-line"></i>
+                                                </a>
+                                                <ul className="dropdown-menu">
+                                                    <li className="nav-item">
+                                                        <Link href={'/initiatives/agroforestry/strawberry/'}>
+                                                            <a className="nav-link">Strawberry</a>
+                                                        </Link>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <Link href={'/initiatives/agroforestry/apple/'}>
+                                                            <a className="nav-link">Apple</a>
+                                                        </Link>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <Link href={'/initiatives/agroforestry/amrood-guava/'}>
+                                                            <a className="nav-link">Amrood (Guava)</a>
+                                                        </Link>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <Link href={'/initiatives/agroforestry/amla-indian-gooseberry/'}>
+                                                            <a className="nav-link">Amla (Indian gooseberry)</a>
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link href={`/project/`}>
+                                            <a className="nav-link">Projects</a>
+                                        </Link>
+
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link">
+                                            Green News
+                                            <i className="ri-add-line"></i>
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li className="nav-item">
+                                                <Link href={'/blog/'}>
+                                                    <a className="nav-link">News and Updates</a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link href={'/contact-us/'}>
+                                            <a className={"nav-link"}>Contact Us</a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div className="mobile-bar-wrap">
+                            <div className="mobile-menu d-lg-none">
+                                <a href="javascript:void(0)"><i className="ri-menu-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </>
+    )
 }

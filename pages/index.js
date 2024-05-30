@@ -29,8 +29,8 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
         <>
             <Meta />
             <Head>
-            <title>Ashok Seeds and Plants - Keeping Earth Safe Through Tree Plantation</title>
-            <meta name="description" content="Ashok Seeds and Plants - We are working towards achieving the Sustainable Development Goals (SDGs) through tree plantation, urban biodiversity conservation, water body restoration, sustainable solutions, and environmental research and awareness." />
+            <title>Tree Plantation Drive, Programme, Certificate, Activity in India</title>
+            <meta name="description" content="Tree Plantation Drive - Ashok Seeds and Plants is one stop solution of tree plantation drive, programme, certificate & activity in India to create sustainable future" />
             </Head>
             <div className="page-wrapper">
             <Header />
@@ -60,7 +60,7 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
                                     <div className="col-lg-6  col-md-9">
                                         <div className="hero-content" data-speed="0.10" data-revert="true">
                                             <span>We'll Save Our Planet</span>
-                                            <h1>Tree Plantation</h1>
+                                            <h1>Tree Plantation Drive in India </h1>
                                             <p>Tree planting is the process of planting and growing trees to restore degraded lands, improve biodiversity, sequester carbon and provide various ecosystem services..</p>
                                             <a href="/initiatives/tree-plantation/" className="btn style2">Join With us</a>
                                         </div>
@@ -116,14 +116,14 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
 
 
                 <section className="about-wrap style2 ptb-100">
-                    <img src="/img/about/about-shape-1.png" alt="Image"
+                    <img src="/img/about/about-shape-1.png" alt="miyawaki forest upsc"
                          className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200"
                                      data-aos-delay="200">
                                     <div className="about-img-wrap">
-                                        <img src="/img/about/about-img-2.png" alt="Image" className="bounce"/>
+                                        <img src="/img/about/about-img-2.png" alt="miyawaki urban forest" className="bounce"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200"
@@ -232,10 +232,10 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
                 </div>
 
                 <section className="team-wrap ptb-100 bg-sand">
-                <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                <img src="/img/shape-11.png" alt="neem tree plantation" className="team-shape-one"/>
                 <div className="container">
                     <div className="section-title style1 text-center mb-40">
-                        <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                        <span>Fruits of<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                         <h2>Our Efforts</h2>
                     </div>
 
@@ -245,7 +245,7 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
             </section>
 
             <section class="team-wrap ptb-100 bg-sand">
-                <img src="/img/shape-11.png" alt="Image" class="team-shape-one"/>
+                <img src="/img/shape-11.png" alt="neem tree plantation" class="team-shape-one"/>
                 <div class="container">
                     <div class="section-title style3 text-center mb-40">
                         <span>Our Partners</span>
@@ -256,13 +256,13 @@ const Home = ({ posts, galleries, portfolios, clients }) => {
             </section>
 
                 <section className="cta-wrap style1 bg-f ptb-100">
-                    <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                    <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two"/>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
                                          data-aos-duration="1200" data-aos-delay="200">
-                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                         <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"

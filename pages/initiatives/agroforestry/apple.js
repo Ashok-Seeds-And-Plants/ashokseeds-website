@@ -13,8 +13,8 @@ const Apple = ({ galleries, portfolios }) => {
         <>
             <Meta />
             <Head>
-                <title>Apple Agroforestry | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <title>Apple Tree Plantation in India | Urban Biodiversity Conservation</title>
+                <meta name="description" content="Apple Tree Plantation in India - Ashok Seeds and Plants is the best source for conservation of urban biodiversity and help the learners emulate the same." />
 
             </Head>
             <div className="page-wrapper">
@@ -37,7 +37,7 @@ const Apple = ({ galleries, portfolios }) => {
                     </div>
 
                     <section className="about-wrap style2 ptb-100 miyawaki-section-bg">
-                        <img src="/img/about/about-shape-1.png" alt="Image"
+                        <img src="/img/about/about-shape-1.png" alt="miyawaki forest upsc"
                              className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
@@ -46,6 +46,8 @@ const Apple = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
+                                       <h1>Apple Tree Plantation in India </h1>
+
                                             <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
                                             <h2>The Miyawaki approach to creating forests.</h2>
                                             <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
@@ -97,10 +99,10 @@ const Apple = ({ galleries, portfolios }) => {
 
                     </div>
                     <section className="team-wrap ptb-100 bg-sand">
-                        <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                        <img src="/img/shape-11.png" alt="neem tree plantation" className="team-shape-one"/>
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
-                                <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                                <span>Fruits of<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                 <h2>Our Efforts</h2>
                             </div>
 
@@ -110,13 +112,13 @@ const Apple = ({ galleries, portfolios }) => {
                     </section>
 
                     <section className="cta-wrap style1 bg-f ptb-100">
-                        <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                        <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two"/>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
                                          data-aos-duration="1200" data-aos-delay="200">
-                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                         <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"

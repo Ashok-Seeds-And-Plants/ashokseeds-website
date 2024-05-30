@@ -34,14 +34,14 @@ export default function Home() {
                     </div>
 
                     <section className="about-wrap style2 ptb-100">
-                        <img src="/img/about/about-shape-1.png" alt="Image"
+                        <img src="/img/about/about-shape-1.png" alt="miyawaki forest upsc"
                              className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200"
                                      data-aos-delay="200">
                                     <div className="about-img-wrap">
-                                        <img src="/img/about/about-img-2.png" alt="Image" className="bounce"/>
+                                        <img src="/img/about/about-img-2.png" alt="miyawaki urban forest" className="bounce"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200"
@@ -65,13 +65,13 @@ export default function Home() {
                     </section>
 
                     <section className="cta-wrap style1 bg-f ptb-100">
-                        <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                        <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two"/>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
                                          data-aos-duration="1200" data-aos-delay="200">
-                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                         <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"

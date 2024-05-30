@@ -13,8 +13,8 @@ const KitchenGarden = ({ galleries, portfolios }) => {
         <>
             <Meta />
             <Head>
-                <title>BKG / Kitchen Garden | Ashok Seeds and Plants</title>
-                <meta name="description" content="BKG / Kitchen Garden for your daily needs of vegetables. The vegetable garden is growing fruits and vegetables in the backyard of the house using the wastewater from the kitchen!" />
+                <title>Kitchen Garden BKC, Plants, Organic Vegetables Tomato Plants</title>
+                <meta name="description" content="Organic kitchen garden farming - Ashok Seeds and Plants is helping people in India plan, design kitchen garden, vegetables, kitchen garden bkc menu etc." />
 
             </Head>
             <div className="page-wrapper">
@@ -36,7 +36,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                     </div>
 
                     <section className="about-wrap style2 ptb-100 miyawaki-section-bg">
-                        <img src="/img/about/about-shape-1.png" alt="Image"
+                        <img src="/img/about/about-shape-1.png" alt="miyawaki forest upsce"
                              className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
@@ -45,6 +45,7 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
+                                            <h1> Kitchen Garden BKC </h1>
                                             <span>A Little Introduction <span className="bl-text">BKG / Kitchen Garden</span></span>
                                             <h2>BKG / Kitchen Garden for your daily needs vegetables</h2>
                                             <p>The vegetable garden is growing fruits and vegetables in the backyard of the house using the wastewater from the kitchen. Also known as Home Garden or Nutritional Garden or Vegetable Garden or Vegetable Garden.</p>
@@ -98,10 +99,10 @@ const KitchenGarden = ({ galleries, portfolios }) => {
 
                     </div>
                     <section className="team-wrap ptb-100 bg-sand">
-                        <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                        <img src="/img/shape-11.png" alt="neem tree plantation" className="team-shape-one"/>
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
-                                <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                                <span>Fruits of<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                 <h2>Our Efforts</h2>
                             </div>
 
@@ -111,13 +112,13 @@ const KitchenGarden = ({ galleries, portfolios }) => {
                     </section>
 
                     <section className="cta-wrap style1 bg-f ptb-100">
-                        <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                        <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two"/>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
                                          data-aos-duration="1200" data-aos-delay="200">
-                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                         <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"

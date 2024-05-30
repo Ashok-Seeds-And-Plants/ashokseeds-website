@@ -14,8 +14,8 @@ const TreePlantation = ({ galleries, portfolios }) => {
         <>
             <Meta />
             <Head>
-                <title>Tree Plantation | Ashok Seeds and Plants</title>
-                <meta name="description" content="We are approaching faster for tree plantation to resuce mother earth. Plant helps to breath clean and fresh air to everyone on this earth.  We use a holistic approach to tree plantation that considers the social, economic and environmental benefits of planting trees." />
+                <title>Mahogany, Agar,Mango & Neem Tree Plantation Distance</title>
+                <meta name="description" content="Mahogany Tree Plantation - AashokSeedPlant is the leading orgnaization for guiding mahogany, agar, mango tree plantation distance & neem tree plantation." />
 
             </Head>
             <div className="page-wrapper">
@@ -37,7 +37,7 @@ const TreePlantation = ({ galleries, portfolios }) => {
                     </div>
 
                     <section className="about-wrap style2 ptb-100 miyawaki-section-bg">
-                        <img src="/img/about/about-shape-1.png" alt="Image"
+                        <img src="/img/about/about-shape-1.png" alt="miyawaki forest upsc"
                              className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
@@ -46,6 +46,7 @@ const TreePlantation = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
+                                            <h1> Mahogany, Agar, Mango, &Neem Tree Plantation </h1>
                                             <span>A Little Introduction <span className="bl-text">Tree Plantation</span></span>
                                             <h2>Approach tree planting to rescue Mother Earth.</h2>
                                             <p>With the rapid growth of India's population and the transformation of towns into concrete jungles, the need for clean air is urgent. We need a solution that can deliver outstanding outcomes in less time and space. </p>
@@ -105,10 +106,10 @@ const TreePlantation = ({ galleries, portfolios }) => {
 
                     </div>
                     <section className="team-wrap ptb-100 bg-sand">
-                        <img src="/img/shape-11.png" alt="Image" className="team-shape-one"/>
+                        <img src="/img/shape-11.png" alt="neem tree plantation" className="team-shape-one"/>
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
-                                <span>Fruits of<img src="/img/section-shape.png" alt="Image"/></span>
+                                <span>Fruits of<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                 <h2>Our Efforts</h2>
                             </div>
 
@@ -118,13 +119,13 @@ const TreePlantation = ({ galleries, portfolios }) => {
                     </section>
 
                     <section className="cta-wrap style1 bg-f ptb-100">
-                        <img src="/img/bg-shape-5.png" alt="Image" className="cta-shape-two"/>
+                        <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two"/>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
                                          data-aos-duration="1200" data-aos-delay="200">
-                                        <span>What you can do<img src="/img/section-shape.png" alt="Image"/></span>
+                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
                                         <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"

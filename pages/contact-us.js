@@ -73,7 +73,7 @@ const Contact = () => {
                     <section className="contact-us-wrap ptb-100">
                         <div className="container">
                             <div className="section-title style1 text-center mb-40">
-                                <span>Contact Us<img src="/img/section-shape.png" alt="Image" /></span>
+                                <span>Contact Us<img src="/img/section-shape.png" alt="advantages of kitchen garden" /></span>
                                 <h2>Get In Touch With Us</h2>
                             </div>
                             <div className="row gx-5 justify-content-center">

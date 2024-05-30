@@ -20,7 +20,7 @@ const Posts = ({ posts }) => {
 
         <section className="blog-wrap ptb-100 bg-sand">
             <div className="container">
-                <img src="/img/shape-7.png" alt="Image" className="blog-section-shape"/>
+                <img src="/img/shape-7.png" alt="apple tree plantation in india" className="blog-section-shape"/>
                 <div className="section-title style3 mb-40 text-center">
                     <span>Our Latest News</span>
                     <h2>Our Latest News &amp; posts</h2>

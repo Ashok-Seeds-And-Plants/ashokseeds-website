@@ -10,16 +10,16 @@ export default function Footer() {
 
         <footer className="footer-wrap">
             <div className="footer-top">
-                <img src="/img/footer-shape-2.png" alt="Image" className="footer-shape-one moveHorizontal"/>
-                    <img src="/img/sun-2.png" alt="Image" className="footer-shape-two rotate"/>
-                        <img src="/img/bird.png" alt="Image" className="footer-shape-three flyLeft"/>
+                <img src="/img/footer-shape-2.png" alt="kitchen garden plants" className="footer-shape-one moveHorizontal"/>
+                    <img src="/img/sun-2.png" alt="kitchen garden vegetables" className="footer-shape-two rotate"/>
+                        <img src="/img/bird.png" alt="kitchen garden design" className="footer-shape-three flyLeft"/>
                             <div className="container">
                                 <div className="row pt-100 pb-75">
                                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-xl-5">
                                         <div className="footer-widget">
                                             <Link href={'/'}>
                                             <a className="footer-logo">
-                                                <img src="/img/logo-white.png" alt="Image"/>
+                                                <img src="/img/logo-white.png" alt="miyawaki forest in india"/>
                                             </a>
                                             </Link>
                                             <p className="comp-desc">Ashok Seeds and Plants is a leading Indian seed provider and environmental group working to achieve sustainable development goals through tree planting.</p>
