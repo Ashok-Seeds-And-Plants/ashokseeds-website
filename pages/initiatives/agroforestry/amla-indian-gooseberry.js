@@ -46,9 +46,10 @@ const Amla = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
+                                        <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
                                         <h1>About Amla (Indian gooseberry) </h1>
                                             <p>Amla, also known as Indian gooseberry, is a nutrient-rich fruit that has been cherished in Ayurveda, the traditional Indian system of medicine, for its various health benefits. Here's a breakdown of its content:</p>
-                                            <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
+                                            
                                             <h2>The Miyawaki approach to creating forests.</h2>
                                             <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
                                             <h3>What does the Miyawaki method mean?</h3>
