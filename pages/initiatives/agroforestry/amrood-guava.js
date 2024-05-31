@@ -46,23 +46,28 @@ const Amrood = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
+                                        <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
                                              <h1>Guava Tree Plantation </h1>
-
-                                            <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
-                                            <h2>The Miyawaki approach to creating forests.</h2>
-                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
-                                            <h3>What does the Miyawaki method mean?</h3>
-                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
-                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
+                                            <p>Planting a guava tree requires careful consideration of the climate, soil conditions, and spacing. Here's a general guide to guava tree plantation:</p>
+                                            <h3>Climate:</h3>
+                                            <p> Guava trees thrive in tropical and subtropical climates. They prefer temperatures between 20°C to 30°C (68°F to 86°F) and require full sun exposure for optimal growth and fruit production. Guava trees are sensitive to frost, so they should be planted in areas where temperatures don't drop below freezing.</p>
+                                            <h3>Soil:</h3>
+                                            <p>Guava trees can tolerate a wide range of soil types but prefer well-drained, fertile soils with a pH ranging from 5.0 to 7.0. They don't do well in waterlogged or excessively sandy soils. Prior to planting, the soil should be tested to ensure it's suitable for guava cultivation. Adding organic matter like compost can improve soil fertility and structure.</p>
+                                            <h3>Site Selection:</h3>
+                                            <p> Choose a site for planting guava trees that receives plenty of sunlight and has good air circulation. Avoid low-lying areas prone to waterlogging and areas with strong winds, as these can damage the trees.</p>
+                                            <h3>Spacing:</h3>
+                                            <p>Guava trees should be spaced adequately to allow for proper growth and development. The spacing between trees depends on the variety and growth habit but generally ranges from 3 to 6 meters (10 to 20 feet) apart.</p>
+                                            <h3>Planting:</h3>
+                                            <p>Guava trees can be propagated from seeds, cuttings, or grafts. While seeds are easy to obtain, they may not produce fruits identical to the parent plant. Grafted or cutting-grown trees are preferred for commercial production as they produce fruits of consistent quality. When planting, dig a hole slightly larger than the root ball, place the tree in the hole, and backfill with soil, ensuring the graft union (if applicable) is above the soil level.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className={'col-md-12'}>
-                                    <img src={'/img/how_miyawaki_work.jpg'} alt={'How miyawaki work'}/>
+                                    <img src={'/img/Guava1.png'} alt={'How miyawaki work'}/>
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
-                                    <p>The dense forests of Miyawaki grow 10 times faster, 100 times richer in biodiversity, 30 times more noisy and reduce dust. have 30 times more green area and is 100 organic, Up to 30 times better carbon dioxide uptake compared to monoculture planting.</p>
+                                    <p>By following these guidelines, you can establish a successful guava tree plantation and enjoy a bountiful harvest of delicious and nutritious fruits.</p>
                                 </div>
                             </div>
                         </div>
