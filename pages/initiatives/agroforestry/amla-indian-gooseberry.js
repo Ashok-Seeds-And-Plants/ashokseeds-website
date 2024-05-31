@@ -62,7 +62,7 @@ const Amla = ({ galleries, portfolios }) => {
                                     </div>
                                 </div>
                                 <div className={'col-md-12'}>
-                                    <img src={'/img/alam1.jpg'} alt={'How miyawaki work'}/>
+                                    <img src={'/img/alma1.png'} alt={'How miyawaki work'}/>
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
