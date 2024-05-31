@@ -47,20 +47,27 @@ const Strawberry = ({ galleries, portfolios }) => {
                                     <div className="about-content">
                                         <div className="content-title style3">
                                             <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
-                                            <h2>The Miyawaki approach to creating forests.</h2>
-                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
-                                            <h3>What does the Miyawaki method mean?</h3>
-                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
-                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
+                                            <h1>Strawberry Agroforestry</h1>
+                                            <p>Strawberry agroforestry involves integrating strawberry cultivation with tree crops or other agricultural practices to optimize land use, improve soil health, and increase overall farm productivity. While strawberries are typically grown as a field crop, incorporating them into agroforestry systems can offer several benefits:</p>
+                                            <h3>Soil Conservation:</h3>
+                                            <p>Trees in agroforestry systems can help prevent soil erosion and improve soil structure, which is beneficial for strawberry cultivation. The tree canopy provides shade, reducing soil moisture evaporation and minimizing erosion during heavy rainfall.</p>
+                                            <h3>Microclimate Modification: </h3>
+                                            <p>Trees can modify the microclimate, providing shelter from harsh weather conditions such as strong winds and excessive sunlight. This can help protect delicate strawberry plants and reduce stress, leading to improved growth and yield.</p>
+                                            <h3>Biodiversity Enhancement:</h3>
+                                            <p>Agroforestry promotes biodiversity by providing habitat for beneficial insects, birds, and other wildlife. This can result in natural pest control and pollination services, reducing the need for synthetic inputs in strawberry production.</p>
+                                            <h3>Nutrient Cycling:</h3>
+                                            <p>Trees in agroforestry systems contribute to nutrient cycling by accumulating organic matter in the form of leaf litter and providing shade, which encourages the growth of beneficial soil microorganisms. This can enhance soil fertility and nutrient availability for strawberry plants.</p>
+                                            <h3>Diversification of Income:</h3>
+                                            <p>Integrating strawberries with tree crops diversifies farm income streams, as both strawberries and tree crops can be harvested and sold for profit. This reduces reliance on a single crop and enhances the resilience of the farm against market fluctuations.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className={'col-md-12'}>
-                                    <img src={'/img/how_miyawaki_work.jpg'} alt={'How miyawaki work'}/>
+                                    <img src={'/img/sb1.png'} alt={'How miyawaki work'}/>
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
-                                    <p>The dense forests of Miyawaki grow 10 times faster, 100 times richer in biodiversity, 30 times more noisy and reduce dust. have 30 times more green area and is 100 organic, Up to 30 times better carbon dioxide uptake compared to monoculture planting.</p>
+                                    <p>When implementing strawberry agroforestry, it's essential to consider factors such as tree species selection, spacing, and management practices to ensure compatibility with strawberry cultivation requirements. Proper planning and management are key to maximizing the benefits of agroforestry while maintaining strawberry productivity and profitability.</p>
                                 </div>
                             </div>
                         </div>
