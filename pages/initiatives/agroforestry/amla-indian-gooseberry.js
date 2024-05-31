@@ -50,11 +50,14 @@ const Amla = ({ galleries, portfolios }) => {
                                         <h1>About Amla (Indian gooseberry) </h1>
                                             <p>Amla, also known as Indian gooseberry, is a nutrient-rich fruit that has been cherished in Ayurveda, the traditional Indian system of medicine, for its various health benefits. Here's a breakdown of its content:</p>
                                             
-                                            <h2>The Miyawaki approach to creating forests.</h2>
-                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
-                                            <h3>What does the Miyawaki method mean?</h3>
-                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
-                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
+                                            <h3>Vitamin C:</h3>
+                                            <p>Amla is exceptionally rich in vitamin C, containing up to 20 times more vitamin C than an orange by weight. Vitamin C is a powerful antioxidant that helps boost the immune system, promotes healthy skin, and aids in the absorption of iron.</p>
+                                            <h3>Antioxidants:</h3>
+                                            <p>Apart from vitamin C, amla contains other antioxidants such as polyphenols, flavonoids, and tannins. These antioxidants help neutralize harmful free radicals in the body, protecting cells from damage and reducing the risk of chronic diseases.</p>
+                                            <h3>Minerals:</h3>
+                                            <p>Amla is a good source of minerals like calcium, phosphorus, iron, and magnesium, which are essential for maintaining bone health, supporting energy production, and aiding in various metabolic processes in the body.</p>
+                                            <h3>Fiber:</h3>
+                                            <p>Amla contains soluble and insoluble fiber, which promotes digestive health by regulating bowel movements, preventing constipation, and supporting the growth of beneficial gut bacteria.</p>
                                         </div>
                                     </div>
                                 </div>
