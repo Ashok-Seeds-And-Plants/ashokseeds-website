@@ -63,7 +63,7 @@ const Amrood = ({ galleries, portfolios }) => {
                                     </div>
                                 </div>
                                 <div className={'col-md-12'}>
-                                    <img src={'/img/Guava1.png'} alt={'How miyawaki work'}/>
+                                    <img src={'/img/Guava.png'} alt={'How miyawaki work'}/>
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
