@@ -66,7 +66,7 @@ const Amla = ({ galleries, portfolios }) => {
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
-                                    <p>The dense forests of Miyawaki grow 10 times faster, 100 times richer in biodiversity, 30 times more noisy and reduce dust. have 30 times more green area and is 100 organic, Up to 30 times better carbon dioxide uptake compared to monoculture planting.</p>
+                                    <p>Overall, amla is a nutritional powerhouse that offers a wide array of health benefits, including boosting immunity, improving digestion, promoting healthy skin and hair, and protecting against chronic diseases. It can be consumed fresh, dried, or in the form of juice, pickles, or supplements.</p>
                                 </div>
                             </div>
                         </div>
