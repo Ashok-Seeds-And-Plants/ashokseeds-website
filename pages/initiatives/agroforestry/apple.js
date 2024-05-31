@@ -46,23 +46,29 @@ const Apple = ({ galleries, portfolios }) => {
                                      data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
+                                        <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
                                        <h1>Apple Tree Plantation in India </h1>
-
-                                            <span>A Little Introduction <span className="bl-text">Miyawaki Forest</span></span>
-                                            <h2>The Miyawaki approach to creating forests.</h2>
-                                            <p>The Indian subway and Megacities have lost 50% of their green coverage. Open spaces are shrinking every year and cities are slowly becoming concrete jungles. Megacities and metropolises need a solution in which many densely forested areas can be created. The Miyawaki method is the way to make a major rapid change in a small area.</p>
-                                            <h3>What does the Miyawaki method mean?</h3>
-                                            <p>The Miyawaki method was developed by the Japanese botanist and plant ecology specialist, Dr Akira Miyawaki. This method is a unique innovative concept of potential natural vegetation, proven to work all over the world, independent of soil and climate conditions. Over 3,000 forests have been successfully established around the world using this method.</p>
-                                            <p>In this method, 3-5 seedlings are planted per square meter with a minimum of 20-50 different species. the creation of a multi-layered green forest with no maintenance after a period of 2 to 3 years.</p>
+                                        <p>Apple tree cultivation in India requires careful consideration of climate, soil conditions, and variety selection. While traditionally associated with temperate regions, certain parts of India with suitable climates, such as the Himalayan foothills, Himachal Pradesh, Jammu and Kashmir, and parts of Uttarakhand, have been successfully growing apples. Here's a general guide to apple tree plantation in India:</p>
+                                            
+                                            <h3>Climate:</h3>
+                                            <p>Apple trees require a temperate climate with distinct seasons, including a cold winter period for dormancy and a warm summer for fruit development. They thrive in regions with cool to cold winters (chilling requirement) and moderate summers. In India, the ideal elevation for apple cultivation is typically between 1,500 to 2,500 meters (4,900 to 8,200 feet) above sea level.</p>
+                                            <h3>Variety Selection:</h3>
+                                            <p> Choose apple varieties that are well-suited to the local climate and soil conditions. Some popular apple varieties grown in India include Red Delicious, Golden Delicious, Royal Delicious, Granny Smith, and Fuji. Consider factors such as chilling hours required, disease resistance, and market demand when selecting varieties.</p>
+                                            <h3>Soil:</h3>
+                                            <p>Apple trees prefer well-drained, loamy soils with good fertility and a slightly acidic to neutral pH (around 6.0 to 7.0). Conduct soil tests to determine nutrient levels and pH, and amend the soil as needed with organic matter or lime.</p>
+                                            <h3>Site Selection:</h3>
+                                            <p>Select a site with good air drainage, as stagnant air can lead to frost damage. South-facing slopes are often preferred for apple orchards as they receive ample sunlight and minimize frost risk. Avoid low-lying areas prone to frost pockets and areas with waterlogging.</p>
+                                            <h3>Planting:</h3>
+                                            <p>Plant apple trees in late winter or early spring when the trees are dormant. Dig planting holes slightly larger than the root ball and amend the soil with compost or well-rotted manure. Space apple trees according to their expected size at maturity, typically 4 to 6 meters (13 to 20 feet) apart in rows.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className={'col-md-12'}>
-                                    <img src={'/img/how_miyawaki_work.jpg'} alt={'How miyawaki work'}/>
+                                    <img src={'/img/apple1.png'} alt={'How miyawaki work'}/>
                                 </div>
 
                                 <div className={'col-md-12 pt-20'}>
-                                    <p>The dense forests of Miyawaki grow 10 times faster, 100 times richer in biodiversity, 30 times more noisy and reduce dust. have 30 times more green area and is 100 organic, Up to 30 times better carbon dioxide uptake compared to monoculture planting.</p>
+                                    <p>By following these guidelines and adapting them to local conditions, apple tree plantation in India can be successful, leading to a rewarding harvest of flavorful and nutritious fruits.</p>
                                 </div>
                             </div>
                         </div>
