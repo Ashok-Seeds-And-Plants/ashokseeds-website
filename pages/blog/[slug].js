@@ -4,7 +4,7 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
-import ReactMarkdown from "react-markdown";
+import parse from 'html-react-parser';
 import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
@@ -52,15 +52,16 @@ const Blog = ({ post, categories }) => {
                                 <div className="col-xl-10 offset-xl-1 col-lg-12">
                                     <article>
                                         <a className="post-img" data-fancybox="gallery"
-                                           href={`${cover}`}>
-                                            <img src={`${cover}`} alt={`${title}`}/>
+                                            href={`${cover}`}>
+                                            <img src={`${cover}`} alt={`${title}`} />
                                         </a>
                                         <h1>{title}</h1>
                                         <ul className="post-metainfo  list-style">
                                             <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
                                         <div className="post-para">
-                                            <ReactMarkdown children={content} />
+
+                                            {parse(content)}
                                         </div>
                                     </article>
                                     <div className="post-meta-option">
@@ -105,11 +106,12 @@ const Blog = ({ post, categories }) => {
                                     </div>
                                     <div className="post-author">
                                         <div className="post-author-img">
-                                            <img src="/img/user.png" alt="Image"/>
+                                            <img src="/img/user.png" alt="Image" />
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="#"> {username}</a></h4>
-                                            <ReactMarkdown children={about} />
+
+                                            {parse(about)}
                                             <ul className="social-profile list-style style3">
                                                 <li>
                                                     <a href="https://facebook.com">
