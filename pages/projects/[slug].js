@@ -11,7 +11,7 @@ import delve from 'dlv'
 import React from "react";
 import Link from "next/link";
 
-const PerPage = 3;
+const PerPage = 9;
 const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     const ServerTotalPage = galleries.meta.pagination.total;
@@ -64,7 +64,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
         <>
             <Meta />
             <Head>
-                <title>Project Page - {CurrentPage} | Ashok Seeds and Plants</title>
+                <title>Gallery Page - {CurrentPage} | Ashok Seeds and Plants</title>
                 <meta name="description" content="" />
 
             </Head>
@@ -188,7 +188,7 @@ export async function getStaticProps({ params }) {
     let StartPage = (slug - 1) * PerPage;
 
 
-    const galleriesRes = await fetchAPI("/posts", {
+    const galleriesRes = await fetchAPI("/galleries", {
         pagination: {
             start: StartPage,
             limit: PerPage,
