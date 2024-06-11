@@ -94,7 +94,29 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                                     const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
                                     
                                     return (
-                                        <h3>Test</h3>
+                                        <div className="col-xl-4 col-lg-6 col-md-6">
+                                            <div className="project-card style1">
+                                                <div className="project-img">
+                                                    <a className="post-img" data-fancybox="gallery"
+                                                        href={`${image}`}>
+                                                        <img src={`${image}`} alt={`${title}`} />
+                                                    </a>
+                                                </div>
+                                                <div className="project-info">
+                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape" />
+                                                    <ul className={'GalleryCategory'}>
+                                                        {gallery_categories.data.map((galleryCat, i) => {
+                                                            const name = delve(galleryCat, "attributes.name");
+                                                            if (name !== 'All') {
+                                                                return (
+                                                                    <li>{name}</li>
+                                                                )
+                                                            }
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     )
                                 })}
 
