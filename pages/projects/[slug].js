@@ -88,19 +88,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
                         <div className="row justify-content-center">
-                                {portfolios.map((portfolio, i) => {
-                                     const title = delve(portfolio, "attributes.title");
-                                     const slug = delve(portfolio, "attributes.slug");
-                                     const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
-                                     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
-                                     const excerpt = delve(portfolio, "attributes.excerpt");
-                                     const categories = delve(portfolio, "attributes.portfolio_categories.data");
-                                    
-                                    return (
-                                        <h3>test</h3>
-                                        
-                                    )
-                                })}
+                                <h3>Loop will be here</h3>
 
                             </div>
                             
