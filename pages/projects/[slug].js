@@ -87,7 +87,14 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                     </div>
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
+                        <div className="row justify-content-center">
+                                {portfolios.data.map((portfolio, i) => {
+                                    return (
+                                        <h3>Test</h3>
+                                    )
+                                })}
 
+                            </div>
                             
                             <ul className="page-nav list-style">
 
