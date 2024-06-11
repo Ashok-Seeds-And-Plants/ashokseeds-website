@@ -88,53 +88,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
 
-                            <div className="row justify-content-center">
-                                {portfolios.map((portfolio, i) => {
-
-                                    //console.log(post);
-                                    const title = delve(portfolio, "attributes.title");
-                                    const slug = delve(portfolio, "attributes.slug");
-                                    const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
-                                    const date = parseISO(delve(portfolio, "attributes.publishedAt"));
-                                    const excerpt = delve(portfolio, "attributes.excerpt");
-                                    const categories = delve(portfolio, "attributes.portfolio_categories.data");
-                                    // console.log(date);
-                                    return (
-                                        <div className="col-xl-4 col-lg-6 col-md-6">
-                                            <div className="project-card style1">
-                                                <div className="project-img">
-                                                    <img src={`${cover}`} alt={`${title}`} />
-                                                </div>
-                                                <div className="project-info">
-                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape" />
-
-                                                    <h3><Link href={`/project/${slug}/`}>{title}</Link></h3>
-
-                                                    <ul className="categories-list">
-                                                        {categories.map((category, i) => {
-                                                            const cat_name = delve(category, "attributes.name");
-                                                            if (cat_name !== "All") {
-                                                                return (
-                                                                    <li>{cat_name}</li>
-
-                                                                )
-                                                            }
-                                                        })}
-
-                                                    </ul>
-
-                                                    <ReactMarkdown children={excerpt} />
-
-                                                    <Link href={`/project/${slug}/`}>
-                                                        <a className="link style1">Read More <i
-                                                            className="flaticon-right-arrow"></i></a>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                            </div>
+                            
                             <ul className="page-nav list-style">
 
                                 {PaginationData()}
