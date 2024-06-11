@@ -12,6 +12,7 @@ import { parseISO, format } from 'date-fns'
 
 const Blog = ({ post, categories }) => {
     const title = delve(post, "attributes.title");
+    const excerpt = delve(post, "attributes.excerpt");
     const content = delve(post, "attributes.content");
     const cover = delve(post, "attributes.cover.data.attributes.url");
 
@@ -25,7 +26,7 @@ const Blog = ({ post, categories }) => {
             <Meta />
             <Head>
                 <title>{title} | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content="{`${excerpt}`}" />
 
             </Head>
             <div className="page-wrapper">
