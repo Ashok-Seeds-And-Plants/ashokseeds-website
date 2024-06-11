@@ -14,7 +14,9 @@ import { parseISO, format } from 'date-fns'
 const Blog = ({ post, categories }) => {
     const title = delve(post, "attributes.title");
     const content = delve(post, "attributes.content");
+    const excerpt = delve(post, "attributes.excerpt");
     const cover = delve(post, "attributes.cover.data.attributes.url");
+
 
 
     const date = parseISO(delve(post, "attributes.publishedAt"));
@@ -26,7 +28,7 @@ const Blog = ({ post, categories }) => {
             <Meta />
             <Head>
                 <title>{title} | Ashok Seeds and Plants</title>
-                <meta name="description" content="" />
+                <meta name="description" content={`${excerpt}`} />
 
             </Head>
             <div className="page-wrapper">
@@ -169,6 +171,7 @@ export async function getStaticProps({ params }) {
         filters: {
             slug: params.slug,
         },
+        sort: ['id:desc'],
         populate: "*",
     })
     const categoriesRes = await fetchAPI("/post-categories")
