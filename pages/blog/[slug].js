@@ -60,8 +60,8 @@ const Blog = ({ post, categories }) => {
                                         <ul className="post-metainfo  list-style">
                                             <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
-                                        <div className="post-para">
                                         {content}
+                                        <div className="post-para">
                                         </div>
                                     </article>
                                     <div className="post-meta-option">
