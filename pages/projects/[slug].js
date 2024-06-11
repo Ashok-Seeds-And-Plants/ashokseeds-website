@@ -11,7 +11,7 @@ import delve from 'dlv'
 import React from "react";
 import Link from "next/link";
 
-const PerPage = 9;
+const PerPage = 3;
 const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     const ServerTotalPage = galleries.meta.pagination.total;
