@@ -26,7 +26,7 @@ const Blog = ({ post, categories }) => {
             <Meta />
             <Head>
                 <title>{title} | Ashok Seeds and Plants</title>
-                <meta name="description" content="{`${excerpt}`}" />
+                <meta name="description" content="{excerpt}" />
 
             </Head>
             <div className="page-wrapper">
