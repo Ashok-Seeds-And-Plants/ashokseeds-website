@@ -170,6 +170,7 @@ export async function getStaticProps({ params }) {
         filters: {
             slug: params.slug,
         },
+        sort: ['id:desc'],
         populate: "*",
     })
     const categoriesRes = await fetchAPI("/post-categories")
