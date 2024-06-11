@@ -89,6 +89,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                         <div className="container">
                         <div className="row justify-content-center">
                                 {portfolios.data.map((gallery, i) => {
+                                    console.log(gallery);
                                     const title = delve(gallery, "attributes.title");
                                     const gallery_categories = delve(gallery, "attributes.gallery_categories");
                                     const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
