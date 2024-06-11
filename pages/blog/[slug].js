@@ -111,7 +111,7 @@ const Blog = ({ post, categories }) => {
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="#"> {username}</a></h4>
 
-                                            {parse(about)}
+                                            {about}
                                             <ul className="social-profile list-style style3">
                                                 <li>
                                                     <a href="https://facebook.com">
