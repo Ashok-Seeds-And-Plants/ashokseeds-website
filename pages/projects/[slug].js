@@ -88,7 +88,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
                         <div className="row justify-content-center">
-                                {portfolios.map((gallery, i) => {
+                                {portfolios.map((portfolio, i) => {
                                      const title = delve(portfolio, "attributes.title");
                                      const slug = delve(portfolio, "attributes.slug");
                                      const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
