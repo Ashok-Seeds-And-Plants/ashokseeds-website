@@ -79,7 +79,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                                 <h2>Gallery - {CurrentPage}</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home</a></li>
-                                    <li><a href="https://www.ashokseedplant.com/about/">About</a></li>
+                                    <li><a href="https://www.ashokseedplant.com/blog/">Blog</a></li>
                                     <li>Gallery</li>
                                 </ul>
                             </div>
