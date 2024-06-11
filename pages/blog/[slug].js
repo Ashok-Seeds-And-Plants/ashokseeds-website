@@ -4,7 +4,7 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
-import parse from 'html-react-parser';
+import ReactMarkdown from "react-markdown";
 import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
@@ -13,8 +13,8 @@ import { parseISO, format } from 'date-fns'
 const Blog = ({ post, categories }) => {
     const title = delve(post, "attributes.title");
     const content = delve(post, "attributes.content");
-    const excerpt = delve(post, "attributes.excerpt");
     const cover = delve(post, "attributes.cover.data.attributes.url");
+
 
     const date = parseISO(delve(post, "attributes.publishedAt"));
     const username = delve(post, "attributes.user.data.attributes.displayName");
@@ -25,7 +25,7 @@ const Blog = ({ post, categories }) => {
             <Meta />
             <Head>
                 <title>{title} | Ashok Seeds and Plants</title>
-                <meta name="description" content={`${excerpt}`} />
+                <meta name="description" content="" />
 
             </Head>
             <div className="page-wrapper">
@@ -52,15 +52,15 @@ const Blog = ({ post, categories }) => {
                                 <div className="col-xl-10 offset-xl-1 col-lg-12">
                                     <article>
                                         <a className="post-img" data-fancybox="gallery"
-                                            href={`${cover}`}>
-                                            <img src={`${cover}`} alt={`${title}`} />
+                                           href={`${cover}`}>
+                                            <img src={`${cover}`} alt={`${title}`}/>
                                         </a>
                                         <h1>{title}</h1>
                                         <ul className="post-metainfo  list-style">
                                             <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
                                         <div className="post-para">
-                                            {parse(content)}
+                                            <ReactMarkdown children={content} />
                                         </div>
                                     </article>
                                     <div className="post-meta-option">
@@ -105,11 +105,11 @@ const Blog = ({ post, categories }) => {
                                     </div>
                                     <div className="post-author">
                                         <div className="post-author-img">
-                                            <img src="/img/user.png" alt="Image" />
+                                            <img src="/img/user.png" alt="Image"/>
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="#"> {username}</a></h4>
-                                             {about}
+                                            <ReactMarkdown children={about} />
                                             <ul className="social-profile list-style style3">
                                                 <li>
                                                     <a href="https://facebook.com">
@@ -168,7 +168,6 @@ export async function getStaticProps({ params }) {
         filters: {
             slug: params.slug,
         },
-        sort: ['id:desc'],
         populate: "*",
     })
     const categoriesRes = await fetchAPI("/post-categories")
