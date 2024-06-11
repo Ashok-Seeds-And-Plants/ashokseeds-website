@@ -102,19 +102,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                                                         <img src={`${image}`} alt={`${title}`} />
                                                     </a>
                                                 </div>
-                                                <div className="project-info">
-                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape" />
-                                                    <ul className={'GalleryCategory'}>
-                                                        {gallery_categories.data.map((galleryCat, i) => {
-                                                            const name = delve(galleryCat, "attributes.name");
-                                                            if (name !== 'All') {
-                                                                return (
-                                                                    <li>{name}</li>
-                                                                )
-                                                            }
-                                                        })}
-                                                    </ul>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     )
