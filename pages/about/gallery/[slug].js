@@ -18,16 +18,15 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
 
     let pages = 0;
 
-    if (ServerTotalPage <= PerPage)
-    {
-        pages = 1; 
+    if (ServerTotalPage <= PerPage) {
+        pages = 1;
 
-    }else if(ServerTotalPage % PerPage === 0){
+    } else if (ServerTotalPage % PerPage === 0) {
 
-        pages = ServerTotalPage/PerPage;
+        pages = ServerTotalPage / PerPage;
 
-    }else{
-        pages = (ServerTotalPage/PerPage) + 1;
+    } else {
+        pages = (ServerTotalPage / PerPage) + 1;
 
     }
 
@@ -36,29 +35,25 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
     const PaginationData = index => {
         let content = [];
 
-        if(pages > 1)
-        {
+        if (pages > 1) {
 
-            if(CurrentPage !== 1)
-            {
-                content.push(<li><Link href={`/about/gallery/${CurrentPage-1}/`}><a><i className="flaticon-left-arrow"></i></a></Link></li>)
+            if (CurrentPage !== 1) {
+                content.push(<li><Link href={`/about/gallery/${CurrentPage - 1}/`}><a><i className="flaticon-left-arrow"></i></a></Link></li>)
             }
 
-        for (let i = 1; i <= pages; i++) {
+            for (let i = 1; i <= pages; i++) {
 
-            if(CurrentPage === i)
-            {
-                content.push(<li><Link href={`/about/gallery/${i}/`}><a className="active">{i}</a></Link></li>);
-            }else{
-                content.push(<li><Link href={`/about/gallery/${i}/`}><a>{i}</a></Link></li>);
+                if (CurrentPage === i) {
+                    content.push(<li><Link href={`/about/gallery/${i}/`}><a className="active">{i}</a></Link></li>);
+                } else {
+                    content.push(<li><Link href={`/about/gallery/${i}/`}><a>{i}</a></Link></li>);
+                }
+
             }
-
-        }
-        if(CurrentPage < pages)
-        {
-            content.push(<li><Link href={`/about/gallery/${CurrentPage+1}/`}><a><i className="flaticon-right-arrow"></i></a></Link></li>)
-        }
-        }else{
+            if (CurrentPage < pages) {
+                content.push(<li><Link href={`/about/gallery/${CurrentPage + 1}/`}><a><i className="flaticon-right-arrow"></i></a></Link></li>)
+            }
+        } else {
             // Do nothing
         }
 
@@ -84,7 +79,7 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                                 <h2>Gallery - {CurrentPage}</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home</a></li>
-                                    <li><a href="https://www.ashokseedplant.com/blog/">Blog</a></li>
+                                    <li><a href="https://www.ashokseedplant.com/about/">About</a></li>
                                     <li>Gallery</li>
                                 </ul>
                             </div>
@@ -102,21 +97,20 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                                             <div className="project-card style1">
                                                 <div className="project-img">
                                                     <a className="post-img" data-fancybox="gallery"
-                                                       href={`${image}`}>
-                                                        <img src={`${image}`} alt={`${title}`}/>
+                                                        href={`${image}`}>
+                                                        <img src={`${image}`} alt={`${title}`} />
                                                     </a>
                                                 </div>
                                                 <div className="project-info">
-                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
+                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape" />
                                                     <ul className={'GalleryCategory'}>
                                                         {gallery_categories.data.map((galleryCat, i) => {
                                                             const name = delve(galleryCat, "attributes.name");
-                                                                if(name !== 'All')
-                                                                {
-                                                                    return(
+                                                            if (name !== 'All') {
+                                                                return (
                                                                     <li>{name}</li>
-                                                                    )
-                                                                }
+                                                                )
+                                                            }
                                                         })}
                                                     </ul>
                                                 </div>
@@ -154,16 +148,15 @@ export async function getStaticPaths() {
 
     let pages = 0;
 
-    if (ServerTotalPage <= PerPage)
-    {
+    if (ServerTotalPage <= PerPage) {
         pages = 1;
 
-    }else if(ServerTotalPage % PerPage === 0){
+    } else if (ServerTotalPage % PerPage === 0) {
 
-        pages = ServerTotalPage/PerPage;
+        pages = ServerTotalPage / PerPage;
 
-    }else{
-        pages = (ServerTotalPage/PerPage) + 1;
+    } else {
+        pages = (ServerTotalPage / PerPage) + 1;
 
     }
 
@@ -173,7 +166,7 @@ export async function getStaticPaths() {
 
     for (let i = 0; i < pages; i++) {
 
-        Pages.push({id:i+1});
+        Pages.push({ id: i + 1 });
 
     }
 
@@ -192,7 +185,7 @@ export async function getStaticProps({ params }) {
 
     const slug = parseInt(params.slug);
 
-    let StartPage = (slug-1)*PerPage;
+    let StartPage = (slug - 1) * PerPage;
 
 
     const galleriesRes = await fetchAPI("/galleries", {
