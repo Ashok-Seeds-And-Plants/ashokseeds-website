@@ -60,7 +60,7 @@ const Blog = ({ post, categories }) => {
                                             <li><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</li>
                                         </ul>
                                         <div className="post-para">
-                                            {ReactHtmlParser(content)}
+                                            {parse(content)}
                                         </div>
                                     </article>
                                     <div className="post-meta-option">
@@ -109,7 +109,7 @@ const Blog = ({ post, categories }) => {
                                         </div>
                                         <div className="post-author-info">
                                             <h4>Posted by<a href="#"> {username}</a></h4>
-                                             {ReactHtmlParser(about)}
+                                             {parse(about)}
                                             <ul className="social-profile list-style style3">
                                                 <li>
                                                     <a href="https://facebook.com">
