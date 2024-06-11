@@ -1,6 +1,6 @@
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 import Link from "next/link";
 
 import React, { useRef, useState } from "react";
@@ -78,7 +78,7 @@ const Posts = ({ posts }) => {
                                 </div>
                                 <div className="blog-info">
                                     <h3><Link href={`/blog/${slug}`}>{title}</Link></h3>
-                                    {ReactHtmlParser(excerpt)}
+                                    {parse(excerpt)}
 
                                     <Link href={`/blog/${slug}`}>
                                     <a className="link style1">Read More <i

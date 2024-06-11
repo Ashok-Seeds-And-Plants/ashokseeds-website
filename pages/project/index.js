@@ -9,7 +9,7 @@ import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import Blogs from "../blog";
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 import Link from "next/link";
 
 const Portfolios = ({ portfolios }) => {
@@ -75,7 +75,7 @@ const Portfolios = ({ portfolios }) => {
 
                                             </ul>
 
-                                            {ReactHtmlParser(excerpt)}
+                                            {parse(excerpt)}
 
                                             <Link href={`/project/${slug}/`}>
                                             <a className="link style1">Read More <i

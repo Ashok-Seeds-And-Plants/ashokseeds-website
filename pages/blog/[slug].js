@@ -4,7 +4,7 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
