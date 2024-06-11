@@ -1,5 +1,5 @@
 import delve from 'dlv'
-import ReactMarkdown from "react-markdown";
+import ReactHtmlParser from 'react-html-parser';
 import Link from "next/link";
 
 import React, { useRef, useState } from "react";
@@ -67,7 +67,7 @@ const Portfolios = ({ portfolios }) => {
                             </div>
                             <div className="project-info">
                                 <h3><Link href={`/project/${slug}`}>{title}</Link></h3>
-                                <ReactMarkdown children={excerpt} />
+                                {ReactHtmlParser(excerpt)}
                                 <Link href={`/project/${slug}`}>
                                     <a className="link style1">See More<i
                                         className="flaticon-right-arrow"></i></a>
