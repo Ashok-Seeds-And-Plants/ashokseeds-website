@@ -12,9 +12,9 @@ import React from "react";
 import Link from "next/link";
 
 const PerPage = 3;
-const Gallery = ({ galleries, categories, CurrentPage }) => {
+const Gallery = ({ portfolios, categories, CurrentPage }) => {
 
-    const ServerTotalPage = galleries.meta.pagination.total;
+    const ServerTotalPage = portfolios.meta.pagination.total;
 
     let pages = 0;
 
@@ -87,38 +87,53 @@ const Gallery = ({ galleries, categories, CurrentPage }) => {
                     </div>
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
+
                             <div className="row justify-content-center">
-                                {galleries.data.map((gallery, i) => {
-                                    const title = delve(gallery, "attributes.title");
-                                    const gallery_categories = delve(gallery, "attributes.gallery_categories");
-                                    const image = delve(gallery, "attributes.image.data.attributes.formats.medium.url");
+                                {portfolios.map((portfolio, i) => {
+
+                                    //console.log(post);
+                                    const title = delve(portfolio, "attributes.title");
+                                    const slug = delve(portfolio, "attributes.slug");
+                                    const cover = delve(portfolio, "attributes.cover.data.attributes.formats.medium.url");
+                                    const date = parseISO(delve(portfolio, "attributes.publishedAt"));
+                                    const excerpt = delve(portfolio, "attributes.excerpt");
+                                    const categories = delve(portfolio, "attributes.portfolio_categories.data");
+                                    // console.log(date);
                                     return (
                                         <div className="col-xl-4 col-lg-6 col-md-6">
                                             <div className="project-card style1">
                                                 <div className="project-img">
-                                                    <a className="post-img" data-fancybox="gallery"
-                                                        href={`${image}`}>
-                                                        <img src={`${image}`} alt={`${title}`} />
-                                                    </a>
+                                                    <img src={`${cover}`} alt={`${title}`} />
                                                 </div>
                                                 <div className="project-info">
                                                     <img src="/img/shape-1.png" alt="Image" className="project-shape" />
-                                                    <ul className={'GalleryCategory'}>
-                                                        {gallery_categories.data.map((galleryCat, i) => {
-                                                            const name = delve(galleryCat, "attributes.name");
-                                                            if (name !== 'All') {
+
+                                                    <h3><Link href={`/project/${slug}/`}>{title}</Link></h3>
+
+                                                    <ul className="categories-list">
+                                                        {categories.map((category, i) => {
+                                                            const cat_name = delve(category, "attributes.name");
+                                                            if (cat_name !== "All") {
                                                                 return (
-                                                                    <li>{name}</li>
+                                                                    <li>{cat_name}</li>
+
                                                                 )
                                                             }
                                                         })}
+
                                                     </ul>
+
+                                                    <ReactMarkdown children={excerpt} />
+
+                                                    <Link href={`/project/${slug}/`}>
+                                                        <a className="link style1">Read More <i
+                                                            className="flaticon-right-arrow"></i></a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
                                     )
                                 })}
-
                             </div>
                             <ul className="page-nav list-style">
 
@@ -188,7 +203,7 @@ export async function getStaticProps({ params }) {
     let StartPage = (slug - 1) * PerPage;
 
 
-    const galleriesRes = await fetchAPI("/galleries", {
+    const portfoliosRes = await fetchAPI("/portfolios", {
         pagination: {
             start: StartPage,
             limit: PerPage,
@@ -200,7 +215,7 @@ export async function getStaticProps({ params }) {
     const categoriesRes = await fetchAPI("/post-categories")
 
     return {
-        props: { galleries: galleriesRes, categories: categoriesRes, CurrentPage: slug },
+        props: { portfolios: portfoliosRes, categories: categoriesRes, CurrentPage: slug },
         revalidate: 1,
     }
 }
