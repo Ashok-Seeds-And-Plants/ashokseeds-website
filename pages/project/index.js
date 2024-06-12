@@ -12,7 +12,61 @@ import { parseISO, format } from 'date-fns'
 import parse from 'html-react-parser';
 import Link from "next/link";
 
+const PerPage = 6;
+let PostCount = 1;
+
 const Portfolios = ({ portfolios }) => {
+
+    const ServerTotalPage = portfolios.meta.pagination.total;
+
+    let pages = 0;
+
+    if (ServerTotalPage <= PerPage) {
+        pages = 1;
+
+    } else if (ServerTotalPage % PerPage === 0) {
+
+        pages = ServerTotalPage / PerPage;
+
+    } else {
+        pages = (ServerTotalPage / PerPage) + 1;
+
+    }
+
+    pages = Math.trunc(pages); // Removing decimal pointsp
+
+    const CurrentPage = 1;
+
+    const PaginationData = index => {
+        let content = [];
+
+        if (pages > 1) {
+
+            if (CurrentPage !== 1) {
+                content.push(<li><Link href={`/projects/${CurrentPage - 1}/`}><a><i className="flaticon-left-arrow"></i></a></Link></li>)
+            }
+
+            for (let i = 1; i <= pages; i++) {
+
+                if (CurrentPage === i) {
+                    content.push(<li><Link href={`/projects/${i}/`}><a className="active">{i}</a></Link></li>);
+                } else {
+                    content.push(<li><Link href={`/projects/${i}/`}><a>{i}</a></Link></li>);
+                }
+
+            }
+            if (CurrentPage < pages) {
+                content.push(<li><Link href={`/projects/${CurrentPage + 1}/`}><a><i className="flaticon-right-arrow"></i></a></Link></li>)
+            }
+        } else {
+            // Do nothing
+        }
+
+        return content;
+    };
+
+    //console.log(pages);
+
     return (
         <>
             <Meta />
@@ -49,50 +103,45 @@ const Portfolios = ({ portfolios }) => {
                                     const date = parseISO(delve(portfolio, "attributes.publishedAt"));
                                     const excerpt = delve(portfolio, "attributes.excerpt");
                                     const categories = delve(portfolio, "attributes.portfolio_categories.data");
-                                    // console.log(date);
+
                                     return (
-                                <div className="col-xl-4 col-lg-6 col-md-6">
-                                    <div className="project-card style1">
-                                        <div className="project-img">
-                                            <img src={`${cover}`} alt={`${title}`}/>
+                                        <div className="col-xl-4 col-lg-6 col-md-6">
+                                            <div className="project-card style1">
+                                                <div className="project-img">
+                                                    <img src={`${cover}`} alt={`${title}`} />
+                                                </div>
+                                                <div className="project-info">
+                                                    <img src="/img/shape-1.png" alt="Image" className="project-shape" />
+
+                                                    <h3><Link href={`/project/${slug}/`}>{title}</Link></h3>
+
+                                                    <ul className="categories-list">
+                                                        {categories.map((category, i) => {
+                                                            const cat_name = delve(category, "attributes.name");
+                                                            if (cat_name !== "All") {
+                                                                return (
+                                                                    <li>{cat_name}</li>
+
+                                                                )
+                                                            }
+                                                        })}
+
+                                                    </ul>
+
+                                                    {parse(excerpt)}
+
+                                                    <Link href={`/project/${slug}/`}>
+                                                        <a className="link style1">Read More <i
+                                                            className="flaticon-right-arrow"></i></a>
+                                                    </Link>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="project-info">
-                                            <img src="/img/shape-1.png" alt="Image" className="project-shape"/>
-
-                                            <h3><Link href={`/project/${slug}/`}>{title}</Link></h3>
-
-                                            <ul className="categories-list">
-                                                {categories.map((category, i) => {
-                                                    const cat_name = delve(category, "attributes.name");
-                                                    if (cat_name !== "All")
-                                                    {
-                                                        return (
-                                                            <li>{cat_name}</li>
-
-                                                        )
-                                                    }
-                                                    })}
-
-                                            </ul>
-
-                                            {parse(excerpt)}
-
-                                            <Link href={`/project/${slug}/`}>
-                                            <a className="link style1">Read More <i
-                                                    className="flaticon-right-arrow"></i></a>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
                                     )
                                 })}
                             </div>
                             <ul className="page-nav list-style">
-                                <li><a href="#"><i className="flaticon-left-arrow"></i></a></li>
-                                <li><a className="active" href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#"><i className="flaticon-right-arrow"></i></a></li>
+                                {PaginationData()}
                             </ul>
                         </div>
                     </section>
@@ -111,7 +160,12 @@ export async function getStaticProps() {
     const [portfoliosRes] = await Promise.all([
         fetchAPI("/portfolios", {
             sort: ['id:desc'],
-            populate: "*"
+            populate: "*",
+            pagination: {
+                start: 0,
+                limit: 6,
+                withCount: true
+            }
         })
     ])
 

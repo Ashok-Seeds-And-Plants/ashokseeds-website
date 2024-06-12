@@ -100,6 +100,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
                                     const categories = delve(portfolio, "attributes.portfolio_categories.data");
                                     // console.log(date);
                                     return (
+
                                         <div className="col-xl-4 col-lg-6 col-md-6">
                                             <div className="project-card style1">
                                                 <div className="project-img">
