@@ -21,7 +21,7 @@ import "swiper/css/navigation";
 //import "./styles.css";
 
 // import required modules
-import { Pagination, Navigation, Autoplay} from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 
 const Blog = ({ portfolio, categories }) => {
@@ -65,7 +65,7 @@ const Blog = ({ portfolio, categories }) => {
                                 <div className="col-xl-8">
                                     <div className="project-desc">
                                         <a className="single-project-img mt-0" data-fancybox="gallery" href={`${cover}`}>
-                                            <img src={`${cover}`} alt={`${title}`}/>
+                                            <img src={`${cover}`} alt={`${title}`} />
                                         </a>
 
                                         <Swiper
@@ -73,7 +73,7 @@ const Blog = ({ portfolio, categories }) => {
                                             spaceBetween={30}
                                             pagination={{
                                                 clickable: true,
-                                                dynamicBullets:true
+                                                dynamicBullets: true
                                             }}
                                             loop={true}
                                             autoplay={{
@@ -89,11 +89,11 @@ const Blog = ({ portfolio, categories }) => {
                                                 const url = delve(slide, "attributes.url");
 
                                                 return (
-                                            <SwiperSlide>
-                                                <a className="single-project-img mt-0" data-fancybox="gallery" href={`${url}`}>
-                                                    <img src={`${url}`} alt={`${title}`}/>
-                                                </a>
-                                            </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <a className="single-project-img mt-0" data-fancybox="gallery" href={`${url}`}>
+                                                            <img src={`${url}`} alt={`${title}`} />
+                                                        </a>
+                                                    </SwiperSlide>
 
                                                 )
                                             })}
@@ -103,8 +103,8 @@ const Blog = ({ portfolio, categories }) => {
 
                                         <h1>{title}</h1>
 
-                                        
-                                        { parse(content) }
+
+                                        {parse(content)}
 
                                     </div>
                                 </div>
@@ -117,8 +117,7 @@ const Blog = ({ portfolio, categories }) => {
                                                     <h6>Category:</h6>
                                                     {port_categories.map((category, i) => {
                                                         const cat_name = delve(category, "attributes.name");
-                                                        if (cat_name !== "All")
-                                                        {
+                                                        if (cat_name !== "All") {
                                                             return (
                                                                 <span className="portfolio-categories">{`${cat_name} `}</span>
 
@@ -165,14 +164,14 @@ const Blog = ({ portfolio, categories }) => {
                                             <h4>Give Us A Message</h4>
                                             <form action="#" className="register-widget">
                                                 <div className="form-group">
-                                                    <input type="text" name="name" id={'name'} placeholder="Name*"/>
+                                                    <input type="text" name="name" id={'name'} placeholder="Name*" />
                                                 </div>
                                                 <div className="form-group">
-                                                    <input type="email" name="email" id={'email'} placeholder="Email*"/>
+                                                    <input type="email" name="email" id={'email'} placeholder="Email*" />
                                                 </div>
                                                 <div className="form-group">
                                                     <textarea name="msg" id="msg" cols="30" rows="10"
-                                                              placeholder="Your Message"></textarea>
+                                                        placeholder="Your Message"></textarea>
                                                 </div>
                                                 <button type="submit" className="btn style1 w-100 d-block">Send
                                                     Message
