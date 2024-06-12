@@ -4,7 +4,8 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
-import ReactMarkdown from "react-markdown";
+
+import parse from 'html-react-parser';
 import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
@@ -102,7 +103,8 @@ const Blog = ({ portfolio, categories }) => {
 
                                         <h1>{title}</h1>
 
-                                        <ReactMarkdown children={content} />
+                                        
+                                        {parse(content)}
 
                                     </div>
                                 </div>
