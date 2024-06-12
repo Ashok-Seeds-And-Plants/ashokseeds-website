@@ -9,7 +9,7 @@ import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
 import Blogs from "../blog";
-import ReactMarkdown from "react-markdown";
+import parse from 'html-react-parser';
 import Link from "next/link";
 
 const Portfolios = ({ portfolios }) => {
@@ -40,7 +40,7 @@ const Portfolios = ({ portfolios }) => {
                     <section className="project-details-wrap ptb-100">
                         <div className="container">
                             <div className="row justify-content-center">
-                                {portfolios.map((portfolio, i) => {
+                                {portfolios.data.map((portfolio, i) => {
 
                                     //console.log(post);
                                     const title = delve(portfolio, "attributes.title");
@@ -75,7 +75,7 @@ const Portfolios = ({ portfolios }) => {
 
                                             </ul>
 
-                                            <ReactMarkdown children={excerpt} />
+                                            {parse(excerpt)}
 
                                             <Link href={`/project/${slug}/`}>
                                             <a className="link style1">Read More <i
@@ -117,7 +117,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            portfolios: portfoliosRes.data
+            portfolios: portfoliosRes
         },
         revalidate: 1,
     }
