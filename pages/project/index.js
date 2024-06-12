@@ -8,7 +8,7 @@ import Js from '@components/Js'
 import { fetchAPI } from "../../lib/api"
 import delve from 'dlv'
 import { parseISO, format } from 'date-fns'
-import Blogs from "../blog";
+
 import parse from 'html-react-parser';
 import Link from "next/link";
 
