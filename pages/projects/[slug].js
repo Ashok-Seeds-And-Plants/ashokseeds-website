@@ -13,7 +13,7 @@ import { parseISO, format } from 'date-fns'
 import React from "react";
 import Link from "next/link";
 
-const PerPage = 3;
+const PerPage = 6;
 const Gallery = ({ portfolios, categories, CurrentPage }) => {
 
     const ServerTotalPage = portfolios.meta.pagination.total;
