@@ -318,7 +318,7 @@ export default function Header() {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href={`/project/`}>
+                                        <Link href={`/projects/`}>
                                             <a className="nav-link">Projects</a>
                                         </Link>
 
