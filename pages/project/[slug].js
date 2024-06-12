@@ -104,7 +104,7 @@ const Blog = ({ portfolio, categories }) => {
                                         <h1>{title}</h1>
 
                                         
-                                        {parse(content)}
+                                       
 
                                     </div>
                                 </div>
