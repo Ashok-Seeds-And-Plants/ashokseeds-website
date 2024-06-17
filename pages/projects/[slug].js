@@ -161,7 +161,7 @@ const Gallery = ({ portfolios, categories, CurrentPage }) => {
 
 export async function getStaticPaths() {
 
-    const ServerGallery = await fetchAPI("/galleries");
+    const ServerGallery = await fetchAPI("/portfolios");
 
     const ServerTotalPage = ServerGallery.meta.pagination.total;
 
