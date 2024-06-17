@@ -13,7 +13,6 @@ import parse from 'html-react-parser';
 import Link from "next/link";
 
 const PerPage = 6;
-let PostCount = 1;
 
 const Portfolios = ({ portfolios }) => {
 
