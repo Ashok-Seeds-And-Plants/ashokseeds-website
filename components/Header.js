@@ -260,7 +260,7 @@ export default function Header() {
                                                 </Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link href={'/about/gallery/1/'}>
+                                                <Link href={'/about/gallery/'}>
                                                     <a className="nav-link">Gallery</a>
                                                 </Link>
                                             </li>
