@@ -78,7 +78,7 @@ const Posts = ({ posts, recentpost, categories, CurrentPage }) => {
                     <div className="breadcrumb-wrap bg-f br-1">
                         <div className="container">
                             <div className="breadcrumb-title">
-                                <h2>Blogs - {CurrentPage}</h2>
+                                <h2>Blogs Page - {CurrentPage}</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home</a></li>
                                     <li>Blogs</li>
