@@ -7,11 +7,8 @@ import Js from '@components/Js'
 import BlogSidebar from '@components/Blog/BlogSidebar'
 import BlogPosts from '@components/Blog/Post'
 
-import parse from 'html-react-parser';
-
 import { fetchAPI } from "../../lib/api"
-import delve from 'dlv'
-import { parseISO, format } from 'date-fns'
+
 import React from "react";
 import Link from "next/link";
 

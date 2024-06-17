@@ -6,22 +6,22 @@ import Link from "next/link";
 const BlogSidebar = ({ categories, recentpost }) => {
 
     return (
-        <div class="col-xl-4 col-lg-12">
-            <div class="sidebar">
-                <div class="sidebar-widget">
+        <div className="col-xl-4 col-lg-12">
+            <div className="sidebar">
+                <div className="sidebar-widget">
                     <h4>Search </h4>
-                    <div class="search-box">
-                        <div class="form-group">
+                    <div className="search-box">
+                        <div className="form-group">
                             <input type="search" placeholder="Search" />
                             <button type="submit">
-                                <i class="flaticon-search"></i>
+                                <i className="flaticon-search"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="sidebar-widget categories">
+                <div className="sidebar-widget categories">
                     <h4>Categories</h4>
-                    <ul class="category-box list-style">
+                    <ul className="category-box list-style">
                         {categories.data.map((rpost, i) => {
 
                             //console.log(post);
@@ -32,7 +32,7 @@ const BlogSidebar = ({ categories, recentpost }) => {
 
                                 <li>
                                     <a href="#">
-                                        <i class="ri-checkbox-line"></i>
+                                        <i className="ri-checkbox-line"></i>
                                         {name}
                                     </a>
                                 </li>
@@ -40,9 +40,9 @@ const BlogSidebar = ({ categories, recentpost }) => {
                         })}
                     </ul>
                 </div>
-                <div class="sidebar-widget popular-post">
+                <div className="sidebar-widget popular-post">
                     <h4>Recent Posts</h4>
-                    <div class="popular-post-widget">
+                    <div className="popular-post-widget">
                         {recentpost.data.map((rpost, i) => {
 
                             //console.log(post);
@@ -54,11 +54,11 @@ const BlogSidebar = ({ categories, recentpost }) => {
                             const username = delve(rpost, "attributes.user.data.attributes.displayName");
                             // console.log(date);
                             return (
-                                <div class="pp-post-item">
-                                    <a href="blog-details-right-sidebar.html" class="pp-post-img">
+                                <div className="pp-post-item">
+                                    <a href="blog-details-right-sidebar.html" className="pp-post-img">
                                         <img src={`${cover}`} alt={`${title}`} />
                                     </a>
-                                    <div class="pp-post-info">
+                                    <div className="pp-post-info">
                                         <h6>
                                             <Link href={`/blog/${slug}/`}>{title}</Link>
                                         </h6>
@@ -71,16 +71,16 @@ const BlogSidebar = ({ categories, recentpost }) => {
                         })}
                     </div>
                 </div>
-                <div class="sidebar-widget style2">
-                    <div class="contact-widget bg-f">
+                <div className="sidebar-widget style2">
+                    <div className="contact-widget bg-f">
                         <h3>Join the green revolution with Miyawaki urban forests</h3>
                         <p>By planting dense, biodiverse mini-forests together, we can transform our cities, fight climate change, and foster community spirit. By working together, we can build a world that is both sustainable and environmentally friendly. We need to start planting today to make tomorrow greener.</p>
-                        <Link href="/contact-us/" class="btn style1">Contact Us</Link>
+                        <Link href="/contact-us/" className="btn style1">Contact Us</Link>
                     </div>
                 </div>
-                <div class="sidebar-widget tags">
+                <div className="sidebar-widget tags">
                     <h4>Popular Tags </h4>
-                    <ul class="tag-list list-style">
+                    <ul className="tag-list list-style">
                         <li><a href="#">Pollution</a></li>
                         <li><a href="#">Water</a></li>
                         <li><a href="#">Protest</a></li>
