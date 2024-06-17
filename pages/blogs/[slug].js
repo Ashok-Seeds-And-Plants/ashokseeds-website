@@ -153,12 +153,22 @@ const Posts = ({ posts, recentpost, categories, CurrentPage }) => {
                                         <div class="sidebar-widget categories">
                                             <h4>Categories</h4>
                                             <ul class="category-box list-style">
-                                                <li>
-                                                    <a href="posts-by-category.html">
-                                                        <i class="ri-checkbox-line"></i>
-                                                        Global Warming
-                                                    </a>
-                                                </li>
+                                                {categories.data.map((rpost, i) => {
+
+                                                    //console.log(post);
+                                                    const name = delve(rpost, "attributes.name");
+
+                                                    // console.log(date);
+                                                    return (
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="ri-checkbox-line"></i>
+                                                                {name}
+                                                            </a>
+                                                        </li>
+                                                    )
+                                                })}
                                             </ul>
                                         </div>
                                         <div class="sidebar-widget popular-post">
@@ -292,7 +302,10 @@ export async function getStaticProps({ params }) {
         sort: ['id:desc'],
         populate: "*",
     })
-    const categoriesRes = await fetchAPI("/post-categories")
+    const categoriesRes = await fetchAPI("/post-categories", {
+        sort: ['id:asc'],
+        populate: "*",
+    })
 
     return {
         props: { posts: postsRes, recentpost: RecentPostsRes, categories: categoriesRes, CurrentPage: slug },
