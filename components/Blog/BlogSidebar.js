@@ -75,7 +75,7 @@ const BlogSidebar = ({ categories, recentpost }) => {
                     <div className="contact-widget bg-f">
                         <h3>Join the green revolution with Miyawaki urban forests</h3>
                         <p>By planting dense, biodiverse mini-forests together, we can transform our cities, fight climate change, and foster community spirit. By working together, we can build a world that is both sustainable and environmentally friendly. We need to start planting today to make tomorrow greener.</p>
-                        <Link href="/contact-us/" className="btn style1">Contact Us</Link>
+                        <Link href="/contact-us/"><a className="btn style1">Contact Us</a></Link>
                     </div>
                 </div>
                 <div className="sidebar-widget tags">
