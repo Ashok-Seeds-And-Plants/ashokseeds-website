@@ -7,7 +7,8 @@ import parse from 'html-react-parser';
 const Post = ({ posts }) => {
 
     return (
-        <div class="row justify-content-center">
+        <>
+        
                                         {posts.data.map((post, i) => {
 
                                             //console.log(post);
@@ -48,8 +49,7 @@ const Post = ({ posts }) => {
                                                 </div>
                                             )
                                         })}
-
-                                    </div>
+                                    </>
     )
 }
 

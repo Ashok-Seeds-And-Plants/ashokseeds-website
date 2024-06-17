@@ -92,12 +92,14 @@ const Posts = ({ posts, recentpost, categories, CurrentPage }) => {
                         <div class="container">
                             <div class="row gx-5">
                                 <div class="col-xl-8 col-lg-12">
-                                    <BlogPosts posts={posts} />
+                                    <div class="row justify-content-center">
+                                        <BlogPosts posts={posts} />
+                                    </div>
                                     <ul class="page-nav list-style">
                                         {PaginationData()}
                                     </ul>
                                 </div>
-                                <BlogSidebar categories={categories} recentpost={recentpost}/>
+                                <BlogSidebar categories={categories} recentpost={recentpost} />
                             </div>
                         </div>
                     </div>
