@@ -4,7 +4,8 @@ import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Js from '@components/Js'
-import BlogSidebar from '@components/BlogSidebar'
+import BlogSidebar from '@components/Blog/BlogSidebar'
+import BlogPosts from '@components/Blog/Post'
 
 import parse from 'html-react-parser';
 
@@ -91,54 +92,12 @@ const Posts = ({ posts, recentpost, categories, CurrentPage }) => {
                         <div class="container">
                             <div class="row gx-5">
                                 <div class="col-xl-8 col-lg-12">
-                                    <div class="row justify-content-center">
-                                        {posts.data.map((post, i) => {
-
-                                            //console.log(post);
-                                            const title = delve(post, "attributes.title");
-                                            const slug = delve(post, "attributes.slug");
-                                            const cover = delve(post, "attributes.cover.data.attributes.formats.medium.url");
-                                            const excerpt = delve(post, "attributes.excerpt");
-                                            const date = parseISO(delve(post, "attributes.publishedAt"));
-                                            const username = delve(post, "attributes.user.data.attributes.displayName");
-                                            // console.log(date);
-                                            return (
-                                                <div class="col-xl-6 col-lg-6 col-md-6">
-                                                    <div class="blog-card style1">
-                                                        <div class="blog-info">
-                                                            <div class="blog-author">
-                                                                <div class="blog-author-img">
-                                                                    <img src="/img/user.png" alt={`${username}`} />
-                                                                </div>
-                                                                <div class="blog-author-info">
-                                                                    <span>Posted By</span>
-                                                                    <h6><a href="#">{username}</a></h6>
-                                                                </div>
-                                                            </div>
-                                                            <img className="blog-cover-img" src={`${cover}`} alt={`${title}`} />
-                                                            <h3><Link href={`/blog/${slug}/`}>{title}</Link></h3>
-                                                            {parse(excerpt)}
-                                                            <ul class="blog-metainfo list-style">
-                                                                <li><Link href={`/blog/${slug}/`}>
-                                                                    <a><i className="ri-calendar-todo-line"></i>{format(date, 'd LLL yyyy')}</a>
-                                                                </Link></li>
-                                                            </ul>
-                                                        </div>
-                                                        <Link href={`/blog/${slug}/`}>
-                                                            <a className="link style1">Read More <i
-                                                                className="flaticon-right-arrow"></i></a>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            )
-                                        })}
-
-                                    </div>
+                                    <BlogPosts posts={posts} />
                                     <ul class="page-nav list-style">
                                         {PaginationData()}
                                     </ul>
                                 </div>
-                                <BlogSidebar />
+                                <BlogSidebar categories={categories} recentpost={recentpost}/>
                             </div>
                         </div>
                     </div>
