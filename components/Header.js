@@ -330,7 +330,7 @@ export default function Header() {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <Link href={'/blog/'}>
+                                                <Link href={'/blogs/'}>
                                                     <a className="nav-link">News and Updates</a>
                                                 </Link>
                                             </li>
