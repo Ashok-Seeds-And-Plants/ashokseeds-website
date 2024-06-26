@@ -40,7 +40,7 @@ const Blog = ({ post, categories }) => {
                                 <h2>{title}</h2>
                                 <ul className="breadcrumb-menu list-style">
                                     <li><a href="https://www.ashokseedplant.com/">Home</a></li>
-                                    <li><a href="https://www.ashokseedplant.com/blog/">Blog</a></li>
+                                    <li><a href="https://www.ashokseedplant.com/blogs/">Blog</a></li>
                                     <li>{title}</li>
                                 </ul>
                             </div>
