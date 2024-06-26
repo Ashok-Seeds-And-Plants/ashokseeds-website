@@ -4,167 +4,217 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://www.ashokseedplant.com/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ashokseedplant.com/initiatives/tree-plantation/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://www.ashokseedplant.com/initiatives/miyawaki-forest/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://www.ashokseedplant.com/initiatives/bkg-kitchen-garden/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://www.ashokseedplant.com/initiatives/agroforestry/apple/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://www.ashokseedplant.com/initiatives/agroforestry/amrood-guava/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://www.ashokseedplant.com/initiatives/agroforestry/amla-indian-gooseberry/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
   <loc>https://www.ashokseedplant.com/about/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/about/mission-vision/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/about/our-team/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ashokseedplant.com/about/gallery/1/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <loc>https://www.ashokseedplant.com/about/gallery/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/initiatives/tree-plantation/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/initiatives/miyawaki-forest/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/initiatives/bkg-kitchen-garden/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/initiatives/agroforestry/strawberry/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/initiatives/agroforestry/apple/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/initiatives/agroforestry/amrood-guava/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/initiatives/agroforestry/amla-indian-gooseberry/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/projects/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ashokseedplant.com/blog/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <loc>https://www.ashokseedplant.com/blogs/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/contact-us/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/village-gadha-katara-sankar-garh/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/800-tree-planted-with-miyawaki-method/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/amla-agroforestry-usari-mafi/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/800-trees-planted-in-shankargarh/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/amla-agroforestry-ckd/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/miyawaki-forest-of-100-square-meters/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/primary-school-bkg-kitchen-garden/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/project/miyawaki-forest-2-acres-800-square-meters/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://www.ashokseedplant.com/donate-now/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/get-involved/volunteer/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/blog/five-important-life-lessons-climate-change-taught-us/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/blog/the-urgent-need-for-20-miyawaki-urban-forests-in-every-indian-city/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/blog/we-committed-to-planting-1-000-000-trees/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 <url>
   <loc>https://www.ashokseedplant.com/blog/let-s-take-care-of-nature-for-the-sake-of-the-earth/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/blog/changes-in-landscapes-and-wildlife-community/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/blog/increasing-risk-of-storms-droughts-and-floods/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/blog/solar-panels-will-be-great-source-of-green-energy/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/terms-conditions/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/privacy-policy/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.ashokseedplant.com/about/gallery/1/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://www.ashokseedplant.com/about/gallery/2/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/about/gallery/3/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.ashokseedplant.com/about/gallery/4/</loc>
-  <lastmod>2024-05-22T09:12:34+00:00</lastmod>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/projects/1/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/projects/2/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/blogs/1/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ashokseedplant.com/blogs/2/</loc>
+  <lastmod>2024-06-26T12:14:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
