@@ -55,7 +55,7 @@ const BlogSidebar = ({ categories, recentpost }) => {
                             // console.log(date);
                             return (
                                 <div className="pp-post-item">
-                                    <a href="blog-details-right-sidebar.html" className="pp-post-img">
+                                    <a href={`/blog/${slug}/`} className="pp-post-img">
                                         <img src={`${cover}`} alt={`${title}`} />
                                     </a>
                                     <div className="pp-post-info">
