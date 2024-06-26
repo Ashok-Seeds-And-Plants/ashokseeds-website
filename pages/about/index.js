@@ -1,13 +1,14 @@
 import Head from 'next/head'
-
+import Clients from "@components/Clients";
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-import Clients from "@components/Clients";
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Link from "next/link";
 
-export default function Home() {
+
+
+const AboutUs = ({ posts, galleries, portfolios, clients }) => {
     return (
         <>
             <Meta />
@@ -103,3 +104,54 @@ export default function Home() {
         </>
     )
 }
+
+
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [postsRes, galleriesRes, portfoliosRes, clientsRes] = await Promise.all([
+        fetchAPI("/posts", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*"
+        }),
+        fetchAPI("/galleries", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*"
+        }),
+        fetchAPI("/portfolios", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*"
+        }),
+        fetchAPI("/clients", {
+            sort: ['id:desc'],
+            pagination: {
+                start: 0,
+                limit: 10,
+            },
+            populate: "*"
+        }),
+    ])
+
+    return {
+        props: {
+            posts: postsRes.data,
+            galleries: galleriesRes.data,
+            portfolios: portfoliosRes.data,
+            clients: clientsRes.data,
+        },
+        revalidate: 1,
+    }
+}
+
+export default AboutUs
