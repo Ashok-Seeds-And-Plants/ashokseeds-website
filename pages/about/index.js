@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Clients from "@components/Clients";
+import { fetchAPI } from "../lib/api"
 import Meta from '@components/Meta'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
