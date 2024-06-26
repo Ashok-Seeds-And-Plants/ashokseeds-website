@@ -55,7 +55,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-box-shadow: 0 0px 15px #2020203d;
-          box-shadow: 0 0px 15px #2020203d;
+  box-shadow: 0 0px 15px #2020203d;
   background: white url("../img/night.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -63,16 +63,16 @@
   background-size: 17px;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: transparent;
 }
 
-input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px  transparent;
-          box-shadow: 0 0 1px  transparent;
+input:focus+.slider {
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   background: white url("../img/sunny.png");
@@ -90,6 +90,11 @@ input:checked + .slider:before {
 
 .theme-light .navbar-brand .logo-light {
   display: block !important;
+}
+
+.theme-dark .copy-right > a{
+  color: 666666;
+
 }
 
 .theme-dark .dpt-100 {
@@ -160,7 +165,8 @@ input:checked + .slider:before {
   color: #fff !important;
 }
 
-.theme-dark p, .theme-dark span,
+.theme-dark p,
+.theme-dark span,
 .theme-dark .checkbox label,
 .theme-dark .content-feature-list li,
 .theme-dark .login-form .login-body .form-group label,
@@ -179,7 +185,9 @@ input:checked + .slider:before {
 .theme-dark .project-card.style3 .project-info .fund-collection .fund-goal,
 .theme-dark .project-card.style4 .project-info .fund-collection .fund-raised,
 .theme-dark .project-card.style4 .project-info .fund-collection .fund-goal,
-.theme-dark article ol li, .theme-dark .service-desc ol li, .theme-dark .terms-wrap ol li,
+.theme-dark article ol li,
+.theme-dark .service-desc ol li,
+.theme-dark .terms-wrap ol li,
 .theme-dark .post-metainfo li {
   color: rgba(255, 255, 255, 0.85) !important;
 }
@@ -218,11 +226,12 @@ input:checked + .slider:before {
 
 .theme-dark .hero-wrap.style3 .hero-shape-two {
   -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
   opacity: 0.3;
 }
 
-.theme-dark .cta-wrap.style1::after, .theme-dark .cta-wrap.style2::after {
+.theme-dark .cta-wrap.style1::after,
+.theme-dark .cta-wrap.style2::after {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(0, 0, 0, 0.95)), color-stop(94%, rgba(0, 0, 0, 0.3)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 45%, rgba(0, 0, 0, 0.3) 94%);
 }
@@ -314,7 +323,7 @@ input:checked + .slider:before {
 .theme-dark .sidebar-widget {
   background-color: transparent;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -364,7 +373,8 @@ input:checked + .slider:before {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.theme-dark input, .theme-dark textarea,
+.theme-dark input,
+.theme-dark textarea,
 .theme-dark .event-search-form .form-group select,
 .theme-dark .event-search-form .form-group input,
 .theme-dark #cmt-form .comment-form .form-group input,
@@ -448,22 +458,27 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 991px) {
+
   .theme-dark .main-menu-wrap,
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu {
     background-color: #091315;
   }
+
   .theme-dark .menu-close i,
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item .menu-expand i {
     color: #fff !important;
   }
+
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item a.active,
   .theme-dark .main-menu li a.active {
     color: #338F7A !important;
   }
+
   .theme-dark .main-menu li a.active,
   .theme-dark .main-menu li a {
     border-color: rgba(255, 255, 255, 0.2);
   }
+
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu li,
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item a {
     border-color: rgba(255, 255, 255, 0.2);
@@ -471,15 +486,18 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width: 992px) {
+
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu,
   .theme-dark .main-menu-wrap #menu ul li.has-children .sub-menu {
     background-color: #091315;
   }
+
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item a:hover,
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item a:focus,
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item a.active {
     color: #338F7A !important;
   }
+
   .theme-dark .header-wrap.style2 .navbar .navbar-nav .nav-item .dropdown-menu li {
     border-color: rgba(255, 255, 255, 0.15);
   }
