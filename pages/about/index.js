@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import Meta from '@components/Meta'
 import Header from '@components/Header'
-import Sidebar from '@components/Sidebar'
+import Clients from "@components/Clients";
 import Footer from '@components/Footer'
 import Js from '@components/Js'
 import Link from "next/link";
@@ -35,17 +35,17 @@ export default function Home() {
 
                     <section className="about-wrap style2 ptb-100">
                         <img src="/img/about/about-shape-1.png" alt="miyawaki forest upsc"
-                             className="about-shape-one moveHorizontal" />
+                            className="about-shape-one moveHorizontal" />
                         <div className="container">
                             <div className="row align-items-center gx-5">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200"
-                                     data-aos-delay="200">
+                                    data-aos-delay="200">
                                     <div className="about-img-wrap">
-                                        <img src="/img/about/about-img-2.png" alt="miyawaki urban forest" className="bounce"/>
+                                        <img src="/img/about/about-img-2.png" alt="miyawaki urban forest" className="bounce" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200"
-                                     data-aos-delay="200">
+                                    data-aos-delay="200">
                                     <div className="about-content">
                                         <div className="content-title style3">
                                             <span>A Little Introduction <span className="bl-text">About Us</span></span>
@@ -64,18 +64,29 @@ export default function Home() {
                         </div>
                     </section>
 
+                    <section class="team-wrap ptb-100 bg-sand">
+                        <img src="/img/shape-11.png" alt="neem tree plantation" class="team-shape-one" />
+                        <div class="container">
+                            <div class="section-title style3 text-center mb-40">
+                                <span>Our Partners</span>
+                                <h2>Our Great Customers</h2>
+                            </div>
+                            <Clients clients={clients} />
+                        </div>
+                    </section>
+
                     <section className="cta-wrap style1 bg-f ptb-100">
-                        <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two"/>
+                        <img src="/img/bg-shape-5.png" alt="apple tree plantation" className="cta-shape-two" />
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                                     <div className="content-title style1 text-center mb-40" data-aos="fade-up"
-                                         data-aos-duration="1200" data-aos-delay="200">
-                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden"/></span>
+                                        data-aos-duration="1200" data-aos-delay="200">
+                                        <span>What you can do<img src="/img/section-shape.png" alt="advantages of kitchen garden" /></span>
                                         <h3>All of our workshops, tree plantings, presentations, outreach programs and educational activities are ABSOLUTELY FREE for government schools, colleges and housing companies.</h3>
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"
-                                         data-aos-delay="300">
+                                        data-aos-delay="300">
                                         <a href="/about/" className="btn style1">Get Started now</a>
                                         <a href="/contact-us/" className="btn style2">Join Our Community</a>
                                     </div>
