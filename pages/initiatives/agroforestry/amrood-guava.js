@@ -128,8 +128,8 @@ const Amrood = ({ galleries, portfolios }) => {
                                     </div>
                                     <div className="cta-btn" data-aos="fade-up" data-aos-duration="1200"
                                          data-aos-delay="300">
-                                        <a href="/donate-now/" className="btn style1">Get Started now</a>
-                                        <a href="/get-involved/volunteer/" className="btn style2">Join Our Community</a>
+                                        <a href="/about/" className="btn style1">Get Started now</a>
+                                        <a href="/contact-us/" className="btn style2">Join Our Community</a>
                                     </div>
                                 </div>
                             </div>
