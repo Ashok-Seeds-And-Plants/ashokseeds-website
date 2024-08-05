@@ -7776,5 +7776,13 @@ article {
   white-space: nowrap;
 }
 .blog-slider-read-more{
+  display: flex;
+}
+
+.blog-slider-excerpt{
   display: block;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

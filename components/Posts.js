@@ -78,7 +78,7 @@ const Posts = ({ posts }) => {
                                 </div>
                                 <div className="blog-info">
                                     <h3><Link href={`/blog/${slug}`}>{title}</Link></h3>
-                                    {parse(excerpt)}
+                                    <div className='blog-slider-excerpt'>{parse(excerpt)}</div>
 
                                     <Link href={`/blog/${slug}`}>
                                     <a className="link style1 blog-slider-read-more">Read More <i
