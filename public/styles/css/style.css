@@ -7775,3 +7775,6 @@ article {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.blog-slider-read-more{
+  display: block;
+}

@@ -81,7 +81,7 @@ const Posts = ({ posts }) => {
                                     {parse(excerpt)}
 
                                     <Link href={`/blog/${slug}`}>
-                                    <a className="link style1">Read More <i
+                                    <a className="link style1 blog-slider-read-more">Read More <i
                                         className="flaticon-right-arrow"></i></a>
                                     </Link>
                                 </div>
