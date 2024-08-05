@@ -67,7 +67,7 @@ const Portfolios = ({ portfolios }) => {
                             </div>
                             <div className="project-info">
                                 <h3><Link href={`/project/${slug}`}>{title}</Link></h3>
-                                {parse(excerpt)}
+                                <div className='project-excerpt'>{parse(excerpt)}</div>
                                 <Link href={`/project/${slug}`}>
                                     <a className="link style1">See More<i
                                         className="flaticon-right-arrow"></i></a>
