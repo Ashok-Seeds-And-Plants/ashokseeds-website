@@ -66,7 +66,7 @@ const Portfolios = ({ portfolios }) => {
                                 <img src={`${cover}`} alt={`${title}`}/>
                             </div>
                             <div className="project-info">
-                                <h3><Link href={`/project/${slug}`}>{title}</Link></h3>
+                                <h3 className='project-slider-title'><Link href={`/project/${slug}`}>{title}</Link></h3>
                                 <div className='project-excerpt'>{parse(excerpt)}</div>
                                 <Link href={`/project/${slug}`}>
                                     <a className="link style1">See More<i
